@@ -2,8 +2,8 @@
 ! Title: GOODBYEADS
 ! Homepage: https://github.com/8680/GOODBYEADS
 ! Expires: 12 Hours
-! Version: 2024-02-24 09:06:17（北京时间） 
-! Total count: 6838
+! Version: 2024-02-24 20:26:43（北京时间） 
+! Total count: 6836
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -106,7 +106,6 @@
 @@/api/v2/models-online?$domain=tik.porn
 @@/assets/js/advertisement.js$~third-party
 @@/bag2?r[]=*&r[]=$domain=free.com.tw
-@@/cache2/*=.m3u8$xmlhttprequest,stealth=referrer,domain=weblivehdplay.ru
 @@/cdn-cgi/pe/bag2?*google-analytics.com%2Fanalytics.js$domain=amypink.de|biznews.com|cryptospot.me|dailycaller.com|droid-life.com|forwardprogressives.com|fpif.org|fullpotentialma.com|geekzone.co.nz|goldsday.com|hoyentec.com|imageupload.co.uk|is-arquitectura.es|lazygamer.net|lingholic.com|mmanews.com|nehandaradio.com|nmac.to|orain.org|tvunblock.com|unilad.co.uk|xrussianteens.com|youngcons.com
 @@/cdn-cgi/pe/bag2?*googleadservices.com$domain=droid-life.com
 @@/cdn-cgi/pe/bag2?*googlesyndication.com%2Fpagead%2Fosd.js$domain=forwardprogressives.com
@@ -131,7 +130,6 @@
 @@/dh-anti-adblocker/assets/js/prebid-ads.js
 @@/dh-anti-adblocker/public/js/prebid-ads.js
 @@/dh-new-anti-adblocker-lite/public/js/prebid-ads.js
-@@/embed/*$stealth=referrer,subdocument,domain=sportsonline.*|sportstream.website|elixx.xyz|primefoot.ru
 @@/embed/comments^$removeparam,~third-party,domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@/fingerprint.$domain=abchina.com
 @@/fingerprint2.js$domain=fangcloud.com|fx678.com|gxpf.cn|hnair.com|pop-fashion.com
@@ -915,6 +913,7 @@
 @@||api.leanplum.com^$app=com.thetrainline
 @@||api.mapbox.com/*?secure&access_token=$stealth
 @@||api.mercari.jp^$stealth
+@@||api.minecraftservices.com^$stealth
 @@||api.mixpanel.com/engage/?data=$xmlhttprequest,domain=deezer.com
 @@||api.mixpanel.com/track/*$domain=etcher.io
 @@||api.mixpanel.com/track/?data=$xmlhttprequest,domain=deezer.com
@@ -941,6 +940,7 @@
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com|taboolanews.com
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
 @@||api.us1.exponea.com^$script,xmlhttprequest,domain=walmartpetrx.com
+@@||api.viddler.com/api/v*/viddler.videos.getPlaybackDetails.json$stealth
 @@||api.youla.io^$stealth
 @@||api2.branch.io/v1/open$domain=flickplay.co
 @@||api2.branch.io^$app=com.reddit.frontpage|com.spotify.music
@@ -1049,7 +1049,6 @@
 @@||ausha.tsbluebox.com^$media,domain=podcast.ausha.co
 @@||auth.gfx.ms^$document
 @@||auth.mail.ru^$stealth
-@@||auth.opera.com^$stealth
 @@||auth.vodafone.hu^$cookie=dtCookie
 @@||auth2.picpay.com^*/event-tracking.js$script,~third-party
 @@||auto-api.yelp.com
@@ -1323,6 +1322,7 @@
 @@||card-form.diehard.yandex.net^$stealth=referrer
 @@||care2.com/assets/scripts/cookies/care2/NitroCookies.js
 @@||careermap.co.uk/careers/js/google-analytics.js
+@@||carefood.kz/upload/$image
 @@||carexpert.com.tw/wp-content/plugins/like-box-pro/includes/javascript/front_end_js.js
 @@||carrefourpl.snrpage.com^$removeparam=utm_source
 @@||carsensor.net/usedcar/modules/clicklog_top_lp_revo.php$xmlhttprequest
@@ -2195,6 +2195,7 @@
 @@||e.cn.miaozhen.com/r/k=*=http
 @@||e.cquotient.com/recs/*?callback=$domain=karstadt.de
 @@||e.cquotient.com/recs/*?callback=$domain=sloggi.com
+@@||e.issuu.com^$stealth
 @@||e.mail.ru^$stealth
 @@||e9china.net^$generichide
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
@@ -2250,7 +2251,6 @@
 @@||em.hk/wp-content/uploads/*_300_250.
 @@||emailapi.zdbb.net/subscriptions/$domain=extremetech.com
 @@||emailapi.zdbb.net/subscriptions/$domain=pcmag.com
-@@||emailregex.com^$generichide
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
 @@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
@@ -4135,7 +4135,6 @@
 @@||katfile.com/js/*ad*.js
 @@||kaxsdc.com/collect/sdk$xmlhttprequest,domain=vanillaereward.com
 @@||kayixin.com^*/advert
-@@||kcjervis.github.io/jervis/static/media/src/images/ships/banner/
 @@||kdpic.pchome.com.tw/img/js/xpcadshow.js$script,domain=10co.biz|10co.xyz|10co.co|10co.me
 @@||kdslife.com/ui/css/share2.
 @@||keep.google.com^$jsinject
@@ -4984,7 +4983,6 @@
 @@||pass.1688.com^$subdocument
 @@||passiontimes.hk^$generichide
 @@||passiontimes.hk^*-ad.php?
-@@||passport.aliexpress.com^$stealth,domain=aliexpress.ru|aliexpress.com
 @@||passport.csdn.net/login^$stealth=referrer
 @@||passport.yandex.ru^$stealth
 @@||pastebin.com/etc/geo.php?
@@ -5543,7 +5541,6 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=espn.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=mobile.donanimhaber.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$script,domain=m.timesofindia.com
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=10play.com.au
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=20min.ch
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=eksisozluk.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamer.com.tw
@@ -6180,6 +6177,7 @@
 @@||thenextweb.com$generichide
 @@||theolivepress.es^$stealth=useragent
 @@||thepiratebay.org/*.php$csp,~third-party
+@@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
 @@||thepiratebay.org/static/main.js$script,~third-party
 @@||thepiratebay.org^$subdocument
 @@||therichest.com^$generichide
