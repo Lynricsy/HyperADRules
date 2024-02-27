@@ -112,54 +112,25 @@ cat \
  | sort | uniq > ll.txt &
 wait
 
-cat l*.txt \
- |grep -v '^!' | grep -E -v "^[\.||]+[com]+[\^]$" \
- |grep -Ev "^\^" \
- |sort -n |uniq >> tmp1-dns1.txt & #处理DNS规则
-wait
-cat tmp1-dns1.txt \
- | sort -n |uniq -u #去重过期域名
-wait
 
 cat *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt & #允许清单处理
 wait
 
-echo 规则合并完成
+cp tmp-allow.txt .././allow.txt
+cp tmp-rules.txt .././rules.txt
 
-#移动规则到Pre目录
-cd ../
-mkdir -p ./pre/
-cp ./tmp/tmp-*.txt ./pre
-cd ./pre
+echo 规则合并完成
 
 # Python 处理重复规则
 python .././data/python/rule.py
+python .././data/python/filter-dns.py
 
 # Start Add title and date
-diffFile="$(ls|sort -u)"
-for i in $diffFile; do
- n=`cat $i | wc -l` 
- echo "! Version: $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间） " >> tpdate.txt 
- new=$(echo "$i" |sed 's/tmp-//g') 
- echo "! Total count: $n" > $i-tpdate.txt 
- cat ./tpdate.txt ./$i-tpdate.txt ./$i > ./$new 
- rm $i *tpdate.txt 
-done
+python .././data/python/title.py
 
-echo '更新统计数据'
 
-cd ../
-
-diffFile="$(ls pre |sort -u)"
-for i in $diffFile; do
- titleName=$(echo "$i" |sed 's#.txt#-title.txt#') 
- cat ./data/title/$titleName ./pre/$i | awk '!a[$0]++'> ./$i 
- sed -i '/^$/d' $i 
-
-done
 wait
 echo '更新成功'
-rm -rf pre
 
 exit
