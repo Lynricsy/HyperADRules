@@ -67,6 +67,7 @@ DNS拦截规则数量: 114704
 - [去APP下载提示规则](https://raw.githubusercontent.com/Noyllopa/NoAppDownload/master/NoAppDownload.txt)
 - [d3ward规则](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock)
 - [oisd规则](https://small.oisd.nl/)
+- [秋风规则](https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt)
 - [补充规则](https://github.com/8680/GOODBYEADS)
 </ul>
 </details>
