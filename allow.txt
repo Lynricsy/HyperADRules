@@ -2,9 +2,9 @@
 ! Title: GOODBYEADS
 ! Homepage: https://github.com/8680/GOODBYEADS
 ! Expires: 12 Hours
-! Version: 2024-02-28 20:28:19（北京时间）
+! Version: 2024-02-29 09:08:29（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 6825
+! Total count: 6838
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -34,6 +34,8 @@
 @@.online^$xmlhttprequest,stealth=referrer,domain=playru.net
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@.ru.com/*/tracks-$xmlhttprequest,stealth
+@@.ru/mylivetv/stream-*.php$stealth=referrer
+@@.ru/premiumtv/*.php*$subdocument,xmlhttprequest,stealth=referrer
 @@.ts^$stealth
 @@//store.donanimhaber.com/ad/*$domain=forum.donanimhaber.com
 @@/WebAd/*$domain=yongyoujia.com
@@ -184,6 +186,7 @@
 @@/piwik-$domain=github.com
 @@/playlist.m3u8$stealth
 @@/playlist/*caxi.m3u8$xmlhttprequest,stealth=referrer,domain=1stream.soccer|streameast.app|1stream.eu|buffstreams.app|meth-streams.ai
+@@/premium*/tracks-*.html$xmlhttprequest,stealth=referrer
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
 @@/pubads*theguardian.com
@@ -452,6 +455,7 @@
 @@||ad-cdn.bilgin.pro/app/ad-*.min.js$domain=medyafaresi.com
 @@||ad-emea.doubleclick.net/clk
 @@||ad-ipd.sxp.smartclip.net/select$domain=tele5.de
+@@||ad-ipd.sxp.smartclip.net/select?type=vast$xmlhttprequest,domain=toggo.de
 @@||ad-ipd.sxp.smartclip.net/select^$domain=n-tv.de
 @@||ad-maven.com^$domain=ad-maven.com
 @@||ad.10010.com^
@@ -2401,7 +2405,10 @@
 @@||fonts.googleapis.com^$stylesheet,domain=up-4ever.net
 @@||football-lineups.com^$generichide
 @@||forbes.ru^$removeparam=erid
+@@||forecast.lemonde.fr/ls.html$domain=lemonde.fr
 @@||forecast.lemonde.fr/p/event/pageview?$image,~third-party
+@@||forecast.lemonde.fr/sdk.js$domain=lemonde.fr
+@@||forecast.lemonde.fr/widget.js$domain=lemonde.fr
 @@||forexprostools.com^$domain=shougedui.com
 @@||forexprostools.com^$subdocument,domain=fx-rashinban.com
 @@||forgeofempires.com/game/json
@@ -2940,6 +2947,8 @@
 @@||googleads.g.doubleclick.net/pagead/ads?client=ca-pub-*&adk=$~xmlhttprequest,~script,~image,domain=ytlarge.com
 @@||googleads.g.doubleclick.net/pagead/html$domain=repo.hackyouriphone.org
 @@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup_fy2021.html$domain=ytlarge.com
+@@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup_inhead_fy2021.html$domain=alliptvlinks.com
+@@||googleads.g.doubleclick.net/pagead/html/*/zrt_lookup_nohtml_fy2021.html$domain=alliptvlinks.com
 @@||googleads.g.doubleclick.net^$app=com.google.android.apps.cultural
 @@||googleads.g.doubleclick.net^$app=com.thoptv.livetvstream
 @@||googleads.g.doubleclick.net^|$app=com.ftt.boxingstar.gl.aos
@@ -3911,7 +3920,6 @@
 @@||img*.doubanio.com^$stealth,domain=accounts.douban.com
 @@||img*.kangaroobro.com/images/$image,domain=leyuman.com
 @@||img*.nga$removeparam=cmpid
-@@||img.adnz.co^$image,domain=finanzen.ch
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
 @@||img.blesk.cz/js/base-cz/gemius.js
@@ -4868,6 +4876,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=10play.com.au
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=1cloudfile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=23qb.net|4spaces.org|aboluowang.com|assbbs.com|chaojizhibo.net|chtoen.com|daxiaamu.com|demo.ama.pub|dizhishengcheng.com|doitwell.tw|ekamus.info|eu4cn.com|ff14angler.com|freedidi.com|haoweichi.com|it365.abctool.info|linovelib.com|logi.im|monnsutogatya.com|mpyit.com|myqqjd.com|numberempire.com|ozabc.com|pansearch.me|patch.ali213.net|pc3mag.com|reh.tw|shenfendaquan.com|sistersbedroom.com|sto520.com|vaptcha.com|wenxuecity.com|wuyong.fun|xbeibeix.com|xiebruce.top|xugaoxiang.com|xxxxx520.com|yodu.org|yummy.best
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=alliptvlinks.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com,stealth
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=as-selection.net
@@ -4947,6 +4956,7 @@
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=copyseeker.net
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=production-api.androidacy.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=zefoy.com
+@@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_fy2021.js$domain=alliptvlinks.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=24sms.net
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=hexviewer.iblogbox.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=knowlet3389.blogspot.com|knowlet3389.blogspot.hk|knowlet3389.blogspot.jp|knowlet3389.blogspot.tw|mnighthk.net|weithenn.org
@@ -5086,6 +5096,7 @@
 @@||player.ex.co/player/$script,domain=theautopian.com
 @@||player.fc-zenit.ru/msi/geoip?$xmlhttprequest
 @@||player.glomex.com/integration^$domain=t-online.de
+@@||player.mediavitrina.ru^$stealth=referrer
 @@||player.odycdn.com/api/$xmlhttprequest,domain=odysee.com
 @@||player.pl^$generichide
 @@||player.smotrim.ru/js/piwik.js
@@ -5365,6 +5376,7 @@
 @@||rsc.cdn77.org^$stealth
 @@||rscdn.cxense.com/cx-test.js$domain=wsj.com
 @@||rt.rtoaster.jp^$image,domain=ec-store.net
+@@||rt.ru/api/$stealth=referrer
 @@||rt.visilabs.net/kapsamaharitasi/om.gif$domain=kapsamaharitasi.turktelekom.com.tr
 @@||rtl.nl/system/s4m/xldata/get_comscore.js?
 @@||rtoaster.jp/Rtoaster.js$domain=peachjohn.co.jp|satofull.jp
@@ -5896,6 +5908,7 @@
 @@||static.criteo.net/js/ld/publishertag.js$domain=novayagazeta.ru
 @@||static.criteo.net/js/ld/publishertag.js$domain=shinden.pl
 @@||static.criteo.net/js/ld/publishertag.js$domain=xda-developers.com
+@@||static.doubleclick.net/instream/ad_status.js$domain=alliptvlinks.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=bloggingsathi.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=idlixofficials.com|idlixofficial.co
 @@||static.doubleclick.net/instream/ad_status.js$domain=investing.com
