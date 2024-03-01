@@ -2,9 +2,9 @@
 ! Title: GOODBYEADS
 ! Homepage: https://github.com/8680/GOODBYEADS
 ! Expires: 12 Hours
-! Version: 2024-03-01 09:15:06（北京时间）
+! Version: 2024-03-01 20:29:26（北京时间）
 ! Description: 适用于AdGuard的去广告规则，合并优质上游规则并去重整理排列
-! Total count: 6840
+! Total count: 6837
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -936,8 +936,6 @@
 @@||api.solvemedia.com/papi/
 @@||api.solvemedia.com^$stealth
 @@||api.spendino.de/admanager^
-@@||api.spotify.com/*?ids=$xmlhttprequest,stealth=3p-auth
-@@||api.spotify.com/v1/playlists/$xmlhttprequest,stealth=3p-auth
 @@||api.taboola.com/2.0/json/*/recommendations.$domain=azby.fmworld.net
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com|taboolanews.com
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
@@ -987,6 +985,7 @@
 @@||aranzulla.it/_adv/
 @@||aranzulla.it^*ads$domain=aranzulla.it
 @@||archive.org/BookReader/$image,~third-party,xmlhttprequest
+@@||archive.org/includes/analytics.js
 @@||archive.org/services/$image,~third-party,xmlhttprequest
 @@||arkadiumhosted.com/API/$generichide
 @@||arrowos.net/js/blockAdBlock.js
@@ -1671,7 +1670,6 @@
 @@||changyan.sohu.com/debug/cookie?
 @@||changyou.com^$generichide
 @@||channel.images.production.web.w4a.tv^*/ard.png?$domain=yallo.tv
-@@||channel4.com^$stealth
 @@||chart-embed.service.newrelic.com^$subdocument,xmlhttprequest
 @@||chartbeat.com/*/chartbeat/$~third-party
 @@||chartbeat.com/js/chartbeat.js$domain=salon.com
@@ -1701,6 +1699,7 @@
 @@||chinapost-track.com/ads.txt
 @@||chinatimes.com/css-main/ad.css
 @@||chineseanime.vip^$generichide
+@@||choice.microsoft.com/*/opt-out$urlblock
 @@||chompers.io/ads.js
 @@||chronicle.blueconic.net/*/json$domain=chronicle.com
 @@||chtoen.com/js/adsbygoogle.js
@@ -2222,7 +2221,6 @@
 @@||editor.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=add-panel-data$domain=editor.wix.com
 @@||edmondpoon.com^$generichide
 @@||edu.cn^*/ad.css?$stylesheet
-@@||educationcanada.com^$generichide
 @@||eduscho.at/*/exactag_clientside.js
 @@||ee.hit.gemius.pl/gplayer.js$domain=tv3play.tv3.ee
 @@||egbilisim.com.tr/wp-content/uploads/$image
@@ -2245,6 +2243,7 @@
 @@||em.hk/wp-content/uploads/*_300_250.
 @@||emailapi.zdbb.net/subscriptions/$domain=extremetech.com
 @@||emailapi.zdbb.net/subscriptions/$domain=pcmag.com
+@@||emailregex.com^$generichide
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
 @@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
@@ -2332,7 +2331,6 @@
 @@||facebook.com/adsmanager^
 @@||facebook.com/connect/xd_arbiter.php$jsinject,elemhide
 @@||facebook.com/dialog/oauth$document
-@@||facebook.com/groupcall/$stealth=webrtc
 @@||facebook.com/login.php$stealth
 @@||facebook.com/share/share_now_menu/$domain=facebook.com
 @@||facebook.com/tr$domain=rusradio.ru
@@ -2356,7 +2354,6 @@
 @@||fdj.fr/oad/js/xiti/xtcore.js
 @@||fedex.com/apps/fedextrack$generichide
 @@||fedex.com/apps/myprofile/$generichide
-@@||feed.4strokemedia.com^$domain=video.corriere.it
 @@||feed.4strokemedia.com^$domain=video.gazzetta.it
 @@||feedback-pa.clients*.google.com/*/google.internal.feedback.$stealth
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
@@ -2582,6 +2579,7 @@
 @@||gismeteo.ru/api/informer/*/180x150
 @@||gitee.com/HServer/
 @@||github.com/AdguardTeam/
+@@||github.com/AdguardTeam/*/antiadblock.txt
 @@||github.com/gorhill/uBlock/*/src/web_accessible_resources/fingerprint2.js$~third-party
 @@||github.com/login$stealth
 @@||github.com^$generichide
@@ -3417,6 +3415,7 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|esgentside.com|maxisciences.com|ohmymag.com|ohmymag.de|ohmymag.com.br|ohmirevista.com
 @@||googletagservices.com/tag/js/gpt.js$domain=imgur.com
 @@||googletagservices.com/tag/js/gpt.js$domain=koigaku.machicon.jp
+@@||googletagservices.com/tag/js/gpt.js$domain=nbcsports.com
 @@||googletagservices.com/tag/js/gpt.js$domain=news.tvb.com
 @@||googletagservices.com/tag/js/gpt.js$domain=phileweb.com
 @@||googletagservices.com/tag/js/gpt.js$domain=scotsman.com,badfilter
@@ -3596,6 +3595,7 @@
 @@||humix.com/beardeddragon/iguana.js
 @@||humix.com/beardeddragon/wyvern.js
 @@||hungryleech.com/redir^$popup
+@@||hungryleech.com/stream^$popup
 @@||huntington.com^$document
 @@||hutchgo.advertserve.com^$domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
 @@||hvemder.no/js/hitcount.min.js$~third-party
@@ -4607,7 +4607,6 @@
 @@||mssl.fwmrm.net/*/AdManager.js?$domain=nhl.com|dtmts.com
 @@||mssl.fwmrm.net/libs/adm/*/LinkTag2.js$domain=play.tv3.lt
 @@||mstm.motorsport.com/mstm.js
-@@||mtouch.facebook.com/ads/api/preview/$domain=business.facebook.com
 @@||mts.ru^$stealth
 @@||mtvnetworks.tt.omtrdc.net^$script,domain=mtv.com
 @@||mui.com^$generichide
@@ -4958,7 +4957,6 @@
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=production-api.androidacy.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=zefoy.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_fy2021.js$domain=alliptvlinks.com
-@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=24sms.net
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=hexviewer.iblogbox.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=knowlet3389.blogspot.com|knowlet3389.blogspot.hk|knowlet3389.blogspot.jp|knowlet3389.blogspot.tw|mnighthk.net|weithenn.org
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=thebrickfan.com
@@ -5182,6 +5180,7 @@
 @@||prod.adspsp.com/adb.*.min.js$domain=healthline.com
 @@||prod.adspsp.com/adb.2418030m.min.js$domain=medicalnewstoday.com
 @@||prod.fennec.atp.fox/js/fennec.js$domain=freemcserver.net
+@@||profitsfly.com/*/ad*.js$domain=tiktokcounter.net
 @@||promo.awempire.com/live_feeds/script_basic_livefeed.php?$domain=sexcamdb.com
 @@||promo.com/embed/$subdocument,third-party
 @@||promods.net/*.js$~third-party
@@ -5563,7 +5562,6 @@
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xmlhttprequest,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|miuiflash.com|thecubexguide.com|jytechs.in
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=10play.com.au
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=abccar.com.tw
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=agario-play.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=alternativeto.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=blog.carstopia.net|blog.coinsvalue.net|blog.cookinguide.net|blog.freeoseocheck.com|blog.makeupguide.net
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=bloomberg.com
@@ -5986,6 +5984,7 @@
 @@||stpd.cloud/saas/$script,domain=dragontea.ink
 @@||stpd.cloud^$domain=freemcserver.net
 @@||stream.adunity.com^$xmlhttprequest,domain=b1tv.ro
+@@||stream.nbcsports.com/assets/page/general/ads.js
 @@||stream.voidboost.cc^$stealth
 @@||stream4free.live^$generichide
 @@||streamlive.to^$generichide
@@ -6180,7 +6179,6 @@
 @@||themezon.net/link.php$stealth=referrer
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
 @@||thenextweb.com$generichide
-@@||theolivepress.es^$stealth=useragent
 @@||thepiratebay.org/*.php$csp,~third-party
 @@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
 @@||thepiratebay.org/static/main.js$script,~third-party
@@ -6284,7 +6282,6 @@
 @@||track.nzz.ch/cre-*/tracking/
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
 @@||track.toggl.com/auth^$stealth
-@@||track.ukrposhta.ua^$stealth
 @@||track.webgains.com/click.html?$popup,domain=pepper.*
 @@||track2.royalmail.com^
 @@||trackcmp.net^|
