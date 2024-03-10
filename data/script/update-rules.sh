@@ -46,6 +46,10 @@ allow=(
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/allowlist.txt"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/allowlist.txt"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/allowlist.txt"
+  "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
+  "https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/filter_whitelist.txt"
+  "https://raw.githubusercontent.com/liwenjie119/adg-rules/master/white.txt"
+  "https://raw.githubusercontent.com/ChengJi-e/AFDNS/master/QD.txt"
 )
 
 for i in "${!rules[@]}" "${!allow[@]}"
