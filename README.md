@@ -54,9 +54,6 @@ DNS拦截规则数量: 228843
 </details>
 
 <h2 id="b">📔 上游列表</h2>
-<details>
-<summary>点击查看</summary>
-<ul>
 
 - [AdGuard规则](https://github.com/AdguardTeam/AdguardFilters)
 - [Tv规则](https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt)
@@ -71,10 +68,8 @@ DNS拦截规则数量: 228843
 - [补充规则](https://github.com/8680/GOODBYEADS)
 - [antiAD](https://github.com/privacy-protection-tools/anti-AD)
 - [adblockfilters](https://github.com/217heidai/adblockfilters)
-</ul>
-</details>
 
-<h2 id="c">🚫 拦截效果</h2>
+<h2 id="c">测试拦截效果</h2>
 
 [AdBlock Tester](https://adblock-tester.com)
 
@@ -82,13 +77,14 @@ DNS拦截规则数量: 228843
 
 [Ad Blocker Test](https://d3ward.github.io/toolz/adblock.html)
 
-<h2 id="d">💬 完善项目</h2>
+<h2 id="d">协助我完善此项目</h2>
 
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则 我审核之后会加入到规则，如果规则有误杀我会尽快处理
 
-**本项目合并规则源码来自[GOODBYEADS](https://github.com/8680/GOODBYEADS)。**
+**本项目部分源码来自[GOODBYEADS](https://github.com/8680/GOODBYEADS)，在此表示感谢。**
 
 **提交范围**
 
 - 漏拦截的广告
 - 误杀的网站
+- 请在测试出具体的域名之后提交issue
