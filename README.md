@@ -1,20 +1,20 @@
 <div align="center">
-<h1 align="center">GOODBYEADS<br>一个强力去广告的规则</h1>
+<h1 align="center">HyperADRules<br>一个集合众家之长的、强力去广告的规则</h1>
 <p>
-  <a href="https://github.com/8680/GOODBYEADS">
-    <img src="https://img.shields.io/github/last-commit/8680/GOODBYEADS?style=flat-square" alt="last update" />
+  <a href="https://github.com/Lynricsy/HyperADRules">
+    <img src="https://img.shields.io/github/last-commit/Lynricsy/HyperADRules?style=flat-square" alt="last update" />
   </a>
-  <a href="https://github.com/8680/GOODBYEADS">
-    <img src="https://img.shields.io/github/forks/8680/GOODBYEADS?style=flat-square" alt="forks" />
+  <a href="https://github.com/Lynricsy/HyperADRules">
+    <img src="https://img.shields.io/github/forks/Lynricsy/HyperADRules?style=flat-square" alt="forks" />
   </a>
-  <a href="https://github.com/8680/GOODBYEADS">
-    <img src="https://img.shields.io/github/stars/8680/GOODBYEADS?style=flat-square" alt="stars" />
+  <a href="https://github.com/Lynricsy/HyperADRules">
+    <img src="https://img.shields.io/github/stars/Lynricsy/HyperADRules?style=flat-square" alt="stars" />
   </a>
-  <a href="https://github.com/8680/GOODBYEADS/issues/">
-    <img src="https://img.shields.io/github/issues/8680/GOODBYEADS?style=flat-square" alt="open issues" />
+  <a href="https://github.com/Lynricsy/HyperADRules/issues/">
+    <img src="https://img.shields.io/github/issues/Lynricsy/HyperADRules?style=flat-square" alt="open issues" />
   </a>
-  <a href="https://github.com/8680/GOODBYEADS">
-    <img src="https://img.shields.io/github/license/8680/GOODBYEADS?style=flat-square" alt="license" />
+  <a href="https://github.com/Lynricsy/HyperADRules">
+    <img src="https://img.shields.io/github/license/Lynricsy/HyperADRules?style=flat-square" alt="license" />
   </a>
 </p>
 
@@ -43,12 +43,12 @@ DNS拦截规则数量: 228761
 <summary>规则列表</summary>
 <ul>
 
-- **[拦截规则（Github）](https://raw.githubusercontent.com/8680/GOODBYEADS/master/rules.txt)**
-- **[拦截规则(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/8680/GOODBYEADS/master/rules.txt)**
-- **[DNS拦截规则（Github）](https://raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt)**
-- **[DNS拦截规则(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/8680/GOODBYEADS/master/dns.txt)**
-- **[白名单（Github）](https://raw.githubusercontent.com/8680/GOODBYEADS/master/allow.txt)**
-- **[白名单(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/8680/GOODBYEADS/master/allow.txt)**
+- **[拦截规则（Github）](https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt)**
+- **[拦截规则(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/Lynricsy/HyperADRules/master/rules.txt)**
+- **[DNS拦截规则（Github）](https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt)**
+- **[DNS拦截规则(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/Lynricsy/HyperADRules/master/dns.txt)**
+- **[白名单（Github）](https://raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt)**
+- **[白名单(Ghproxy-国内加速)](https://mirror.ghproxy.com/raw.githubusercontent.com/Lynricsy/HyperADRules/master/allow.txt)**
 
 </ul>
 </details>
@@ -69,6 +69,8 @@ DNS拦截规则数量: 228761
 - [oisd规则](https://small.oisd.nl/)
 - [秋风规则](https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt)
 - [补充规则](https://github.com/8680/GOODBYEADS)
+- [antiAD](https://github.com/privacy-protection-tools/anti-AD)
+- [adblockfilters](https://github.com/217heidai/adblockfilters)
 </ul>
 </details>
 
@@ -83,6 +85,8 @@ DNS拦截规则数量: 228761
 <h2 id="d">💬 完善项目</h2>
 
 希望大家可以提交 Issue 或者 Request 来帮助我完善规则 我审核之后会加入到规则，如果规则有误杀我会尽快处理
+
+**本项目合并规则源码来自[GOODBYEADS](https://github.com/8680/GOODBYEADS)。**
 
 **提交范围**
 
