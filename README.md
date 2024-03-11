@@ -1,3 +1,4 @@
+![HyperADRules](https://pic.imgdb.cn/item/65eec8319f345e8d034300e8.png)
 <div align="center">
 <h1 align="center">HyperADRules<br>一个集合众家之长的、强力去广告的规则</h1>
 <p>
