@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-11 20:10:32（北京时间）
+! Version: 2024-03-11 23:24:41（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7301
+! Total count: 7303
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -250,9 +250,12 @@
 @@_300_250.$domain=nanrenwo.net
 @@_370x270.$domain=bairuitool-cn.aliyun-hk03.hicheng.net
 @@_ads_cpc_$domain=90lover.cn
+@@_adview_$domain=52xkdy.com
+@@_adview_$domain=fydy8.com
 @@_cpa_cpm_$domain=52xkdy.com
 @@_cpc_cpm/$domain=youranshare.com
 @@_cpc_cpm_$domain=fydy8.com|saraba1st.com
+@@_cpc_cpm_$domain=saraba1st.com
 @@analytics^$domain=wwe.com
 @@assets/dist//bts2$xmlhttprequest,stealth=referrer,domain=previbes.online
 @@bit.ly
@@ -1179,7 +1182,6 @@
 @@||avgle.com/embed/$genericblock,generichide
 @@||avpgalaxy.net/gpt.js
 @@||awaps.yandex.ru^$app=ru.yandex.searchplugin
-@@||aweprt.com/embed/fk?_=$domain=oklivetv.com|okteve.com
 @@||awin1.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||ay.delivery/client-v2.js$script,domain=diep.io
 @@||az416426.vo.msecnd.net/next/ai.2.min.js$domain=ams.cdn.arkadiumhosted.com
@@ -1239,7 +1241,6 @@
 @@||bats.video.yahoo.com$app=com.yahoo.mobile.client.android.mail
 @@||battle.net^
 @@||battlecats-db.com^$generichide
-@@||bauersecure.com/dist/js/prebid/$domain=carmagazine.co.uk
 @@||baumberger.shop/cache/javascript_*_responsive_ad_footer.js$~third-party
 @@||baumberger.shop/cache/style_*_responsive_ad_header.css$~third-party
 @@||bb.com.br^$stealth=dpi
@@ -2474,6 +2475,7 @@
 @@||etsy.com/api/v3/ajax/bespoke/*log_performance_metrics=$~third-party
 @@||etsy.com/your/shops/$document
 @@||ettoday.net^$generichide
+@@||eu.spgo.io/*~/aaa$~image
 @@||eu4cn.com^$generichide
 @@||eum-blue-saas.instana.io^$app=com.kaufland.Kaufland
 @@||euronewsgroup.demdex.net/event?d_event=$~third-party
@@ -2506,7 +2508,6 @@
 @@||ez3c.tw/js/adblockDetector.js
 @@||ez3c.tw^$generichide
 @@||ezodn.com/cmp/gvl.json$xmlhttprequest
-@@||eztv.io^$csp=script-src 'self' 'unsafe-inline'
 @@||f*.market.mi-img.com^$important
 @@||f*.market.xiaomi.com^$important
 @@||f-droid.org/assets/Ads_$~third-party
@@ -3700,6 +3701,7 @@
 @@||haokoubei.top/check_img_block.js
 @@||haokoubei.top/dl/rfo_v_f_pc.js
 @@||haokoubei.top/sz/to_v_f.js
+@@||haokoubei.top/sz/tos_v_f.js
 @@||haoweichi.com/Public/js/ads.js
 @@||happyride.se/img/admarket/
 @@||harvard.edu/scripts/ga_social_tracking.js
@@ -4419,6 +4421,7 @@
 @@||kotaku.com/x-kinja-static/assets/new-client/adManager.$~third-party
 @@||kotaku.com/x-kinja-static/assets/new-client/adManager~video-html5-playlist~videoHtml5.*.js$domain=kotaku.com
 @@||koyi.pub/wp-content/plugins/fuzqing-ad-plus/assets/js/*.js
+@@||kozkutak.hu/getdata.php?v*=pageview$~third-party
 @@||kqzyfj.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||kraj-lbc.cz^$stealth=dpi
 @@||krebsonsecurity.com
@@ -4500,7 +4503,6 @@
 @@||linksynergy.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||linkvertise.com/assets/ads.js
 @@||linkvertise.com^$generichide
-@@||linkvertise.download^$generichide
 @@||linuxize.com/porpoiseant/banger.js
 @@||lirarate.org/tardisrocinante/screx.js
 @@||litv.tv/ads/ads.js
@@ -5227,7 +5229,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sportskeeda.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=stockstracker.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=streetdir.com|roaddir.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=technorozen.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=thizissam.in
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=turkce-brosurler.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=updato.com
@@ -5832,6 +5833,7 @@
 @@||script-at.iocnt.net/iam.js$domain=oe24.at
 @@||script.nettix.fi/auto/extra/template/nettiauto_analytics.js$domain=nettiauto.com
 @@||scripts.demandmedia.com/wm.js$domain=ehow.com
+@@||sctapi.ftqq.com^
 @@||scyts.com^$generichide
 @@||sdc.pingan.com^$~image
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
