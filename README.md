@@ -19,7 +19,7 @@
 </p>
 
 <h4>
-    <a href="#a">规则订阅</a>
+    <a href="#a">Status</a>
   <span> · </span>
     <a href="#b">上游列表</a>
   <span> · </span>
@@ -30,7 +30,7 @@
 
 </div>
 
-<h2 id="a">🎯 规则订阅</h2>
+<h2 id="a">Status</h2>
 
 ```
 更新时间: 2024-03-11 13:14:47 （北京时间） 
@@ -52,7 +52,7 @@ DNS拦截规则数量: 228843
 
 </ul>
 
-<h2 id="b">📔 上游列表</h2>
+<h2 id="b">上游列表</h2>
 
 - [AdGuard规则](https://github.com/AdguardTeam/AdguardFilters)
 - [Tv规则](https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt)
