@@ -65,15 +65,12 @@ DNS拦截规则数量: 228257
 - [d3ward规则](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock)
 - [oisd规则](https://small.oisd.nl/)
 - [秋风规则](https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt)
-- [补充规则](https://github.com/8680/GOODBYEADS)
+- [GOODBYEADS](https://github.com/8680/GOODBYEADS)
 - [antiAD](https://github.com/privacy-protection-tools/anti-AD)
 - [adblockfilters](https://github.com/217heidai/adblockfilters)
+- 我自己补充的规则
 
 <h2 id="c">测试拦截效果</h2>
-
-[AdBlock Tester](https://adblock-tester.com)
-
-[Block Ads! Adblock test](https://blockads.fivefilters.org/)
 
 [Ad Blocker Test](https://d3ward.github.io/toolz/adblock.html)
 
