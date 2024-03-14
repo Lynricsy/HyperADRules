@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-14 08:27:49（北京时间）
+! Version: 2024-03-14 20:11:38（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7311
+! Total count: 7320
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -1006,6 +1006,7 @@
 @@||api.mapbox.com/*/mapbox.mapbox-terrain-*,mapbox.mapbox-streets-*^$stealth
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
+@@||api.mapbox.com/geocoding/$stealth
 @@||api.micloud.xiaomi.net^$important
 @@||api.minecraftservices.com^$stealth
 @@||api.miui.security.xiaomi.com^$important
@@ -1295,6 +1296,7 @@
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||bigota.d.miui.com^$important
 @@||bikeforums.net/clientscript/vbulletin_analytics.js
+@@||bikeportland.org/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js$script,~third-party
 @@||bild.de^$stealth
 @@||bild.met.vgwort.de/na^$domain=bild.de
 @@||bilder-a.akamaihd.net/ip/js/ipdvdc/blockadblock.min.js$domain=rtl.de
@@ -2367,6 +2369,7 @@
 @@||e.issuu.com^$stealth
 @@||e.mail.ru^$stealth
 @@||e9china.net^$generichide
+@@||eapteka.ru/*/personal/$stealth
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
 @@||easylife.tw/js/adblockDetector.js
@@ -2518,6 +2521,7 @@
 @@||facebook.com/adsmanager^
 @@||facebook.com/connect/xd_arbiter.php$jsinject,elemhide
 @@||facebook.com/dialog/oauth$document
+@@||facebook.com/groupcall/$stealth=webrtc
 @@||facebook.com/login.php$stealth
 @@||facebook.com/share/share_now_menu/$domain=facebook.com
 @@||facebook.com/tr$domain=rusradio.ru
@@ -4038,6 +4042,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=spox.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=stack.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tenceretv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=texastech.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=timesnownews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tranimeci.com
@@ -4063,6 +4068,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wetteronline.de
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wetv.vip
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wibc.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wordgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wsls.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=xxxdan.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=yad.com
@@ -4709,6 +4715,7 @@
 @@||media.org.hk^*/ads_
 @@||media.richrelevance.com/rrserver/$domain=askul.co.jp
 @@||media.sailthru.com^$image,domain=link.ted.com
+@@||media.salemwebnetwork.com/adverts/advertisement.js$domain=biblestudytools.com
 @@||media.sosh.fr/includes/wtbase.js
 @@||media.sosh.fr/includes/wtinit.js
 @@||media.studybreakmedia.com/doubleclick/ads2.js
@@ -5234,6 +5241,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vladan.fr
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vorsprung-online.de
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zefoy.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=panel.waifly.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,xmlhttprequest,domain=topsporter.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=b2bhint.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=duelmeta.com|linetv.tw|liout.com|moneysave.info|zxmee.com
@@ -6522,6 +6530,7 @@
 @@||tehnotone.com^$generichide
 @@||telegram.hr^$content
 @@||telegraph.co.uk/template/ver1-0/js/webtrends/live/wtid.js
+@@||telize.com/geoip$document
 @@||templates.marketo.net/template*/$script,stylesheet,domain=pages.addigy.com
 @@||tenki.jp/storage/static-images/top-ad/
 @@||tennispro.eu/min/?$script,~third-party
