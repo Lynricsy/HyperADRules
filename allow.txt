@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-15 08:28:09（北京时间）
+! Version: 2024-03-15 20:10:03（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7315
+! Total count: 7322
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -904,6 +904,7 @@
 @@||aolcdn.com^*/beacon.min.js$domain=autoblog.com|dailyfinance.com
 @@||api*-access-sg.pangle.io^$app=com.square_enix.android_googleplay.dqwalkj
 @@||api-analytics.magstimconnect.net^$~third-party
+@@||api-edge.cognitive.microsofttranslator.com/translate?
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api-maps.yandex.ru/services/startup/$stealth
 @@||api-mg2.db-ip.com^$xmlhttprequest,domain=journal-news.com
@@ -1179,6 +1180,7 @@
 @@||avgle.com/embed/$genericblock,generichide
 @@||avpgalaxy.net/gpt.js
 @@||awaps.yandex.ru^$app=ru.yandex.searchplugin
+@@||awempire.com/*/css/*.css$domain=awempire.com
 @@||awin1.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||ay.delivery/client-v2.js$script,domain=diep.io
 @@||az416426.vo.msecnd.net/next/ai.2.min.js$domain=ams.cdn.arkadiumhosted.com
@@ -4195,6 +4197,7 @@
 @@||in.api.glance.inmobi.com^$app=com.samsung.android.keyguardmgsupdator
 @@||in.treasuredata.com/js/*api_key$script,domain=retty.me
 @@||in.treasuredata.com/js/v*/event/fluentd_website/anchor_clicks_$domain=docs.fluentd.org
+@@||in91vip.win/default_ad_js/ad_code.js
 @@||inapps.appsflyer.com^$app=se.prisjakt.pricespy
 @@||inazuma.co/campaign/js/heatmap.js$domain=monopoly.mcdonalds.co.uk
 @@||indeed.com/rpc/log/myjobs/$~third-party
@@ -4341,6 +4344,7 @@
 @@||js.sentry-cdn.com^$script,domain=app.homebinder.com|book.dmm.com|etsy.com|interacty.me|jobs.ch|pizzahut.com.au
 @@||js.tv.itc.cn/gg.seed.js
 @@||js.vpro.nl/vpro/*/statcounter.js?
+@@||js.wpadmngr.com/static/adManager.js$domain=blog.carstopia.net|blog.coinsvalue.net|blog.cookinguide.net|blog.freeoseocheck.com|blog.makeupguide.net
 @@||jsdelivr.net/combine/npm/$domain=ulifestyle.com.hk
 @@||jsdelivr.net/gh/bde4admin/*/prebid-ads.js$domain=52bdys.com
 @@||jsdelivr.net/gh/bde4admin/*/prebid-ads.js$domain=bde4.icu
@@ -5184,6 +5188,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=autofaucet.dutchycorp.space
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=axilesoft.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=battlecats-db.com|cpu-world.com|game.anymanager.io|games.wkb.jp|html5.gamedistribution.com|knowfacts.info|lacoste.com|megagames.com|megaleech.us|newson.us|real-sports.jp|slideplayer.com|tampermonkey.net|teemo.gg|thefreedictionary.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=blog.carstopia.net|blog.coinsvalue.net|blog.cookinguide.net|blog.freeoseocheck.com|blog.makeupguide.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bloggingsathi.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=blogs.sapib.ca
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bowfile.com
@@ -6096,6 +6101,7 @@
 @@||soisk-me.pl/modules/*/js/advertisement.js
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
 @@||solve-all-problems.info/googleads.js
+@@||solvetube.site/*js$domain=solvetube.site
 @@||solvetube.site^$generichide
 @@||som.aeroplan.com/b/ss/
 @@||sonar.viously.com^$domain=clubic.com
@@ -7016,6 +7022,7 @@
 @@||wazimo.com/engine/common/widgets/content/$domain=showsnob.com
 @@||wbapp.mobile.sina.cn^$important
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
+@@||wcofun.com/inc/embed/ads.js
 @@||wd.adcolony.com^|$app=com.jellybtn.cashkingmobile
 @@||web-ads.pulse.weatherbug.net/api/ads/targeting/v*/parameters?$domain=weatherbug.com
 @@||web.any.do^$document
