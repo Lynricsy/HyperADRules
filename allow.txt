@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-15 20:10:03（北京时间）
+! Version: 2024-03-16 08:27:00（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7322
+! Total count: 7319
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -17,7 +17,6 @@
 @@.2o7.net/$domain=today.com
 @@.adserver.$domain=litv.tv
 @@.aliimg.com$domain=aliexpress.com
-@@.amazon.*/sample/$stealth=referrer
 @@.atlassian.net$document
 @@.co.uk/wp-banners.js$domain=advertiserandtimes.co.uk|northern-scot.co.uk|suffolknews.co.uk|kentonline.co.uk|cambridgeindependent.co.uk|fenlandcitizen.co.uk|granthamjournal.co.uk|stratford-herald.com|spaldingtoday.co.uk
 @@.com/ad.aspx|$domain=xdingdian.cc
@@ -544,7 +543,6 @@
 @@||ad.thsi.cn/siteHome/
 @@||ad.vivo.com.cn^
 @@||ad.vivo.com.cn^$~third-party
-@@||ad.zanox.com/ppc/$subdocument,domain=wisedock.com
 @@||ad13.adfarm1.adition.com^$domain=1und1.de
 @@||ad3.adfarm1.adition.com^$domain=servustv.com,other
 @@||ad4.on.cc/web/www/delivery/ajs.php
@@ -1089,7 +1087,6 @@
 @@||appmsg.gzmtr.cn^$important
 @@||appnee.com/clever_ads.js
 @@||apps.derstandard.at^*/TrackingCookieCheck?$subdocument
-@@||apps.geodan.nl^$stealth=referrer
 @@||appsupport.qq.com^$important
 @@||apv-launcher.minute.ly/api/$script
 @@||aqy103.com/js/aqy/main.js
@@ -2394,6 +2391,7 @@
 @@||eddiebauer.com/__ssobj/core.js+ssdomvar.js+generic-adapter.js
 @@||eden.international/script/ad_banner/
 @@||eden.org.tw^*/ad_banner/
+@@||edge-*.gcdn.app/st/$stealth=referrer,domain=anilife.live
 @@||edge-enterprise.activity.windows.com^
 @@||edge.activity.windows.com^
 @@||edge.microsoft.com/translate/auth
@@ -5975,6 +5973,7 @@
 @@||sexgalaxy.net/wp-content/themes^
 @@||sexgalaxy.net/wp-includes/js^
 @@||sextb.net^$generichide
+@@||sextb.xyz^$generichide
 @@||seyise8.com^$generichide
 @@||seyy66.space^$generichide
 @@||seznam.cz/?spec=*&url=$image,domain=search.seznam.cz
@@ -6318,8 +6317,6 @@
 @@||static.vocstatic.com^$script,stylesheet,domain=ideal.es
 @@||static.vrv.co^$media,domain=crunchyroll.com
 @@||static.webshark.pl/adserver/*/main_script.js?advertise_check=1
-@@||static.ziffdavis.com/sitenotice/*/settings.js$domain=allestoringen.be|allestoringen.nl|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de|downdetector.ae|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.com|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr
-@@||static.ziffdavis.com/sitenotice/evidon-sitenotice-bundle.js$domain=allestoringen.be|allestoringen.nl|xn--allestrungen-9ib.at|xn--allestrungen-9ib.ch|xn--allestrungen-9ib.de|downdetector.ae|downdetector.ca|downdetector.co.nz|downdetector.co.uk|downdetector.co.za|downdetector.com.ar|downdetector.com.au|downdetector.com.br|downdetector.com.co|downdetector.com|downdetector.cz|downdetector.dk|downdetector.ec|downdetector.es|downdetector.fi|downdetector.fr|downdetector.gr|downdetector.hk|downdetector.hr|downdetector.hu|downdetector.id|downdetector.ie|downdetector.in|downdetector.it|downdetector.jp|downdetector.mx|downdetector.my|downdetector.no|downdetector.pe|downdetector.pk|downdetector.pl|downdetector.pt|downdetector.ro|downdetector.ru|downdetector.se|downdetector.sg|downdetector.sk|downdetector.web.tr
 @@||static00.forvo.com/_presentation/assets/js/vendor_mobile_no_ads.js
 @@||static3.iask.cn^
 @@||statics.cfmcdn.net/*/scripts/webtrends-$script,domain=cheapflights.com
