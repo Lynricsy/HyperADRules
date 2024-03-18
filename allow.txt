@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-18 08:29:33（北京时间）
+! Version: 2024-03-18 20:10:39（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7332
+! Total count: 7342
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -698,6 +698,7 @@
 @@||adsafeprotected.com/iasPET.$script,domain=independent.co.uk|reuters.com
 @@||adsafeprotected.com/vans-adapter-google-ima.js$script,domain=gamingbible.co.uk|ladbible.com|reuters.com
 @@||adsales.snidigital.com/*/ads-config.min.js$script
+@@||adsco.re/p$domain=shorterall.com
 @@||adsense.woso.cn^$~third-party
 @@||adserver.juicyads.com/js/jads.js$domain=netflav.com
 @@||adserver.skiresort-service.com/www/delivery/spcjs.php?$script,domain=skiresort.de|skiresort.fr|skiresort.info|skiresort.it|skiresort.nl
@@ -1196,6 +1197,7 @@
 @@||b.scorecardresearch.com/r$domain=macworld.com|elmundo.es|pcworld.com|seattletimes.com|ancestry.com|ancestry.co.uk|ancestry.ca|ancestry.de|ancestry.it|ancestry.fr|ancestry.se|ancestry.mx
 @@||b.scorecardresearch.com/r$domain=techhive.com
 @@||b.scorecardresearch.com/r?$domain=bedfordshire-news.co.uk
+@@||b1.best-hit.tv^$generichide
 @@||b90.yahoo.co.jp/conv.js$domain=www3.nissan.co.jp
 @@||b92.net/a/cmt_submit.php$document
 @@||b92.yahoo.co.jp/js/s_retargeting.js$domain=www3.nissan.co.jp
@@ -1287,6 +1289,7 @@
 @@||beyondsoft.com/dataservice/img/ad_
 @@||bf.sbdm.cc^$stealth
 @@||bgp.he.net/images/flags/*.gif?$image,~third-party
+@@||bhavanijewellery.in/ads9.gif$domain=atozmath.com
 @@||bhc.co.kr^$stealth=dpi
 @@||bhg.com/web/js-min/common/js/dwr/RemoteTargetingService.js
 @@||bigbtc.win/js/ads-prebid.js
@@ -1322,6 +1325,7 @@
 @@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
 @@||blackcircles.ca^$script,~third-party
 @@||blackmod.net^$generichide
+@@||bleepingcomputer.com/download/ads-spy/
 @@||blob.core.windows.net/bge/src/js/google-analytics.js$domain=secure2.bge.com
 @@||blocket.se/annonser^
 @@||blocket.se^*/xtcore.js
@@ -1506,6 +1510,7 @@
 @@||cdn.ampproject.org/v0.js$domain=amp.fakty.ua
 @@||cdn.ampproject.org/v0.js$domain=novosti-n.org
 @@||cdn.ampproject.org/v0.js$domain=politnavigator.net
+@@||cdn.anilife.*/assets/img/cover/$domain=anilife.*,stealth=referrer
 @@||cdn.antenne.de/antenne-de/uploads^
 @@||cdn.appdynamics.com/adrum$domain=cvs.com
 @@||cdn.apple-mapkit.com/*?apiVersion=$stealth
@@ -1752,6 +1757,7 @@
 @@||cdnjs.cloudflare.com/ajax/libs/*.min.js$domain=audioz.download
 @@||cdnjs.cloudflare.com/ajax/libs/Swiper/*/js/swiper.min.js$domain=9anime.*
 @@||cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js
+@@||cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js$domain=dutchycorp.ovh
 @@||cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.js$domain=dutchycorp.space
 @@||cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.min.js
 @@||cdnjs.cloudflare.com/ajax/libs/blockadblock/3.2.1/blockadblock.min.js$domain=cpmlink.net
@@ -3682,6 +3688,7 @@
 @@||h-cast.jp^$script,domain=bookoffonline.co.jp
 @@||h-sdk.online-metrix.net^$app=com.ebay.mobile
 @@||h.imedia.cz/js/cmp2/scmp.js$domain=seznam.cz
+@@||h178.com^$generichide
 @@||h1g.jp/img/ad/ad_heigu.html$~third-party
 @@||h5.m.taobao.com^$important
 @@||haaretz.co.il/logger/p.gif?$image,xmlhttprequest
@@ -4285,6 +4292,8 @@
 @@||ixueshu.com/ad-server/
 @@||izifilm.net^$stealth,app=Kinoplay.exe
 @@||izo.tw/wp-content/advert1.js
+@@||j-baseball.club^$generichide
+@@||j-basketball.club^$generichide
 @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com
 @@||jandan.net^$generichide
 @@||jav777.cc/advertise/
@@ -6995,6 +7004,7 @@
 @@||vulture.com/decor/javascript/magnify_stats.js
 @@||vvic.com/monetize/ads/index/
 @@||w.pandora.xiaomi.com^$important
+@@||w2g.tv/rooms/$stealth
 @@||w3-reporting.reddit.com^$app=com.reddit.frontpage
 @@||w3spy.org/etc/geo.php?
 @@||w88.espn.com/id?$domain=espn.com
