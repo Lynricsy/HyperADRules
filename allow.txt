@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-19 08:28:22（北京时间）
+! Version: 2024-03-19 20:10:46（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7349
+! Total count: 7357
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -1008,6 +1008,7 @@
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
 @@||api.mapbox.com/geocoding/$stealth
+@@||api.mercari.jp^$stealth
 @@||api.micloud.xiaomi.net^$important
 @@||api.minecraftservices.com^$stealth
 @@||api.miui.security.xiaomi.com^$important
@@ -1028,6 +1029,7 @@
 @@||api.phnx.click/js/article-stat-v2.js$domain=smak.ua
 @@||api.playstation.com^$stealth
 @@||api.poki.com/ads/houseads/$domain=ninja.io
+@@||api.production.k8s.y3o.tv/*/video-ads/$domain=yallo.tv
 @@||api.rikka.app^$important
 @@||api.sec.miui.com^$important
 @@||api.slightcommunicativeinterconnectedness.xyz^
@@ -1817,6 +1819,7 @@
 @@||changyan.sohu.com/debug/cookie?
 @@||changyou.com^$generichide
 @@||channel.images.production.web.w4a.tv^*/ard.png?$domain=yallo.tv
+@@||channel4.com^$stealth
 @@||chart-embed.service.newrelic.com^
 @@||chart-embed.service.newrelic.com^$subdocument,xmlhttprequest
 @@||chartbeat.com/*/chartbeat/$~third-party
@@ -1986,6 +1989,7 @@
 @@||collector.wawlabs.com/mmsearch.js$domain=mediamarkt.com.tr
 @@||collegeboard.org/webanalytics/
 @@||collusion.com/static/newrelic.js$script,~third-party
+@@||comcast.net^$stealth
 @@||comcastresidentialservices.tt.omtrdc.net/m2/comcastresidentialservices^$domain=xfinity.com
 @@||comeresaprensasl.tt.omtrdc.net/rest/v*/delivery$domain=elcomercio.es|eldiariomontanes.es|elcorreo.com|lasprovincias.es|hoy.es|ideal.es
 @@||commerce.adobe.io^$xmlhttprequest,domain=superbrightleds.com
@@ -2336,6 +2340,7 @@
 @@||drive.google.com^$generichide
 @@||drivemoe.com/-ads-banner.js
 @@||driverfix.com^*/index_src.php?tracking=$~third-party
+@@||drm.6cloud.fr^$domain=6play.fr,stealth=3p-auth
 @@||dropbox.com/*/oauth$document
 @@||dropbox.com^$generichide
 @@||dropbox.com^$generichide,badfilter
@@ -2609,6 +2614,7 @@
 @@||flyert.com/plug/socialShare/js/social-share.
 @@||flyme.cn^
 @@||flyordie.com/games/online/iframeafg*.html
+@@||fnggcdn.com/items/$stealth=referrer
 @@||focus.ti.com^*/metrics-min.js
 @@||fonts.googleapis.com^$stylesheet,domain=up-4ever.net
 @@||football-lineups.com^$generichide
@@ -4475,6 +4481,7 @@
 @@||latimes.com/hive/javascripts/loggingService.js
 @@||latin.it/banner.php
 @@||launcher.spot.im/spot/$script,domain=jac.yahoosandbox.com
+@@||layout.6cloud.fr/front/*/token-web$domain=6play.fr,stealth=3p-auth
 @@||lcs.naver.com/*?u=*service_id$image,domain=smartstore.naver.com
 @@||lcs.naver.com/m?u=$domain=smartstore.naver.com
 @@||ldxinyong.com^$generichide
@@ -5527,7 +5534,6 @@
 @@||prod.adspsp.com/adb.2418030m.min.js$domain=medicalnewstoday.com
 @@||prod.fennec.atp.fox/js/fennec.js$domain=freemcserver.net
 @@||profile*.se.360.cn^
-@@||profitsfly.com/antonimos/ctandrei1.js$domain=tiktokcounter.net
 @@||promo.awempire.com/live_feeds/script_basic_livefeed.php?$domain=sexcamdb.com
 @@||promods.net/*.js$~third-party
 @@||proquest.com/modules.gz/snowplow/snowplow-
@@ -6269,6 +6275,7 @@
 @@||states.newegg.com/b/ss/neweggprod/
 @@||static-cdn.spot.im/production/ads/tags/*/ads/ads.js$domain=cgmagonline.com
 @@||static-cf.cleverbridge.com/mycontent^$domain=secure.ccleaner.com,stealth
+@@||static-file.com^$stealth,domain=eyny.com
 @@||static-redesign.cnbcfm.com/dist/components-PcmModule-Taboola-*.js$domain=cnbc.com
 @@||static-v*.trbo.com/plugin/trbo_*.js$domain=blau.de
 @@||static-v*.trbo.com/plugin/trbo_*.js$domain=o2online.de
@@ -7345,6 +7352,7 @@
 @@||zmdownload.zoho.com/zm/imagedisplay$stealth=dpi
 @@||zmovs.com/js/pop.js
 @@||zmtt.net^$script,domain=luoqiuzw.com
+@@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
 @@||zonebourse.com/js/googleads.js
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 @@||zpmobi.cn^*/ad.css?$stylesheet
