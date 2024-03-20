@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-19 20:10:46（北京时间）
+! Version: 2024-03-20 08:28:14（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7357
+! Total count: 7358
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -185,7 +185,6 @@
 @@/nbc-ad*.js$domain=notebookcheck-hu.com|notebookcheck.com|notebookcheck.net|notebookcheck.org|notebookcheck.biz|notebookcheck.it|notebookcheck.nl|notebookcheck.info|notebookcheck-tr.com|notebookcheck.se|notebookcheck-ru.com
 @@/needsharebutton.min.js$domain=leetcode-cn.com
 @@/owa/service.svc$document
-@@/pagead.js$domain=tiktokcounter.net
 @@/pdc_s_code.js$domain=adobe.com
 @@/piwik-$domain=github.com
 @@/playlist.m3u8$stealth
@@ -2506,7 +2505,6 @@
 @@||evernote.com^*/google-analytics-util.js
 @@||evil-inc.com/comic/advertising-age/$~third-party,xmlhttprequest
 @@||evowars.io/ads.js
-@@||ewrc.cz/js/pagead.js
 @@||exoclick.com/iframe.php?*=2596969&$domain=jav777.cc|jav777.xyz
 @@||exoclick.com/iframe.php?idzone=*&size=468x60$domain=porn77.info
 @@||exp.sug.browser.miui.com^$important
@@ -5644,6 +5642,8 @@
 @@||r4---sn-a5meknek.googlevideo.com^$important
 @@||r4---sn-qxo7rn7e.googlevideo.com^$important
 @@||r5---sn-4g5ednsl.googlevideo.com^$important
+@@||rackcdn.com/stf.js$domain=20min.ch
+@@||rackcdn.com/stf.js$script,domain=20min.ch
 @@||radio.com/player/javascript/tracking.js$domain=player.radio.com
 @@||radio.securenetsystems.net/cwa/js/prebid.js
 @@||radio24.ilsole24ore.com/plugins/cordova-plugin-nielsen/www/nielsen.js$script,~third-party
@@ -6976,6 +6976,7 @@
 @@||vidmoly.to/embed-$stealth
 @@||vidoza.net/embed-*.html$subdocument
 @@||vidoza.net/js/pop.js
+@@||vidsrc.*^$stealth
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
 @@||view.inews.qq.com^$important
 @@||viid.me^$generichide
