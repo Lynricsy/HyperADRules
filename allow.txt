@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-21 08:29:22（北京时间）
+! Version: 2024-03-21 20:10:18（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7365
+! Total count: 7372
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -31,6 +31,7 @@
 @@.jpg#$domain=huhupan.com
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@.online^$xmlhttprequest,stealth=referrer,domain=playru.net
+@@.php?play_vid=$subdocument,stealth=referrer,domain=xyflv.cc
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
 @@.ru.com/*/tracks-$xmlhttprequest,stealth
 @@.ru/mylivetv/stream-*.php$stealth=referrer
@@ -539,7 +540,6 @@
 @@||ad.nl^
 @@||ad.ourgame.com^
 @@||ad.siemens.com.cn^
-@@||ad.skylinewebcams.com/ad.php
 @@||ad.smartmediarep.com/NetInsight/video/smr$domain=programs.sbs.co.kr
 @@||ad.thsi.cn/siteHome/
 @@||ad.vivo.com.cn^
@@ -878,6 +878,7 @@
 @@||animecorner.me/*/screx.js
 @@||animeforce.org^$generichide
 @@||animego.org^$stealth=ip
+@@||animesonline.nz/noance/$subdocument,stealth=referrer
 @@||aniview.com/api/adserver/spt?$domain=sportbible.com
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
@@ -3883,7 +3884,6 @@
 @@||icloud.com^$generichide
 @@||icloud.com^$stealth
 @@||icreativeidea.com/unique/assets/images/ad_photo/$app=com.icreativeidea
-@@||icutlink.com/ad.min.js
 @@||id.cxense.com/public/user/id?json=$domain=itmedia.co.jp
 @@||id.flybuys.com.au/*/fingerprint2.min.js
 @@||id.skyeng.ru^$stealth
@@ -4176,6 +4176,7 @@
 @@||imfeifan.com/adv/$~third-party
 @@||img*.*.*^$stealth,domain=mangalib.me
 @@||img*.doubanio.com^$stealth,domain=accounts.douban.com
+@@||img*.kachelmannwetter.com/images/$domain=meteologix.com
 @@||img*.kangaroobro.com/images/$image,domain=leyuman.com
 @@||img*.nga$removeparam=cmpid
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
@@ -4823,6 +4824,7 @@
 @@||microsoftazuresponsorships.com^
 @@||microsoftedge.microsoft.com/addons^$stealth
 @@||microsofttranslator.com/translate?
+@@||mid.ru^$stealth=ip
 @@||middleware.p7s1.io/galileo/v1/player/metadata/$domain=galileo.tv
 @@||middleware.p7s1.io/galileo/v1/tracking$domain=galileo.tv
 @@||middleware.p7s1.io^$app=at.zappn
@@ -4942,6 +4944,7 @@
 @@||muzlan.top/ads/banner.png
 @@||muzlan.top^$generichide
 @@||muzu.tv/flash/*tracking
+@@||mxcontent.net/*.mp4$media,stealth=referrer
 @@||mxpnl.com/libs/mixpanel-*.min.js$domain=change.org|frigidaire.com
 @@||mxpnl.com/libs/mixpanel-*.min.js$domain=change.org|thefrisky.com
 @@||mxpnl.com/libs/mixpanel-*.min.js$domain=deezer.com
@@ -4955,6 +4958,7 @@
 @@||my.prom.ua/*/iframe$stealth
 @@||my.prom.ua/remote/
 @@||my.westfieldinsurance.com^$document
+@@||myabandonware.com/wp-content/plugins/wp-banners/js/wp-banners.js
 @@||myaccount.chicagotribune.com/assets/scripts/tag-manager/googleTag.js$~third-party
 @@||myaccount.google.com^$generichide
 @@||mybuys.com/webrec/wr.do?
@@ -5525,7 +5529,6 @@
 @@||pravo.by^$stealth=dpi
 @@||prd.jwpltx.com/*/jwplayer$domain=embed.watchanimesub.net
 @@||prebid-asia.creativecdn.com/bidder/prebid/bids$domain=atozmath.com
-@@||prepostseo.com/ad.js$domain=prepostseo.com
 @@||primevideo.com^$stealth
 @@||primis.tech^$domain=sportsmole.co.uk
 @@||privat24.privatbank.ua^
@@ -5670,6 +5673,7 @@
 @@||rctech.net/forum/clientscript/vbulletin_analytics.js$domain=rctech.net
 @@||rd.ias.global.rakuten.com/adv/$domain=24.rakuten.co.jp
 @@||rddywd.com/adcode.png$domain=populistpress.com|canadafreepress.com|thelibertydaily.com|writerscafe.org|populist.press|welovetrump.com|grammarist.com|protrumpnews.com|concomber.com|videogamesblogger.com|gamersheroes.com|letocard.fr|100percentfedup.com|thepalmierireport.com|kresy.pl|beforeitsnews.com|thepatriotjournal.com|phoenixnewtimes.com|thepoke.co.uk|comicallyincorrect.com|thegatewaypundit.com
+@@||rddywd.com/advertising.js$domain=herokuapp.com
 @@||rddywd.com/advertising.js$domain=populistpress.com|canadafreepress.com|thelibertydaily.com|writerscafe.org|populist.press|welovetrump.com|grammarist.com|protrumpnews.com|concomber.com|videogamesblogger.com|gamersheroes.com|letocard.fr|100percentfedup.com|thepalmierireport.com|kresy.pl|beforeitsnews.com|thepatriotjournal.com|phoenixnewtimes.com|thepoke.co.uk|comicallyincorrect.com|thegatewaypundit.com
 @@||readmoo.com/images/social/
 @@||real.de/fileadmin/template/javascript/emos2.js
@@ -6150,6 +6154,7 @@
 @@||sonic-ui.highereducation.com/latest/ucl.adapter.js$domain=thebestschools.org
 @@||sonic-ui.highereducation.com/latest/ucl.publisher.js$domain=thebestschools.org
 @@||sonic-ui.highereducation.com/latest/vendor.js$domain=thebestschools.org
+@@||sonichits.com^$generichide
 @@||sonichits.com^$generichide,badfilter
 @@||sophos.com^*/tracking/gainjectmin.js$script,domain=community.sophos.com
 @@||soranews24.com^$generichide
@@ -6821,6 +6826,7 @@
 @@||tvarticles.org^$generichide
 @@||tvb.com/social/share_
 @@||tvb.com^*/videojs.ads.
+@@||tvbanywherena.com^$generichide
 @@||tvcatchup.com^$generichide
 @@||tvcom-static.ssl.cdn.cra.cz/*/videojs.ga.js$script,domain=tvcom.cz
 @@||tvepg.pandora.xiaomi.com^$important
@@ -7013,6 +7019,7 @@
 @@||vmeas.cloud/hls/$stealth
 @@||vmware.com^$important
 @@||vo.msecnd.net^$domain=gsmarena.com
+@@||vod-*=video/mp4$media,stealth=referrer,domain=animesonline.nz
 @@||vod.olympics2010.msn.com/beacon?
 @@||vod.universalsports.com/beacon?
 @@||vodafonelimited.tt.omtrdc.net^
