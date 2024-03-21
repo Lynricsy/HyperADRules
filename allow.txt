@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-20 20:10:27（北京时间）
+! Version: 2024-03-21 08:29:22（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7363
+! Total count: 7365
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -3229,6 +3229,7 @@
 @@||googletagmanager.com/gtag/js$domain=hancomdocs.com
 @@||googletagmanager.com/gtag/js$domain=hitta.se
 @@||googletagmanager.com/gtag/js$domain=html5.gamedistribution.com
+@@||googletagmanager.com/gtag/js$domain=kaft.com
 @@||googletagmanager.com/gtag/js$domain=klix.ba
 @@||googletagmanager.com/gtag/js$domain=lightrun.com
 @@||googletagmanager.com/gtag/js$domain=ln24.be
@@ -6400,6 +6401,7 @@
 @@||stream.nbcsports.com/assets/page/general/ads.js
 @@||stream.voidboost.cc^$stealth
 @@||stream4free.live^$generichide
+@@||streamingcommunity.*/*.js
 @@||streamlive.to^$generichide
 @@||streamtape.*/ad.js
 @@||streamwish.com/js/dnsads.js?ads
