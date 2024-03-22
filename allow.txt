@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-21 20:10:18（北京时间）
+! Version: 2024-03-22 08:28:04（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7372
+! Total count: 7378
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -57,6 +57,7 @@
 @@/_js/pubfig.min.js$~third-party,domain=svethardware.cz|relaxuj.cz|svetmobilne.cz|digimanie.cz
 @@/ad-close.png$domain=ch.com
 @@/ad.js$domain=tiktokcounter.net
+@@/ad.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/ad/banner/_adsense_/_adserver/_adview_.ad.json
 @@/ad/images/*$domain=37-express.com|vnnox.com
 @@/adLoader.$domain=shejiben.com
@@ -76,6 +77,7 @@
 @@/adjs_pic_$domain=168gamer.net|slit.cn
 @@/admanager/*$domain=woego.cn
 @@/adpartner.min.js$domain=tiktokcounter.net
+@@/adpartner.min.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/adpic/*$domain=baike.baidu.com|czsrc.com|nieyou.com|ontheup.com.tw|zform.net
 @@/adpro.js$domain=tingfm.com
 @@/adrum.js$domain=usbank.com
@@ -4678,6 +4680,7 @@
 @@||maptiles.ping-admin.ru^$image,domain=ping-admin.com
 @@||market.mi-img.com^$important
 @@||market.viber.com^$elemhide
+@@||marketing.unionpayintl.com/offer-promote/static/sensorsdata.min.js$script,~third-party
 @@||marketingautomation.services^$script,domain=leeuwerik.nl
 @@||marketo.com//index.php/form/
 @@||marketo.com//js/forms$script,stylesheet
@@ -5194,6 +5197,7 @@
 @@||otakustream.tv/player.php^
 @@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||ott.yandex.ru^$stealth
+@@||outbrainimg.com^$third-party,domain=computerbild.de|fitbook.de|metal-hammer.de|rollingstone.de|stylebook.de
 @@||outkick.com/wp-content/plugins/advanced-ads-pro/assets/js/
 @@||outkick.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js
 @@||outlook.live.com^$cookie=OParams
@@ -5276,6 +5280,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=thizissam.in
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=turkce-brosurler.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=updato.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=veev.to
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vladan.fr
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=vorsprung-online.de
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zefoy.com
@@ -5914,8 +5919,10 @@
 @@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||securenetsystems.net/*/scripts/ads/prebid.js
 @@||securenetsystems.net/v5/scripts/
+@@||securepubads.g.doubleclick.net/*/gpt.js$domain=tiktokcounter.net|crypto-radio.eu
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$domain=cinemaxx.de
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|miuiflash.com|thecubexguide.com|jytechs.in
+@@||securepubads.g.doubleclick.net/*/pubads_impl.js$domain=tiktokcounter.net|crypto-radio.eu
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=cinemaxx.de
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=purepeople.com
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=simple.ripley.cl
@@ -7235,7 +7242,6 @@
 @@||wx.qq.com/mmbizwap/*/framead.
 @@||wx2.sinaimg.cn^$important
 @@||wykop.pl/api/v3/tags/reklama/$xmlhttprequest,~third-party
-@@||wyniki.diag.pl^$stealth=ip
 @@||wzrkt.com/e?$domain=lottiefiles.com
 @@||x.kinja-static.com/assets/packaged-js/runtime~trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@||x.kinja-static.com/assets/packaged-js/trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
