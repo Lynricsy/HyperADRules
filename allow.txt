@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-22 08:28:04（北京时间）
+! Version: 2024-03-22 20:10:55（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7378
+! Total count: 7381
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -56,7 +56,6 @@
 @@/^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,xmlhttprequest,third-party,domain=1cloudfile.com
 @@/_js/pubfig.min.js$~third-party,domain=svethardware.cz|relaxuj.cz|svetmobilne.cz|digimanie.cz
 @@/ad-close.png$domain=ch.com
-@@/ad.js$domain=tiktokcounter.net
 @@/ad.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/ad/banner/_adsense_/_adserver/_adview_.ad.json
 @@/ad/images/*$domain=37-express.com|vnnox.com
@@ -76,7 +75,6 @@
 @@/adimg/*$domain=laniqu.com
 @@/adjs_pic_$domain=168gamer.net|slit.cn
 @@/admanager/*$domain=woego.cn
-@@/adpartner.min.js$domain=tiktokcounter.net
 @@/adpartner.min.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/adpic/*$domain=baike.baidu.com|czsrc.com|nieyou.com|ontheup.com.tw|zform.net
 @@/adpro.js$domain=tingfm.com
@@ -1416,6 +1414,7 @@
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=kark.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=spox.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=tasteofhome.com
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=time.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=wgntv.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=wivb.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=worldsurfleague.com
@@ -1446,6 +1445,7 @@
 @@||canada.com/js/ooyala/comscore.js
 @@||canadacomputers.com/templates/ccnew/assets/js/jquery.browser-fingerprint-$~third-party
 @@||canadiantire.ca^*/analytics.sitecatalyst.js
+@@||candidate.hr-manager.net/Advertisement/PreviewAdvertisement.aspx$subdocument,~third-party
 @@||candlesouth.net/embed$stealth
 @@||capi.connatix.com/core/pls?v=$domain=loot.tv
 @@||capitolbroadcasting.blueconic.net^$image,script,xmlhttprequest,domain=wral.com
@@ -1903,6 +1903,7 @@
 @@||cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$domain=nfmovies.com
 @@||cloudflare.com/ajax/libs/fuckadblock/$domain=seselah.com
 @@||cloudflare.com/analytics?$domain=cloudflare.com
+@@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|injora.com|myair.resmed.com
 @@||cloudflare.com/cdn-cgi/trace$domain=infyspringboard.onwingspan.com|myair.resmed.com
 @@||cloudflare.com^$script,domain=rule34hentai.net
 @@||cloudflare.com^*/videojs-contrib-ads.js$domain=wtk.pl
@@ -2207,7 +2208,6 @@
 @@||deals.nextag.com^*/ClickTracker.jsp
 @@||debenhams.com/foresee/foresee-trigger.js
 @@||debugtbs.qq.com^$important
-@@||decrypt.day^$generichide
 @@||deezer.com^$generichide
 @@||delivery-cdn-cf.adswizz.com/adswizz/js/SynchroClient*.js$script,domain=tunein.com
 @@||delivery.adrecover.com/*/adRecover.js$domain=duplichecker.com
@@ -2476,7 +2476,6 @@
 @@||eolinker.com^$generichide
 @@||ephoto360.com/js/blockadblock.js
 @@||epst.hindustantimes.com/Js/_show_Ads.js
-@@||epuap.gov.pl^$cookie=dtCookie
 @@||epubit.com/static/epubit/share/js/share.min.js
 @@||equifaxps.122.2o7.net^
 @@||esia.gosuslugi.ru^$stealth
@@ -2792,6 +2791,7 @@
 @@||getjad.io/prebid/$script,domain=gamepro.de
 @@||getpublica.com/playlist.m3u8$xmlhttprequest
 @@||getraenkedienst.com/muenchen/media/image/
+@@||getyourbitco.in/application/views/script/advert.js
 @@||gg.pl/wp-content/*/GG/
 @@||gg.wudizuqiu.com/72nba.js
 @@||ggg50.pw^$generichide
@@ -6179,6 +6179,7 @@
 @@||spark.co.nz/content/*/utag.sync.js$domain=skinny.co.nz
 @@||spclient.wg.spotify.com^$important
 @@||speedcurve.com/js/lux.js$script,domain=tv8.it
+@@||speedtest.net/*-login.php$domain=speedtest.net
 @@||speedtest.net/api/api.php
 @@||speedtest.net/api/js/user-settings|$xmlhttprequest
 @@||speedtest.net/javascript/ads.js
@@ -7133,6 +7134,7 @@
 @@||whoson.com/include.js$domain=oneplus.net|hotelchocolat.com
 @@||widget.1688.com^
 @@||widget.ezidebit.com.au^
+@@||widget.fitanalytics.com/widget.js$domain=pullandbear.com
 @@||widget.fitanalytics.com/widget.js$script,domain=pullandbear.com
 @@||widget.intercom.io^
 @@||widget.myrentacar.me^$script,subdocument
@@ -7340,6 +7342,7 @@
 @@||youtube.googleapis.com/embed^$stealth
 @@||youtubei.googleapis.com^$important
 @@||ytimg.com^*_banner$domain=youtube.com
+@@||ytlarge.com^$script,subdocument,~third-party
 @@||ytlarge.com^$script,~third-party
 @@||yu.xyz.mn/images/event.gif?$image,~third-party
 @@||yummy.best^$generichide
