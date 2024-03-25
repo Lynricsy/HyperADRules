@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-24 20:10:09（北京时间）
+! Version: 2024-03-25 08:29:56（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7381
+! Total count: 7371
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -223,7 +223,6 @@
 @@/wp-content/plugins/ad-ace//includes/adblock-detector/advertisement.js$~third-party
 @@/wp-content/plugins/blockalyzer-adblock-counter/*$image,script,~third-party,domain=~gaytube.com|~pornhub.com|~pornhubthbh7ap3u.onion|~redtube.com|~redtube.com.br|~tube8.com|~tube8.es|~tube8.fr|~xtube.com|~youjizz.com|~youporn.com|~youporngay.com
 @@/wp-content/plugins/imedia-basic/adserver-*.js$domain=sgxnifty.org|dollarindex.org|cacfutures.org|dowfutures.org|nasdaqfutures.org|spfutures.org|ftsefutures.org|daxfutures.org|nikkeifutures.org|niftyfutures.org|comexlive.org|mcxlive.org|ncdexlive.org
-@@/wp-content/themes/*/ads/*/sailthru.js$domain=healthy4pepole.com
 @@/wp-content/themes/radio-hub/static/js/adpro.js$domain=tingfm.com
 @@/ws$websocket,domain=speedtest.net
 @@185.88.236.76:443$network
@@ -1482,7 +1481,6 @@
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
 @@||cdn*.anyclip.com^$domain=content.dictionary.com
 @@||cdn*.jianshu.io^$stealth
-@@||cdn*.movcdn.*^$xmlhttprequest,stealth=referrer|ip,domain=moeni.net
 @@||cdn*.pw/stream2/cdn-*/index.m3u8$stealth=ip|referrer
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
 @@||cdn-fck.tnaflix.com^$removeparam
@@ -1605,7 +1603,6 @@
 @@||cdn.jsdelivr.net/npm/fingerprintjs2$domain=wannadep.com
 @@||cdn.jsdelivr.net/npm/fuckadblock@3.2.1/fuckadblock.min.js
 @@||cdn.jsdelivr.net/npm/jquery@
-@@||cdn.jsdelivr.net/npm/videojs-contrib-ads/dist/videojs.ads.min.js$domain=scenelife.org|hqq.tv|czxxx.org|waaw.tv
 @@||cdn.jsdelivr.net^$important
 @@||cdn.jsdelivr.net^$script,domain=movieffm.net
 @@||cdn.jsdelivr.net^$script,domain=yemancomic.com
@@ -2671,7 +2668,6 @@
 @@||fussball.de/fbed/js/xtcore.js
 @@||future.biz.weibo.com^
 @@||fux.com/adblockchecker.js
-@@||g.adspeed.net/ad.php?do=detectadblocker$domain=allcryptoz.net|crewbase.net|crewus.net|shinchu.net|thumb8.net|thumb9.net|uniqueten.net
 @@||g.alicdn.com/??*/criteo
 @@||g.alicdn.com^*/banner_ad_
 @@||g.doubleclick.net/gampad/ads$xmlhttprequest,domain=bloomberg.com|chromatographyonline.com|formularywatch.com|journaldequebec.com|managedhealthcareexecutive.com|medicaleconomics.com|physicianspractice.com
@@ -3321,7 +3317,6 @@
 @@||googletagmanager.com/gtm.js$domain=blue-tomato.com
 @@||googletagmanager.com/gtm.js$domain=braun.com
 @@||googletagmanager.com/gtm.js$domain=brita.de
-@@||googletagmanager.com/gtm.js$domain=btcbitco.in|btcsatoshi.net|gainl.ink|wiour.com
 @@||googletagmanager.com/gtm.js$domain=buhitter.com
 @@||googletagmanager.com/gtm.js$domain=bunte.de|stiefelparadies.de
 @@||googletagmanager.com/gtm.js$domain=cabinet.planetakino.ua
@@ -4059,7 +4054,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=rte.ie
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=rtl.it
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sbs.com.au
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=scenelife.org|hqq.tv|czxxx.org|waaw.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sondakika.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=spox.com
@@ -5239,7 +5233,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=darkwiki.in
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dl.ccbluex.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=door2windows.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=drivedrama.com|puressh.net|iptvbin.com|htnovo.net|frendz4m.org|bestnhl.com|safbits.com|codenova-center.web.app|rivanimation.com|elbierzodigital.com|uploadrar.com|vknsorgula.net|safelink.asia
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dthforum.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=duplichecker.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=eirudo.com
@@ -6364,7 +6357,6 @@
 @@||static.rpxnow.com/js/lib/rpx.js$domain=colbertnation.com|thedailyshow.com
 @@||static.shorte.st/bundles/smeweb/$domain=sh.st
 @@||static.softlayer.com^
-@@||static.surfe.pro/js/net.js$domain=btcbitco.in|btcsatoshi.net
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
 @@||static.trbo.com/img/$domain=o2online.de
 @@||static.vocstatic.com^$script,domain=areapersonal.hoy.es
@@ -6443,8 +6435,6 @@
 @@||support.logi.com/*/articles/$stealth=useragent
 @@||support.thesslstore.com/visitor/index.php
 @@||support.weixin.qq.com^
-@@||surfe.pro/js/net.js$script,xmlhttprequest,domain=btcbitco.in|btcsatoshi.net|cempakajaya.com|gainl.ink|wiour.com
-@@||surfe.pro/net/teaser$domain=btcbitco.in|btcsatoshi.net
 @@||surfguru.com^$generichide
 @@||suumo.jp/sp/js/beacon.js$script,~third-party
 @@||suwonlib.go.kr^$stealth=dpi
