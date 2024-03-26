@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-25 20:10:15（北京时间）
+! Version: 2024-03-26 08:27:56（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7351
+! Total count: 7352
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -5344,6 +5344,7 @@
 @@||peacocktv.com^$generichide
 @@||pendo.io/agent/static/$script,domain=recruiting.adp.com
 @@||pepperjamnetwork.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
+@@||per*.segmentify.com^$app=com.carrefoursa.ecommerce
 @@||per*.segmentify.com^$domain=gratis.com
 @@||per*.segmentify.com^$domain=mediamarkt.com.tr
 @@||perfectgirls.net^$generichide
