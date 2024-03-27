@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-27 08:27:51（北京时间）
+! Version: 2024-03-27 20:11:22（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7355
+! Total count: 7363
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -238,6 +238,7 @@
 @@://192.168.$generichide
 @@://googleadservices.com^|
 @@://localhost:$generichide
+@@://www.coinbase.com^$stealth
 @@://www.fedex.com/Tracking?
 @@://www.googleadservices.com^|
 @@=mywebloadt1&$domain=myweb.hinet.net
@@ -1401,6 +1402,7 @@
 @@||bytegoofy.com/ad/$domain=jinritemai.com
 @@||c.adsco.re^$domain=shorterall.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=atozmath.com
+@@||c.amazon-adsystem.com/aax2/apstag.js$domain=baltimoresun.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=epochtimes.de
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=fitforfun.de
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=fox21news.com
@@ -2605,6 +2607,7 @@
 @@||fltaradio.com/js/ads.js
 @@||fluidplayer.com^$script,stylesheet,domain=canyoublockit.com
 @@||flyert.com/plug/socialShare/js/social-share.
+@@||flying-lines.com/banners/$image,~third-party
 @@||flyme.cn^
 @@||flyordie.com/games/online/iframeafg*.html
 @@||fnggcdn.com/items/$stealth=referrer
@@ -3645,6 +3648,7 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=topuniversities.com
 @@||googletagservices.com/tag/js/gpt.js$domain=tvb.com|www.gamer.com.tw
 @@||googletagservices.com/tag/js/gpt.js$domain=ukr.net
+@@||googletagservices.com/tag/js/gpt.js$domain=xn--allestrungen-9ib.de
 @@||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt,domain=wuzzuf.net
 @@||googletagservices.com/tag/js/gpt.js?ad_tag=$domain=clipmyhorse.tv
 @@||gooogle.how^$generichide
@@ -3942,6 +3946,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=atv.at
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=autocentrum.pl|autokult.pl|gadzetomania.pl|fotoblogia.pl|pudelek.pl
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=babygames.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=baltimoresun.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=beinsports.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=bestgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=bighero.io
@@ -4691,6 +4696,7 @@
 @@||maxstream.video^$generichide
 @@||mb.yidianzixun.com^$important
 @@||mbank.pl^$stealth=dpi
+@@||mbcdn.xyz^$image,stealth,domain=mangabuddy.com
 @@||mbd.baidu.com^$important
 @@||mbe-cdn.fyber.com$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||mbe.modelica.university/_next/static/*/pages/pageview.js$~third-party
@@ -5230,6 +5236,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=filgoal.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=fox.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|poppamr.com|adnit.xyz|miuiku.com|tatangga.com|flash-firmware.blogspot.com|ghostsnet.com|rezkozpatch.xyz|rumahit.id|sekilastekno.com|romfirmware.com|orirom.com|gsmfirmware.net|akwam.*|health-and.me|fc-lc.com|fc.lc|note1s.com|paste1s.com|playstore.pw|yoshare.net|pes-patches.com|1shorten.com|publicananker.com|ipacrack.com|codevn.net|traffic1s.com|adnews.me|eg-akw.com|ak4eg.*|xn--mgba7fjn.*|akw.to|mawsueaa.com|ak4ar.*|anhdep24.com|nguyenvanbao.com|akw-cdn1.link|akw.mov|ak.sv|akw.cam|shahid4u.charity|indokontraktor.com|shahee4u.cam|batch-kun.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freebnbcoin.com|exotictgirl.blogspot.com|bospedia.com|rockmods.net|aiimsneetshortnotes.com|arabseed.onl|poppamr.com|adnit.xyz|miuiku.com|tatangga.com|flash-firmware.blogspot.com|ghostsnet.com|rezkozpatch.xyz|rumahit.id|sekilastekno.com|romfirmware.com|orirom.com|gsmfirmware.net|akwam.*|health-and.me|fc-lc.com|fc.lc|note1s.com|paste1s.com|playstore.pw|yoshare.net|pes-patches.com|1shorten.com|publicananker.com|ipacrack.com|codevn.net|traffic1s.com|adnews.me|eg-akw.com|ak4eg.*|xn--mgba7fjn.*|akw.to|mawsueaa.com|ak4ar.*|anhdep24.com|nguyenvanbao.com|akw-cdn1.link|akw.mov|ak.sv|akw.cam|shahid4u.charity|indokontraktor.com|shahee4u.cam|batch-kun.com|shii4u.cam
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=freeopenvpn.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=hackedfreegames.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=ifate.com
@@ -7305,6 +7312,7 @@
 @@||youaima.com/zz/play_
 @@||youku.com/cms/player/userinfo/
 @@||youku.com/cms/playlog/get?
+@@||youmadcdn.xyz^$image,stealth,domain=mangabuddy.com
 @@||youmaker.com/js/prebid.js$domain=epochtimes.com
 @@||youmath.it/_*.js$script
 @@||youporn.com/embed/$subdocument
