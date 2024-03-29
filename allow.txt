@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-29 08:28:28（北京时间）
+! Version: 2024-03-29 20:10:49（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7362
+! Total count: 7366
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -1791,6 +1791,7 @@
 @@||cdntrf.com/trf-tz-only_NATIVE.js$domain=tz.de
 @@||cdntrf.com/trfAdSetup.js$domain=ingame.de
 @@||cdntrf.com/trfAdSetup.js$domain=tz.de
+@@||cdntvmedia.com^$stealth=referrer
 @@||cdntvn.pl/*/assets/*advert*.js$domain=player.pl|get.x-link.pl|tvn24.pl|vod.pl
 @@||cdnvideo.ru^$stealth
 @@||cdp.cloud.unity3d.com^$app=com.rovio.baba
@@ -1834,6 +1835,7 @@
 @@||check.ddos-guard.net/check.js$script
 @@||checkfresh.com/js/prebid-ads.js
 @@||checkoutshopper-live.adyen.com/checkoutshopper/*/securedFields.html$stealth
+@@||checkz.net^$generichide
 @@||chemicalbook.com^$stealth
 @@||cherrymx.de^$stealth=dpi
 @@||cheshi-img.com/ad/csad_2019.js
@@ -4877,6 +4879,7 @@
 @@||monetate.net/js/$domain=nike.com
 @@||monetate.net/trk/$domain=consumerreports.org
 @@||monetize-static.viralize.tv/prebid.min.$domain=automoto.it|moto.it
+@@||monetize-static.viralize.tv/viralize_player_content$domain=majorcineplex.com
 @@||money18.on.cc/js/ad/liveinfo_page/
 @@||money18.on.cc/js/adbanner.js
 @@||moneysave.info^$generichide
@@ -5544,6 +5547,7 @@
 @@||pstatic.net^$image,stealth
 @@||pstatp.com^$important
 @@||pttplay.com/js/momo/adsbygoogle.js
+@@||pub-api.biggerpicture.ai^$stealth=3p-auth
 @@||pub.alimama.com/common/adzone/
 @@||pub.doubleverify.com/dvtag/$domain=time.com
 @@||pub.doubleverify.com/dvtag/$script,domain=time.com
@@ -5782,7 +5786,6 @@
 @@||s.adadapter.netzathleten-media.de/*/naMediaAd.js$domain=wooco.de
 @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
 @@||s.click.taobao.com^$important
-@@||s.clickiocdn.com/t/200069/360.js$domain=glav.su
 @@||s.go-mpulse.net/boomerang/$domain=royalmail.com
 @@||s.imgur.com/min/px.js$domain=imgur.com
 @@||s.jacquieetmichelelite.com/assets/popunder.js
@@ -7281,6 +7284,7 @@
 @@||yastatic.net/yandex-video-player-iframe-api-bundles$stealth
 @@||ydstatic.com^$important
 @@||yellowbridge.com^$generichide
+@@||yellowmap.de/api_rst/$stealth
 @@||yesiget.i234.me^$generichide
 @@||yext-pixel.com/store_pagespixel$domain=vippetcare.com
 @@||yhd.com^$important
