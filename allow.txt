@@ -2,7 +2,7 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-03-29 20:10:49（北京时间）
+! Version: 2024-03-30 08:27:49（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
 ! Total count: 7366
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -188,6 +188,7 @@
 @@/playlist.m3u8$stealth
 @@/pop.js|$domain=pornve.com
 @@/premium*/tracks-*.html$xmlhttprequest,stealth=referrer
+@@/premium*/tracks-*/*.webp$xmlhttprequest,stealth=referrer,domain=claplivehdplay.ru
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
 @@/pubads*theguardian.com
@@ -4539,7 +4540,6 @@
 @@||live.primis.tech/live/liveVideo.php$domain=manchestereveningnews.co.uk
 @@||live.primis.tech/live/liveView.php$domain=manchestereveningnews.co.uk
 @@||live.primis.tech^$script,domain=eurogamer.net|klaq.com|loudwire.com|screencrush.com|vg247.com|xxlmag.com
-@@||live.primis.tech^$xmlhttprequest,domain=xxlmag.com
 @@||live.rezync.com^$script,domain=batteriesplus.com
 @@||live.streamtheworld.com/*.aac
 @@||live.streamtheworld.com/*.mp3
