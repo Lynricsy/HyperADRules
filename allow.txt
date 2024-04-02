@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-02 08:28:51（北京时间）
+! Version: 2024-04-02 20:11:09（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7386
+! Total count: 7393
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@&ad_type=$domain=ultimate-guitar.com
@@ -38,6 +38,7 @@
 @@//store.donanimhaber.com/ad/*$domain=forum.donanimhaber.com
 @@/WebAd/*$domain=yongyoujia.com
 @@/\/\d{5,7}$/$domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
+@@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/sb\/t\/\d{6,8}\/\d\/\d\/w:300\/t\d{1,2}-enh\/(?:[0-9a-z]+-)*[0-9a-z]+\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/coomer\.su\/api\/v1\/(?:fansly|onlyfans)\/user\/[.0-9A-Z_a-z]+\/post\/[-0-9A-Za-z]+(?:\/flag)?$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
 @@/^https:\/\/coomer\.su\/api\/v1\/favorites\/creator\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
 @@/^https:\/\/coomer\.su\/api\/v1\/favorites\/post\/(?:fansly|onlyfans)\/[.0-9A-Z_a-z]+\/\d+$/$xmlhttprequest,~third-party,match-case,method=post,domain=coomer.su
@@ -625,6 +626,7 @@
 @@||ads-twitter.com/oct.js$domain=ncsoft.jp
 @@||ads-twitter.com/uwt.js$domain=factory.pixiv.net
 @@||ads.95516.com^
+@@||ads.a-static.com/ads.js|
 @@||ads.adfox.ru/*/getCode$app=ru.infoshell.android
 @@||ads.adfox.ru/*/getCodeTest?$domain=tv.yandex.by|tv.yandex.kz|tv.yandex.ru
 @@||ads.adfox.ru/*/prepareCode?$domain=tv.yandex.by|tv.yandex.kz|tv.yandex.ru
@@ -1010,6 +1012,7 @@
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
 @@||api.mapbox.com/geocoding/$stealth
+@@||api.mapbox.com^$stealth,domain=gpx.studio
 @@||api.mercari.jp^$stealth
 @@||api.micloud.xiaomi.net^$important
 @@||api.minecraftservices.com^$stealth
@@ -3960,6 +3963,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=cdn.htmlgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=chili.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=ciudad.com.ar
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=classicreload.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=clipmyhorse.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=coolgames.com|newgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=corrieredellosport.it
@@ -4282,6 +4286,7 @@
 @@||ipapi.co/json/$xmlhttprequest,domain=168.dailymaverick.co.za|audius.co
 @@||ipfs-lab.com^$generichide
 @@||ipinfo.io/?token=$domain=assurancemortgage.com|webtv.ert.gr
+@@||ipinfo.io/json$domain=queye.co
 @@||ipip.net/ping.php?
 @@||ipqualityscore.com/api/$script,domain=carousell.com.hk
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
@@ -6716,6 +6721,7 @@
 @@||townwork.net/js/AppMeasurement.js$~third-party
 @@||toy-people.com^$generichide
 @@||toyota.com/recall/static/js/custom/facebookPixel.js$~third-party
+@@||tpc.googlesyndication.com/archive/simgad/$image,domain=adstransparency.google.com
 @@||tpc.googlesyndication.com/pagead/js/$domain=googleads.g.doubleclick.net
 @@||tpc.googlesyndication.com/simgad/$domain=financemonk.net
 @@||tpc.googlesyndication.com/simgad/$domain=smartkhabrinews.com|streama2z.com
@@ -7349,6 +7355,7 @@
 @@||youtube.googleapis.com/embed^$stealth
 @@||youtubei.googleapis.com^$important
 @@||ytimg.com^*_banner$domain=youtube.com
+@@||ytlarge.com^$script,subdocument,xmlhttprequest,~third-party
 @@||ytlarge.com^$script,subdocument,~third-party
 @@||yu.xyz.mn/images/event.gif?$image,~third-party
 @@||yummy.best^$generichide
