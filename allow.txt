@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-05 20:10:39（北京时间）
+! Version: 2024-04-06 08:28:14（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7404
+! Total count: 7412
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -13,6 +13,7 @@
 @@*$redirect-rule,domain=d3ward.github.io
 @@*.flyme.cn
 @@*.myapp.com
+@@*.php?player=desktop$stealth=referrer,domain=feedzstream.com|cricplay2.xyz|antenatv.shop|virazo.sx|redditsoccerstream.online
 @@*ad*.cms$domain=indiatimes.com|timesofindia.com
 @@-social-bar.$domain=mobi.yahoo.com
 @@.2o7.net/$domain=today.com
@@ -55,6 +56,7 @@
 @@/^https:\/\/www\.[a-z]{7,14}\.com\/[a-z]{1,4}\.js/$script,third-party,domain=shinden.pl,badfilter
 @@/^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,xmlhttprequest,third-party,domain=1cloudfile.com
 @@/_js/pubfig.min.js$~third-party,domain=svethardware.cz|relaxuj.cz|svetmobilne.cz|digimanie.cz
+@@/_v2*/h/*.*$xmlhttprequest,image,stealth=referrer,domain=e69975b881.nl
 @@/ad-close.png$domain=ch.com
 @@/ad.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/ad/banner/_adsense_/_adserver/_adview_.ad.json
@@ -177,6 +179,7 @@
 @@/kcarting-tally?&random=$domain=coveryourtracks.eff.org
 @@/libs/advertisement.js$domain=xfaucet.net|getfreebit.xyz|getfree.co.in|starbits.io|bagi.co.in|konstantinova.net|starfaucet.net|bitearns.com|cryptofreebies.info|trivisna.com|nosl.juezcoin.xyz|earn-cryptolive.000webhostapp.com|dogeatm.com|aztecafaucet.space|multifaucet.org|dogestar.website|claimbits.io|i-bits.io|diamondfaucet.space|gobits.io|russiacoin.xyz|lionltcfaucet.xyz|faucet.shorterall.com|yellowfaucet.ovh|faucet.cryptourl.net|simplyfaucet.xyz|up-cripto.com|highearn.xyz|tv3.lv
 @@/linkshare/*$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
+@@/live/*.m3u8$xmlhttprequest,stealth=referrer,domain=weakspell.org|streamocean.online|gameshdlive.net|bestsolaris.com|itssportstime.info|weakspell.to
 @@/log/report/*$script,domain=bilibili.com
 @@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl
 @@/mobileads.$domain=naviking.localking.com.tw
@@ -188,7 +191,9 @@
 @@/piwik-$domain=github.com
 @@/playlist.m3u8$stealth
 @@/pop.js|$domain=pornve.com
+@@/premium*/index.m3u8$xmlhttprequest,stealth=referrer,domain=claplivehdplay.ru
 @@/premium*/tracks-*.html$xmlhttprequest,stealth=referrer
+@@/premium*/tracks-*/*$xmlhttprequest,stealth=referrer,domain=claplivehdplay.ru
 @@/premium*/tracks-*/*.webp$xmlhttprequest,stealth=referrer,domain=claplivehdplay.ru
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
@@ -5786,6 +5791,8 @@
 @@||rtoaster.jp^$domain=3ple.jp
 @@||rtoaster.jp^$domain=attenir.co.jp
 @@||rtoaster.jp^$script,domain=animate-onlineshop.jp|brainpad.co.jp|hikaritv.net|lexus.jp|peachjohn.co.jp|rurubu.jp|melonbooks.co.jp
+@@||rtoaster.jp^$script,domain=cecile.co.jp
+@@||rtoaster.jp^$script,domain=cecile.co.jp|ec-store.net|jreastmall.com|lexus.jp|melonbooks.co.jp
 @@||rtoaster.jp^$script,domain=ec-store.net
 @@||rtoaster.jp^$script,domain=ec-store.net|jreastmall.com|lexus.jp|melonbooks.co.jp
 @@||rtoaster.jp^$script,domain=jreastmall.com
@@ -7020,6 +7027,7 @@
 @@||vidmoly.to/embed-$stealth
 @@||vidoza.net/embed-*.html$subdocument
 @@||vidoza.net/js/pop.js
+@@||vidsrc.*/embed/$stealth=referrer
 @@||vidsrc.*^$stealth
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
 @@||view.inews.qq.com^$important
