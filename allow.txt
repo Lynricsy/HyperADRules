@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-08 08:30:15（北京时间）
+! Version: 2024-04-08 20:10:49（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7413
+! Total count: 7415
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -230,6 +230,7 @@
 @@185.88.236.76:443$network
 @@185.88.236.77:443$network
 @@212.103.68.8:443$network
+@@43.240.156.118:8443^$stealth=referrer
 @@5.148.189.203:443$network
 @@5.148.189.204:443$network
 @@5.148.189.205:443$network
@@ -1015,6 +1016,7 @@
 @@||api.mapbox.com/geocoding/$stealth
 @@||api.mapbox.com^$stealth,domain=gpx.studio
 @@||api.mercari.jp^$stealth
+@@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
 @@||api.minecraftservices.com^$stealth
 @@||api.miui.security.xiaomi.com^$important
