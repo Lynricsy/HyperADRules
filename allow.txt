@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-19 08:29:13（北京时间）
+! Version: 2024-04-19 20:10:47（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7304
+! Total count: 7306
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -136,7 +136,6 @@
 @@/dh-anti-adblocker/assets/js/prebid-ads.js
 @@/dh-anti-adblocker/public/js/prebid-ads.js
 @@/dh-new-anti-adblocker-lite/public/js/prebid-ads.js
-@@/embed/*$stealth=referrer,subdocument,domain=ldcstreaming.info|sportsonline.*|sportstream.website|elixx.xyz|primefoot.ru
 @@/embed/*$stealth=referrer,subdocument,domain=lol-foot.ru|flashsports.org|ldcstreaming.info|sportsonline.*|sportstream.website|elixx.xyz|primefoot.ru
 @@/embed/comments^$removeparam,~third-party,domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@/fingerprint.$domain=abchina.com
@@ -1289,6 +1288,7 @@
 @@||bhavanijewellery.in/ads9.gif$domain=atozmath.com
 @@||bhc.co.kr^$stealth=dpi
 @@||bhg.com/web/js-min/common/js/dwr/RemoteTargetingService.js
+@@||bidder.criteo.com/cdb|$domain=app.axenthost.com
 @@||bigbtc.win/js/ads-prebid.js
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||bigota.d.miui.com^$important
@@ -4022,6 +4022,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sondakika.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=spox.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=stack.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=texastech.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=timesnownews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tranimeci.com
@@ -7166,6 +7167,7 @@
 @@||wx.qq.com/c/=/mpres/*/video_ad_
 @@||wx.qq.com/mmbizwap/*/framead.
 @@||wx2.sinaimg.cn^$important
+@@||wykop.pl/api/v3/tags/reklama/$xmlhttprequest,~third-party
 @@||wzrkt.com/e?$domain=lottiefiles.com
 @@||x.kinja-static.com/assets/packaged-js/runtime~trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
 @@||x.kinja-static.com/assets/packaged-js/trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
