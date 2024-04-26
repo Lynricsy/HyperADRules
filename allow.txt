@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-26 08:29:23（北京时间）
+! Version: 2024-04-26 20:11:07（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7306
+! Total count: 7309
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -31,6 +31,7 @@
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.google-analytics.com%2Fanalytics.js$domain=free.com.tw
 @@.googleadservices.*.js$domain=ponominalu.ru
+@@.instantservice.com$document
 @@.jpg#$domain=huhupan.com
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@.png#$domain=3dpchip.com|9zvip.net|club.tgfcer.com|coolinet.com|d1-dm.com|digit77.com|e9china.net|upxin.net
@@ -58,7 +59,6 @@
 @@/_js/pubfig.min.js$~third-party,domain=svethardware.cz|relaxuj.cz|svetmobilne.cz|digimanie.cz
 @@/_v2*/h/*.*$xmlhttprequest,image,stealth=referrer,domain=e69975b881.nl
 @@/ad-close.png$domain=ch.com
-@@/ad.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/ad.js$domain=tiktokcounter.net|crypto-radio.eu|lifgam.online
 @@/ad/banner/_adsense_/_adserver/_adview_.ad.json
 @@/ad/images/*$domain=37-express.com|vnnox.com
@@ -78,7 +78,6 @@
 @@/adimg/*$domain=laniqu.com
 @@/adjs_pic_$domain=168gamer.net|slit.cn
 @@/admanager/*$domain=woego.cn
-@@/adpartner.min.js$domain=tiktokcounter.net|crypto-radio.eu
 @@/adpartner.min.js$domain=tiktokcounter.net|crypto-radio.eu|lifgam.online
 @@/adpic/*$domain=baike.baidu.com|czsrc.com|nieyou.com|ontheup.com.tw|zform.net
 @@/adpro.js$domain=tingfm.com
@@ -681,6 +680,7 @@
 @@||ads.remix.es/advertisement.js|
 @@||ads.roblox.com/v*/sponsored-pages$xmlhttprequest
 @@||ads.roblox.com/v1/sponsored-pages$xmlhttprequest,domain=roblox.com
+@@||ads.rogersmedia.com^$subdocument,domain=cbc.ca
 @@||ads.rubiconproject.com/prebid/$script,domain=drudgereport.com|everydayhealth.com
 @@||ads.rubiconproject.com/prebid^$domain=index.hr
 @@||ads.sber.ru^$domain=ads.sber.ru
@@ -731,6 +731,7 @@
 @@||adverts.ie/css/
 @@||adx.yiche.com/cityindex.ashx
 @@||adx.yiche.com/ssp/echo/v1.0/en?*,*,*&cs=
+@@||adz7short.space^$generichide
 @@||aeries.net^*/require/analytics/views/$script,~third-party
 @@||aetv.com^$generichide
 @@||affyun.com^$generichide
@@ -1642,6 +1643,7 @@
 @@||cdn.petametrics.com/*.js$domain=ranker.com
 @@||cdn.petametrics.com^$domain=techgenix.com
 @@||cdn.petametrics.com^$domain=telegraph.co.uk
+@@||cdn.plyr.io/*/plyr.svg$domain=akwam.*
 @@||cdn.popt.in/pixel.js$domain=userstyles.org
 @@||cdn.privatehost.com/videos*/$removeparam
 @@||cdn.qgraph.io/dist/aiqua-wp.js$domain=cw.com.tw
@@ -2630,6 +2632,7 @@
 @@||freeporn8.com/nb/frot_lod.js
 @@||freereceivesms.com/*.js
 @@||freereceivesms.com/js/peel1.js
+@@||freereceivesms.com/weborama.js
 @@||freeride.se/img/admarket/$~third-party
 @@||freundin.de/*_wrapper_format=drupal_ajax
 @@||friday.tw/backend/uploadpic/adindex/
@@ -3758,6 +3761,7 @@
 @@||hhgregg.com/wcsstore/MadisonsStorefrontAssetStore/javascript/Analytics/AnalyticsTagDataObject.js
 @@||highcharts.com.cn/highcharts/modules/heatmap.js
 @@||hikmall.com/js/sensorsdata.min.js
+@@||hinagiku-u.ed.jp/wp54/wp-content/themes/hinagiku/images/$image,~third-party
 @@||hindustantimes.com/res/js/*ads*
 @@||hinet.net/keys/a.key^$domain=ani.gamer.com.tw
 @@||histock.tw/JScript/AD/
@@ -4189,6 +4193,7 @@
 @@||indeed.com/rpc/log/myjobs/transition_job_state$xmlhttprequest
 @@||independent.co.uk/_build/prebid.*.js$domain=independent.co.uk
 @@||indiatimes.com/configspace/
+@@||indiatimes.com/wp-content/themes/*/js/*ads*.js
 @@||indiegogo.com^$stealth
 @@||inews.gtimg.com^
 @@||inews.gtimg.com^$important
@@ -5845,6 +5850,7 @@
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
 @@||sdk.split.io/api/$stealth=3p-auth,domain=rewardlink.io
 @@||sdkapi.sms.mob.com^
+@@||sdltutorials.com/Data/Ads/AppStateBanner.jpg$~third-party
 @@||sdn-global-audio-adswizz-cache.3qsdn.com/*/files/$other,media,domain=noz.de
 @@||se.monetate.net/js/*/custom.js$domain=debenhams.com
 @@||se.monetate.net/js/*/entry.js$domain=debenhams.com
@@ -5867,11 +5873,9 @@
 @@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||securenetsystems.net/*/scripts/ads/prebid.js
 @@||securenetsystems.net/v5/scripts/
-@@||securepubads.g.doubleclick.net/*/gpt.js$domain=tiktokcounter.net|crypto-radio.eu
 @@||securepubads.g.doubleclick.net/*/gpt.js$domain=tiktokcounter.net|crypto-radio.eu|lifgam.online
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$domain=cinemaxx.de
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|miuiflash.com|thecubexguide.com|jytechs.in
-@@||securepubads.g.doubleclick.net/*/pubads_impl.js$domain=tiktokcounter.net|crypto-radio.eu
 @@||securepubads.g.doubleclick.net/*/pubads_impl.js$domain=tiktokcounter.net|crypto-radio.eu|lifgam.online
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=cinemaxx.de
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=purepeople.com
@@ -6971,7 +6975,6 @@
 @@||w88.go.com^$domain=abc.go.com
 @@||waap.ru$jsinject,elemhide,extension
 @@||walla.co.il^$csp
-@@||walletkeyslocker.me/?scode=$xmlhttprequest,stealth=referrer,domain=cuervotv.me
 @@||wallpaper.cdn.pandora.xiaomi.com^$important
 @@||wallpapers.ispazio.net/advert^
 @@||wallpapershome.com/scripts/ads.js
