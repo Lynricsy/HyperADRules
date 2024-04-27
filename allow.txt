@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-26 20:11:07（北京时间）
+! Version: 2024-04-27 08:28:54（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7309
+! Total count: 7302
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -55,7 +55,6 @@
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/cat\.image\/[_3a-z]{2,16}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/st\.pussyspace\.(?:com|net)\/upload\/poster_img_url\/par\/c3Rhci9[%0-9A-Za-z]{16,32}&size_width\/par\/160\/l\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
 @@/^https:\/\/www\.[a-z]{7,14}\.com\/[a-z]{1,4}\.js/$script,third-party,domain=shinden.pl,badfilter
-@@/^https?:\/\/(?:www\.|[a-z0-9]{7,10}\.)?[a-z0-9-]{5,}\.(?:com|bid|link|live|online|top|club)\/\/?(?:[a-z0-9]{2}\/){2,3}[a-f0-9]{32}\.js/$script,xmlhttprequest,third-party,domain=1cloudfile.com
 @@/_js/pubfig.min.js$~third-party,domain=svethardware.cz|relaxuj.cz|svetmobilne.cz|digimanie.cz
 @@/_v2*/h/*.*$xmlhttprequest,image,stealth=referrer,domain=e69975b881.nl
 @@/ad-close.png$domain=ch.com
@@ -112,6 +111,7 @@
 @@/api/models?$domain=tik.porn
 @@/api/v2/models-online?$domain=tik.porn
 @@/assets/js/advertisement.js$~third-party
+@@/assets/js/prebid-ads.js$domain=player.cdnm4m.nl|play.cdnm4m.nl
 @@/bag2?r[]=*&r[]=$domain=free.com.tw
 @@/cdn-cgi/pe/bag2?*google-analytics.com%2Fanalytics.js$domain=amypink.de|biznews.com|dailycaller.com|droid-life.com|forwardprogressives.com|fpif.org|fullpotentialma.com|geekzone.co.nz|goldsday.com|hoyentec.com|imageupload.co.uk|is-arquitectura.es|lazygamer.net|lingholic.com|mmanews.com|nehandaradio.com|nmac.to|orain.org|tvunblock.com|unilad.co.uk|xrussianteens.com|youngcons.com
 @@/cdn-cgi/pe/bag2?*googleadservices.com$domain=droid-life.com
@@ -249,7 +249,6 @@
 @@://192.168.$generichide
 @@://googleadservices.com^|
 @@://localhost:$generichide
-@@://www.coinbase.com^$stealth
 @@://www.fedex.com/Tracking?
 @@://www.googleadservices.com^|
 @@=mywebloadt1&$domain=myweb.hinet.net
@@ -915,7 +914,6 @@
 @@||api-mg2.db-ip.com^$xmlhttprequest,domain=journal-news.com
 @@||api-rewarded-video.fyber.com^$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||api-secure.solvemedia.com^
-@@||api-secure.solvemedia.com^$stealth
 @@||api-v*.trbo.com/r.php$domain=blau.de
 @@||api-v*.trbo.com/r.php$domain=o2online.de
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
@@ -1179,7 +1177,6 @@
 @@||avgle.com/embed/$genericblock,generichide
 @@||avpgalaxy.net/gpt.js
 @@||awaps.yandex.ru^$app=ru.yandex.searchplugin
-@@||awempire.com/*/css/*.css$domain=awempire.com
 @@||awin1.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||ay.delivery/client-v2.js$script,domain=diep.io
 @@||az416426.vo.msecnd.net/next/ai.2.min.js$domain=ams.cdn.arkadiumhosted.com
@@ -1321,7 +1318,6 @@
 @@||bitbucket.org^$generichide
 @@||bitent.com/lock_html5/adPlayer/v*/adPlayer.js
 @@||bitent.com/lock_html5/adscontrol.js$domain=bitent.com
-@@||bitfun.co^$generichide
 @@||bizx.info$domain=sourceforge.net
 @@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
 @@||blackcircles.ca^$script,~third-party
@@ -2631,7 +2627,6 @@
 @@||freeplayervideo.com^$subdocument
 @@||freeporn8.com/nb/frot_lod.js
 @@||freereceivesms.com/*.js
-@@||freereceivesms.com/js/peel1.js
 @@||freereceivesms.com/weborama.js
 @@||freeride.se/img/admarket/$~third-party
 @@||freundin.de/*_wrapper_format=drupal_ajax
@@ -3638,7 +3633,6 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=topuniversities.com
 @@||googletagservices.com/tag/js/gpt.js$domain=tvb.com|www.gamer.com.tw
 @@||googletagservices.com/tag/js/gpt.js$domain=ukr.net
-@@||googletagservices.com/tag/js/gpt.js$domain=xn--allestrungen-9ib.de
 @@||googletagservices.com/tag/js/gpt.js$xmlhttprequest,script,redirect=googletagservices-gpt,domain=wuzzuf.net
 @@||googletagservices.com/tag/js/gpt.js?ad_tag=$domain=clipmyhorse.tv
 @@||gooogle.how^$generichide
@@ -4166,7 +4160,6 @@
 @@||imgcache.qq.com^$important
 @@||imgdrive.net/anex/alt2.js
 @@||imgtaxi.com/img-*.html
-@@||imgtn.bdimg.com^$stealth
 @@||imgur.com/min/px.js$~third-party
 @@||imgwallet.com/advertisement.js
 @@||imobiliare.ro/js/gtm.js$script,~third-party
@@ -4399,6 +4392,7 @@
 @@||kifir2.kir.hu^$stealth=dpi
 @@||kilimall.co.ke/sensorsdata.min.js$~third-party
 @@||kilimall.co.tz/sensorsdata.min.js$~third-party
+@@||kilimall.com&*/js/sensorsdata.min.js$script,domain=kilimall.co.ke
 @@||kimcartoon.me/ads/fbMob.aspx
 @@||kincho.co.jp/cm/img/bnr_ad_$image,~third-party
 @@||kinescope.io/embed/$stealth
@@ -4671,7 +4665,6 @@
 @@||maxstream.video^$generichide
 @@||mb.yidianzixun.com^$important
 @@||mbank.pl^$stealth=dpi
-@@||mbcdn.xyz^$image,stealth,domain=mangabuddy.com
 @@||mbd.baidu.com^$important
 @@||mbe-cdn.fyber.com$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||mbe.modelica.university/_next/static/*/pages/pageview.js$~third-party
@@ -5156,6 +5149,7 @@
 @@||orientaldaily.on.cc/js/oncc-ad.js
 @@||oriflame.ru^$cookie=SC_ANALYTICS_GLOBAL_COOKIE
 @@||oss-asq-static.11222.cn^$important
+@@||oss.dns.aliyun.com.dalvhe.com/image/$stealth=referrer,image,domain=4ksj.com
 @@||osym.gov.tr^$stealth=dpi
 @@||ots.webtrends-optimize.com/$xmlhttprequest,domain=tvlicensing.co.uk
 @@||ott.yandex.ru^$stealth
@@ -7128,7 +7122,6 @@
 @@||wwe.com/sites/all/modules/wwe/wwe_analytics/s_wwe_code.js
 @@||www.chemdraw.com.cn^$important
 @@||www.fbsbx.com^
-@@||www.gdata.pl^$elemhide
 @@||www.google-analytics.com^$app=com.fitbit.FitbitMobile
 @@||www.google-analytics.com^$app=com.google.android.apps.cultural
 @@||www.google-analytics.com^$app=jp.naver.line.android
