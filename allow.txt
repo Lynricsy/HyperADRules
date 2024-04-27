@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-04-27 08:28:54（北京时间）
+! Version: 2024-04-27 20:09:16（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7302
+! Total count: 7309
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -489,6 +489,7 @@
 @@||acea.it^$jsinject
 @@||acgbenzi.com//dist/images/top.png
 @@||acgdraw.com/ad$xmlhttprequest
+@@||acid2.acidtests.org^$document
 @@||acid3.acidtests.org^$document
 @@||acs.m.taobao.com^
 @@||acs.m.taobao.com^$important
@@ -1312,6 +1313,7 @@
 @@||bing.com/secure/Passport.aspx$stealth,important
 @@||bing.com/translator/api/Translate/TranslateArray?$third-party,xmlhttprequest
 @@||bing.com^$generichide
+@@||bing.com^$generichide,badfilter
 @@||bing.com^$important
 @@||bingfeng.tw/source/plugin/unadblock/*_ads_*.js
 @@||bitauto.com/bglogpostlog.js
@@ -1958,6 +1960,7 @@
 @@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
 @@||coinadster.com^$script,stylesheet,xmlhttprequest,other,image,domain=coinadster.com
 @@||coinmarketcap.com/static/addetect/$script,~third-party
+@@||colamanga.com^$generichide
 @@||colatour.com.tw/webDM/*/adbanner$~third-party
 @@||colatour.com.tw^$generichide
 @@||colendilabs.com^$stealth=dpi
@@ -3620,6 +3623,7 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com
 @@||googletagservices.com/tag/js/gpt.js$domain=fukuishimbun.co.jp
 @@||googletagservices.com/tag/js/gpt.js$domain=gamestar.de
+@@||googletagservices.com/tag/js/gpt.js$domain=gaming.uefa.com
 @@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|esgentside.com|maxisciences.com|ohmymag.com|ohmymag.de|ohmymag.com.br|ohmirevista.com
 @@||googletagservices.com/tag/js/gpt.js$domain=ikitesurf.com
 @@||googletagservices.com/tag/js/gpt.js$domain=imgur.com
@@ -4497,6 +4501,7 @@
 @@||linksynergy.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||linkvertise.com/assets/ads.js
 @@||linkvertise.com^$generichide
+@@||linkvertise.download^$generichide
 @@||litv.tv/ads/ads.js
 @@||liulanmi.com/wp-content/uploads/*/StatCounter-
 @@||liumingye.cn^$generichide
@@ -4513,6 +4518,7 @@
 @@||liveapi.cleverpush.com/websocket$websocket,domain=heise.de
 @@||livefyre.com/wjs/v1.0/javascripts/CommentCount.js$domain=mlb.com
 @@||livehindustan.com/*ad$script
+@@||liveindex.org/wp-content/plugins/imedia-basic/*.js
 @@||liveinternet.ru/code$generichide,genericblock,domain=liveinternet.ru
 @@||livenation.122.2o7.net/b/ss/$domain=oss.ticketmaster.com
 @@||livesicilia.it/wp-content/plugins/digistream/digiplayer/js/videojs.ga.js?$script,~third-party
@@ -4651,6 +4657,7 @@
 @@||masterkong.com.cn/adimages/
 @@||material.angular.io^$generichide
 @@||material.io^$generichide
+@@||mathworks.com^$stealth
 @@||matomo.miraheze.org/matomo.js$script,~third-party
 @@||max.com^$generichide
 @@||maxcdn.bootstrapcdn.com/font-awesome^
@@ -5394,7 +5401,6 @@
 @@||player.aniview.com/script/$script,domain=odysee.com|pogo.com
 @@||player.aniview.com/script/*/AVmanager.js$domain=adnkronos.com
 @@||player.avplayer.com^$script,domain=explosm.net|gamingbible.co.uk|justthenews.com|ladbible.com
-@@||player.cdnm4m.nl/assets/js/prebid-ads.js$domain=player.cdnm4m.nl
 @@||player.clevercast.com/players/video-js/video-js-plugins/videojs.ads.min.js
 @@||player.enetres.net/js/videojs-plugins/videojs-ads-contrib/videojs.ads.js
 @@||player.ex.co/player/$domain=si.com
@@ -5648,6 +5654,7 @@
 @@||reddit.com^$generichide
 @@||reddit.com^$generichide,badfilter
 @@||redditenhancementsuite.com/js/jquery.google-analytics.js
+@@||redefineadpl.hit.gemius.pl/*redataredir?url=*.hit.stat24.com*ad.xml$domain=polsatnews.pl|polsatsport.pl|twojapogoda.pl
 @@||redfin.com/stingray/clicktracker.jsp?
 @@||redguide.top^*/ad.css?$stylesheet
 @@||redheadsound.video/player^$stealth
