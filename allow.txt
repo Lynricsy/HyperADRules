@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-05-12 08:33:40（北京时间）
+! Version: 2024-05-12 20:11:00（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7363
+! Total count: 7364
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -28,6 +28,7 @@
 @@.com/embed2.php?player=$stealth=referrer
 @@.com/js/a_d/$domain=colamanga.com
 @@.com/logo/ad.$domain=colamanga.com
+@@.dmf.link/dl/$stealth
 @@.gif#$domain=b168.net|cnprint.org|huhupan.com|tgfcer.com|wgun.net
 @@.google-analytics.com%2Fanalytics.js$domain=free.com.tw
 @@.googleadservices.*.js$domain=ponominalu.ru
@@ -767,7 +768,6 @@
 @@||ajax.cloudflare.com/cdn-cgi/scripts/*/cloudflare-static/mirage2.min.js$domain=mangafreak.net
 @@||ajax.googleapis.com/ajax/libs/jquery/
 @@||ajax.googleapis.com^$script,domain=imgbox.com
-@@||ajax.googleapis.com^$script,domain=rule34hentai.net
 @@||ajio.com/static/assets/vendors~static/chunk/common/libraries/fingerprintjs2.$script,~third-party
 @@||ak.sail-horizon.com/onsite/personalize.v0.0.4.min.js$domain=standard.co.uk
 @@||ak.sail-horizon.com/spm/spm.v*.min.js$domain=usnews.com
@@ -780,7 +780,6 @@
 @@||akamaihd.net/nbad/player/*/visitorapi.js$domain=watch.nba.com
 @@||akamaihd.net/worldwide_analytics/tagcommander/Ubisoft$domain=account.ubisoft.com|connect.ubisoft.com|store.ubi.com
 @@||akamaized.net/*.m4s$stealth,domain=bilibili.com
-@@||akamaized.net/*.m4s$xmlhttprequest,stealth=referrer,domain=bilibili.tv
 @@||akamaized.net^$important
 @@||akc.blueconic.net^$domain=akc.org
 @@||aktuality.sk^$generichide
@@ -1019,6 +1018,7 @@
 @@||api.mercari.jp^$stealth
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
+@@||api.minecraftservices.com^$stealth
 @@||api.miui.security.xiaomi.com^$important
 @@||api.mixpanel.com/engage/?data=$xmlhttprequest,domain=deezer.com
 @@||api.mixpanel.com/track/*$domain=etcher.io
@@ -1837,7 +1837,6 @@
 @@||chinacourt.gov.cn/share/jquery/plugins/adbox/
 @@||chinamobile.com^$generichide
 @@||chinamobile.com^*/ad$~third-party
-@@||chinapost-track.com/ads.txt
 @@||chinatimes.com/css-main/ad.css
 @@||chineseanime.vip^$generichide
 @@||choice.microsoft.com/*/opt-out$urlblock
@@ -2378,7 +2377,6 @@
 @@||e.cn.miaozhen.com/r/k=*=http
 @@||e.cquotient.com/recs/*?callback=$domain=karstadt.de
 @@||e.cquotient.com/recs/*?callback=$domain=sloggi.com
-@@||e.issuu.com^$stealth
 @@||e.mail.ru^$stealth
 @@||e.zg-api.com/*/analytics.js$domain=zillow.com
 @@||e9china.net^$generichide
@@ -3989,6 +3987,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=haberglobal.com.tr
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=haberler.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=hanime.tv
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=hiddenobjectgames.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=hoy.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=html5.gamedistribution.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=hungama.com
@@ -4703,6 +4702,7 @@
 @@||maxstream.video^$generichide
 @@||mb.yidianzixun.com^$important
 @@||mbank.pl^$stealth=dpi
+@@||mbcdn.xyz^$image,stealth,domain=mangabuddy.com
 @@||mbd.baidu.com^$important
 @@||mbe-cdn.fyber.com$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||mbe.modelica.university/_next/static/*/pages/pageview.js$~third-party
@@ -5152,6 +5152,7 @@
 @@||online.a1.by/l/v/track.php?event=$domain=a1.by
 @@||online.americanexpress.com/myca/statementimage/$document
 @@||online.bcs.ru^*/piwik.bcs.js$script
+@@||online.cosmosbank.in^$document
 @@||online.mps-gba.de/praeludium/$script,domain=auto-motor-und-sport.de|caravaning.de|motorradonline.de
 @@||online.tivo.com^$elemhide,jsinject
 @@||online.unionpay.com/ads/$script
@@ -5233,10 +5234,8 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chromeactions.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cimanow.cc|cnvids.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=copyseeker.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coursesghar.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cutty.app
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=di.fm
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dl.ccbluex.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=door2windows.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dthforum.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=duplichecker.com
@@ -5291,7 +5290,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=b2bhint.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=duelmeta.com|linetv.tw|liout.com|moneysave.info|zxmee.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=linetv.tw
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xmlhttprequest,domain=n-egy.best
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=iconmonstr.com,xmlhttprequest
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$domain=noor-book.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js|$xmlhttprequest,domain=testadmit.com
@@ -5406,6 +5404,12 @@
 @@||pingtas.qq.com^$important
 @@||pingtcss.qq.com^$important
 @@||pinterest.com^$generichide
+@@||pinterest.de^$generichide
+@@||pinterest.es^$generichide
+@@||pinterest.fr^$generichide
+@@||pinterest.it^$generichide
+@@||pinterest.jp^$generichide
+@@||pinterest.ph^$generichide
 @@||piwik.pro/images/
 @@||piwik.windit.de/piwik.js$domain=livespotting.tv
 @@||pix04.revsci.net/E05510/a4/0/0/pcx.js?$domain=video.foxbusiness.com
@@ -7053,8 +7057,6 @@
 @@||wargaming.net^$stealth
 @@||watch.globaltv.com^$generichide
 @@||watchcartoononline.io/back.jpg
-@@||watchcartoononline.io/favicon.ico
-@@||watchcartoononline.io/inc/
 @@||watchcartoononline.io/thumbs/
 @@||wavse.com^$generichide
 @@||wazimo.com/engine/common/widgets/content/$domain=lastnighton.com
@@ -7090,7 +7092,6 @@
 @@||webtrends.com/ots/$domain=moneysupermarket.com
 @@||webtrends.com^*/events.svc$subdocument,domain=mycokerewards.com
 @@||webtrendslive.com^*/wtid.js?$domain=att.yahoo.com
-@@||weby.aaas.org/weby_bundle_v*.js$domain=sciencemag.org
 @@||wechat.ishare.iask.com.cn^
 @@||weibo.cn^$important
 @@||weibo.com/api/weipan/getAds
