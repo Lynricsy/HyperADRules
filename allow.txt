@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-05-16 20:11:45（北京时间）
+! Version: 2024-05-17 08:30:37（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7374
+! Total count: 7365
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -197,6 +197,7 @@
 @@/pdc_s_code.js$domain=adobe.com
 @@/piwik-$domain=github.com
 @@/playlist.m3u8$stealth
+@@/playlist/*caxi.m3u8$xmlhttprequest,stealth=referrer,domain=thestreameast.ai|1stream.soccer|streameast.app|1stream.eu|buffstreams.app|meth-streams.ai
 @@/prebid-js-$domain=mytvsuper.com|tvb.com|tvbs.com.tw
 @@/premium*/*.php$subdocument,stealth=referrer,domain=worldstreams.lol|stronstream.shop|dailytechs.shop|sportzlive.shop
 @@/premium*/tracks-*.html$xmlhttprequest,stealth=referrer
@@ -207,6 +208,7 @@
 @@/rwd_cap.js$domain=ibf.tw
 @@/s_code_acdc.js$domain=adobe.com
 @@/script/advert.js$domain=sunbtc.space|weatherx.co.in
+@@/scripts/*js|$xmlhttprequest,stealth=referrer,domain=thestreameast.ai|1stream.eu|1stream.soccer|streameast.app|thecrackstreams.live|meth-streams.ai|buffstreams.app
 @@/sensorsdata-$domain=aixiaoyuan.cn|zkh.com
 @@/sensorsdata.$domain=36kr.com|binance.com|by56.com|canon.com.cn|chuanglan.com|fenbi.com|guancha.cn|imooc.com|kuque.com|modian.com|saicskoda.com.cn|shanbay.com|tianyancha.com|ttcdw.cn|xinrenxinshi.com|zzjiasuqi.com
 @@/setCookie?$domain=ctrip.com|ctrip.com.hk|pinyin.cn
@@ -282,6 +284,7 @@
 @@m.video.xiaomi.com
 @@mp4.ts
 @@nileapi.market.xiaomi.com
+@@playlist/*/load-playlist$xmlhttprequest,stealth=referrer,domain=thestreameast.ai|1stream.eu|1stream.soccer|streameast.app|thecrackstreams.live|meth-streams.ai|buffstreams.app
 @@qlogo.cn^
 @@s.click.taobao.com
 @@s.click.tmall.com
@@ -718,7 +721,6 @@
 @@||adsafeprotected.com/vans-adapter-google-ima.js$script,domain=gamingbible.co.uk|ladbible.com|reuters.com
 @@||adsales.snidigital.com/*/ads-config.min.js$script
 @@||adsense.woso.cn^$~third-party
-@@||adserver.adtech.advertising.com/pubapi/*/ADTECH;*;cmd=bid;cors=yes|$xmlhttprequest
 @@||adserver.juicyads.com/js/jads.js$domain=netflav.com
 @@||adserver.skiresort-service.com/www/delivery/spcjs.php?$script,domain=skiresort.de|skiresort.fr|skiresort.info|skiresort.it|skiresort.nl
 @@||adservice.google.com/adsid/integrator.js$domain=logi.im
@@ -5265,6 +5267,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=metrolagu.cam
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mobile-tracker-free.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mpyit.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mshares.co|gayvidsclub.com|1069boys.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mta-resource.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=okdebrid.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=pansearch.me
@@ -6320,17 +6323,7 @@
 @@||static.ads-twitter.com^$app=jp.co.alc.eow
 @@||static.ads-twitter.com^|$app=com.nttdocomo.android.danimeapp
 @@||static.adsafeprotected.com/iasPET*.js$domain=independent.co.uk
-@@||static.adsafeprotected.com/skeleton.gif?*adid=
-@@||static.adsafeprotected.com/skeleton.gif?*adslot=
-@@||static.adsafeprotected.com/skeleton.gif?*adunitid=
-@@||static.adsafeprotected.com/skeleton.gif?*bannnerid=
-@@||static.adsafeprotected.com/skeleton.gif?*zoneid=
 @@||static.adsafeprotected.com/skeleton.js$domain=cwtv.com
-@@||static.adsafeprotected.com/skeleton.js?*adid=
-@@||static.adsafeprotected.com/skeleton.js?adslot=
-@@||static.adsafeprotected.com/skeleton.js?adspot_id=
-@@||static.adsafeprotected.com/skeleton.js?adunitid=
-@@||static.adsafeprotected.com/skeleton.js?bannnerid=
 @@||static.adsafeprotected.com/vans-adapter-google-ima.js$domain=forbes.com
 @@||static.adsafeprotected.com/vans-adapter-google-ima.js$domain=motorsport.tv
 @@||static.amazon.jobs/assets/analytics-$script,domain=amazon.jobs
@@ -6442,8 +6435,6 @@
 @@||studioclassroom.com/ad/
 @@||stylished.de/js/vendors/emos2.js$domain=stylished.de
 @@||stylist.co.uk^$stealth=dpi
-@@||succeedscene.com/*/ads.load.js
-@@||succeedscene.com/ads/*/*.js
 @@||sudupan.com^*/*.gif
 @@||sug.browser.miui.com^
 @@||suggestions.dadata.ru^$stealth
