@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-05-28 08:30:36（北京时间）
+! Version: 2024-05-28 20:11:58（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15207
+! Total count: 15214
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -2144,6 +2144,7 @@
 @@||assets.adobedtm.com/*-source.min.js$domain=samsung.com
 @@||assets.adobedtm.com/*/satelliteLib-*.js$domain=docs.nvidia.com
 @@||assets.adobedtm.com/*launch-*.min.js$domain=samsung.com
+@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=nbc.com|tatamotors.com
 @@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=tatamotors.com
 @@||assets.adobedtm.com^$domain=wired.com
 @@||assets.anyclip.com^$domain=content.dictionary.com
@@ -2643,6 +2644,7 @@
 @@||bookscool.com/*/advertisement.js
 @@||bookwalker.com.tw/images/p_img/pc_ad*.png$~third-party
 @@||bootcss.com^$script,domain=kan-tv.com
+@@||bordeaux.futurecdn.net/bordeaux.js$script,domain=gamesradar.com|tomsguide.com
 @@||bordeaux.futurecdn.net/bordeaux.js$script,domain=tomsguide.com
 @@||borneobulletin.com.bn/wp-content/banners/bblogo.jpg$~third-party
 @@||borsen.dk/themes/borsen.dk/js/dfp.js
@@ -3547,6 +3549,7 @@
 @@||claimsatoshi.xyz^$generichide
 @@||claimtrx.com^$generichide
 @@||claplivehdplay.ru/*.php?id=k$subdocument,stealth=referrer
+@@||claplivehdplay.ru/*.ts$stealth
 @@||clarity.ms/tag/$domain=moeci.com
 @@||classic-retro-games.com^$generichide
 @@||classic.comunio.de/clubImg.phtml/$image,~third-party
@@ -5306,6 +5309,7 @@
 @@||fundingchoicesmessages.google.com^$stealth,domain=adshnk.com|adshrink.it
 @@||fundingchoicesmessages.google.com^$stealth,domain=stooq.pl|stooq.com
 @@||fundingchoicesmessages.google.com^$stealth,script,domain=player.addradio.de
+@@||fundingchoicesmessages.google.com^$stealth=referrer
 @@||funimation.com^$generichide
 @@||funnymadworld.blogspot.com^$generichide
 @@||funshion.com/*/media/$stealth
@@ -9834,6 +9838,7 @@
 @@||online.unionpay.com/ads/$script
 @@||onlinebanking.usbank.com/TUX/public/libs/adobe/appmeasurement.js$script,~third-party
 @@||onlinefixuploads.ru^$stealth
+@@||onlinehdhls.ru/*/playlist.m3u8$stealth
 @@||onlinehealthsociety.com^$generichide
 @@||onlinemahjong.games/api/ima3.js
 @@||onlinemovie.one^$generichide
@@ -14471,6 +14476,7 @@
 @@||vivocha.com^*/vivocha.js?$script,domain=kartell.com
 @@||vivotvhd.com^$generichide
 @@||vivud.com/js/pop.js
+@@||viwlivehdplay.ru/mono.php?id=$stealth
 @@||vixcloud.co/embed/$stealth=referrer
 @@||vizio.com/resources/js/vizio-module-tracking-google-analytics.js
 @@||vjs.zencdn.net/*/video-js.css
@@ -14717,6 +14723,7 @@
 @@||who-called.co.uk^$generichide
 @@||whoson.com/include.js$domain=oneplus.net|hotelchocolat.com
 @@||whowantstuffs.blogspot.com^$generichide
+@@||wideiptv.top/*/embed.html?token=*&remote=no_check_ip$stealth
 @@||widget.1688.com^
 @@||widget.ezidebit.com.au^
 @@||widget.fitanalytics.com/widget.js$domain=pullandbear.com
