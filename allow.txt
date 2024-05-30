@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-05-29 20:11:42（北京时间）
+! Version: 2024-05-30 08:31:05（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15220
+! Total count: 15213
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -1550,7 +1550,6 @@
 @@||alucard.stream/playlist/$stealth
 @@||amazon-adsystem.com/aax2/amzn_ads.js^$domain=kino.de
 @@||amazon-adsystem.com/aax2/apstag.js$domain=accuweather.com|barstoolsports.com|blastingnews.com|cnn.com|familyhandyman.com|foxbusiness.com|gamingbible.co.uk|history.com|independent.co.uk|inquirer.com|keloland.com|radio.com|rd.com|si.com|sportbible.com|tasteofhome.com|thehealthy.com|time.com|wboy.com|wellgames.com|wkrn.com|wlns.com|wvnstv.com
-@@||amazon-adsystem.com/aax2/apstag.js$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com
 @@||amazon-adsystem.com/aax2/apstag.js$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com|uniladtech.com
 @@||amazon-adsystem.com/aax2/apstag.js$domain=macworld.co.uk
 @@||amazon-adsystem.com/aax2/apstag.js$domain=watchtv24.com
@@ -6420,6 +6419,7 @@
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.com.tr
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.de
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.nl
+@@||googletagmanager.com/gtm.js$domain=megacurioso.com.br
 @@||googletagmanager.com/gtm.js$domain=militaria.pl
 @@||googletagmanager.com/gtm.js$domain=miltonkeynes.co.uk
 @@||googletagmanager.com/gtm.js$domain=mobile01.com
@@ -6720,6 +6720,7 @@
 @@||grapeshot.co.uk/image-resize/$image
 @@||grapeshot.co.uk/main/channels.cgi$script,domain=telegraph.co.uk
 @@||grapeshot.co.uk/sare-api/
+@@||graph.microsoft.com$stealth=3p-auth
 @@||graph.microsoft.com^$stealth,xmlhttprequest,domain=odwebp.svc.ms
 @@||graph.qq.com^$important
 @@||graphicdesignresources.net^$generichide
@@ -8834,7 +8835,6 @@
 @@||matzoo.pl/*/adsbygoogle.js
 @@||mawsueaa.com^$generichide
 @@||max.com^$generichide
-@@||max.permato.com/getWidget^$stealth
 @@||maxcdn.bootstrapcdn.com/bootstrap/$domain=gelbooru.com
 @@||maxcdn.bootstrapcdn.com/font-awesome/*/fonts/fontawesome-webfont.woff$domain=livescience.com
 @@||maxcdn.bootstrapcdn.com/font-awesome^
@@ -9378,10 +9378,6 @@
 @@||mxtads.com/vimeo/froogaloop*.min.js$domain=kinozadrot.club
 @@||my-bucket-s3-*-amazonaws.*.*/*.m3u8$stealth,domain=ibomma.*
 @@||my-bucket-s3-*-amazonaws.*.*/*.mp4$stealth,domain=ibomma.*
-@@||my-debrid.net/files/reklam/api.php$~third-party
-@@||my-debrid.net/files/reklam/css/*.css$~third-party
-@@||my-debrid.net/files/reklam/favicon.ico$~third-party
-@@||my-debrid.net/files/reklam/js/*.js$~third-party
 @@||my.asos.com/identity^$stealth
 @@||my.bmi.ir^$elemhide,jsinject
 @@||my.foxnews.com^$stealth
@@ -10119,7 +10115,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=copyseeker.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=coursesghar.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=crast.net
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cutlink.net|cutado.com|cutnet.net|cety.app|emxaw.com|mrgec.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cutlink.net|cutado.com|cutnet.net|cety.app|emxaw.com|mrgec.com|ijvam.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cutsy.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cutty.app
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=darkwiki.in
@@ -11353,11 +11349,8 @@
 @@||pub.alimama.com/common/adzone/
 @@||pub.doubleverify.com/dvtag/$domain=time.com
 @@||pub.doubleverify.com/dvtag/$script,domain=time.com
-@@||pub.doubleverify.com/dvtag/signals/*/pub.json$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com
 @@||pub.doubleverify.com/dvtag/signals/*/pub.json$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com|uniladtech.com
-@@||pub.doubleverify.com/signals/pub.js$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com
 @@||pub.doubleverify.com/signals/pub.js$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com|uniladtech.com
-@@||pub.doubleverify.com/signals/pub.json$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com
 @@||pub.doubleverify.com/signals/pub.json$domain=ladbible.com|unilad.com|unilad.co.uk|gamingbible.com|tyla.com|sportbible.com|uniladtech.com
 @@||pub.network^$script,domain=creaders.net
 @@||pub.pixels.ai/prebid_standard.js$domain=standard.co.uk
@@ -11656,7 +11649,6 @@
 @@||rek.www.wp.pl/*.gif$domain=wp.pl
 @@||reklama.studio^$domain=reklama.studio
 @@||reklama5.mk^$domain=reklama5.mk
-@@||reklamlar.my-debrid.net^
 @@||relampagomovies.com^$generichide
 @@||relap.io/api/v*/head.js$domain=briefly.ru|kulturologia.ru,stealth
 @@||relatosdesexo.xxx^$generichide
@@ -12977,6 +12969,7 @@
 @@||static.chartbeat.com/crossdomain.xml
 @@||static.chartbeat.com/js/chartbeat.js$domain=hindustantimes.com
 @@||static.chartbeat.com/js/chartbeat.js$domain=m.timesofindia.com
+@@||static.chartbeat.com/js/chartbeat.js$domain=megacurioso.com.br
 @@||static.chartbeat.com/js/chartbeat_brightcove_plugin.js$domain=m2o.it|deejay.it|capital.it
 @@||static.chartbeat.com/js/chartbeat_brightcove_plugin.js$domain=repubblica.it
 @@||static.chartbeat.com/js/chartbeat_mab.js$domain=ny1.com
