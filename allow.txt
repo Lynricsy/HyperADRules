@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-06-15 20:11:11（北京时间）
+! Version: 2024-06-16 08:34:57（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15260
+! Total count: 15263
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -297,6 +297,7 @@
 @@/inc/embed/*ads.js$domain=wcostream.org|watchanimesub.net|wco.tv|wcostream.net|wcostream.com|wcoforever.tv
 @@/inc/embed/suv4.js$domain=wcostream.org|watchanimesub.net|wco.tv|wcostream.net|wcostream.com|wcoforever.tv
 @@/index.m3u8$xmlhttprequest,stealth=referrer,domain=ienjoyhd.site|poscishd.online|claplivehdplay.ru
+@@/index.m3u8$xmlhttprequest,stealth=referrer,domain=olalivehdplay.ru|lewblivehdplay.ru
 @@/index.m3u8?wmsAuthSign=$stealth
 @@/invoke.js$domain=emurom.net
 @@/iplookup.$domain=cankaoxiaoxi.com|dongfeng-nissan.com.cn|huomao.com|loldk.com|sina.com.cn
@@ -387,6 +388,7 @@
 @@/storage/js/taboola_ads.js$~third-party,domain=luxusmail.org|10minuteemails.com
 @@/store_ad/*$domain=pcstore.com.tw
 @@/streamlive/*.m3u8?token=$stealth,domain=stream.televall.website
+@@/stylesheet/*$xmlhttprequest,stealth=referrer,domain=gamingzen.xyz|fabtech.work
 @@/stylesheet/*/*.m3u8$xmlhttprequest,stealth=referrer,domain=fabtech.work
 @@/stylesheet/*/css|$xmlhttprequest,stealth=referrer,domain=fabtech.work
 @@/tghr.js$domain=biqle.com
@@ -3598,6 +3600,7 @@
 @@||cll.press^$generichide
 @@||cllkme.com^$generichide
 @@||cloadstream*.xyz/hls/$stealth
+@@||closedjelly.net/embed/$subdocument,stealth=referrer
 @@||closeload.com/video/embed/$stealth
 @@||closeload.com^$generichide
 @@||cloud-*.onionflix.$stealth
