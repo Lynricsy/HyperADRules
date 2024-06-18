@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-06-18 08:32:14（北京时间）
+! Version: 2024-06-18 20:12:17（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15263
+! Total count: 15265
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -2152,6 +2152,7 @@
 @@||assets.adobedtm.com/*/satelliteLib-*.js$domain=docs.nvidia.com
 @@||assets.adobedtm.com/*launch-*.min.js$domain=samsung.com
 @@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=nbc.com|tatamotors.com
+@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=nbc.com|tatamotors.com|usanetwork.com
 @@||assets.adobedtm.com^$domain=wired.com
 @@||assets.anyclip.com^$domain=content.dictionary.com
 @@||assets.beinsports.com/*/scripts/ads.js$~third-party
@@ -6151,6 +6152,7 @@
 @@||googleapis.com/customsearch/$domain=m.hdzog.com
 @@||googleapis.com/customsearch/v*/siterestrict?$domain=rakuten.com.tw,stealth
 @@||googleapis.com/identitytoolkit^$stealth
+@@||googleapis.com/identitytoolkit^$stealth=referrer
 @@||googleapis.com/tile/v*/*?session=$stealth,domain=waze.com
 @@||googleapis.com/tile/v*/createSession?key=$stealth,domain=waze.com
 @@||googleapis.com/youtube/$stealth,domain=angrybirdsnest.com
@@ -7215,6 +7217,7 @@
 @@||identity.mparticle.com/v1/identify$domain=cwtv.com
 @@||identity.mparticle.com^$xmlhttprequest
 @@||identity.oraclecloud.com//sso/v*/sdk/authenticate$stealth,domain=v2.ereg.ets.org
+@@||identitytoolkit.googleapis.com^$stealth=referrer
 @@||idm.hit.gemius.pl/gplayer.js$domain=muratorplus.pl
 @@||idm.hit.gemius.pl/gplayer.js$domain=poradnikzdrowie.pl|mjakmama24.pl|se.pl|eskarock.pl|voxfm.pl|radioplus.pl|eska.pl|radiosupernova.pl|vibefm.pl|urzadzamy.pl
 @@||idmsa.apple.com/appleauth/$stealth,domain=icloud.com|icloud.com.cn
@@ -7948,7 +7951,6 @@
 @@||iwa.iplsc.com/iwa.js$script
 @@||iwa3.hit.interia.pl^*/iwa_core?ts=$domain=pomponik.pl|interia.pl
 @@||iwatchtheoffice.com^$generichide
-@@||iwb.jp^$generichide
 @@||iwrite.unipus.cn/js/main/GPT.js$~third-party
 @@||ixifile.xyz/*.mp4$stealth
 @@||ixueshu.com/ad-server/
