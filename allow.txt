@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-08-01 20:12:39（北京时间）
+! Version: 2024-08-02 08:32:59（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15449
+! Total count: 15458
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -630,6 +630,7 @@
 @@||1plus1.ua^$stealth,domain=1plus1.ua
 @@||1plus1.video/tvguide/embed/*?autoplay=$stealth
 @@||1plus1.video/video/embed/$stealth,~script,~xmlhttprequest,~other
+@@||1qwebplay.xyz/*.php$stealth=referrer
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
 @@||1trackapp.com^$stealth,xmlhttprequest,domain=1track.ru
 @@||1ttv.net/iframe.php$stealth
@@ -861,6 +862,7 @@
 @@||account.adobe.com^$document,domain=services.adobe.com,stealth=useragent
 @@||account.leagueoflegends.com/pm.html$jsinject,elemhide
 @@||account.mail.ru^$stealth
+@@||account.mcid.mynavi.jp^$stealth=referrer
 @@||account.microsoft.com/?refd=$stealth
 @@||account.microsoft.com/auth/$stealth
 @@||account.withings.com^$stealth
@@ -2496,6 +2498,7 @@
 @@||bettycrocker.com/Shared/Javascript/ntpagetag.js
 @@||beureum.com^$generichide
 @@||beursig.com^$generichide
+@@||bewilderedblade.com^$domain=mdn.lol
 @@||beyondsoft.com/dataservice/img/ad_
 @@||bf.sbdm.cc^$stealth
 @@||bfas237blog.info^$generichide
@@ -3280,6 +3283,7 @@
 @@||cdn.snigelweb.com/adengine/imagetotext.info/loader.js$domain=imagetotext.info
 @@||cdn.snigelweb.com/adengine/paraphraser.io/loader.js$domain=paraphraser.io
 @@||cdn.sophi.io/assets/$script,domain=nationalpost.com
+@@||cdn.sophi.io/assets/demeter/*/stable/*.js$domain=nationalpost.com
 @@||cdn.spotxcdn.com/integration/directsdk/*.js$domain=bloomberg.com
 @@||cdn.spotxcdn.com/media/videos/orig/*.mp4$xmlhttprequest,domain=rakuten.tv
 @@||cdn.springserve.com/assets/0/playerJS/chegg_unlocked_cm.js$domain=citationmachine.net
@@ -5511,6 +5515,7 @@
 @@||ganji.com/findjob/send_resume.*&ad_type=
 @@||ganma.jp/view/magazine/viewer/pages/advertisement/googleAdSense.html|$~third-party,xmlhttprequest
 @@||gannettdigital.com/universal-web-client/$domain=greenvilleonline.com
+@@||gapis.win^$stealth=referrer,domain=app.jscdn.win
 @@||gapl.hit.gemius.pl/gplayer.js$domain=player.antyradio.pl|player.radiozet.pl|player.chillizet.pl|player.meloradio.pl
 @@||gapl.hit.gemius.pl/gplayer.js$domain=redefine.pl
 @@||gapt.hit.gemius.pl/gplayer.js$domain=radiocomercial.iol.pt
@@ -8273,6 +8278,7 @@
 @@||kehai.com/front/dist/app/site/list/advertisement.js
 @@||keizai.biz^$generichide
 @@||kemono.su/.well-known/ddos-guard/mark/|
+@@||kenitv.me/*embed$stealth=referrer
 @@||kenoshanews.com^$generichide
 @@||kentucky.com/mistats/finalizestats.js
 @@||keran.co/*/js/advertisement.js
@@ -12476,6 +12482,7 @@
 @@||securepubads.g.doubleclick.net^$app=jp.naver.line.android
 @@||securepubads.g.doubleclick.net^$domain=hoyts.com.au
 @@||secureservercdn.net/*.myftpupload.com/wp-content/themes/jannah/assets/js/advertisement.js$domain=sailuniverse.com
+@@||securetoken.googleapis.com^$stealth=referrer
 @@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth
 @@||securitykiss.com$document
 @@||securitytrails.com/app/api/$domain=securitytrails.com
@@ -14552,6 +14559,7 @@
 @@||vaughnlive.tv/*/js/ima3.js
 @@||vaughnsoft.net/play/$stealth,domain=vaughn.live
 @@||vb.icdrama.se/advertisement.js
+@@||vcdn.xemcl.net/html/$stealth=referrer,domain=app.jscdn.win
 @@||vcdn.xszcdn.com/hls/$domain=xszav1.com
 @@||vcomic.net/app/*/assets/js/prebid-ads.js
 @@||vdncloud.org/iframe/$stealth=referrer
@@ -14791,6 +14799,7 @@
 @@||wakudan.seesaa.net^$generichide
 @@||walla.co.il^$csp
 @@||walla.co.il^$generichide
+@@||walletkeyslocker.me/?scode=*&stream=$stealth=referrer
 @@||walletkeyslocker.me/?stream$stealth=referrer
 @@||walletkeyslocker.me^$domain=nolive.me,stealth=referrer
 @@||wallpaper-house.com^$generichide
