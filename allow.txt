@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-08-07 20:13:13（北京时间）
+! Version: 2024-08-08 08:33:41（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15463
+! Total count: 15469
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -1240,6 +1240,7 @@
 @@||ads.pubmatic.com/AdServer/js/pwt/*/pwt.js$domain=hindustantimes.com
 @@||ads.pubmatic.com/AdServer/js/pwt/*/pwt.js$domain=wionews.com
 @@||ads.pubmatic.com/AdServer/js/pwt/*/pwt.js$domain=zeenews.india.com
+@@||ads.pubmatic.com/AdServer/js/pwt/floors/*/floors.json$domain=zeenews.india.com
 @@||ads.pubmatic.com/AdServer/js/pwtSync/$script,subdocument,domain=dnaindia.com|independent.co.uk|wionews.com
 @@||ads.pubmatic.com/adserver/js/$script,domain=zeebiz.com
 @@||ads.reddit.com^$domain=ads.reddit.com
@@ -10088,6 +10089,7 @@
 @@||overwatch.pl^$generichide
 @@||ovh.webshark.pl/adserver/*/main_script.js?advertise_check=1
 @@||ovnihoje.com^$generichide
+@@||ow.pubmatic.com/pbs/openrtb2/auction$domain=zeenews.india.com
 @@||owllink.net^$generichide
 @@||ox-d.adclixx.net/auid=
 @@||ox-d.adnetasia.com/auid=
@@ -10972,6 +10974,7 @@
 @@||pandora.com/web-version/*/*.json
 @@||pandora.com^$generichide
 @@||panel.flops.ru/js/member/evercookie_init.js
+@@||panel.sinema.cx/video/$stealth=referrer
 @@||pangzi.ca^$subdocument
 @@||panjiachen.github.io^$generichide
 @@||pantagraph.com^$generichide
@@ -12061,6 +12064,8 @@
 @@||s0.wp.com/wp-content/js^$domain=gaypornwave.com
 @@||s0ft4pc.com^$generichide
 @@||s1-filecr.xyz^$stealth
+@@||s1-static.msstatic.com/mfe/huya_main/*.html$stealth,domain=huya.com
+@@||s1-static.msstatic.com/mfe/huya_main/*.html$xmlhttprequest,elemhide,jsinject,content,extension,domain=huya.com
 @@||s1.adform.net/banners/scripts/adx.js$domain=delfi.lt
 @@||s1.daumcdn.net/svc/original/U03/cssjs/userAgent$domain=tistory.com
 @@||s1.wp.com^
@@ -14485,6 +14490,7 @@
 @@||usgamer.net/static/scripts/AdsLoad.js
 @@||usgamer.net/static/scripts/SidebarAds.js
 @@||usplastic.com/js/hawk.js
+@@||ut.pubmatic.com/geo?pubid=$domain=zeenews.india.com
 @@||utorrentgamesps2.blogspot.com^$generichide
 @@||uu.res.netease.com/pc/zt/*/img/ad_
 @@||uukanshu.com^$generichide
