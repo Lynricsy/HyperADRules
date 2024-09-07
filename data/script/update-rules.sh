@@ -49,6 +49,12 @@ allow=(
   "https://raw.githubusercontent.com/8680/GOODBYEADS/master/allow.txt"
 )
 
+# 处理允许列表规则
+cat *.txt | grep -E '^[^#]' | awk '
+  /^@@/ { next }
+  /^[^@]/ { print "@@||" $0 "^" }
+' | sort -u >> tmp-allow.txt &
+
 for i in "${!rules[@]}" "${!allow[@]}"
 do
   curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "rules${i}.txt" --connect-timeout 60 -s "${rules[$i]}" |iconv -t utf-8 &
@@ -103,6 +109,7 @@ cat \
 cat \
  | sed "s/^/0.0.0.0 &/g" &
 
+
 echo 开始合并
 
 cat rules*.txt \
@@ -115,15 +122,10 @@ cat \
  | sort | uniq > ll.txt &
 wait
 
+
 cat *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt & #允许清单处理
 wait
-
-# 处理允许列表规则
-cat *.txt | grep -E '^[^#]' | awk '
-  /^@@/ { next }
-  /^[^@]/ { print "@@||" $0 "^" }
-' | sort -u >> tmp-allow.txt &
 
 cp tmp-allow.txt .././allow.txt
 cp tmp-rules.txt .././rules.txt
@@ -136,6 +138,7 @@ python .././data/python/filter-dns.py
 
 # Start Add title and date
 python .././data/python/title.py
+
 
 wait
 echo '更新成功'
