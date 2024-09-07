@@ -76,12 +76,7 @@ wait
 
 # 处理允许规则中的纯域名
 cat allow_special.txt | grep -E '^[^#]' | awk '{ print "@@||" $0 "^" }' | sort -u >> allow.txt
-
-# 合并其他允许规则
-for i in "${!allow[@]}"; do
-  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
-    curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
-  fi
+fi
 done
 
 wait
