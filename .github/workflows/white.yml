@@ -1,0 +1,58 @@
+name: Process Domain Lists
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜运行
+
+jobs:
+  process_domains:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set Up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install Dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl
+
+    - name: Download and Process Domain Lists
+      run: |
+        #!/bin/bash
+
+        # Define the URLs
+        urls=(
+          "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
+          # Add other URLs here if needed
+        )
+
+        # Download and process each URL
+        for url in "${urls[@]}"; do
+          filename=$(basename "$url")
+          curl -s "$url" | awk '{ print "@@||" $0 "^" }' > "processed_$filename"
+        done
+
+        # Merge processed files into allow.txt
+        cat processed_*.txt | sort -u > allow.txt
+
+        # Create the target directory if it does not exist
+        mkdir -p data/rules
+
+        # Move allow.txt to the processed folder
+        mv allow.txt data/rules/
+
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: 'data/rules/allow.txt'
+        message: 'Update allow.txt with new domain rules'
