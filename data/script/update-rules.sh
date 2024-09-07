@@ -54,12 +54,6 @@ special_allow=(
   "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
 )
 
-# 下载规则
-for i in "${!rules[@]}"
-do
-  curl -m 60 --retry-delay 2 --retry 5 -k -L -C - -o "rules${i}.txt" --connect-timeout 60 -s "${rules[$i]}" | iconv -t utf-8 &
-done
-
 # 下载需要单独处理的允许规则
 for url in "${special_allow[@]}"; do
   curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow_special.txt" --connect-timeout 60 -s "$url" | iconv -t utf-8 &
@@ -76,7 +70,12 @@ wait
 
 # 处理允许规则中的纯域名
 cat allow_special.txt | grep -E '^[^#]' | awk '{ print "@@||" $0 "^" }' | sort -u >> allow.txt
-fi
+
+# 合并其他允许规则
+for i in "${!allow[@]}"; do
+  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
+    curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
+  fi
 done
 
 wait
@@ -86,21 +85,14 @@ cat *.txt | grep -E '^[^#]' | awk '
 ' | sort -u >> tmp-allow.txt
 
 # 处理规则
-echo '添加空格'
-file="$(ls | sort -u)"
-for i in $file; do
-  echo -e '\n' >> $i &
-done
-wait
-
 echo '处理规则中'
-cat *.txt | sort -n | grep -v -E "^((#.*)|(\s*))$" \
- | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|local|loopback)$" \
- | grep -Ev "local.*\.local.*$" \
- | sed s/127.0.0.1/0.0.0.0/g | sed s/::/0.0.0.0/g | grep '0.0.0.0' | grep -Ev '.0.0.0.0 ' | sort \
+cat *.txt | grep -Ev '^((#.*)|(\s*))$' \
+ | grep -v -E '^[0-9f\.:]+\s+(ip6\-)|(localhost|loopback)$' \
+ | sed 's/127.0.0.1/0.0.0.0/g' | sed 's/::/0.0.0.0/g' \
+ | grep '0.0.0.0' | grep -Ev '.0.0.0.0 ' | sort \
  | uniq > base-src-hosts.txt &
-wait
 
+wait
 cat base-src-hosts.txt | grep -Ev '#|\$|@|!|/|\\|\*' \
  | grep -v -E "^((#.*)|(\s*))$" \
  | grep -v -E "^[0-9f\.:]+\s+(ip6\-)|(localhost|loopback)$" \
@@ -108,40 +100,19 @@ cat base-src-hosts.txt | grep -Ev '#|\$|@|!|/|\\|\*' \
  | sed "s/^/||&/g" | sed "s/$/&^/g" | sed '/^$/d' \
  | grep -v '^#' \
  | sort -n | uniq | awk '!a[$0]++' \
- | grep -E "^((\|\|)\S+\^)" > tmp-rules.txt & # Hosts规则转ABP规则
+ | grep -E "^(\|\|[\S]+\^)" > tmp-rules.txt & # 保留ABP格式的域名规则
 
-# 处理允许规则
-cat *.txt | sed '/^$/d' | grep -v '#' \
- | sed "s/^/@@||&/g" | sed "s/$/&^/g" \
- | sort -n | uniq | awk '!a[$0]++' > tmp-allow.txt &
+wait
 
-cat *.txt | sed '/^$/d' | grep -v "#" \
- | sed "s/^/@@||&/g" | sed "s/$/&^/g" | sort -n \
- | uniq | awk '!a[$0]++' & # 将允许域名转换为ABP规则
-
-cat *.txt | sed '/^$/d' | grep -v "#" \
- | sed "s/^/0.0.0.0 &/g" | sort -n \
- | uniq | awk '!a[$0]++' & # 将允许域名转换为ABP规则
-
-cat *.txt | sed '/^$/d' \
- | grep -E "^\/[a-z]([a-z]|\.)*\.$" \
- | sort -u > l.txt &
-
-cat *.txt \
- | sed "s/^/||&/g" | sed "s/$/&^/g" &
-
-cat *.txt \
- | sed "s/^/0.0.0.0 &/g" &
-
-echo '开始合并'
+# 合并规则
 cat rules*.txt \
  | grep -Ev "^((\!)|(\[)).*" \
  | sort -n | uniq | awk '!a[$0]++' > tmp-rules.txt & # 处理AdGuard的规则
 
 cat *.txt | grep '^@' \
  | sort -n | uniq > tmp-allow.txt & # 允许清单处理
-wait
 
+wait
 cp tmp-allow.txt .././allow.txt
 cp tmp-rules.txt .././rules.txt
 
@@ -158,4 +129,3 @@ wait
 echo '更新成功'
 
 exit
-
