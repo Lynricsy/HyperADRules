@@ -47,6 +47,7 @@ allow=(
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/GermanFilter/sections/allowlist.txt"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/TurkishFilter/sections/allowlist.txt"
   "https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/SpywareFilter/sections/allowlist.txt"
+  "https://github.com/Lynricsy/HyperADRules/blob/master/data/rules/whitelist.txt"
   "https://raw.githubusercontent.com/greatcoolge/HyperADRules/master/data/rules/allow.txt"
   "https://raw.githubusercontent.com/hl2guide/Filterlist-for-AdGuard/master/filter_whitelist.txt"
   "https://raw.githubusercontent.com/liwenjie119/adg-rules/master/white.txt"
