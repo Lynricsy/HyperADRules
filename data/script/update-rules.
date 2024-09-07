@@ -49,11 +49,19 @@ allow=(
   "https://raw.githubusercontent.com/8680/GOODBYEADS/master/allow.txt"
 )
 
-# 下载允许列表
+# 需要单独处理的允许规则链接
+special_allow=(
+  "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
+)
+
+# 下载需要单独处理的允许规则
+for url in "${special_allow[@]}"; do
+  curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow_special.txt" --connect-timeout 60 -s "$url" | iconv -t utf-8 &
+done
+
+# 下载其他允许规则
 for i in "${!allow[@]}"; do
-  if [[ "${allow[$i]}" == *"anti-ad-white-list.txt"* ]]; then
-    curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow_special.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
-  else
+  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
     curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
   fi
 done
@@ -65,7 +73,7 @@ cat allow_special.txt | grep -E '^[^#]' | awk '{ print "@@||" $0 "^" }' | sort -
 
 # 合并其他允许规则
 for i in "${!allow[@]}"; do
-  if [[ "${allow[$i]}" != *"anti-ad-white-list.txt"* ]]; then
+  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
     curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
   fi
 done
