@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-09-07 09:43:33（北京时间）
+! Version: 2024-09-07 10:01:24（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15331
+! Total count: 15327
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=stfly.cc
@@ -431,7 +431,6 @@
 @@5.148.189.205:443$network
 @@://*.ico$domain=livenewschat.eu
 @@://*.xuk.ru^$stealth
-@@://0.0.0.0$generichide
 @@://10.0.0.$generichide
 @@://10.1.1.$generichide
 @@://127.0.0.1$generichide
@@ -545,7 +544,6 @@
 @@||*optout$domain=smartadserver.com
 @@||*optout$domain=youronlinechoices.com
 @@||*status$domain=youronlinechoices.com
-@@||0.0.0.0/admin/admin_ad.php?$domain=0.0.0.0
 @@||060s.com/images_ad/*.png
 @@||073img.com/*,*,
 @@||0914.global.ssl.fastly.net/ads/*/x.$domain=cbs.com
@@ -10929,7 +10927,6 @@
 @@||pcworldcommunication.d2.sc.omtrdc.net/b/ss/$domain=techhive.com
 @@||pdc.micloud.xiaomi.net^
 @@||pdc.micloud.xiaomi.net^$important
-@@||pdfextra.com#%#//scriptlet('trusted-set-cookie', 'ms0.0.0.0pdf-extra-web0.0.0.0pushtkn', '1')^
 @@||pdk.theplatform.com/*/AdManager.swf$domain=vplayer.nbcsports.com
 @@||pdk.theplatform.com/*/FreeWheelAdManagerLoader.swf$domain=pdk.theplatform.com
 @@||pdk.theplatform.com^$domain=vplayer.nbcolympics.com
@@ -15334,4 +15331,3 @@
 @@||zxzja.com:*/player-$subdocument,stealth
 @@||zylom.com/images/site/zylom/scripts/google-analytics.js
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
-@@||||0.0.0.0^$script,domain=iqiyi.com^
