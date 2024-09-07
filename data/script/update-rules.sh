@@ -54,6 +54,11 @@ allow=(
   "https://raw.githubusercontent.com/8680/GOODBYEADS/master/allow.txt"
 )
 
+# 需要单独处理的允许规则链接
+special_allow=(
+  "https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt"
+)
+
 # 下载规则
 for i in "${!rules[@]}"
 do
@@ -66,18 +71,38 @@ do
   curl -m 60 --retry-delay 2 --retry 5 -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
 done
 
-# 特殊处理额外的允许规则
-curl -s https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-list.txt | \
-    sed 's/^/@@||/g; s/$/&^/g' > allow_special.txt &
+# 下载其他允许规则
+for i in "${!allow[@]}"; do
+  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
+    curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
+  fi
+done
 
 wait
-echo '规则下载完成'
 
-# 为文件添加空行
-for i in *.txt; do
-  echo -e '\n' >> "$i" &
+# 处理允许规则中的纯域名
+cat allow_special.txt | grep -E '^[^#]' | awk '{ print "@@||" $0 "^" }' | sort -u >> allow.txt
+
+# 合并其他允许规则
+for i in "${!allow[@]}"; do
+  if [[ ! " ${special_allow[@]} " =~ " ${allow[$i]} " ]]; then
+    curl -m 60 --retry-delay 2 --retry 5 --parallel --parallel-immediate -k -L -C - -o "allow${i}.txt" --connect-timeout 60 -s "${allow[$i]}" | iconv -t utf-8 &
+  fi
+done
+
+wait
+cat *.txt | grep -E '^[^#]' | awk '
+  /^@@/ { next }
+  /^[^@]/ { print "@@||" $0 "^" }
+' | sort -u >> tmp-allow.txt
+
+# 添加空格
+file="$(ls|sort -u)"
+for i in $file; do
+  echo -e '\n' >> $i &
 done
 wait
+
 
 echo '处理规则中'
 
