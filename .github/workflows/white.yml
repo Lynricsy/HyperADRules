@@ -37,22 +37,19 @@ jobs:
           # Add other URLs here if needed
         )
 
-        # Download and process each URL
+        # Step 1: Download and extract pure domain names
         for url in "${urls[@]}"; do
           filename=$(basename "$url")
           
-          # Process and save the file with @@||...^ format
-          curl -s "$url" | awk '!/^#|^!/{ print "@@||" $0 "^" }' > "processed_${filename}_with_prefix.txt"
-
-          # Process and save the file with just the domain names
-          curl -s "$url" | awk '!/^#|^!/{ print $0 }' > "processed_${filename}_pure_domain.txt"
+          # Extract pure domain names and save to a file
+          curl -s "$url" | awk '!/^#|^!|[^\.\-a-zA-Z0-9]/ { print $0 }' > "pure_${filename}"
         done
 
-        # Merge processed files into allow.txt (with @@||...^)
-        cat processed_*_with_prefix.txt | sort -u > allow.txt
+        # Merge pure domain files into pure_domains.txt
+        cat pure_*.txt | sort -u > pure_domains.txt
 
-        # Merge processed files into pure_domains.txt (just domain names)
-        cat processed_*_pure_domain.txt | sort -u > pure_domains.txt
+        # Step 2: Create allow.txt with @@||...^ format
+        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
