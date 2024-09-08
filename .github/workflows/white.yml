@@ -37,36 +37,31 @@ jobs:
           # Add other URLs here if needed
         )
 
-        # Step 1: Download and extract pure domain names, ensuring no empty lines
+        # Step 1: Download and process each URL
         for url in "${urls[@]}"; do
           filename=$(basename "$url")
-          
-          # Extract pure domain names, excluding comments, invalid lines, and empty lines
-          curl -s "$url" | awk 'NF && !/^#|^!|[^\.\-a-zA-Z0-9]/ { print $0 }' > "pure_${filename}"
+
+          # Extract lines with || prefix, pure domain, and $ suffix
+          curl -s "$url" | awk '/\|\|[a-zA-Z0-9.-]+\$/' > "special_${filename}"
         done
 
-        # Merge pure domain files into pure_domains.txt and ensure no empty lines
-        cat pure_*.txt | sort -u | awk 'NF' > pure_domains.txt
+        # Merge special domain files into special_domains.txt
+        cat special_*.txt | sort -u > special_domains.txt
 
-        # Step 2: Create allow.txt with @@||...^ format and ensure no empty lines
-        awk 'NF { print "@@||" $0 "^" }' pure_domains.txt > allow.txt
+        # Step 2: Create allow.txt with @@||...^ format
+        awk '{ print "@@||" $0 "^" }' special_domains.txt > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
 
         # Move the generated files to the processed folder
         mv allow.txt data/rules/
-        mv pure_domains.txt data/rules/
+        mv special_domains.txt data/rules/
 
-    - name: Commit Changes
-      run: |
-        git config --global user.email "github-actions@github.com"
-        git config --global user.name "github.actions"
-        git add data/rules/*
-        
-        # Commit only if there are changes
-        git commit -m "Update domain rules with new data" || echo "No changes to commit"
-
-    - name: Push Changes
-      run: |
-        git push
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: |
+          data/rules/allow.txt
+          data/rules/special_domains.txt
+        message: 'Update domain rules with new data'
