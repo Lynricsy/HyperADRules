@@ -37,31 +37,32 @@ jobs:
           # Add other URLs here if needed
         )
 
-        # Step 1: Download and process each URL
-        for url in "${urls[@]}"; do
-          filename=$(basename "$url")
+        # Temporary file to hold all domains
+        temp_file="all_domains.txt"
 
-          # Extract lines with || prefix, pure domain, and $ suffix
-          curl -s "$url" | awk '/\|\|[a-zA-Z0-9.-]+\$/' > "special_${filename}"
+        # Step 1: Download, filter, and merge domain lists
+        for url in "${urls[@]}"; do
+          curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
-        # Merge special domain files into special_domains.txt
-        cat special_*.txt | sort -u > special_domains.txt
+        # Remove duplicates and sort the domains
+        sort -u "$temp_file" > pure_domains.txt
 
         # Step 2: Create allow.txt with @@||...^ format
-        awk '{ print "@@||" $0 "^" }' special_domains.txt > allow.txt
+        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
 
         # Move the generated files to the processed folder
         mv allow.txt data/rules/
-        mv special_domains.txt data/rules/
+        mv pure_domains.txt data/rules/
 
     - name: Commit and Push Changes
       uses: EndBug/add-and-commit@v9
       with:
         add: |
           data/rules/allow.txt
-          data/rules/special_domains.txt
+          data/rules/pure_domains.txt
         message: 'Update domain rules with new data'
+        force: true
