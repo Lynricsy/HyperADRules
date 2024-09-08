@@ -40,8 +40,9 @@ jobs:
         # Download and process each URL
         for url in "${urls[@]}"; do
           filename=$(basename "$url")
-          curl -s "$url" | awk '{ print "@@||" $0 "^" }' > "processed_$filename"
+          curl -s "$url" | awk '!/^#|^!/{ print "@@||" $0 "^" }' > "processed_$filename"
         done
+
 
         # Merge processed files into allow.txt
         cat processed_*.txt | sort -u > allow.txt
