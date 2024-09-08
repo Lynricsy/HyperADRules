@@ -58,8 +58,15 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Commit and Push Changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: "data/rules/*"
-        message: 'Update domain rules with new data'
+    - name: Commit Changes
+      run: |
+        git config --global user.email "github-actions@github.com"
+        git config --global user.name "github.actions"
+        git add data/rules/*
+        
+        # Commit only if there are changes
+        git commit -m "Update domain rules with new data" || echo "No changes to commit"
+
+    - name: Push Changes
+      run: |
+        git push
