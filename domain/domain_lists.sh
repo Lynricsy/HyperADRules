@@ -11,13 +11,8 @@ https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/ant
 
 # 定义临时文件和输出文件的路径
 temp_file="all_domains.txt"  # 临时文件保存在当前目录
-output_dir="list"  # 指定目标目录（修改为所需的目录）
+output_dir="data/rules"  # 指定目标目录
 output_file="$output_dir/allow1.txt"  # 在指定目录下生成文件
-
-# 输出调试信息
-echo "Temporary file: $temp_file"
-echo "Output directory: $output_dir"
-echo "Output file: $output_file"
 
 # 确保目标目录存在
 mkdir -p "$output_dir" || { echo "Failed to create directory $output_dir"; exit 1; }
