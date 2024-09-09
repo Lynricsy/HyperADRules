@@ -49,7 +49,7 @@ jobs:
         awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
 
         # Step 3: Filter out regex patterns and create pure_domains.txt
-        grep -Ev 'regexp:' "$temp_file" > pure_domains.txt
+        grep -Ev 'regexp:|^\*\.' "$temp_file" > pure_domains.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
@@ -58,11 +58,13 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Pull latest changes
+    - name: Check for changes
+      id: check_changes
       run: |
-        git pull origin master  # 替换为你的实际分支名称
+        git diff --quiet || echo "Changes detected" > changes_detected.txt
 
     - name: Commit and Push Changes
+      if: steps.check_changes.outputs.changed == 'true'
       uses: EndBug/add-and-commit@v9
       with:
         add: |
