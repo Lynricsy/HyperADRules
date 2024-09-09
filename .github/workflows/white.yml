@@ -3,7 +3,7 @@ name: Process Domain Lists
 on:
   push:
     branches:
-      - master  # 替换为你的实际分支名称
+      - master  # 修改为你的实际分支名称
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'  # 每小时触发一次
@@ -45,11 +45,11 @@ jobs:
           curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
-        # Step 2: Create allow.txt from all_domains.txt
-        awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
+        # Remove duplicates and sort the domains
+        sort -u "$temp_file" > pure_domains.txt
 
-        # Step 3: Filter out regex patterns and create pure_domains.txt
-        grep -Ev 'regexp:|^\*\.' "$temp_file" > pure_domains.txt
+        # Step 2: Create allow.txt with @@||...^ format
+        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
@@ -58,17 +58,15 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Ensure file change
+    - name: Pull latest changes
       run: |
-        # Configure Git
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        
-        # Check if there are changes
-        if [ -n "$(git status --porcelain)" ]; then
-          git add data/rules/allow.txt data/rules/pure_domains.txt
-          git commit -m "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
-          git push origin master
-        else
-          echo "No changes detected."
-        fi
+        git pull origin master  # 修改为你的实际分支名称
+
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: |
+          data/rules/allow.txt
+          data/rules/pure_domains.txt
+        message: "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
+        force: true
