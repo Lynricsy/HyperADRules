@@ -72,5 +72,5 @@ jobs:
         add: |
           data/rules/allow.txt
           data/rules/pure_domains.txt
-        message: "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+        message: "Updated at $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')（北京时间）"
         force: true
