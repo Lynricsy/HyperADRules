@@ -40,42 +40,37 @@ jobs:
         # Temporary file to hold all domains
         temp_file="all_domains.txt"
 
-        # Step 1: Download and merge domain lists for allow.txt
+        # Step 1: Download, filter, and merge domain lists
         for url in "${urls[@]}"; do
           curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
+        # Remove duplicates and sort the domains
+        sort -u "$temp_file" > pure_domains.txt
+
         # Step 2: Create allow.txt with @@||...^ format
-        awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
+        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
 
-        # Move the generated allow.txt to the processed folder
+        # Move the generated files to the processed folder
         mv allow.txt data/rules/
+        mv pure_domains.txt data/rules/
 
     - name: Commit and Push Changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: |
-          data/rules/allow.txt
-        message: "Update allow.txt with new data at $(date +'%Y-%m-%d %H:%M:%S')"
-        force: true
-
-    - name: Process Pure Domains
       run: |
-        #!/bin/bash
-
-        # Remove regex patterns from the domain list
-        grep -Ev '[\^\$*]' "$temp_file" > pure_domains.txt
-
-        # Remove duplicates and sort the domains
-        sort -u pure_domains.txt > data/rules/pure_domains.txt
-
-    - name: Commit and Push Pure Domains
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: |
-          data/rules/pure_domains.txt
-        message: "Update pure_domains.txt with new data at $(date +'%Y-%m-%d %H:%M:%S')"
-        force: true
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        
+        # Pull the latest changes
+        git pull --rebase
+        
+        # Add the changes
+        git add data/rules/allow.txt data/rules/pure_domains.txt
+        
+        # Commit the changes with a timestamp
+        git commit -m "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
+        
+        # Push the changes
+        git push
