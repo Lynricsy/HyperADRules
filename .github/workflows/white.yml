@@ -49,7 +49,7 @@ jobs:
         awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
 
         # Step 3: Filter out regex patterns and create pure_domains.txt
-        grep -Ev 'regexp:|^\*\.' "$temp_file" > pure_domains.txt
+        grep -Ev 'regexp:' "$temp_file" > pure_domains.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
