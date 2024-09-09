@@ -64,5 +64,5 @@ jobs:
         add: |
           data/rules/allow.txt
           data/rules/pure_domains.txt
-        message: 'Update domain rules with new data'
+        message: "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
         force: true
