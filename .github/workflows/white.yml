@@ -62,18 +62,17 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Git push assets to GitHub
+    - name: Pull latest changes
       run: |
-        # Initialize git repository and set user details
-        git init
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        
-        # Check for changes and commit if necessary
-        git add data/rules/allow.txt data/rules/pure_domains.txt
-        git diff --cached --quiet || git commit -m "Updated at $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-        
-        # Push changes
-        git branch -M master
-        git remote add origin https://github.com/greatcoolge/HyperADRules.git
-        git push -u origin master --force
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git pull origin master  # 替换为你的实际分支名称
+
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: |
+          data/rules/allow.txt
+          data/rules/pure_domains.txt
+        message: "Updated at $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+        force: true
