@@ -11,7 +11,7 @@ https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/ant
 
 # 定义临时文件和输出文件的路径
 temp_file="all_domains.txt"  # 临时文件保存在当前目录
-output_dir="data/rules"  # 指定目标目录
+output_dir="list"  # 指定目标目录
 output_file="$output_dir/allow1.txt"  # 在指定目录下生成文件
 
 # 确保目标目录存在
