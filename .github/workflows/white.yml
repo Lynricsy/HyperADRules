@@ -1,12 +1,12 @@
 name: Process Domain Lists
 
 on:
-#  push:
-#    branches:
-#      - master  # 替换为你的实际分支名称
+  push:
+    branches:
+      - master  # 替换为你的实际分支名称
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'  # 每小时触发一次
+    - cron: '0 18 * * *'  
 
 jobs:
   process_domains:
@@ -58,17 +58,21 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Check for changes
-      id: check_changes
+    - name: Check file changes
       run: |
-        git diff --quiet || echo "Changes detected" > changes_detected.txt
+        echo "allow.txt:"
+        sha256sum data/rules/allow.txt
+        echo "pure_domains.txt:"
+        sha256sum data/rules/pure_domains.txt
+
+    - name: Show git status
+      run: git status
+
+    - name: Show git diff
+      run: git diff
 
     - name: Commit and Push Changes
-      if: steps.check_changes.outputs.changed == 'true'
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: |
-          data/rules/allow.txt
-          data/rules/pure_domains.txt
-        message: "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
-        force: true
+      run: |
+        git add data/rules/allow.txt data/rules/pure_domains.txt
+        git commit -m "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
+        git push origin master
