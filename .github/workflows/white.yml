@@ -1,46 +1,40 @@
-name: Process Domain Lists
+name: Update Rules
 
-on:
-  push:
-    branches:
-      - master
+on: 
   workflow_dispatch:
   schedule:
     - cron: '0 */12 * * *'
-
+    
 jobs:
-  process_domains:
+  update:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Set Up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Set Up Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl
 
-    - name: Install Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y curl
+      - name: Run Domain List Script
+        run: |
+          chmod +x ./data/script/domain_lists.sh
+          ./data/script/domain_lists.sh
 
-    - name: Download and Process Domain Lists
-      run: |
-        chmod +x process_domain_lists.sh
-        ./data/script/domain_lists.sh
+      - name: Git Push Changes to GitHub
+        run: |
+          git init
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add --all
+          git commit -m "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+          git push -u origin master --force
 
-    - name: Pull latest changes
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
-        git pull origin master
-
-    - name: Commit and Push Changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: |
-          data/rules/allow.txt
-        message: "Updated allow.txt"
-        force: true
+      - name: Delete Workflow Runs 
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 0
