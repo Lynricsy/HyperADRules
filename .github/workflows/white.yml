@@ -41,12 +41,12 @@ jobs:
         temp_file="all_domains.txt"
 
         # Step 1: Download, filter, and merge domain lists
-        for url in "${urls[@]}"; do
+        for url in "${urls[@]}"]; do
           curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
         # Step 2: Remove lines containing regex patterns to keep only pure domains
-        grep -vE '[*.^$[\](){}]' "$temp_file" | sort -u > pure_domains.txt
+        grep -Ev '(\*|\^|\$|\[|\]|\(|\)|\{|\}|\\)' "$temp_file" | sort -u > pure_domains.txt
 
         # Step 3: Create allow.txt with @@||...^ format (without filtering)
         awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
@@ -64,5 +64,5 @@ jobs:
         add: |
           data/rules/allow.txt
           data/rules/pure_domains.txt
-        message: "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
+        message: "Update domain rules with new data at $(date +\"%Y-%m-%d %H:%M:%S\")"
         force: true
