@@ -45,11 +45,11 @@ jobs:
           curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
-        # Remove duplicates and sort the domains
-        sort -u "$temp_file" > pure_domains.txt
+        # Step 2: Remove lines containing regex patterns to keep only pure domains
+        grep -vE '[*.^$[\](){}]' "$temp_file" | sort -u > pure_domains.txt
 
-        # Step 2: Create allow.txt with @@||...^ format
-        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
+        # Step 3: Create allow.txt with @@||...^ format (without filtering)
+        awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
