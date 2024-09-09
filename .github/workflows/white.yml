@@ -3,7 +3,7 @@ name: Process Domain Lists
 on:
   push:
     branches:
-      - master
+      - master  # 替换为你的实际分支名称
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'  # 每小时触发一次
@@ -45,11 +45,11 @@ jobs:
           curl -s "$url" | awk 'NF && !/^#|^!/' >> "$temp_file"
         done
 
-        # Remove duplicates and sort the domains
-        sort -u "$temp_file" > pure_domains.txt
+        # Step 2: Create allow.txt from all_domains.txt
+        awk '{ print "@@||" $0 "^" }' "$temp_file" > allow.txt
 
-        # Step 2: Create allow.txt with @@||...^ format
-        awk '{ print "@@||" $0 "^" }' pure_domains.txt > allow.txt
+        # Step 3: Filter out regex patterns and create pure_domains.txt
+        grep -Ev 'regexp:' "$temp_file" > pure_domains.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
@@ -60,7 +60,7 @@ jobs:
 
     - name: Pull latest changes
       run: |
-        git pull origin master
+        git pull origin master  # 替换为你的实际分支名称
 
     - name: Commit and Push Changes
       uses: EndBug/add-and-commit@v9
