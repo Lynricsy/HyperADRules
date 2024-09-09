@@ -17,9 +17,11 @@ output_file="$output_dir/allow1.txt"  # 在指定目录下生成文件
 # 确保目标目录存在
 mkdir -p "$output_dir" || { echo "Failed to create directory $output_dir"; exit 1; }
 
-# 清空临时文件和输出文件
-> "$temp_file"
-> "$output_file"
+# 清空临时文件
+: > "$temp_file"
+
+# 清空输出文件（如果需要）
+: > "$output_file"
 
 # 下载、过滤并合并所有域名列表
 for url in $urls; do
