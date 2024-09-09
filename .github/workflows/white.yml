@@ -3,7 +3,7 @@ name: Process Domain Lists
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'  # 每小时触发一次
@@ -58,19 +58,15 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Commit and Push Changes
+    - name: Pull latest changes
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        
-        # Pull the latest changes
-        git pull --rebase
-        
-        # Add the changes
-        git add data/rules/allow.txt data/rules/pure_domains.txt
-        
-        # Commit the changes with a timestamp
-        git commit -m "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
-        
-        # Push the changes
-        git push
+        git pull origin master
+
+    - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: |
+          data/rules/allow.txt
+          data/rules/pure_domains.txt
+        message: "Update domain rules with new data at $(date +'%Y-%m-%d %H:%M:%S')"
+        force: true
