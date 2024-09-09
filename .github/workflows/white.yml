@@ -6,7 +6,7 @@ on:
       - master  # 替换为你的实际分支名称
   workflow_dispatch:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 */12 * * *'  # 每12小时触发一次
 
 jobs:
   process_domains:
@@ -62,15 +62,18 @@ jobs:
         mv allow.txt data/rules/
         mv pure_domains.txt data/rules/
 
-    - name: Pull latest changes
+    - name: Git push assets to GitHub
       run: |
-        git pull origin master  # 替换为你的实际分支名称
-
-    - name: Commit and Push Changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        add: |
-          data/rules/allow.txt
-          data/rules/pure_domains.txt
-        message: "Updated at $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')（北京时间）"
-        force: true
+        # Initialize git repository and set user details
+        git init
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Check for changes and commit if necessary
+        git add data/rules/allow.txt data/rules/pure_domains.txt
+        git diff --cached --quiet || git commit -m "Updated at $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+        
+        # Push changes
+        git branch -M master
+        git remote add origin https://github.com/${{ secrets.GITHUB_REPOSITORY }}.git
+        git push -u origin master --force
