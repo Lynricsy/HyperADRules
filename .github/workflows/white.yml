@@ -1,9 +1,9 @@
 name: Process Domain Lists
 
 on:
-  push:
-    branches:
-      - master  # 替换为你的实际分支名称
+#  push:
+#    branches:
+#      - master  # 替换为你的实际分支名称
   workflow_dispatch:
   schedule:
     - cron: '0 * * * *'  # 每小时触发一次
