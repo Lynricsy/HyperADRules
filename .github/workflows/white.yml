@@ -1,4 +1,11 @@
-name: Process Domain Lists
+ - name: Commit and Push Changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: |
+          data/rules/allow.txt
+          data/rules/pure_domains.txt
+        message: "Updated at $(TZ=UTC-8 date +'%Y-%m-%d %H:%M:%S')（北京时间）"
+        force: truename: Process Domain Lists
 
 on:
   push:
@@ -53,7 +60,7 @@ jobs:
         awk '{ print "@@||" $0 "^" }' "$filtered_file" > allow.txt
 
         # Step 4: Remove duplicates and sort the domains, then filter out regex patterns for pure_domains.txt
-        sort -u "$filtered_file" | grep -Ev '^[.*\\$|^]*\.*\.*\.*[a-z0-9]*$' > pure_domains.txt
+        sort -u "$filtered_file" | grep -Ev '^[.*\\\*\?\+\[\]\(\)\{\}\^\$\|]+.*$' > pure_domains.txt
 
         # Create the target directory if it does not exist
         mkdir -p data/rules
