@@ -19,7 +19,7 @@ jobs:
 
       - name: Run Domain List Script
         run: |
-          chmod +x ./data/script/domain_lists.sh
+          chmod +x ./domain/domain_lists.sh
           ./domain/domain_lists.sh
 
       - name: Git Push Changes to GitHub
