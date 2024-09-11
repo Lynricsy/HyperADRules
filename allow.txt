@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-09-11 08:35:36（北京时间）
+! Version: 2024-09-11 20:13:26（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 15434
+! Total count: 15437
 @@#.banner%20ad.$image,domain=dokuo666.blog98.fc2.com
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
@@ -281,7 +281,6 @@
 @@/hls/*.ts$stealth=referrer,domain=techclips.net|abolishstand.net|planetfastidious.net|thegentleclass.com
 @@/home/ads/*$domain=esunbank.com.tw
 @@/https?:\/\/(www\.)?sonixgvn\.net\/.{1,15}\.js$/$script,~third-party,domain=sonixgvn.net
-@@/iframe*.php$subdocument,stealth,domain=dizipal701.com|dizipal702.com|dizipal703.com|dizipal704.com|dizipal705.com|dizipal706.com|dizipal707.com|dizipal709.com|dizipal710.com|dizipal711.com|dizipal712.com|dizipal713.com|dizipal714.com|dizipal715.com|dizipal716.com|dizipal717.com|dizipal718.com|dizipal719.com|dizipal720.com|dizipal721.com|dizipal722.com|dizipal723.com|dizipal724.com|dizipal725.com|dizipal726.com|dizipal727.com|dizipal728.com|dizipal730.com|dizipal731.com|dizipal732.com|dizipal733.com|dizipal734.com|dizipal735.com|dizipal736.com|dizipal737.com|dizipal738.com|dizipal739.com|dizipal740.com|dizipal745.com|dizipal755.com|dizipal801.com|dizipal802.com|dizipal803.com|dizipal804.com|dizipal805.com|dizipal806.com|dizipal807.com|dizipal808.com|dizipal809.com|dizipal810.com|dizipal811.com|dizipal812.com|dizipal814.com|dizipal815.com|dizipal816.com|dizipal817.com|dizipal818.com|dizipal831.com
 @@/iframe.php$stealth=referrer,domain=dizilla.*
 @@/image/*$xmlhttprequest,stealth,domain=turkanime.co
 @@/image/ad/*$domain=gashpoint.com
@@ -323,7 +322,6 @@
 @@/kcarting-tally?&random=$domain=coveryourtracks.eff.org
 @@/libs/advertisement.js$domain=xfaucet.net|getfreebit.xyz|getfree.co.in|starbits.io|bagi.co.in|konstantinova.net|starfaucet.net|bitearns.com|cryptofreebies.info|trivisna.com|nosl.juezcoin.xyz|earn-cryptolive.000webhostapp.com|dogeatm.com|aztecafaucet.space|multifaucet.org|dogestar.website|claimbits.io|i-bits.io|diamondfaucet.space|gobits.io|russiacoin.xyz|lionltcfaucet.xyz|faucet.shorterall.com|yellowfaucet.ovh|faucet.cryptourl.net|simplyfaucet.xyz|up-cripto.com|highearn.xyz|tv3.lv
 @@/libs/advertisement1.js$domain=faucet.shorterall.com
-@@/linkshare/*$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@/live/*.$stealth,domain=futbolfullenvivo.com
 @@/live/*.m3u8$xmlhttprequest,stealth=referrer,domain=flstv.online|itssportstime.info|gamehdlive.net|weakspell.to|weakspell.org|streamocean.online|gameshdlive.net|bestsolaris.com|itssportstime.info|weakspell.to
 @@/live/*.ts|$xmlhttprequest,stealth=referrer,domain=weakspell.org|streamocean.online
@@ -792,8 +790,9 @@
 @@||a.magsrv.com/ad-provider.js$domain=jembut.us
 @@||a.magsrv.com/ad-provider.js$domain=reshare.pm
 @@||a.magsrv.com/ad-provider.js$domain=rule34porn.net
-@@||a.magsrv.com/ad-provider.js$domain=veev.to
+@@||a.magsrv.com/ad-provider.js$xmlhttprequest,domain=veev.to
 @@||a.magsrv.com/video-slider.js$domain=daemonanime.net
+@@||a.orbsrv.com/ad-provider.js$xmlhttprequest,domain=veev.to
 @@||a.poki.com/prebid/$script,domain=poki-gdn.com|repuls.io
 @@||a.pub.network/core/pubfig/cls.css$domain=vrcmods.com
 @@||a.pub.network/crewbase-net/pubfig.min.js$script,domain=allcryptoz.net|crewbase.net|crewus.net|shinchu.net|thumb8.net|thumb9.net|uniqueten.net
@@ -2920,6 +2919,7 @@
 @@||cd.connatix.com/connatix.playspace.js$domain=theverge.com
 @@||cda.pl/video/$subdocument,domain=szukajka.tv
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
+@@||cdi.ofiii.com^
 @@||cdn*-player.com^$stealth
 @@||cdn*.*.pw/*p_*.jpg$stealth=referrer,domain=vidload.lol
 @@||cdn*.anicdn.net/appsd*.mp4$stealth=referrer
@@ -4487,6 +4487,7 @@
 @@||dosgamezone.com/ads/banner1.gif
 @@||dostats.info^$generichide
 @@||dostavista.ru^$stealth
+@@||dosyaload.com/embed/$stealth=referrer
 @@||dosyayukle.biz^$generichide
 @@||dot.360.cn^$important
 @@||dot.ro^$generichide
@@ -5147,6 +5148,7 @@
 @@||fingerprintjs.com^$generichide
 @@||finishline.com^$stealth
 @@||finn.no/*/ad.html
+@@||fino.svc.litv.tv^
 @@||firebase.google.com/docs/analytics/$~third-party
 @@||firefaucet.win^$generichide
 @@||firefox.com.cn/media/img/mozcn/spread/468-60-
@@ -10184,7 +10186,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bankomap.com.ua
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bankvacency.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=basicweb.ru
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=battlecats-db.com|cpu-world.com|game.anymanager.io|games.wkb.jp|html5.gamedistribution.com|knowfacts.info|lacoste.com|megagames.com|megaleech.us|newson.us|real-sports.jp|slideplayer.com|sudokugame.org|tampermonkey.net|teemo.gg|thefreedictionary.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=beatsnoop.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bestopbook.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bestreamsports.org
@@ -10686,6 +10687,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=z-lib.io
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=za.gl
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zdopravy.cz
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zeemoontv-28.blogspot.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zefoy.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zeriun.cc
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=zobacz.ws
@@ -15387,6 +15389,7 @@
 @@||zee5*.akamaized.net^$stealth,domain=zee5.com
 @@||zeebiz.com/ads/$image,~third-party
 @@||zeekmagazine.com/wp-content/plugins/wp-ad-guru/assets/js/adguru.js
+@@||zeemoontv-28.blogspot.com^$generichide
 @@||zeit.de/piwik/piwik.js$domain=schach.zeit.de
 @@||zeit.de/static/js/webtrekk/webtrekk_$script,domain=schach.zeit.de
 @@||zekozimo.blogspot.com^$generichide
