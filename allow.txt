@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-12 08:37:17（北京时间）
+! Version: 2024-10-12 20:12:29（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7400
+! Total count: 7414
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -531,7 +531,6 @@
 @@||ad.crwdcntrl.net^$script,domain=rtl.nl
 @@||ad.de.doubleclick.net/imp;$object,domain=rtl-now.rtl.de|rtl2now.rtl2.de|rtlnitronow.de|superrtlnow.de|voxnow.de
 @@||ad.dotandad.com/mediamond_vm.jsp$domain=video.mediaset.it
-@@||ad.doubleclick.net/*/adi/com.ytbc/$domain=youtube.com
 @@||ad.doubleclick.net/clk*&destinationURL=$popup
 @@||ad.doubleclick.net/clk;$urlblock
 @@||ad.doubleclick.net/ddm/$popup,domain=billiger.de|creditcard.com.au|debitcards.com.au|finder.com|finder.com.au|findershopping.com.au|guide-epargne.be|legacy.com|mail.yahoo.com|nytimes.com|spaargids.be|whatphone.com.au
@@ -679,6 +678,7 @@
 @@||ads.rubiconproject.com/prebid/$script,domain=drudgereport.com|everydayhealth.com
 @@||ads.rubiconproject.com/prebid/*.js$domain=tvaplus.ca
 @@||ads.rubiconproject.com/prebid^$domain=index.hr
+@@||ads.sber.ru^$domain=ads.sber.ru
 @@||ads.shopee.*/$popup
 @@||ads.smartmidea.net^
 @@||ads.snapchat.com^
@@ -1160,6 +1160,7 @@
 @@||auto-api.yelp.com
 @@||auto-swiat.pl/*&srcc=ucs$removeparam=utm_source
 @@||auto.cz/*/foto$jsinject
+@@||auto.cz/auto/skins/*/js/advertisment.js
 @@||autocomplete.clearbit.com^
 @@||autocomplete.clearbit.com^$xmlhttprequest
 @@||autohome.com.cn/javascript/fingerprint.js
@@ -1778,6 +1779,7 @@
 @@||cdntrf.com/trf-tz-only_NATIVE.js$domain=tz.de
 @@||cdntrf.com/trfAdSetup.js$domain=ingame.de
 @@||cdntrf.com/trfAdSetup.js$domain=tz.de
+@@||cdntvmedia.com^$stealth=referrer
 @@||cdntvn.pl/*/assets/*advert*.js$domain=player.pl|get.x-link.pl|tvn24.pl|vod.pl
 @@||cdnvideo.ru^$stealth
 @@||cdp.cloud.unity3d.com^$app=com.rovio.baba
@@ -1823,6 +1825,7 @@
 @@||chemicalbook.com^$stealth
 @@||cherrymx.de^$stealth=dpi
 @@||cheshi-img.com/ad/csad_2019.js
+@@||chicksonright.com^$csp,~third-party
 @@||chili.com/api/v*/ad-manager/avod/metadata?*videoAssetId=
 @@||china.com/dianbo/adv1.xml
 @@||chinacourt.gov.cn/share/jquery/plugins/adbox/
@@ -3153,6 +3156,7 @@
 @@||google.ru/translate_$media,third-party,xmlhttprequest
 @@||google.sn/translate_$media,third-party,xmlhttprequest
 @@||google.so/translate_$media,third-party,xmlhttprequest
+@@||googleads.g.doubleclick.net/ads/preferences/$domain=googleads.g.doubleclick.net
 @@||googleads.g.doubleclick.net/favicon.ico$app=com.ftt.boxingstar.gl.aos
 @@||googleads.g.doubleclick.net/mads/gma?*&_package_name=com.nextradiotv.bfmbusiness
 @@||googleads.g.doubleclick.net/mads/gma?request_id=*&_package_name=com.nextradiotv.bfmbusiness
@@ -3863,6 +3867,7 @@
 @@||huntington.com^$document
 @@||hutchgo.advertserve.com^$domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
 @@||hvemder.no/js/hitcount.min.js$~third-party
+@@||hvg.hu/Content/redesign/js-notbundled/showads.js
 @@||hvz.baden-wuerttemberg.de$stealth=dpi
 @@||hwcdn.net^$script,domain=mp4upload.com
 @@||hydrax.net/players^
@@ -3875,6 +3880,7 @@
 @@||i.doodcdn.co/ads/ad.js
 @@||i.doodcdn.co/ads/pop.js
 @@||i.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
+@@||i.kinja-img.com^$stealth
 @@||i.onthe.io^$script,image,stylesheet,domain=nur.kz
 @@||i.pximg.net^$stealth=referrer,domain=pixiv.net|pixivision.net
 @@||i.snssdk.com/log/sentry/$domain=lv.ulikecam.com
@@ -4093,6 +4099,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=ynet.co.il
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=zee5.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=zeebiz.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=zoomtventertainment.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$important,domain=digi24.ro
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=line.me
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=24ur.com
@@ -4242,6 +4249,8 @@
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infolink.pavv.co.kr^
 @@||infowars.com/wp-content/themes/$image
+@@||infusionsoft.app/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
+@@||infusionsoft.com/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||ing-diba.de^*/sitestat.js
 @@||ing.blueconic.net^$domain=ing.jobs
 @@||ingdirect.com.au^$document
@@ -4889,6 +4898,7 @@
 @@||mmy.la^*300*250
 @@||mnighthk.net/template/*/ad
 @@||mnighthk.net^$elemhide
+@@||moat.com/creatives/advertiser/$domain=moat.com
 @@||moatads.com^$script,domain=imsa.com|nascar.com
 @@||mobi.oui9.com/advertisement.js
 @@||mobile.appchina.com^$important
@@ -5703,6 +5713,7 @@
 @@||rddywd.com/advertising.js$domain=populistpress.com|canadafreepress.com|thelibertydaily.com|writerscafe.org|populist.press|welovetrump.com|grammarist.com|protrumpnews.com|concomber.com|videogamesblogger.com|gamersheroes.com|letocard.fr|100percentfedup.com|thepalmierireport.com|kresy.pl|beforeitsnews.com|thepatriotjournal.com|phoenixnewtimes.com|thepoke.co.uk|comicallyincorrect.com|thegatewaypundit.com
 @@||reactandshare.com^$domain=maanmittauslaitos.fi
 @@||readmoo.com/images/social/
+@@||readpai.com^$stealth=referrer,image
 @@||real.de/fileadmin/template/javascript/emos2.js
 @@||realclearpolitics.com/esm/assets/js/admiral.js
 @@||realclearpolitics.com/esm/assets/js/admiral.js$~third-party
@@ -6496,6 +6507,7 @@
 @@||szhr.com^$generichide
 @@||szhr.com^*ad
 @@||szmg.qq.com^
+@@||t*.daumcdn.net/cafeattach/$stealth
 @@||t-mobile.com/mms/$document
 @@||t-online.de/js/xtcore_t_online.js?$xmlhttprequest
 @@||t-online.de^*/xtcore.jstpl
@@ -6791,6 +6803,7 @@
 @@||trackjs.com^$~third-party
 @@||tracklog.58.com/referrer$~third-party
 @@||trackonomics.net/client/$script,domain=popsugar.com
+@@||tractorshed.com/photoads/upload/$~third-party
 @@||tradedoubler.com^$removeparam=tduid
 @@||tradingview.com/adx/$subdocument,domain=adx.ae
 @@||tradingview.com^$script,stealth
@@ -7094,6 +7107,7 @@
 @@||ware.shop.jd.com^$genericblock,generichide
 @@||wargag.ru/public/js/counter.js?
 @@||wargaming.net^$stealth
+@@||warpwire.com/AD/
 @@||watch.globaltv.com^$generichide
 @@||watchdirty.to/player/stats.php
 @@||wavse.com^$generichide
