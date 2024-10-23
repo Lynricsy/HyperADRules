@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-23 08:38:01（北京时间）
+! Version: 2024-10-23 20:14:38（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7669
+! Total count: 7680
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -59,6 +59,7 @@
 @@/ad-close.png$domain=ch.com
 @@/ad-provider.js$xmlhttprequest,domain=veev.to
 @@/ad.js$~third-party,domain=giveaway.su
+@@/ad.sense/ad-m.js$~third-party
 @@/ad/banner/_adsense_/_adserver/_adview_.ad.json
 @@/ad/images/*$domain=37-express.com|vnnox.com
 @@/adLoader.$domain=shejiben.com
@@ -469,6 +470,7 @@
 @@||a.lulucdn.com/js/dnsads.js
 @@||a.magsrv.com/ad-provider.js$domain=reshare.pm
 @@||a.poki.com/prebid/$script,domain=poki-gdn.com|repuls.io
+@@||a.realsrv.com/ad-provider.js$xmlhttprequest,domain=asiaon.top|asiaontop.com
 @@||a.sellpoint.net^
 @@||a.usafacts.org/api/v4/Metrics$~third-party
 @@||a.visualrevenue.com/vrs.js$domain=nydailynews.com
@@ -491,7 +493,6 @@
 @@||account.adobe.com/newrelic.js$~third-party
 @@||account.mail.ru^$stealth
 @@||account.mcid.mynavi.jp^$stealth=referrer
-@@||account.microsoft.com/?refd=$stealth
 @@||account.microsoft.com/auth/$stealth
 @@||accounts.google.com/gsi/$stealth
 @@||accounts.google.com^$generichide
@@ -591,6 +592,7 @@
 @@||adconsole.ch/api/ws-businessclick/*/data.json$domain=finanzen.ch
 @@||addicted-sports.com/piwik/piwik.js
 @@||addon.dismall.com/resource/*/ad
+@@||addons.opera.com/extensions/download/$stealth
 @@||addons.opera.com^$stealth
 @@||addthis.com/*-angularjs.min.js$script,domain=ead.senac.br|missingkids.com|missingkids.org
 @@||addthis.com/js/*/addthis_widget.js$script,domain=stagecoachbus.com
@@ -789,7 +791,6 @@
 @@||akamaized.net^$important
 @@||akc.blueconic.net^$domain=akc.org
 @@||aktuality.sk^$generichide
-@@||aktualne.cz/embed_iframe/$csp=child-src *
 @@||ala.durasite.net/DuraUidSegmentMap.js$domain=passnavi.evidus.com
 @@||algolia.net/*/indexes/$stealth
 @@||algolianet.com/*/indexes/$stealth
@@ -1033,6 +1034,7 @@
 @@||api.leanplum.com^$app=com.thetrainline
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
+@@||api.mapbox.com/geocoding/$stealth
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
 @@||api.miui.security.xiaomi.com^$important
@@ -1860,6 +1862,7 @@
 @@||chart-embed.service.newrelic.com^
 @@||chart-embed.service.newrelic.com^$subdocument,xmlhttprequest
 @@||chartbeat.com/*/chartbeat/$~third-party
+@@||chartbeat.com/crossdomain.xml
 @@||chartbeat.com/js/chartbeat.js$domain=salon.com
 @@||chartbeat.com/js/chartbeat_brightcove_plugin.js$domain=capital.it|deejay.it|m2o.it
 @@||chasecdn.com/web/*/eventtracker.js$domain=chase.com
@@ -2119,6 +2122,7 @@
 @@||coolinet.com^$generichide
 @@||coomer.su/.well-known/ddos-guard/mark/|
 @@||copypastecharacter.com^$generichide
+@@||coral.coralproject.net^$stealth
 @@||coremetrics.com*/eluminate.js
 @@||coremetrics.com/eluminate.js
 @@||costco.com.tw/_ui/shared/js/analyticsmediator.js
@@ -2165,6 +2169,7 @@
 @@||csdata1.com/data/js/$domain=acehardware.com
 @@||csdn.net/static/static/js/apps/popShow.js
 @@||csdnimg.cn^$stealth,domain=csdn.net
+@@||cse.google.com/adsense/search/async-ads.js$domain=asiaon.top|asiaontop.com
 @@||csid.com/wp-content/plugins/bwp-minify/min/?*/google-analyticator/$script
 @@||csm.cxpublic.com/President.js$domain=president.jp
 @@||csm.cxpublic.com/Shueisha.js$domain=wpb.shueisha.co.jp|sportiva.shueisha.co.jp
@@ -2341,6 +2346,7 @@
 @@||djtflbt20bdde.cloudfront.net^$domain=feedly.com
 @@||djxmaza.in^$generichide
 @@||dkb.de^$cookie=dtCookie
+@@||dl.phncdn.com/pics/$domain=pornhub.com|pornhub.org|pornhub.net
 @@||dl.zhutix.net^$stealth=referrer
 @@||dldir1.qq.com^$important
 @@||dlh.net^$script,subdocument,domain=dlh.net
@@ -5380,6 +5386,7 @@
 @@||onlinemschool.com/script/ads.js
 @@||onlinemschool.com/script/ads1.js
 @@||onlinemschool.com^$generichide
+@@||ooodesi.com/*/js/advertisement.js
 @@||ooyala.com/3rdparty/comscore_$domain=livetvcafe.net
 @@||ooyala.com/3rdparty/comscore_*.swf$domain=bloomberg.com|businessweek.com|greentechmedia.com
 @@||ooyala.com/crossdomain.xml
@@ -5508,6 +5515,7 @@
 @@||pagead2.googlesyndication.com/pagead/managed/js/*/show_ads_impl$script,domain=battlecats-db.com|game.anymanager.io|games.wkb.jp|sudokugame.org
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=copyseeker.net
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=decrypt.day
+@@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=production-api.androidacy.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_*.js$domain=zefoy.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_fy2021.js$domain=alliptvlinks.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/slotcar_library_$script,domain=game.anymanager.io|sudokugame.org
@@ -5757,6 +5765,7 @@
 @@||profile*.se.360.cn^
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
 @@||promiflash.de/static/js/pf-web-*.js$domain=promiflash.de
+@@||promo.com/embed/$subdocument,third-party
 @@||promo.gramedia.com^
 @@||promods.net/*.js$~third-party
 @@||proquest.com/modules.gz/snowplow/snowplow-
@@ -6025,7 +6034,6 @@
 @@||ruten.com.tw/ahd/fetch_ad.php
 @@||ruten.com.tw/js/jquery.ruten.supertop_ad.js
 @@||rv.treehousei.com/prm/js/*/public.min.js$domain=partnerportal.fortinet.com
-@@||ryanair.com/static/
 @@||rzd.ru^$stealth
 @@||s-ad.rmp.rakuten.co.jp^$app=jp.co.rakuten.pay
 @@||s-microsoft.com/mscc/statics/$script,domain=microsoft.com
@@ -6871,6 +6879,7 @@
 @@||the-japan-news.com/modules/js/lib/fgp/fingerprint2.js
 @@||the-sun.com/wp-content/uploads/
 @@||thebookee.net^$generichide
+@@||thechive.files.wordpress.com/*?quality=*&strip=info
 @@||thecollector.com^$stealth=dpi
 @@||thedailybeast.com/pf/resources/js/ads/arcads.js$~third-party
 @@||thefastlaneforum.com/community/js/*/adblocker-leader.js
@@ -6894,6 +6903,7 @@
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
 @@||thenextweb.com$generichide
 @@||thepiratebay.org/*.php$csp,~third-party
+@@||thepiratebay.org/cdn-cgi/challenge-platform/$~third-party
 @@||thepiratebay.org/static/main.js$script,~third-party
 @@||thepiratebay.org^$subdocument
 @@||therichest.com^$generichide
@@ -7592,6 +7602,7 @@
 @@||yesiget.i234.me^$generichide
 @@||yext-pixel.com/store_pagespixel$domain=vippetcare.com
 @@||yhd.com^$important
+@@||yibada.com^$generichide
 @@||yieldlove.com/v2/yieldlove.js$script,domain=whatismyip.com
 @@||yimg.com/*/*.css
 @@||yimg.com/*/css/
