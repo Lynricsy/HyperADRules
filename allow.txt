@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-24 08:38:05（北京时间）
+! Version: 2024-10-24 20:14:26（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7682
+! Total count: 7693
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -299,8 +299,10 @@
 @@yandex.*/user-id?$stealth=referrer|searchqueries
 @@|http$script,~third-party,domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@|http*://*.*/*.$image,third-party,domain=a2zupload.com
+@@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|https://$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+@@|ws://*$websocket,domain=flirt4free.com
 @@||*.alipay.com^
 @@||*.alipay.com^$important
 @@||*.cdninstagram.com^$important
@@ -661,6 +663,7 @@
 @@||ads.adthrive.com/sites/$script,domain=adamtheautomator.com|mediaite.com|packhacker.com|packinsider.com
 @@||ads.alafish.cn^
 @@||ads.alafish.cn^$~third-party
+@@||ads.atmosphere.copernicus.eu^$popup
 @@||ads.cdn.tvb.com^
 @@||ads.cdn.tvb.com^*.key
 @@||ads.console.aliyun.com^
@@ -1088,6 +1091,7 @@
 @@||app.adjust.world^$app=com.spotify.music
 @@||app.appsflyer.com^
 @@||app.clarity.so^$~third-party
+@@||app.clickfunnels.com/assets/lander.js$script,domain=propanefitness.com
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.khz.se/api/*&ad_type=preroll-channel$domain=ilikeradio.se
 @@||app.market.xiaomi.com^$important
@@ -1590,7 +1594,6 @@
 @@||cdn.consentmanager.net/delivery/js/cmp*.min.js$stealth
 @@||cdn.contentful.com/spaces^$stealth
 @@||cdn.cpex.cz/cmp/v*/cpex-cmp.min.js$domain=zive.cz
-@@||cdn.cpex.cz/logos/cnc.png$domain=zive.cz
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=karstadt.de
 @@||cdn.cquotient.com/js/*/gretel.min.js$domain=sloggi.com
 @@||cdn.crowdtwist.com/img/$image,domain=myperks.catchow.com
@@ -1699,7 +1702,6 @@
 @@||cdn.perfops.net/rom3/rom3.min.js$domain=cdnperf.com
 @@||cdn.permutive.app/*-web.js$domain=theglobeandmail.com
 @@||cdn.permutive.com/*-web.js$domain=independent.co.uk
-@@||cdn.plyr.io/*/plyr.svg$domain=akwam.*
 @@||cdn.plytv.me/scripts/embed.min.js
 @@||cdn.popt.in/pixel.js$domain=userstyles.org
 @@||cdn.privatehost.com/videos*/$removeparam
@@ -2537,6 +2539,7 @@
 @@||emailregex.com^$generichide
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
+@@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
 @@||embed.redditmedia.com/widgets/platform.js$domain=gamerant.com
 @@||embeddedanalytics.com/updateeakpi.html$domain=brocardi.it
 @@||embedstreams.me^$stealth=referrer,subdocument
@@ -2614,6 +2617,7 @@
 @@||ez3c.tw^$generichide
 @@||ezodn.com/cmp/gvl.json$xmlhttprequest
 @@||ezodn.com/tardisrocinante/lazy_load.js$script,domain=origami-resource-center.com
+@@||ezoic.net/tardisrocinante/lazy_load.js$domain=doncorgi.com
 @@||f*.market.mi-img.com^$important
 @@||f*.market.xiaomi.com^$important
 @@||f-gear.ec-optimizer.com/img/spacer.gif$image,domain=ec.f-gear.co.jp
@@ -3984,7 +3988,6 @@
 @@||hse24.de^*/emos2.js
 @@||htlbid.com^*/htlbid.js$domain=hodinkee.com
 @@||html-load.com^$stealth=referrer
-@@||html5.gamedistribution.com/*/$stealth
 @@||huhupan.com/e/extend/down/$generichide
 @@||huke88.com^*-tracking.js
 @@||hulkshare.com/combine/*adblocker.js
@@ -4071,6 +4074,7 @@
 @@||image.mp3.zdn.vn/banner/
 @@||image.shutterstock.com^$image,domain=icons8.com
 @@||image.uc.cn^$important
+@@||imagebam.com/gallery-organizer$document
 @@||imagefap.com/jscripts/ad_loader.js
 @@||images*.imagebam.com/ad^
 @@||images-*.ssl-images-amazon.com/images/*/advertising^$domain=amazon.de|amazon.com|amazon.fr|amazon.it|amazon.es|amazon.co.jp|amazon.co.uk|amazon.ca
@@ -4330,6 +4334,7 @@
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
 @@||img.blesk.cz/js/base-cz/gemius.js
+@@||img.blesk.cz/static/data/blesk/reklama/advertisment.js
 @@||img.chefkoch-cdn.de/gujAd.min.js
 @@||img.dladealera.pl/ads/$domain=budmatauto.pl
 @@||img.kilimall.com/*/js/sensorsdata.min.js$domain=kilimall.co.ke
@@ -4683,6 +4688,7 @@
 @@||lessornot.ws^$stealth=ip
 @@||letelegramme.fr/js/xtcore.js
 @@||letmegpt.com/js/gpt.js$~third-party
+@@||letocard.fr/wp-content/uploads/$image,~third-party
 @@||letskorail.com^$stealth=dpi
 @@||level.travel/tracker/tracker.js$script,~third-party
 @@||levexis.com/nbty/$domain=puritan.com
@@ -4850,6 +4856,7 @@
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
 @@||manageengine.com/images/logo/$image,~third-party
 @@||manageengine.com/products/ad-manager/$~third-party
+@@||management.azure.com^$stealth=3p-auth
 @@||mangadex.*/images^
 @@||mangapark.net^$image
 @@||manhua.acimg.cn^$stealth,domain=ac.qq.com
@@ -4871,6 +4878,7 @@
 @@||maptiles.ping-admin.ru^$image,domain=ping-admin.com
 @@||market.mi-img.com^$important
 @@||market.viber.com^$elemhide
+@@||marketing.dropbox.com/?referrer=$stealth
 @@||marketing.net.idealo-partner.com^
 @@||marketing.unionpayintl.com/offer-promote/static/sensorsdata.min.js$script,~third-party
 @@||marketingautomation.services^$script,domain=leeuwerik.nl
@@ -4921,6 +4929,7 @@
 @@||mccm88.com^$generichide
 @@||mcdn.bilivideo.cn^$stealth,domain=bilibili.com
 @@||mclo.gs/js/logview.js$~third-party
+@@||mcloud.to/embed^$popup
 @@||mcmod.cn/images/banner/
 @@||mcmod.cn/js/jquery.cookie.js
 @@||mcs.snssdk.com/*/user/webid$domain=lv.ulikecam.com
@@ -5179,6 +5188,7 @@
 @@||mycokerewards.com^*/webtrends/mcr3-webtrends_POST_$script
 @@||mycommunitynow.com/includes/JI_trafficTracking.js$domain=mycommunitynow.com
 @@||myfamilycominc.tt.omtrdc.net^$domain=ancestry.com|ancestry.co.uk|ancestry.ca|ancestry.de|ancestry.it|ancestry.fr|ancestry.se|ancestry.mx
+@@||myfilestorage.xyz^$stealth,media,domain=bflix.gs
 @@||mygrad.app.io^$extension
 @@||mylivesignature.com/js/adblocker.js
 @@||myqcloud.com^$stealth=referrer,domain=chinadsl.net
@@ -6075,7 +6085,6 @@
 @@||s79.research.de.com/bb-mx/prime$domain=joyn.de
 @@||s9.cnzz.com^$app=com.unionpay
 @@||saabcentral.com^$generichide
-@@||sadeemapk.com^$generichide
 @@||safeframe.googlesyndication.com^$subdocument,domain=koigaku.machicon.jp
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||samsunhaber.com/images/banner/*logo$~third-party
@@ -6142,6 +6151,7 @@
 @@||scrippsdigital.com/cms/videojs/$stylesheet,domain=scrippsdigital.com
 @@||script-at.iocnt.net/iam.js$domain=oe24.at
 @@||script.nettix.fi/auto/extra/template/nettiauto_analytics.js$domain=nettiauto.com
+@@||scriptcdn.net/code/$xmlhttprequest,domain=filecr.com
 @@||scripts.demandmedia.com/wm.js$domain=ehow.com
 @@||sctapi.ftqq.com^
 @@||scyts.com^$generichide
@@ -6650,6 +6660,7 @@
 @@||stats.g.doubleclick.net/dc.js$domain=dubizzle.com
 @@||stats.g.doubleclick.net/dc.js$domain=lifehack.org|tripinsurance.ru|vimeo.com|universarium.org
 @@||stats.g.doubleclick.net/dc.js$domain=softkey.ru|softkey.ua
+@@||stats.g.doubleclick.net/dc.js$script,domain=chintaistyle.jp|gyutoro.com
 @@||stats.g.doubleclick.net^$app=com.google.android.apps.cultural
 @@||stats.g.doubleclick.net^$app=pl.promate.bilkom
 @@||stats.g.doubleclick.net^|$app=com.nttdocomo.android.danimeapp
