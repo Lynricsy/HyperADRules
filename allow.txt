@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-26 08:37:23（北京时间）
+! Version: 2024-10-26 20:13:30（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7707
+! Total count: 7717
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -371,7 +371,6 @@
 @@||1trackapp.com/static/tracking/$script,stylesheet,~third-party
 @@||2018x.bid/adview.js
 @@||210.40.130.91^*/ad.css?$stylesheet
-@@||230book.com/images/bqg.js$domain=230book.net
 @@||2345.com/images/activity/20171111/open/j/close.png
 @@||2mdn.net/instream/
 @@||2mdn.net/instream/html5/ima3.js$script,domain=earthtv.com|zdnet.com
@@ -1041,6 +1040,7 @@
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
 @@||api.mapbox.com/geocoding/$stealth
+@@||api.mapy.cz^$stealth
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
 @@||api.miui.security.xiaomi.com^$important
@@ -1257,6 +1257,7 @@
 @@||bam.nr-data.net^$script,domain=play.spotify.com
 @@||bam.nr-data.net^$xmlhttprequest,domain=abema.tv
 @@||bancobrasil.com.br^$stealth=dpi
+@@||banki.ru/bitrix/*/advertising.block/$stylesheet
 @@||bankofamerica.com/content/images/ContextualSiteGraphics/Marketing/Banners/
 @@||bankofamerica.com^*?adx=
 @@||bankofamerica.com^*?adx=$~third-party,xmlhttprequest
@@ -1296,7 +1297,7 @@
 @@||bdash-cloud.com/recommend-script/$script,domain=junonline.jp
 @@||bdash-cloud.com/tracking-script/*/tracking.js$domain=junonline.jp
 @@||bdimg.com/advert/js/advert.js$domain=music.baidu.com
-@@||bdimg.com/libs/$domain=00ksw.com|147xiaoshuo.com|23xstxt.net|24kxs.cc|8181zw.com|b520.cc|b5200.net|biqiuge8.cc|biquge99.cc|biqugecd.com|biqugewu.net|boquku.com|bqg999.net|bqwxg8.com|bxwx.live|ddbqgtxt.cc|gdbzkz.org|huanyue1234.com|msxsw.com|paoshu8.com|piaotian55.com|qianrenge.cc|quge66.com|shuyy8.com|sytxt.cc|ttzw.tv|txtwan.com|u33.me|viviyzw.com|xinxs.la|xqianqian.cc|xs98.me|xxbiqudu.com|xygwh.cc|ygshu.com|ymxwx.com|yuyougu.com
+@@||bdimg.com/libs/$domain=00ksw.com|147xiaoshuo.com|23xstxt.net|24kxs.cc|8181zw.com|b520.cc|b5200.net|biqiuge8.cc|biquge99.cc|biqugecd.com|biqugewu.net|boquku.com|bqg999.net|bqwxg8.com|bxwx.live|ddbqgtxt.cc|gdbzkz.org|huanyue1234.com|msxsw.com|paoshu8.com|piaotian55.com|quge66.com|shuyy8.com|sytxt.cc|txtwan.com|u33.me|xqianqian.cc|xxbiqudu.com|xygwh.cc|ygshu.com|ymxwx.com|yuyougu.com
 @@||bdimg.com/static/wapwenku/static/common/widget/share/share_
 @@||bdimg.com/static/wenda-pc/widget/share/share_
 @@||bdimg.com/static/wkcore/widget/adControl/adControl_
@@ -1553,6 +1554,7 @@
 @@||cdn.adsninja.ca/adsninja_worker_caller.js$domain=makeuseof.com|howtogeek.com
 @@||cdn.adsninja.ca^$domain=xda-developers.com
 @@||cdn.adspirit.de^$domain=cdn.adspirit.de
+@@||cdn.adswizz.com/adswizz/js/SynchroClient*.js$domain=lounge.fm
 @@||cdn.advertserve.com^$domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
 @@||cdn.afp.ai/ssp/sdk.js$domain=manilatimes.net
 @@||cdn.amplitude.com/libs/amplitude-*-min.gz.js$domain=agroros.ru
@@ -1570,7 +1572,6 @@
 @@||cdn.avansas.com/content/img/home/banner^
 @@||cdn.bannersnack.com/banners/$~third-party,image,subdocument
 @@||cdn.bcebos.com/passApi/$stealth
-@@||cdn.bcebos.com^*/$script,domain=fyxfcw.com
 @@||cdn.blueconic.net/akc.js$domain=akc.org
 @@||cdn.blueconic.net/chronicle.js$domain=chronicle.com
 @@||cdn.blueconic.net/pon.js$domain=seat.nl
@@ -1580,7 +1581,7 @@
 @@||cdn.bootcdn.net^$script,domain=38kanshu.net|tianz.la
 @@||cdn.bootcss.com/fuckadblock/3.2.1/fuckadblock.min.js$domain=1090ys8.com
 @@||cdn.bootcss.com/fuckadblock/3.2.1/fuckadblock.min.js$domain=share1223.com
-@@||cdn.bootcss.com^$script,domain=59xs.com|biqudd.com|luoqiuzw.com|u33.me|xbiqugela.com|xs98.me|ysxs8.vip
+@@||cdn.bootcss.com^$script,domain=59xs.com|biqudd.com|luoqiuzw.com|u33.me|xbiqugela.com|ysxs8.vip
 @@||cdn.broadstreetads.com/init.js$domain=thebatavian.com
 @@||cdn.cervell.io^$domain=cildimveben.com
 @@||cdn.clerk.io/clerk.js$domain=apotera.no
@@ -1691,6 +1692,7 @@
 @@||cdn.optimizely.com/datafiles/*.json$domain=talktalk.co.uk
 @@||cdn.optimizely.com/datafiles/*.json/tag.js$domain=nike.com
 @@||cdn.optimizely.com/img/$image,domain=store-jp.nintendo.com
+@@||cdn.optimizely.com/js/$domain=account.microsoft.com
 @@||cdn.optimizely.com/js/$domain=zdnet.com
 @@||cdn.optimizely.com/js/$script,domain=store-jp.nintendo.com
 @@||cdn.optimizely.com/js/*.js$domain=foxsports.com
@@ -2350,7 +2352,6 @@
 @@||disqus.com/embed/comments/
 @@||disqus.com/embed/comments/$subdocument
 @@||distrowatch.com/images/cpxtu/dwbanner.png
-@@||ditiezu.com^*.php$subdocument
 @@||dizhi99.com^$generichide
 @@||dj.1688.com^$important
 @@||djtflbt20bdde.cloudfront.net^$domain=feedly.com
@@ -2424,6 +2425,7 @@
 @@||download.megaup.net/*.js$~third-party
 @@||download.mokeedev.com^$genericblock,generichide
 @@||downloader.disk.yandex.$stealth
+@@||downloads.descendant.me^$generichide
 @@||downum.game.uc.cn^$important
 @@||dpbolvw.net^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||dpm.demdex.net/id?d_visid_ver=$domain=nbcdfw.com,important
@@ -4491,6 +4493,7 @@
 @@||jav777.xyz/advertise/
 @@||javedit.com/d/js/acmsd/thea0.
 @@||javhdonline.com^$generichide
+@@||javhdx.tv$generichide
 @@||javpost.net/ads.php
 @@||jbprogramnotes.com^$generichide
 @@||jd.com/adclick?$~third-party
@@ -4565,7 +4568,6 @@
 @@||jsdelivr.net^*/keen-tracking.min.js$domain=nextquotidiano.it
 @@||jsfiddle.net^$generichide
 @@||jsjiami.com^$generichide
-@@||jsqsjn.com^$script,domain=fyxfcw.com
 @@||jsr9.com^$domain=jsr9.com
 @@||jsrdn.com/s/$script,domain=distro.tv
 @@||jssdkcdns.mparticle.com/js/v*/*/mparticle.js$domain=cwseed.com
@@ -4712,7 +4714,7 @@
 @@||lib.baomitu.com/vue/*/vue.global.prod.min.js$domain=69xx03608.xyz
 @@||lib.wtg-ads.com/lib.min.js$domain=dnevnik.hr
 @@||libero.it^$generichide
-@@||libs.baidu.com^$domain=0794.org|12zw.net|1biqu.com|1kans.com|230book.net|23hh.com|23sk.net|23wxx.com|33yq.org|3yt.com|4xiaoshuo.net|56shuku.info|777zw.net|81book.com|81zw.me|99mk.net|aiwx.info|aixs.la|anshuge.com|baoshuu.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee6.com|biquka.com|biqukt.com|biqutsxs.com|biquzw.info|bodekang.net|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|gdbzkz.com|gdbzkz.org|hongyeshuzhai.com|ibiquges.com|ibiquges.org|ibiquta.net|ibotaodz.org|imianhuatang.info|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.info|ixs.la|jianlaixiaoshuo.com|lewenge.info|liewenn.com|liudatxt.org|paoshu8.com|paoshuzw.com|pksge.com|qianrenge.cc|qishuta.info|qr1234.com|shu008.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|ttzw.tv|tutengzw.com|u33.cc|wenxuem.com|x81zw.co|xbiquke.com|xdingdian.cc|xiaxs.info|xinxs.la|xquge6.com|xs5200.com|xszww8.net|xuanshu.org|xuessex.com|yqd6.com|yunxs.info|zjsw.org|zzs5.info
+@@||libs.baidu.com^$domain=0794.org|12zw.net|1biqu.com|1kans.net|23hh.com|23sk.net|23wxx.com|33yq.org|3yt.com|4xiaoshuo.net|56shuku.info|777zw.net|81book.com|81zw.me|99mk.net|aiwx.info|aixs.la|anshuge.com|bequmo.com|bimixsw.com|biqiuge8.cc|biqudu.tv|biquge775.com|biquge98.net|biqugecd.com|biqugee6.com|biquka.com|biqukt.com|biqutsxs.com|biquzw.info|bshuku.com|bxwx.live|bxwx.org|damengzhu1.com|gdbzkz.com|gdbzkz.org|hongyeshuzhai.com|ibiquges.com|ibiquges.org|ibiquta.net|ibotaodz.org|imianhuatang.info|ishisetianxia.com|ishubao.org|ivipxs.com|iwurexs.info|ixs.la|jianlaixiaoshuo.com|lewenge.info|liewenn.com|liudatxt.org|paoshu8.com|paoshuzw.com|pksge.com|qishuta.info|shu008.com|shumil.co|silukex.com|siluwx.org|sthuojia.org|tutengzw.com|u33.cc|wenxuem.com|x81zw.co|xbiquke.com|xdingdian.cc|xiaxs.info|xs5200.com|xszww8.net|xuanshu.org|xuessex.com|yqd6.com|yunxs.info|zjsw.org|zzs5.info
 @@||libs.baidu.com^$domain=m.supfree.net
 @@||lifehacker.ru^$removeparam=erid
 @@||lightning.bleacherreport.com/launch/*-source.min.js$~third-party
@@ -5544,6 +5546,7 @@
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/show_ads_impl_fy2021.js$domain=alliptvlinks.com
 @@||pagead2.googlesyndication.com/pagead/managed/js/adsense/*/slotcar_library_$script,domain=game.anymanager.io|sudokugame.org
 @@||pagead2.googlesyndication.com/pagead/managed/js/gpt/*/pubads_impl.js?$script,domain=wunderground.com
+@@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=hexviewer.iblogbox.com
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=knowlet3389.blogspot.com|knowlet3389.blogspot.hk|knowlet3389.blogspot.jp|knowlet3389.blogspot.tw|mnighthk.net|weithenn.org
 @@||pagead2.googlesyndication.com/pagead/show_ads.js$domain=thebrickfan.com
 @@||pagead2.googlesyndication.com/tag/js/gpt.js$script,domain=wunderground.com
@@ -5667,6 +5670,7 @@
 @@||pixel.quantserve.com/pixel^$domain=mixcloud.com
 @@||pixel.quantserve.com/seg/$script,domain=photos.essence.com
 @@||pixel.quantserve.com/seg/r;a=$domain=cbs.com|filefront.com|imdb.com|laobserved.com|tv.com
+@@||pixlr.com^$content,jsinject
 @@||pjtra.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||pkstep.com^$generichide
 @@||places.mercedes-benz.com/*/adrum.js
@@ -6059,6 +6063,7 @@
 @@||ruten.com.tw/ahd/fetch_ad.php
 @@||ruten.com.tw/js/jquery.ruten.supertop_ad.js
 @@||rv.treehousei.com/prm/js/*/public.min.js$domain=partnerportal.fortinet.com
+@@||rykoeb.com/remote_control.php^$stealth
 @@||rzd.ru^$stealth
 @@||s-ad.rmp.rakuten.co.jp^$app=jp.co.rakuten.pay
 @@||s-microsoft.com/mscc/statics/$script,domain=microsoft.com
@@ -6145,6 +6150,7 @@
 @@||scdn.cxense.com/cx.js$domain=sbs.com.au
 @@||scdn.cxense.com/cx.js$domain=wsj.com
 @@||schwab.com^$stealth=referrer
+@@||sciencechannel.com^$generichide
 @@||sciencedirect.com^$stealth
 @@||scontent*.cdninstagram.com^$stealth
 @@||scontent.xx.fbcdn.net/hads-ak-prn2/*.png$domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion
@@ -7343,6 +7349,7 @@
 @@||vlist.se/advertisement.js
 @@||vlscppe.microsoft.com/fp/tags.js$domain=microsoft.com
 @@||vlscppe.microsoft.com/fp/tags.js$stealth
+@@||vmeas.cloud/hls/$stealth
 @@||vms-players.minutemediaservices.com^$script,domain=si.com
 @@||vms-videos.minutemediaservices.com^$xmlhttprequest,domain=si.com
 @@||vmware.com^$important
@@ -7547,6 +7554,7 @@
 @@||www.olx.ua/api^$app=ua.slando
 @@||www.paypalobjects.com^$important
 @@||www.pussyspace.com/class/captcha/arrow.png|
+@@||www.pussyspace.com/class/captcha/captcha.php|
 @@||www.pussyspace.com/favicon.ico|
 @@||www.pussyspace.com/style/img/navbg.hover.png|
 @@||www.pussyspace.com/upload/no_img.jpg|
@@ -7601,6 +7609,7 @@
 @@||xvideos.*/models/$elemhide,jsinject,extension,xmlhttprequest
 @@||xvideos.*/pornstars/$elemhide,jsinject,extension,xmlhttprequest
 @@||xvideos.*/profiles/$elemhide,jsinject,extension,xmlhttprequest
+@@||xvideos.com/*/?_=$document
 @@||xxxxx520.com^$generichide
 @@||xzeepb2clookuppsta001.blob.core.windows.net/comed/src/js/google-analytics.js$domain=secure1.comed.com
 @@||xzz.xiaomin.tech^$important
@@ -7617,6 +7626,7 @@
 @@||yandex.ru/webvisor/$xmlhttprequest,domain=anoncer.net
 @@||yandex.st/swfobject^
 @@||yantuchina.com/gg/tmp/hong.gif
+@@||yastatic.net/awaps-ad-sdk-js$domain=kinopoisk.ru|video.yandex.ru,script
 @@||yastatic.net/pcode/adfox/header-bidding.js$domain=kp.ru|kp.by|kp.kg|kp.kz
 @@||yastatic.net/pcode/adfox/header-bidding.js$domain=onedio.ru
 @@||yastatic.net/pcode/adfox/loader.js$domain=kp.ru|kp.by|kp.kg|kp.kz
