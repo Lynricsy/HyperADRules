@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-28 08:41:32（北京时间）
+! Version: 2024-10-28 20:16:07（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7727
+! Total count: 7732
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -181,6 +181,7 @@
 @@/js/ads.js|$script,~third-party,domain=~internethaber.com|~knaqu.tv
 @@/js/advert.js$~third-party
 @@/js/advertisement.$domain=blogs.sapib.ca
+@@/js/adview_*.adsbygoogle.js$~third-party,domain=letv8.cc|zhibo1.cc
 @@/js/countd.js?rand=$script,stealth=referrer,domain=financemonk.net
 @@/js/fuckadb.js$~third-party,domain=megaurl.in
 @@/js/prebid-$domain=huruwo.top
@@ -1212,6 +1213,7 @@
 @@||autotrader.co.uk^*/advert$~third-party
 @@||av30.xyz/cs/2.js
 @@||av4u.info/source/plugin/unadblock^
+@@||avalanche.state.co.us/caic/pub_bc_avo.php?zone_id=
 @@||avclub.com^*/adManager.$script,~third-party
 @@||avgle.com/embed/$genericblock,generichide
 @@||avpgalaxy.net/gpt.js
@@ -1460,9 +1462,6 @@
 @@||c.paypal.com/da/r/fb.js$script
 @@||c.pc.qq.com^
 @@||c.pc.qq.com^$important
-@@||c.speedtest.net/flash/speedtest-*.swf
-@@||c.speedtest.net/flash/standard-*.swf
-@@||c.speedtest.net/flash/wave-*.swf
 @@||c.tieba.baidu.com^$important
 @@||c.webengage.com/lw/*.jpg?p=
 @@||c.webtrends-optimize.com/acs/$image,script,domain=tvlicensing.co.uk
@@ -4553,6 +4552,7 @@
 @@||js.dmtry.com/channel.js$domain=zillow.com
 @@||js.dogannet.tv/q/s/player/html5^
 @@||js.iplsc.com/inpl.abd/*/proxy.html?host=$generichide
+@@||js.iplsc.com/inpl.abd/latest/ads.js?$domain=pomponik.pl|interia.pl|js.iplsc.com
 @@||js.mamydirect.com^$app=com.adguard.dns
 @@||js.monitor.azure.com/scripts/$script,domain=genya.it
 @@||js.monitor.azure.com/scripts/$script,domain=genya.it|microsoft.com|rubex.efilecabinet.net
@@ -4635,7 +4635,7 @@
 @@||kinescope.io/embed/$stealth
 @@||kingofdown.com^$generichide
 @@||kingofshrink.com^$generichide
-@@||kingwar.cn^$stealth=referrer,domain=mh160.cc
+@@||kingwar.cn^$image,stealth=referrer
 @@||kiplinger.112.2o7.net^
 @@||kissjav.com^$generichide
 @@||kk665403.pixnet.net^$generichide
@@ -5054,7 +5054,6 @@
 @@||microsoftazuresponsorships.com^
 @@||microsoftedge.microsoft.com/addons^$stealth
 @@||microsofttranslator.com/translate?
-@@||mid.ru^$stealth=ip
 @@||middleware.p7s1.io/galileo/v1/player/metadata/$domain=galileo.tv
 @@||middleware.p7s1.io/galileo/v1/tracking$domain=galileo.tv
 @@||middleware.p7s1.io^$app=at.zappn
@@ -5510,6 +5509,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=key-hub.eu
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kitguru.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=livemint.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mealcold.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=metrolagu.cam
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mobile-tracker-free.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=okdebrid.com
@@ -6115,6 +6115,7 @@
 @@||saabcentral.com^$generichide
 @@||safeframe.googlesyndication.com^$subdocument,domain=koigaku.machicon.jp
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
+@@||salfordonline.com/wp-content/plugins/wp_pro_ad_system/$script
 @@||samsunhaber.com/images/banner/*logo$~third-party
 @@||sankei.co.jp/js/analytics/skd.Analysis.js$script
 @@||sanspo.com/parts/chartbeat/$xmlhttprequest
@@ -6287,6 +6288,7 @@
 @@||securitykiss.com$document
 @@||securitytrails.com/app/api/$domain=securitytrails.com
 @@||securitytrails.com/domain/$domain=securitytrails.com
+@@||seeitworks.com/advertisement.js
 @@||seg-cdn.pumpkin.care/analytics.js/$~third-party
 @@||seg-cdn.pumpkin.care/next-integrations/integrations/mixpanel/$domain=get.pumpkin.care
 @@||segmentify.com^$script,stylesheet,xmlhttprequest,domain=puma.com
@@ -6493,6 +6495,7 @@
 @@||speedcurve.com/js/lux.js$script,domain=tv8.it
 @@||speedtest.net/api/api.php
 @@||speedtest.net/api/js/user-settings|$xmlhttprequest
+@@||speedtest.net/javascript/ads.js
 @@||speedtestcustom.com^$subdocument,stealth
 @@||speee-ad.akamaized.net/tag/$script,domain=hochi.news
 @@||speee-ad.akamaized.net^$image,domain=hochi.news
@@ -6756,6 +6759,7 @@
 @@||surveymyopinion.researchnow.com^
 @@||suumo.jp/sp/js/beacon.js$script,~third-party
 @@||suwonlib.go.kr^$stealth=dpi
+@@||sv1.fluxcedene.net/api/gql$stealth=referrer
 @@||svtrd.com^$domain=moneyou.de|ns.nl
 @@||swa.mail.ru/cgi-bin/counters?$script
 @@||swap.qth.com/include/adblockdetection/adblockDetector.js
@@ -7325,6 +7329,7 @@
 @@||videos.nbcolympics.com/beacon?$domain=nbcolympics.com
 @@||videosvc.ezoic.com/play?videoID=$domain=humix.com
 @@||videotron.com/sites/default/files/google_tag/google_tag/primary/google_tag.script.js$domain=videotron.com
+@@||vidhidepro.com^$stealth=referrer
 @@||vidhidevip.com/embed/$subdocument,stealth=referrer
 @@||vidible.tv^*/ComScore.StreamSense.js
 @@||vidible.tv^*/ComScore.Viewability.js
