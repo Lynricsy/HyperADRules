@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-10-30 08:38:52（北京时间）
+! Version: 2024-10-30 20:14:36（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7755
+! Total count: 7766
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1067,6 +1067,7 @@
 @@||api.performfeeds.com^$stealth=referrer
 @@||api.phnx.click/js/article-stat-v2.js$domain=smak.ua
 @@||api.playstation.com^$stealth
+@@||api.poki.com/ads/houseads/$domain=ninja.io
 @@||api.prod.bunnings.com.au^$stealth
 @@||api.production.k8s.y3o.tv/*/video-ads/$domain=yallo.tv
 @@||api.rikka.app^$important
@@ -1842,7 +1843,6 @@
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.min.js$domain=linetv.tw
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads^$domain=in.gr
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls^
-@@||cdns.*.gigya.com/gs/webSdk/Api.aspx$stealth
 @@||cdnstatic.secure.spiegel.de/SP/*/grafik^
 @@||cdntrf.com/id-ingame.js$domain=ingame.de
 @@||cdntrf.com/lib/templates/index.js$domain=ingame.de
@@ -2532,6 +2532,7 @@
 @@||editor.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=add-panel-data$domain=editor.wix.com
 @@||edmondpoon.com^$generichide
 @@||edu.cn^*/ad.css?$stylesheet
+@@||educationcanada.com/js/advertisement.js
 @@||eduscho.at/*/exactag_clientside.js
 @@||ee.hit.gemius.pl/gplayer.js$domain=tv3play.tv3.ee
 @@||eegybest.xyz^$generichide
@@ -2651,6 +2652,7 @@
 @@||f.51240.com^$important
 @@||f.monetate.net/trk/$domain=debenhams.com
 @@||f8.market.xiaomi.com^$important
+@@||f95zone.to/login/$stealth
 @@||faberlic.com/images/banners/
 @@||facebook.com/*/dialog/oauth$stealth
 @@||facebook.com/ads/profile/$~third-party,xmlhttprequest
@@ -2725,6 +2727,7 @@
 @@||firefox.com.cn/media/img/mozcn/spread/468-60-
 @@||firmwaredrive.com/templates/default/html/en/assets/js/fingerprint2.min.js
 @@||firstdirect.com^*/logging-code.js
+@@||firstonetv.net^$generichide
 @@||flightradar24.com^$stealth=dpi
 @@||flipboard.com/*/videojs-contrib-ads.*.bundle.js
 @@||fltaradio.com/js/ads.js
@@ -2851,6 +2854,7 @@
 @@||ganji.com/findjob/send_resume.*&ad_type=
 @@||ganma.jp/view/magazine/viewer/pages/advertisement/googleAdSense.html|$~third-party,xmlhttprequest
 @@||ganyancanavari.com/js/fingerprint2.min.js$~third-party
+@@||gapis.win^$stealth=referrer,domain=app.jscdn.win
 @@||gapl.hit.gemius.pl/gplayer.js$domain=player.antyradio.pl|player.radiozet.pl|player.chillizet.pl|player.meloradio.pl
 @@||gapt.hit.gemius.pl/gplayer.js$domain=radiocomercial.iol.pt
 @@||gardenista.com/assets/scripts/advert.js
@@ -3981,6 +3985,7 @@
 @@||hk01.com^*/scripts/ga.js
 @@||hkjc.com/bannerad/
 @@||hlidacstatu.cz/scripts/highcharts-6/modules/heatmap.js
+@@||hlmod.ru^$xmlhttprequest,~third-party
 @@||hlntv.com/*/ad_policy.xml
 @@||hls-live.bdstatic.com/*/stream_$stealth
 @@||hls.exmarketplace.com/*.m3u8$domain=tvserial.it
@@ -4228,7 +4233,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.addradio.de
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.glomex.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.motorsport-magazin.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=player.pl|vod.pl
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=pluscdn.pl
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=pogo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=poki-gdn.com|repuls.io
@@ -4423,6 +4427,7 @@
 @@||indiatimes.com/configspace/
 @@||inews.gtimg.com^
 @@||inews.gtimg.com^$important
+@@||infectiousmedia.com/iab^$domain=youronlinechoices.com
 @@||info.seek.com/b/ss/$image,domain=seek.com.au
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infolink.pavv.co.kr^
@@ -4535,6 +4540,7 @@
 @@||jmedj.co.jp/files/$image,~third-party
 @@||jobs.bg/front_job_search.php$~third-party
 @@||join.southerncross.co.nz/quote/_assets/js/sx/app/helpers/gtm.js
+@@||jokerly.com/Okidak/adSelectorDirect.htm?id=$document,subdocument
 @@||jokerly.com/Okidak/vastChecker.htm$document,subdocument
 @@||jolie.de/sites/default/files/google_tag/google_tag_manager/google_tag.script.js
 @@||josiad.ns.nl/DG/DEFAULT/$xmlhttprequest
@@ -5426,6 +5432,7 @@
 @@||online.a1.by/l/v/track.php?event=$domain=a1.by
 @@||online.americanexpress.com/myca/statementimage/$document
 @@||online.bcs.ru^*/piwik.bcs.js$script
+@@||online.cosmosbank.in^$document
 @@||online.mps-gba.de/praeludium/$script,domain=auto-motor-und-sport.de|caravaning.de|motorradonline.de
 @@||online.rshb.ru/rshb-mbfl/lib/snowplow/
 @@||online.rshb.ru/rshb-mbfl/plugins/
@@ -5583,6 +5590,7 @@
 @@||pandora.com/web-version/*/*.json
 @@||pandora.com^$generichide
 @@||panel.flops.ru/js/member/evercookie_init.js
+@@||panel.sinema.cx/video/$stealth=referrer
 @@||pangzi.ca^$subdocument
 @@||panjiachen.github.io^$generichide
 @@||papalah.com^$generichide
@@ -6202,6 +6210,7 @@
 @@||sdc.pingan.com^$~image
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
 @@||sdkapi.sms.mob.com^
+@@||sdltutorials.com/Data/Ads/AppStateBanner.jpg$~third-party
 @@||sdn-global-audio-adswizz-cache.3qsdn.com/*/files/$other,media,domain=noz.de
 @@||se.monetate.net/js/*/custom.js$domain=debenhams.com
 @@||se.monetate.net/js/*/entry.js$domain=debenhams.com
@@ -6315,6 +6324,7 @@
 @@||sellpoint.net/smart_button/$script,domain=walmart.com
 @@||sendgb.com/*/?utm_source=$removeparam=utm_source
 @@||sendgrid.com/marketing_campaigns$document
+@@||sendvsfeedback2-secondary.azurewebsites.net^$stealth
 @@||seoulland.co.kr^$stealth=dpi
 @@||sephora-track.inside-graph.com/gtm/$domain=sephora.com
 @@||sephora-track.inside-graph.com/ig.js$domain=sephora.com
@@ -6661,7 +6671,6 @@
 @@||static.criteo.net/js/ld/publishertag.js$domain=shinden.pl
 @@||static.criteo.net/js/ld/publishertag.js$domain=xda-developers.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=alliptvlinks.com
-@@||static.doubleclick.net/instream/ad_status.js$domain=idlixplus.*|idlixofficialx.*
 @@||static.doubleclick.net/instream/ad_status.js$domain=investing.com
 @@||static.doubleclick.net/instream/ad_status.js$domain=mhdtvmax.net
 @@||static.doubleclick.net/instream/ad_status.js$domain=techedubyte.com
@@ -7321,6 +7330,7 @@
 @@||vatanbilgisayar.com/upload/banner/
 @@||vatchus.com^$generichide
 @@||vattastic.com/js/fp2/fingerprint2.min.js
+@@||vcdn.xemcl.net/html/$stealth=referrer,domain=app.jscdn.win
 @@||vcentry3.valuecommerce.ne.jp^
 @@||vdncloud.org/iframe/$stealth=referrer
 @@||vdun.weibo.com^$important
@@ -7667,6 +7677,7 @@
 @@||yastatic.net/awaps-ad-sdk-js$domain=kinopoisk.ru|video.yandex.ru,script
 @@||yastatic.net/pcode/adfox/header-bidding.js$domain=kp.ru|kp.by|kp.kg|kp.kz
 @@||yastatic.net/pcode/adfox/header-bidding.js$domain=onedio.ru
+@@||yastatic.net/pcode/adfox/loader.js$domain=hitfm.ru
 @@||yastatic.net/pcode/adfox/loader.js$domain=kp.ru|kp.by|kp.kg|kp.kz
 @@||yastatic.net/pcode/adfox/loader.js$domain=onedio.ru
 @@||yastatic.net/yandex-video-player-iframe-api-bundles$stealth
