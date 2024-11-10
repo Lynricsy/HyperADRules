@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-10 08:40:45（北京时间）
+! Version: 2024-11-10 20:12:27（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7786
+! Total count: 7792
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -37,6 +37,7 @@
 @@.ts^$stealth
 @@/*/*-*/*.png$stealth=referrer,xmlhttprequest,domain=dbx.molystream.org
 @@//store.donanimhaber.com/ad/*$domain=forum.donanimhaber.com
+@@/Tag.rb$domain=github.com
 @@/WebAd/*$domain=yongyoujia.com
 @@/\/\d{5,7}$/$domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@/^https:\/\/[a-z]\.pussyspace\.(?:com|net)\/(?:yip?|xvs)\/videos\/20\d{4}\/\d{2}\/\d{9}\/(?:original|thumbs_\d{2})\/\d{0,2}(?:\(m=e[0-9A-Za-z]{5,7}(?:aaaa)?\)\(mh=[-_0-9A-Za-z]{16}\))?\d{0,2}\.jpg$/$image,~third-party,domain=pussyspace.com|pussyspace.net
@@ -910,7 +911,6 @@
 @@||ancensored.com/js/flowplayer.min.js
 @@||android-api-de.gumtree.com/api/users/*/ads.json
 @@||android.clients.google.com/market/GetBinary/$document
-@@||androidcentral.com/sites/androidcentral.com/files/advagg_js/js__*.js
 @@||anhuinews.com/zhuyeguanli/2020ad/xidad.jpg
 @@||ani.gamer.com.tw^$generichide
 @@||ani4u.org^$generichide
@@ -1392,6 +1392,7 @@
 @@||book.com.tw/image/getImage?
 @@||book.com.tw/image/getImage?$domain=books.com.tw
 @@||bookmate.com^*/impressions?$~third-party,xmlhttprequest
+@@||books-share.com/scripts/ads.js
 @@||bookwalker.com.tw/images/p_img/pc_ad*.png$~third-party
 @@||bootcss.com^$script,domain=kan-tv.com
 @@||bordeaux.futurecdn.net/bordeaux.js$script,domain=gamesradar.com|tomsguide.com
@@ -1821,6 +1822,7 @@
 @@||cdnb.4strokemedia.com^$domain=video.corriere.it
 @@||cdnb.4strokemedia.com^$domain=video.gazzetta.it
 @@||cdnbigdata.azureedge.net/scripts/fingerprint2.min.js$domain=news.abs-cbn.com
+@@||cdndm5.com^$stealth
 @@||cdnformanga.net/wp-*/$stealth=referrer
 @@||cdnjs.cloudflare.com/ajax/libs/$script,domain=vidoza.co|vidoza.net
 @@||cdnjs.cloudflare.com/ajax/libs/*.min.js$domain=audioz.download
@@ -1911,6 +1913,7 @@
 @@||chinamobile.com^*/ad$~third-party
 @@||chinatimes.com/css-main/ad.css
 @@||chineseanime.vip^$generichide
+@@||choice.microsoft.com/*/opt-out$urlblock
 @@||chompers.io/ads.js
 @@||chronicle.blueconic.net/*/json$domain=chronicle.com
 @@||chtoen.com/js/adsbygoogle.js
@@ -2635,6 +2638,7 @@
 @@||explainxkcd.com/wiki/images/$image,~third-party
 @@||exponential.com^*/tags.js$domain=yellowbridge.com
 @@||exsite24.pl/cdn-cgi/challenge-platform/$stealth
+@@||extreme-down.plus^$popup,domain=extreme-down.plus
 @@||extreme-ip-lookup.com/json/$xmlhttprequest,domain=skaitv.gr
 @@||extreme-ip-lookup.com^$script,domain=bulkbarn.ca
 @@||eye.swfchan.com/captcha/*.gif$domain=eye.swfchan.com
@@ -2888,7 +2892,6 @@
 @@||gelbooru.com/script/lazyload.js
 @@||gelbooru.com^$generichide
 @@||gemini.google.com^$generichide
-@@||gemini.yahoo.com/advertiser/$domain=gemini.yahoo.com
 @@||gemius.pl/gplayer.js$domain=tsn.ua
 @@||gemius.pl/gplayer.js$script,third-party
 @@||gemius.pl/gstream.js
@@ -2911,6 +2914,7 @@
 @@||getclicky.com/ajax/marketshare?$script
 @@||getcopy.link/js/prebid-ads.js
 @@||getflywheel.com/addons/google-analytics/$~third-party
+@@||getfree.co.in^$generichide
 @@||getgoods.de^*/emstrack.js
 @@||getintopc.com/*.js$domain=getintopc.com
 @@||getintopc.com^$generichide
@@ -3171,6 +3175,7 @@
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=nordvpn.com,important
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=tv-media.at,important
 @@||google-analytics.com/analytics.js$script,redirect=google-analytics,domain=upc.pl
+@@||google-analytics.com/analytics.js$stealth,domain=tv-media.at
 @@||google-analytics.com/analytics.js^$domain=cosstores.com
 @@||google-analytics.com/analytics.js^$domain=freshmilk.tv
 @@||google-analytics.com/analytics.js^$domain=jackbox.tv
@@ -3893,6 +3898,7 @@
 @@||h-sdk.online-metrix.net^$app=com.ebay.mobile
 @@||h.imedia.cz/js/cmp2/scmp.js$domain=seznam.cz
 @@||h1g.jp/img/ad/ad_heigu.html$~third-party
+@@||h5.4j.com/js/ima3.js
 @@||h5.m.taobao.com^$important
 @@||haaretz.co.il/logger/p.gif?$image,xmlhttprequest
 @@||haaretz.co.il/logger/p.gif?*=COMMENTS$xmlhttprequest
@@ -4397,7 +4403,6 @@
 @@||imgdrive.net/anex/alt2.js
 @@||imgtaxi.com/img-*.html
 @@||imgur.com/min/px.js$~third-party
-@@||imgwallet.com/advertisement.js
 @@||imobiliare.ro/js/gtm.js$script,~third-party
 @@||imore.com/sites/imore.com/files/*/public/field/image/*/adchoices-$image,domain=imore.com
 @@||imore.com/sites/imore.com/files/advagg_js/$script
@@ -4628,7 +4633,6 @@
 @@||kameleoon.io/ip^$domain=welt.de
 @@||kanalfrederikshavn.dk^*/jquery.openx.js?
 @@||kapaza.be/nl/js/xtcore_$script,domain=kapaza.be
-@@||kapsamaharitasi.turktelekom.com.tr^$stealth=ip
 @@||kaptcha.com/collect/sdk?$domain=palmettostatearmory.com|wyze.com
 @@||karte.io/libs/tracker.$domain=zf1.tohoku-epco.co.jp
 @@||karte.io/libs/tracker.$domain=zf1.tohoku-epco.co.jp|zozo.jp
@@ -5000,6 +5004,7 @@
 @@||media.jd.com/static/*/ad
 @@||media.kaspersky.com/tracking/omniture/s_code_single_suite.js
 @@||media.kijiji.ca/api/$image,~third-party
+@@||media.oadts.com/www/delivery/le.php*&dist.prerollDone$domain=media.oadts.com
 @@||media.org.hk^*/ads_
 @@||media.richrelevance.com/rrserver/$domain=askul.co.jp
 @@||media.sailthru.com^$image,domain=link.ted.com
@@ -5351,6 +5356,7 @@
 @@||ntou.edu.tw/bin/showads.
 @@||ntu.edu.tw/modules/banner.php
 @@||ntust.edu.tw/bin/showads.
+@@||ntv*.akamaized.net/*.m3u8$stealth
 @@||ntv.io/serve/load.js$domain=mcclatchydc.com
 @@||nu.nl^$generichide
 @@||nuggad.net^$domain=video.sport1.de
@@ -5741,6 +5747,7 @@
 @@||player-feedback-v1.glomex.com/pf/|$domain=player.glomex.com
 @@||player.aniview.com/script/$script,domain=odysee.com|pogo.com
 @@||player.aniview.com/script/*/AVmanager.js$domain=adnkronos.com
+@@||player.avplayer.com^$script,domain=explosm.net|gamingbible.co.uk|justthenews.com|ladbible.com
 @@||player.clevercast.com/players/video-js/video-js-plugins/videojs.ads.min.js
 @@||player.ex.co/player/$domain=si.com
 @@||player.ex.co/player/$domain=thestreet.com
@@ -6295,7 +6302,6 @@
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=chelseafc.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=crazygames.com|shellshock.io|minijuegos.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=digitaltrends.com
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=epaper.timesgroup.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=factable.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=freundin.de
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=games.gamesplaza.com
@@ -6991,6 +6997,7 @@
 @@||themarker.com/logger/p.gif?$image,xmlhttprequest
 @@||themarker.com/logger/p.gif?*=COMMENTS$xmlhttprequest
 @@||themarker.com/logger/p.gif?a=$image
+@@||thememypc.net/wp-content/plugins/nervous-pleasure/assets/js/advertisement.min.js
 @@||themes.googleusercontent.com/static/fonts/$domain=tweaktown.com
 @@||themezon.net/link.php$stealth=referrer
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
@@ -7230,6 +7237,7 @@
 @@||tweaktown.com^$generichide,badfilter
 @@||twitch.tv^$generichide
 @@||twitter.com$domain=bleacherreport.com
+@@||twitter.com/i/videos/tweet/*?embed_$document
 @@||twitter.com/oct.js$domain=jp.square-enix.com
 @@||twowheeler.policybazaar.com/js/googleanalytics.js
 @@||txc.gtimg.com/static/$stealth,domain=support.qq.com
@@ -7279,7 +7287,6 @@
 @@||upgrade.ptmi.gitv.tv^$important
 @@||upload*.jianshu.io^$stealth
 @@||upload.cc
-@@||upload.forumfree.net^$stealth
 @@||upload.wikimedia.org/wikipedia/$image,media
 @@||uploadcloud.pro^$generichide
 @@||ups.com/*/WebTracking/track&dcs
@@ -7601,7 +7608,6 @@
 @@||www.google.*/gen_204$app=com.google.android.googlequicksearchbox
 @@||www.google.*/search?$domain=google.ae|google.at|google.be|google.bg|google.by|google.ca|google.ch|google.cl|google.co.id|google.co.il|google.co.in|google.co.jp|google.co.ke|google.co.kr|google.co.nz|google.co.th|google.co.uk|google.co.ve|google.co.za|google.com|google.com.ar|google.com.au|google.com.br|google.com.co|google.com.ec|google.com.eg|google.com.hk|google.com.mx|google.com.my|google.com.pe|google.com.ph|google.com.pk|google.com.py|google.com.sa|google.com.sg|google.com.tr|google.com.tw|google.com.ua|google.com.uy|google.com.vn|google.cz|google.de|google.dk|google.dz|google.ee|google.es|google.fi|google.fr|google.gr|google.hr|google.hu|google.ie|google.it|google.lt|google.lv|google.nl|google.no|google.pl|google.pt|google.ro|google.rs|google.ru|google.se|google.sk
 @@||www.google.*/search?$generichide
-@@||www.google.*/search?q=*&oq=*&aqs=chrome.*&sourceid=chrome&$popup,third-party
 @@||www.google.com/ads/preferences/$image,script,subdocument
 @@||www.google.com^$important
 @@||www.googleadservices.*/aclk?*&adurl=$~third-party
