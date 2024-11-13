@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-12 20:14:46（北京时间）
+! Version: 2024-11-13 08:38:09（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7786
+! Total count: 7790
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -489,6 +489,7 @@
 @@||about-australia.com/*/clickheat.js
 @@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
+@@||ac.namu.la^$image,domain=arca.live,stealth=referrer
 @@||accaii.com^$domain=kyuusai2nd.net
 @@||account.adobe.com/newrelic.js$~third-party
 @@||account.mail.ru^$stealth
@@ -1072,6 +1073,7 @@
 @@||api.slightcommunicativeinterconnectedness.xyz^
 @@||api.solvemedia.com/papi/
 @@||api.spendino.de/admanager^
+@@||api.spotify.com/v1/me|$xmlhttprequest,stealth=3p-auth
 @@||api.sprig.com/sdk/$domain=paypal.com
 @@||api.taboola.com/2.0/json/*/recommendations.$domain=azby.fmworld.net
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com|taboolanews.com
@@ -2432,6 +2434,7 @@
 @@||doubleclick.net/ddm/trackclk/$popup,domain=hongkongcard.com
 @@||doubleclick.net/gpt/pubads_impl$domain=www.gamer.com.tw
 @@||doubleclick.net/ssai/*/streams$xmlhttprequest,domain=snippet.univtec.com
+@@||doubleclick.net/|$xmlhttprequest,domain=tvnz.co.nz
 @@||doubleclick.net^$app=com.google.android.music
 @@||doubleclick.net^$domain=video.sport1.de
 @@||doubleclick.net^$xmlhttprequest,domain=yyets.click
@@ -4478,6 +4481,7 @@
 @@||intersport.peerius.com^|$domain=intersport.de
 @@||inven.co.kr^$stealth=dpi
 @@||inven.co.kr^$stealth=ip
+@@||inven.com^$stealth=dpi
 @@||iocdn.coremetrics.com^*.js?V=$domain=24ace.co.uk
 @@||iocdn.coremetrics.com^*.js?V=$script,domain=adidas.de
 @@||iocdn.coremetrics.com^*/io_config.js?ts=$domain=24ace.co.uk
