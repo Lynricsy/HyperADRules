@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-16 20:13:24（北京时间）
+! Version: 2024-11-17 08:43:11（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7788
+! Total count: 7790
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1077,6 +1077,7 @@
 @@||api.sprig.com/sdk/$domain=paypal.com
 @@||api.taboola.com/2.0/json/*/recommendations.$domain=azby.fmworld.net
 @@||api.taboola.com^$domain=samsung.com|thestartmagazine.com|taboolanews.com
+@@||api.themoviedb.org^$stealth=3p-auth
 @@||api.touchnote.io^$xmlhttprequest,domain=app.touchnote.com
 @@||api.ts.feedback.qy.net^$important
 @@||api.val.qq.com/go/agame/resource/banner?bannerid=aclos_website_banner$domain=val.qq.com
@@ -4864,6 +4865,7 @@
 @@||m.da.mgtv.com/m/player?_type_object=$domain=m.mgtv.com
 @@||m.dcinside.com/movie/$stealth,app=com.dcinside.app.android|com.dcinside.app
 @@||m.dcinside.com^$stealth=dpi
+@@||m.ddyueshu.cc/*common
 @@||m.haberturk.com/adscbg/mdet.js
 @@||m.jiaoyimao.com^$important
 @@||m.manhuabei.com^$important
