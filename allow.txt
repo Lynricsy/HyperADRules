@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-17 08:43:11（北京时间）
+! Version: 2024-11-17 20:13:26（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7790
+! Total count: 7786
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1054,7 +1054,6 @@
 @@||api.mixpanel.com/engage/?data=$xmlhttprequest,domain=deezer.com
 @@||api.mixpanel.com/track/*$domain=etcher.io
 @@||api.mixpanel.com/track/?data=$xmlhttprequest,domain=deezer.com
-@@||api.moeni.net^$xmlhttprequest,stealth=referrer|ip
 @@||api.ok.ru/fb.do?application_key=*_advertisement.user_id
 @@||api.olx.$app=com.app.tokobagus.betterb
 @@||api.omappapi.com/v3/geolocate/json$domain=seclore.com
@@ -1505,7 +1504,6 @@
 @@||careermap.co.uk/careers/js/google-analytics.js
 @@||carefood.kz/upload/$image
 @@||carexpert.com.tw/wp-content/plugins/like-box-pro/includes/javascript/front_end_js.js
-@@||cargocollective.com/designs/$document
 @@||carrefourpl.snrpage.com^$removeparam=utm_source
 @@||carsales.com.au/afx_prid/$domain=carsales.com.au
 @@||carsensor.net/usedcar/modules/clicklog_top_lp_revo.php$xmlhttprequest
@@ -1531,7 +1529,6 @@
 @@||cdn*.*.pw/*p_*.jpg$stealth=referrer,domain=vidload.lol
 @@||cdn*.anicdn.net/appsd*.mp4$stealth=referrer
 @@||cdn*.jianshu.io^$stealth
-@@||cdn*.movcdn.*^$xmlhttprequest,stealth=referrer|ip,domain=moeni.net
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
 @@||cdn-fck.tnaflix.com^$removeparam
 @@||cdn-gl.imrworldwide.com/conf/*.js#name=nlsnInstance$domain=joyn.de
@@ -1950,6 +1947,7 @@
 @@||cleviationly.com/adServe/aff?cmpid=*mydealz*&dlink=$removeparam=cmpid
 @@||click.appcast.io/track^$domain=neuvoo.co.uk
 @@||click.appcast.io^
+@@||click.cptrack.de^
 @@||click.simba.taobao.com^
 @@||click.simba.taobao.com^$important
 @@||click.speee-ad.jp/v1/recwid?$script,domain=hochi.news
@@ -2304,8 +2302,6 @@
 @@||dd.myapp.com^$important
 @@||dd6zx4ibq538k.cloudfront.net/static/images/$domain=tkmaxx.com
 @@||ddnk.advertur.ru/*/code.js$domain=grouple.co
-@@||deadshot.io^$extension="AdGuard Popup Blocker"
-@@||deadshot.io^$stealth
 @@||deals.nextag.com^*/ClickTracker.jsp
 @@||debenhams.com/foresee/foresee-trigger.js
 @@||debugtbs.qq.com^$important
@@ -3367,6 +3363,7 @@
 @@||googletagmanager.com/gtag/js$domain=coinhall.org
 @@||googletagmanager.com/gtag/js$domain=dholic.co.jp
 @@||googletagmanager.com/gtag/js$domain=duplichecker.com
+@@||googletagmanager.com/gtag/js$domain=earnhub.net
 @@||googletagmanager.com/gtag/js$domain=filmomaniak.pl
 @@||googletagmanager.com/gtag/js$domain=go.epageview.com
 @@||googletagmanager.com/gtag/js$domain=godaddy.com
@@ -3938,6 +3935,7 @@
 @@||hcaptcha.com^*/api.js
 @@||hdfilmfullizle.com/_video_onu_yeni.php?v=1$domain=hdfilmifullizle.com|hdfilmfullizle.com
 @@||hdfilmifullizle.com/_video_onu_yeni.php$domain=hdfilmifullizle.com
+@@||hdliveextra-a.akamaihd.net/*/showads*.js
 @@||hdsky.net/ad/down.png
 @@||hdslb.com/bfs/archive/*@$domain=bilibili.com,image
 @@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
@@ -4031,6 +4029,7 @@
 @@||hse24.de^*/emos2.js
 @@||htlbid.com^*/htlbid.js$domain=hodinkee.com
 @@||html-load.com^$stealth=referrer
+@@||html5.gamedistribution.com/*/$stealth
 @@||huhupan.com/e/extend/down/$generichide
 @@||huke88.com^*-tracking.js
 @@||hulkshare.com/combine/*adblocker.js
@@ -4066,6 +4065,7 @@
 @@||ia.hit.interia.pl/*/date?$domain=interia.pl|pomponik.pl
 @@||ia.hit.interia.pl^
 @@||ia.hit.interia.pl^$app=pl.interia.news
+@@||ib.adnxs.com$domain=prmgr.a3cloud.net
 @@||ib.adnxs.com/getuidj|$domain=independent.co.uk
 @@||ib.adnxs.com/ptv$domain=tele5.de
 @@||ib.adnxs.com^$app=se.prisjakt.pricespy
@@ -4490,7 +4490,6 @@
 @@||ipqualityscore.com/api/$script,domain=carousell.com.hk
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||ipv4.seeip.org/jsonip$domain=empire-streaming.app
-@@||ireland101.com/assets/js/prebid-add.js
 @@||issuecdn.baidupcs.com^$important
 @@||isub.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
 @@||itc.cn/site/share/
@@ -5172,6 +5171,7 @@
 @@||moyens.net^$generichide
 @@||moyu.im/*.jpg$stealth
 @@||mozu.com^*/monetate.js$script,domain=acehardware.com
+@@||mp3fy.com^$generichide
 @@||mp4upload.com/embed-*.html$popup
 @@||mp4upload.com/jw/jwplayer.js
 @@||mparticle.com/js/v2/*/mparticle.js$script,domain=bk.com|bravotv.com|cnbc.com|gymshark.com|motortrendondemand.com|nbcsports.com
@@ -5243,7 +5243,6 @@
 @@||myfamilycominc.tt.omtrdc.net^$domain=ancestry.com|ancestry.co.uk|ancestry.ca|ancestry.de|ancestry.it|ancestry.fr|ancestry.se|ancestry.mx
 @@||myfilestorage.xyz^$stealth,media,domain=bflix.gs
 @@||myfilmyzilla.com^$generichide
-@@||mygrad.app.io^$extension
 @@||mylivesignature.com/js/adblocker.js
 @@||myqcloud.com^$stealth=referrer,domain=chinadsl.net
 @@||myqqjd.com^
@@ -5532,6 +5531,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=decrypt.day
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=di.fm
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=door2windows.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=drivedrama.com|puressh.net|iptvbin.com|htnovo.net|frendz4m.org|bestnhl.com|safbits.com|codenova-center.web.app|rivanimation.com|elbierzodigital.com|uploadrar.com|vknsorgula.net|safelink.asia
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=dthforum.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=duplichecker.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=eirudo.com
@@ -5758,7 +5758,6 @@
 @@||player.pl^$generichide
 @@||player.smotrim.ru/js/piwik.js
 @@||player.smotrim.ru/js/piwik.js$~third-party
-@@||player.starlight.digital^$stealth
 @@||player.vgtrk.com/js/stat.js?
 @@||player.vimeo.com/video^$stealth
 @@||player.ynet.co.il/*/flowplayer.ads.*.ynet.js$domain=ynet.co.il
@@ -6553,7 +6552,6 @@
 @@||sport.be.msn.com/javascripts/tracking/metriweb/spring.js
 @@||sport.be/javascripts/tracking/metriweb/spring.js
 @@||sport.virgilio.it/js/web-vitals-evnt.25/web-vitals.attribution.js$script,domain=sport.virgilio.it
-@@||sportnews.to/*?ref=$stealth=referrer,domain=sportshub.to
 @@||sportnews.to^$generichide
 @@||sportpari.by^$stealth=ip
 @@||sportsgrid.com/decor/javascript/magnify_stats.js
@@ -6714,7 +6712,6 @@
 @@||static.redtube.com/mobi/images/$domain=redtube.com|redtube.net
 @@||static.rpxnow.com/js/lib/rpx.js$domain=colbertnation.com|thedailyshow.com
 @@||static.shorte.st/bundles/smeweb/$domain=sh.st
-@@||static.shorte.st/js/packed/smeadvert-locked.js$domain=sh.st
 @@||static.softlayer.com^
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
 @@||static.trbo.com/img/$domain=o2online.de
@@ -7001,6 +6998,7 @@
 @@||thepiratebay.org^$subdocument
 @@||therichest.com^$generichide
 @@||thetvdb.com/banners/$image,domain=tvtime.com
+@@||theverge.com/_next/data/*.json
 @@||thirdwx.qlogo.cn^$important
 @@||thisav.com^$generichide
 @@||thoaimedia.com^$generichide
@@ -7470,7 +7468,6 @@
 @@||web-ads.pulse.weatherbug.net/api/ads/targeting/$domain=weatherbug.com
 @@||web-ads.pulse.weatherbug.net/api/ads/targeting/v*/parameters?$domain=weatherbug.com
 @@||web-sdk.urbanairship.com/notify/$script,domain=etoro.com
-@@||web.any.do^$document
 @@||web.basemark.com^$generichide
 @@||web.dev/patterns/web-vitals-$~third-party
 @@||web.np.playstation.com/api^$stealth
@@ -7640,7 +7637,6 @@
 @@||wx.qq.com/c/=/mpres/*/video_ad_
 @@||wx.qq.com/mmbizwap/*/framead.
 @@||wx2.sinaimg.cn^$important
-@@||wykop.pl/api/v3/tags/reklama/$xmlhttprequest,~third-party
 @@||wzrkt.com/e?$domain=lottiefiles.com
 @@||x.com^$generichide
 @@||x.kinja-static.com/assets/packaged-js/runtime~trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
