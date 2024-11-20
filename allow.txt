@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-20 08:40:12（北京时间）
+! Version: 2024-11-20 20:15:17（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7810
+! Total count: 7811
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -491,6 +491,7 @@
 @@||accaii.com^$domain=kyuusai2nd.net
 @@||account.adobe.com/newrelic.js$~third-party
 @@||account.mail.ru^$stealth
+@@||account.microsoft.com/?refd=$stealth
 @@||account.microsoft.com/auth/$stealth
 @@||accounts.google.com/gsi/$stealth
 @@||accounts.google.com^$generichide
@@ -919,6 +920,7 @@
 @@||animeshouse.net/mp4doo/$stealth
 @@||anisearch.*^$generichide
 @@||anitube.vip/playerricas.php$stealth=referrer
+@@||anizmstream*.com/cdn/down/$stealth,domain=anizmplayer.com|anizm.net
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
 @@||anonymousemail.me/*.js$~third-party
@@ -2722,6 +2724,7 @@
 @@||filmweb.pl^$generichide
 @@||findernet.com^$content
 @@||findlawimg.com^$stealth=referrer,domain=findlaw.cn
+@@||fingahvf.top/advertisers.js
 @@||fingerprintjs.com^$generichide
 @@||firebase.google.com/docs/analytics/$~third-party
 @@||firefaucet.win^$generichide
@@ -2873,7 +2876,6 @@
 @@||gaugau.futabanet.jp^$removeparam=utm_content
 @@||gaus.ee^$generichide
 @@||gaybeeg.info^$generichide
-@@||gaynetwork.co.uk/Images/ads/bg/$image,~third-party
 @@||gbf.wiki/images/$image,~third-party
 @@||gboku.com^$generichide
 @@||gc.ca^$stealth=dpi
@@ -3881,7 +3883,6 @@
 @@||guancha.cn/ad/m_
 @@||guancha.cn/js/sensorsdata.min.js
 @@||guanjia.qq.com^
-@@||guccihide.store/v/$subdocument,stealth=referrer
 @@||guce.advertising.com/collectIdentifiers$~third-party
 @@||guim.co.uk/flash/video/embedded/player-$object,domain=thedailywh.at
 @@||guinnessworldrecords.jp/ezais/analytics$~third-party
@@ -3921,7 +3922,6 @@
 @@||hb.improvedigital.com/pbw/headerlift.min.js$domain=gry.pl
 @@||hb.improvedigital.com/pbw/headerlift.min.js$domain=spielen.com
 @@||hb.improvedigital.com/pbw/prebid/prebid-idhb-v*.min.js$domain=html5.gamedistribution.com
-@@||hb.improvedigital.com/pbw/prebid/prebid-v*-pbjsgd.min.js$domain=html5.gamedistribution.com
 @@||hbbtv.kika.de^
 @@||hbbtv.prosieben.de^
 @@||hbbtv.redbutton.de^
@@ -4090,6 +4090,7 @@
 @@||id.flybuys.com.au/*/fingerprint2.min.js
 @@||id.i2i.jp^
 @@||id.sky.de^$domain=wowtv.de,stealth=referrer
+@@||id.skyeng.ru^$stealth
 @@||id.spectrum.net^$stealth=referrer
 @@||id.vk.com/auth$jsinject
 @@||identity.mparticle.com/v*/identify$domain=cwseed.com
@@ -4115,7 +4116,6 @@
 @@||iknow-pic.cdn.bcebos.com^$stealth
 @@||ilpuntotecnico.com^$generichide
 @@||im.qq.com^$important
-@@||image.mp3.zdn.vn/banner/
 @@||image.shutterstock.com^$image,domain=icons8.com
 @@||image.uc.cn^$important
 @@||imagebam.com/gallery-organizer$document
@@ -4429,11 +4429,11 @@
 @@||indeed.com/rpc/log/myjobs/transition_job_state$xmlhttprequest
 @@||independent.co.uk/_build/prebid.*.js$domain=independent.co.uk
 @@||indianrailways.info/js/adblocker.js
-@@||indiansgetfucked.com$generichide
 @@||indiatimes.com/configspace/
 @@||inews.gtimg.com^
 @@||inews.gtimg.com^$important
 @@||infectiousmedia.com/iab^$domain=youronlinechoices.com
+@@||infinityscans.*/adsAPI.js$domain=infinityscans.xyz|infinityscans.net
 @@||info.seek.com/b/ss/$image,domain=seek.com.au
 @@||infobel.com/Scripts/custom/*.js
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
@@ -4507,6 +4507,7 @@
 @@||itworld.com/elqnow/elq*.js
 @@||iufostworldcongress-singapore.com^
 @@||iv*.imgview.net/i/$image
+@@||ivi.ru/*/video/?id=$stealth
 @@||ivwbox.de/2004/01/survey.js$domain=stylished.de|t-online.de
 @@||ivwextern.prosieben.de/crossdomain.xml$domain=galileo-videolexikon.de
 @@||ivwextern.prosieben.de/php-bin/functions/ivwbox/ivwbox_extern.php?path=$domain=galileo-videolexikon.de
@@ -4839,6 +4840,7 @@
 @@||login.wmtransfer.com^$stealth
 @@||login.wyborcza.pl^$stealth=referrer
 @@||login.yahoo.com$stealth
+@@||login.yahoo.com/config/$stealth
 @@||loginza.ru/api/
 @@||logly.co.jp/recommend/$image,domain=benesse.ne.jp|sponichi.co.jp
 @@||logly.co.jp/recommend/$image,domain=sponichi.co.jp
@@ -4852,7 +4854,6 @@
 @@||longtailvideo.com/5/googlytics/googlytics-1.js$domain=arte.tv
 @@||looker.com/api/internal/$~third-party
 @@||lootup.me/assets/js/ads-prebid.js
-@@||lordserials.cx^$stealth=3p-cookie
 @@||lotto-bw.de^$jsinject
 @@||loyalty-hub.api.unoapp.io/api/$domain=monsterenergyloyalty.com,stealth=referrer
 @@||lp.longtailvideo.com/5/yourlytics/yourlytics-1.js$domain=indiedb.com|indieroyale.com|moddb.com
@@ -5145,6 +5146,7 @@
 @@||mobile.yangkeduo.com^$important
 @@||mobileads.indiatimes.com/Web_Ads/js/22april16/prebid_1.js$script,domain=m.timesofindia.com
 @@||mobinovels.com^$generichide
+@@||modetour.com^$stealth=dpi
 @@||moea.gov.tw/EgisWeb/Scripts/google-analytics.js
 @@||moegirl.org.cn^$generichide
 @@||mojedatovaschranka.cz^$stealth=dpi
@@ -5497,7 +5499,6 @@
 @@||ott.yandex.ru^$stealth
 @@||outbrain.com/outbrain.js$domain=cnn.com
 @@||outbrainimg.com^$third-party,domain=computerbild.de|fitbook.de|metal-hammer.de|rollingstone.de|stylebook.de
-@@||outlook.live.com/owa/projection.aspx$document
 @@||outlook.live.com^$cookie=OParams
 @@||outlookindia.com$generichide
 @@||outsideonline.com^$stealth=dpi
