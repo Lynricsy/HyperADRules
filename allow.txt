@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-11-29 20:15:22（北京时间）
+! Version: 2024-11-30 08:39:58（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7805
+! Total count: 7807
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -3268,6 +3268,7 @@
 @@||google.*/images/icons/product/adsense-
 @@||google.*/imgres?
 @@||google.*/mapmaker/gen_204?$subdocument,xmlhttprequest
+@@||google.*/maps?$removeparam=utm_campaign
 @@||google.com.tr/ads/publisher/partners/static/*/index.min.$domain=google.com.tr
 @@||google.com/adsense/domains/caf.js$domain=wotaku.moe
 @@||google.com/afs/ads?q=*adsafe$domain=wanted.de
@@ -6252,6 +6253,7 @@
 @@||secure.info.seek.com/b/ss/
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||secure.quantserve.com/quant.js$domain=fruitlab.com
+@@||securecard.jp/card_input.html$stealth=referrer
 @@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||secureimage.securedataimages.com^
 @@||securenetsystems.net/*/scripts/ads/prebid.js
