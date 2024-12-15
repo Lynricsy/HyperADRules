@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-12-15 08:46:13（北京时间）
+! Version: 2024-12-15 20:14:22（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7831
+! Total count: 7830
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -299,7 +299,6 @@
 @@|/wp-content/plugins/*/assets/fuckadblock.js
 @@|http$script,~third-party,domain=mylink.*|my1ink.*|myl1nk.*|myli3k.*
 @@|http*://*.*/*.$image,third-party,domain=a2zupload.com
-@@|http://ie.microsoft.com/testdrive/Performance/FishBowl/Default.html|$document
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|https://$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@|ws://*$websocket,domain=flirt4free.com
@@ -481,6 +480,7 @@
 @@||ab.blogs.es/abtest.png$image,domain=xataka.com|trendencias.com
 @@||ab.blogs.es/abtest.png?editorialRecommendations$domain=applesfera.com
 @@||abchina.com^*ad
+@@||abcnews.com/assets/js/prebid.min.js$~third-party
 @@||abema-tv.com^$domain=abema.tv,stealth=3p-auth
 @@||aboluowang.com^$generichide
 @@||about-australia.com/*/clickheat.js
@@ -589,7 +589,6 @@
 @@||adap.tv/redir/javascript/vpaid.js
 @@||adapi.zcool.com.cn/api/adstrategy/realtime/get_ad_info?location_id=$domain=zcool.com.cn
 @@||adashx.ut.dingtalk.com^
-@@||adbeat.com^$domain=adbeat.com
 @@||adblock.adguard.com^
 @@||adblockanalytics.com/ads.js|
 @@||adblockanalytics.com/wp-banners.js|
@@ -1369,7 +1368,6 @@
 @@||bilivideo.com^$stealth,domain=bilibili.com
 @@||billiger.de/js/emos2.js
 @@||billiongraves.com^$generichide
-@@||bin.bnbstatic.com^$stealth,domain=binance.com
 @@||binbucks.com/fuckadblock.js
 @@||binbucks.com^$generichide
 @@||bing.com/Passport.aspx$document
@@ -1931,6 +1929,7 @@
 @@||chineseanime.vip^$generichide
 @@||choice.microsoft.com/*/opt-out$urlblock
 @@||chompers.io/ads.js
+@@||chrome.google.com/webstore/detail/$stealth
 @@||chronicle.blueconic.net/*/json$domain=chronicle.com
 @@||chtoen.com/js/adsbygoogle.js
 @@||chuangkit.com^$generichide
@@ -2707,7 +2706,6 @@
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
 @@||feedly.com/i/^$jsinject
 @@||feilusw.com/search.html$genericblock,generichide
-@@||feldherr.com^$stealth
 @@||feliz-web.data.tm-awx.com/smile-web.min.js$domain=dailystar.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=dailystar.co.uk
 @@||feliz.data.tm-awx.com/smile-web-v2/rootEvent$domain=mirror.co.uk
@@ -4034,6 +4032,7 @@
 @@||hopto.org^$generichide
 @@||host.bsky.network^$stealth=3p-auth
 @@||hostlogr.com/etc/geo.php?
+@@||hosts-file.net/ad_servers.txt
 @@||hosts-file.net^$important
 @@||hotmail.com/mail/*/i2a.js
 @@||hotpornfile.org/wp-admin/admin-ajax.php$domain=hotpornfile.org
@@ -4201,6 +4200,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=cubuffs.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=dailystar.co.uk
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=digitalspy.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=diziler.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=einthusan.ca|einthusan.tv|einthusan.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=embed-zattoo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=etonline.com
@@ -4329,6 +4329,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=tabii.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=vix.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=winknews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=zee5.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$important,domain=digi24.ro
 @@||imasdk.googleapis.com/js/sdkloader/ima3_debug.js$domain=abcnews.go.com|brightcove.net|cbsnews.com|embed.sportsline.com|insideedition.com|pch.com
@@ -4494,7 +4495,6 @@
 @@||instagram.com^$important
 @@||instantink.hpconnected.com/api/$stealth=referrer
 @@||instapundit.com^$generichide
-@@||instasave.xyz^$generichide
 @@||instawp.xyz^$generichide
 @@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source
 @@||int.mwbbiz.com/static/*/app.js$domain=91porny.com
@@ -5131,6 +5131,7 @@
 @@||minyu-net.com/parts/ad/banner/$image,~third-party
 @@||mistore.jp/content/dam/isetan_mitsukoshi/advertise/$~third-party
 @@||mitsubishiclub.cz^$generichide
+@@||miuiflash.com^$generichide
 @@||mivideo.cdn.pandora.xiaomi.com^$important
 @@||mixdrop.ps/e/$subdocument,stealth=referrer
 @@||mixpanel.com/site_media/js/api/mixpanel.js$domain=blog.cloudflare.com
@@ -5545,7 +5546,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=as-selection.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=avforums.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=axilesoft.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=blog.carstopia.net|blog.coinsvalue.net|blog.cookinguide.net|blog.freeoseocheck.com|blog.makeupguide.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=blogs.sapib.ca
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bowfile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=breatheheavy.com
@@ -5694,6 +5694,7 @@
 @@||pgpartner.com^
 @@||phonecallapi.micloud.xiaomi.net^$important
 @@||photofunia.com/effects/$image,~third-party
+@@||photopea.com/promo/no_ads.png
 @@||photos.google.com^$generichide
 @@||piaotia.com/scripts/readindex/tongji.js
 @@||pic.iask.cn^
@@ -6143,7 +6144,6 @@
 @@||rzd.ru^$stealth
 @@||s-ad.rmp.rakuten.co.jp^$app=jp.co.rakuten.pay
 @@||s-microsoft.com/mscc/statics/$script,domain=microsoft.com
-@@||s-plugins.wordpress.org
 @@||s-pt.ppstatic.pl/o/js/pp-ads/ads.js
 @@||s.adadapter.netzathleten-media.de/*/naMediaAd.js$domain=wooco.de
 @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
@@ -6304,7 +6304,6 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=eksisozluk.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamer.com.tw
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamestar.de
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=hdblog.it
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=news.tvb.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=sinarharian.com.my
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=softonic.com
@@ -6356,7 +6355,6 @@
 @@||securetoken.googleapis.com^$stealth=referrer
 @@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth
 @@||securitykiss.com$document
-@@||securitytrails.com/app/api/$domain=securitytrails.com
 @@||securitytrails.com/domain/$domain=securitytrails.com
 @@||seg-cdn.pumpkin.care/analytics.js/$~third-party
 @@||seg-cdn.pumpkin.care/next-integrations/integrations/mixpanel/$domain=get.pumpkin.care
@@ -6800,6 +6798,7 @@
 @@||storage.live.com^
 @@||storage.yandex.net/rdisk/$stealth
 @@||store.storeimages.cdn-apple.com^$domain=apple.com,stealth=referrer
+@@||stores.office.com/authredir
 @@||stpd.cloud^$domain=freemcserver.net
 @@||str.hit.gemius.pl^
 @@||stream.adunity.com^$xmlhttprequest,domain=b1tv.ro
@@ -7148,7 +7147,6 @@
 @@||track.rutarget.ru^
 @@||track.sendcloud.org^
 @@||track.shipstation.com/collections/trackingEvents.js$~third-party
-@@||track.toggl.com/auth^$stealth
 @@||track.toggl.com^
 @@||track.vontron.com^
 @@||track.webgains.com/click.html?$popup,domain=pepper.*
@@ -7802,6 +7800,7 @@
 @@||z.moatads.com^$script,domain=standard.co.uk
 @@||zaixianjisuan.com^$generichide
 @@||zappos.com/js/trackingPixel/mercentTracker.js
+@@||zdbb.net/edaa^$domain=youronlinechoices.com
 @@||zdbb.net/r/?*&mailing
 @@||zdf.de/zdf/flash/eplayer/player.swf?*/cgi-bin/ivw/
 @@||zdopravy.cz^$generichide
