@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-12-21 08:38:56（北京时间）
+! Version: 2024-12-21 20:12:55（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7818
+! Total count: 7816
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1115,6 +1115,7 @@
 @@||app.adjust.world^$app=com.spotify.music
 @@||app.appsflyer.com^
 @@||app.clarity.so^$~third-party
+@@||app.clickfunnels.com/assets/lander.js$script,domain=propanefitness.com
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.market.xiaomi.com^$important
 @@||app.message.sonicwall.com^
@@ -1219,6 +1220,7 @@
 @@||auth2.picpay.com^*/event-tracking.js$script,~third-party
 @@||auto-api.yelp.com
 @@||auto-swiat.pl/*&srcc=ucs$removeparam=utm_source
+@@||auto-swiat.pl/*srcc=$stealth
 @@||auto.cz/*/foto$jsinject
 @@||auto.cz/auto/skins/*/js/advertisment.js
 @@||autocomplete.clearbit.com^
@@ -1281,7 +1283,6 @@
 @@||bam.nr-data.net^$script,domain=kapwing.com
 @@||bam.nr-data.net^$script,domain=play.spotify.com
 @@||bam.nr-data.net^$xmlhttprequest,domain=abema.tv
-@@||bamgrid.com^$stealth=3p-auth|useragent
 @@||bancobrasil.com.br^$stealth=dpi
 @@||banki.ru/bitrix/*/advertising.block/$stylesheet
 @@||bankofamerica.com/content/images/ContextualSiteGraphics/Marketing/Banners/
@@ -1296,6 +1297,7 @@
 @@||barax.de/cache/images/logo-*x*-
 @@||barclays.touchclarity.com^$domain=barclaycard.co.uk
 @@||base64.online/ads.txt
+@@||basinnow.com/admin/upload/settings/advertise-img.jpg
 @@||bat.bing.com/bat.js$domain=airbnb.ru
 @@||bats.video.yahoo.com$app=com.yahoo.mobile.client.android.mail
 @@||battlecats-db.com^$generichide
@@ -1367,7 +1369,6 @@
 @@||bilivideo.com^$stealth,domain=bilibili.com
 @@||billiger.de/js/emos2.js
 @@||billiongraves.com^$generichide
-@@||binbucks.com/fuckadblock.js
 @@||binbucks.com^$generichide
 @@||bing.com/Passport.aspx$document
 @@||bing.com/fd/ls/GLinkPing.aspx?
@@ -1861,6 +1862,7 @@
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js$domain=papalah.com
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/3.2.1/fuckadblock.min.js$domain=sadistic.pl
 @@||cdnjs.cloudflare.com/ajax/libs/jquery/*/jquery.min.js$domain=ouo.press|ouo.io
+@@||cdnjs.cloudflare.com/ajax/libs/jquery/*/jquery.min.js$domain=youav.com
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.js$domain=wtk.pl
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/*/videojs.ads.min.js$domain=linetv.tw
 @@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads^$domain=in.gr
@@ -2568,14 +2570,12 @@
 @@||elife-cloud.blogspot.com^$generichide
 @@||eloqua.com/include/livevalidation_standalone.compressed.js$domain=pbs.org
 @@||eloqua.com/visitor/v200/svrgp.aspx?$domain=itworld.com|juniper.net
-@@||eloqua.com^$domain=forms.progress.com
 @@||eltern.de/min.php?*/clickTracking.js
 @@||em.hk/wp-content/uploads/*_300_250.
 @@||email.awscloud.com^
 @@||email.elitedangerous.com^
 @@||emailapi.zdbb.net/subscriptions/$domain=extremetech.com
 @@||emailapi.zdbb.net/subscriptions/$domain=pcmag.com
-@@||emailregex.com^$generichide
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
 @@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
@@ -3957,7 +3957,6 @@
 @@||hcaptcha.com^*/api.js
 @@||hdfilmfullizle.com/_video_onu_yeni.php?v=1$domain=hdfilmifullizle.com|hdfilmfullizle.com
 @@||hdfilmifullizle.com/_video_onu_yeni.php$domain=hdfilmifullizle.com
-@@||hdliveextra-a.akamaihd.net/*/showads*.js
 @@||hdsky.net/ad/down.png
 @@||hdslb.com/bfs/archive/*@$domain=bilibili.com,image
 @@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
@@ -4802,7 +4801,6 @@
 @@||liulanmi.com/wp-content/uploads/*/StatCounter-
 @@||liumingye.cn^$generichide
 @@||live.indiatimes.com/trackjs.cms
-@@||live.lequipe.fr/thirdparty/prebid.js$~third-party
 @@||live.primis.tech/content/$domain=manchestereveningnews.co.uk
 @@||live.primis.tech/live/liveVideo.php$domain=manchestereveningnews.co.uk
 @@||live.primis.tech/live/liveView.php$domain=manchestereveningnews.co.uk
@@ -5751,6 +5749,7 @@
 @@||pladform.ru/player$subdocument
 @@||planetazdorovo.ru/pics/transparent_pixel.png$image,~third-party
 @@||plantyn.com/optiext/optiextension.dll$~third-party
+@@||platform.twitter.com/$domain=discovery.com
 @@||platform.twitter.com/js/tweet.*.js$domain=gamerant.com
 @@||platform.twitter.com/widgets.js$domain=gamerant.com
 @@||plausible.io/js/plausible.js$domain=sammobile.com
@@ -5910,7 +5909,6 @@
 @@||pubads.g.doubleclick.net/ondemand/hls/content/*/vid/*/streams$domain=sbs.com.au
 @@||pubads.g.doubleclick.net/ssai/
 @@||pubads.g.doubleclick.net/ssai/event/$xmlhttprequest,domain=10play.com.au
-@@||pubads.g.doubleclick.net/ssai/event/$xmlhttprequest,domain=sbs.com.au
 @@||pubads.g.doubleclick.net/ssai/event/*/master.m3u8$domain=click2houston.com
 @@||pubads.g.doubleclick.net/ssai/event/*/master.m3u8$domain=digi24.ro
 @@||pubads.g.doubleclick.net/ssai/event/*/streams$domain=cbc.ca
@@ -6233,6 +6231,7 @@
 @@||sciencechannel.com^$generichide
 @@||sciencedirect.com^$stealth
 @@||scontent*.cdninstagram.com^$stealth
+@@||scontent-*.cdninstagram.com^$stealth,domain=bella.tw
 @@||scontent.xx.fbcdn.net/hads-ak-prn2/*.png$domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion
 @@||scorecardresearch.com$domain=bt.com
 @@||scorecardresearch.com/*/streamingtag_plugin_jwplayer.js$domain=telemundopr.com
@@ -7100,7 +7099,6 @@
 @@||torrindex.net/images/*.gif$domain=thepiratebay.org
 @@||torrindex.net/images/*.jpg$domain=thepiratebay.org
 @@||torrindex.net^$script,stylesheet,domain=thepiratebay.org
-@@||tortuga.wtf^$stealth=referrer
 @@||totaldebrid.org^$generichide
 @@||totheglory.im/pic/ttg_logo
 @@||toutiaocdn.com^$important
@@ -7443,6 +7441,7 @@
 @@||vms-players.minutemediaservices.com^$script,domain=si.com
 @@||vms-videos.minutemediaservices.com^$xmlhttprequest,domain=si.com
 @@||vmware.com^$important
+@@||vnecdn.net/vnexpress/video/video/$stealth,domain=vnexpress.net
 @@||vo.msecnd.net^$domain=gsmarena.com
 @@||vod.olympics2010.msn.com/beacon?
 @@||vod.universalsports.com/beacon?
@@ -7656,7 +7655,6 @@
 @@||www.ruanyifeng.com^$csp=script-src 'self' * 'sha256-0McqMM66/wAVZmxF6zXpjNsb1UMbTl4LXBXdhqPKxws='
 @@||www.statcounter.com/images/$image,third-party
 @@||www.statcounter.com^
-@@||www.ticketmaster.$popup,domain=adclick.g.doubleclick.net
 @@||www.ups.com/WebTracking/processInputRequest
 @@||www.youtube-nocookie.com
 @@||www.youtube.com^$generichide
