@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2024-12-25 20:14:18（北京时间）
+! Version: 2024-12-26 08:38:24（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7809
+! Total count: 7812
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1444,6 +1444,7 @@
 @@||btloader.com/tag?h=prismamedia-com&upapi=true$script,domain=maxisciences.com|gentside.*|ohmymag.*
 @@||btrace.qq.com^$important
 @@||btsax.info^$generichide
+@@||btv.bg/static/bg/shared/js/admanager/ads.js
 @@||buffaloshop.de^*/webtrekk.js
 @@||buffalowildwings.com^*/google-analytics.js
 @@||bugsnag.com^$~third-party,domain=app.bugsnag.com
@@ -5541,6 +5542,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=blogs.sapib.ca
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bowfile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=breatheheavy.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=btv.bg
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=chromeactions.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=cimanow.*|cnvids.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=copyseeker.net
@@ -5868,6 +5870,8 @@
 @@||proton.me^$cookie
 @@||proton.me^$generichide
 @@||protopage.com^$generichide
+@@||prra.spxl.socy.es/pixel.json$domain=cadenaser.com
+@@||prra.spxl.socy.es/pixel/js/$domain=cadenaser.com
 @@||pruefernavi.de/vendor/elasticsearch/elastic-apm-rum.umd.min.js$~third-party
 @@||przegladsportowy.pl/*&srcc=ucs$removeparam
 @@||ps.eyeota.net/opt-in^$domain=youronlinechoices.com
@@ -5977,8 +5981,7 @@
 @@||query1.petametrics.com/*&sdk=bc-jsonp$domain=lanacion.com.ar
 @@||query1.petametrics.com/*&sdk=bc-jsonp$domain=ranker.com
 @@||qun.qzone.qq.com^$important
-@@||r.ap-southeast-1.awstrack.me^
-@@||r.ap-southeast-2.awstrack.me^
+@@||r.*.awstrack.me^
 @@||r.linksprf.com/v$domain=pepper.pl
 @@||r10s.jp/com/img/home/t.gif?$domain=24.rakuten.co.jp
 @@||r10s.jp/share/themes/ds/js/show_ads_randomly.js$domain=travel.rakuten.co.jp
