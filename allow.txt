@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-01-13 20:15:46（北京时间）
+! Version: 2025-01-14 08:37:05（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7783
+! Total count: 7784
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -243,6 +243,7 @@
 @@://10.1.1.$generichide
 @@://127.0.0.1$generichide
 @@://192.168.$generichide
+@@://analytics.google.com/analytics/$domain=analytics.google.com
 @@://googleadservices.com^|
 @@://localhost/$generichide
 @@://localhost:$generichide
@@ -3294,7 +3295,6 @@
 @@||google.com/adsense/domains/caf.js$domain=wotaku.moe
 @@||google.com/adsense/search/ads.js$domain=news.biglobe.ne.jp
 @@||google.com/afs/ads?q=*adsafe$domain=wanted.de
-@@||google.com/analytics/web/$document
 @@||google.com/cse/cse.js$domain=m.hdzog.com
 @@||google.com/images/integrations/$image,~third-party
 @@||google.com/js/gweb/analytics/$domain=google.com
@@ -4745,6 +4745,7 @@
 @@||leadpages.io/analytics/v1/observations/capture?$xmlhttprequest
 @@||leanplum.com^$domain=arkadium.com
 @@||leanplum.com^$domain=nbc.com|leanplum.com
+@@||learn.khanacademy.org^
 @@||leechers-paradise.org^
 @@||lefile.cn/??*,
 @@||legendstracking.com/js/legends-tracking.js$~third-party
