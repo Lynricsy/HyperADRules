@@ -2,7 +2,7 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-01-21 20:14:30（北京时间）
+! Version: 2025-01-22 08:38:22（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
 ! Total count: 7839
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
@@ -824,7 +824,6 @@
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
 @@||alllaw.112.2o7.net^
 @@||allmusic.com/images/tracking/tracking_pixel.jpg
-@@||allpornstream.com/api/ads?type=thumbnail$~third-party
 @@||allthatsinteresting.com/wordpress/wp-content/plugins/bwp-minify^
 @@||almayadeen.net/Content/VideoJS/js/videoPlayer/VideoAds.js$script,~third-party
 @@||alotof.software/wp-content/themes/alosss/ads.php
@@ -935,9 +934,6 @@
 @@||api*-access-sg.pangle.io^$app=com.square_enix.android_googleplay.dqwalkj
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-edge.cognitive.microsofttranslator.com/translate?
-@@||api-iam.intercom.io/messenger/web/ping$domain=help.kobo.com
-@@||api-iam.intercom.io/messenger/web/ping$domain=help.openai.com
-@@||api-iam.intercom.io/messenger/web/ping$domain=support.anthropic.com
 @@||api-js.datadome.co/js/$domain=account.samsung.com
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api-maps.yandex.$stealth=referrer
@@ -2133,6 +2129,7 @@
 @@||connectivitycheck.gstatic.com^$important
 @@||consent.cookiefirst.com/sites$stealth
 @@||console.bce.baidu.com^$domain=console.bce.baidu.com
+@@||console.cloud.google.com^$generichide
 @@||console.statsig.com/_next/$~third-party
 @@||constantcontact.com/js/WebTracking/
 @@||contacts.google.com^$generichide
@@ -2373,6 +2370,7 @@
 @@||directline.com/touchclarity/$script
 @@||discord.com^$generichide
 @@||discordapp.com/banners/$image
+@@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
 @@||disneyplus.com^$generichide
 @@||disneyplus.com^$generichide,badfilter
@@ -6204,7 +6202,7 @@
 @@||safeway.com/*/?bannerId
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
 @@||salfordonline.com/wp-content/plugins/wp_pro_ad_system/$script
-@@||sams.11freunde.de/ee/irl1/v1/interact?$domain=11freunde.de
+@@||sams.11freunde.de/ee/*/interact?$xmlhttprequest,domain=11freunde.de
 @@||sams.spiegel.de/ee/irl1/v1/interact?$domain=spiegel.de
 @@||samsunhaber.com/images/banner/*logo$~third-party
 @@||sankei.co.jp/js/analytics/skd.Analysis.js$script
@@ -7254,6 +7252,7 @@
 @@||ttmetrics.faz.net/rest/v1/delivery?$domain=faz.net
 @@||tts.carbonatixaudio.com^$stealth=referrer
 @@||tubeoffline.com/js/hot.min.js
+@@||tubitv.com^$generichide
 @@||tui.click/js/ads.js
 @@||tui.click^$generichide
 @@||tunein.com/api/v1/comscore$~third-party
@@ -7514,6 +7513,7 @@
 @@||wargaming.net^$stealth
 @@||warpwire.net/AD/
 @@||watch.globaltv.com^$generichide
+@@||watchadsontape.com/prebid.min.js
 @@||watchdirty.to/player/stats.php
 @@||wavse.com^$generichide
 @@||wazimo.com/engine/common/widgets/content/$domain=lastnighton.com
