@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-01-25 20:13:19（北京时间）
+! Version: 2025-01-26 08:38:59（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7867
+! Total count: 7870
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=vidoza.co|vidoza.net
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1116,6 +1116,9 @@
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.market.xiaomi.com^$important
 @@||app.message.sonicwall.com^
+@@||app.plex.tv/auth-form/$removeparam=utm_content,domain=app.plex.tv
+@@||app.plex.tv/auth-form/$removeparam=utm_medium,domain=app.plex.tv
+@@||app.plex.tv/auth-form/$removeparam=utm_source,domain=app.plex.tv
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
 @@||app.tirelocator.ca/static/scripts/google-analytics.js
