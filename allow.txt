@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-03-14 08:40:13（北京时间）
+! Version: 2025-03-14 20:14:49（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 7963
+! Total count: 7971
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -34,7 +34,6 @@
 @@.html$xmlhttprequest,subdocument,stealth=referrer,domain=edgedeliverynetwork.com
 @@.jpg#$domain=huhupan.com
 @@.m3u8$stealth=referrer,domain=edgedeliverynetwork.com
-@@.mp4$domain=crunchyroll.com,stealth
 @@.mp4$media,stealth=referrer,domain=api.animeuzayi.com
 @@.myvi.ru^$stealth
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
@@ -414,6 +413,7 @@
 @@||520cc.cc^*/ad.php
 @@||520click.com/ad.php$domain=520cc.cc
 @@||520click.com/ad.php$stealth
+@@||520click.com/ad.php?id=$script,domain=surirt.com
 @@||5278.cool^$generichide
 @@||52zy.com/gg/
 @@||5471782.fls.doubleclick.net^
@@ -659,6 +659,7 @@
 @@||adroll.com/edaa^$domain=youronlinechoices.com
 @@||ads-api.twitter.com/*/accounts/$domain=analytics.twitter.com
 @@||ads-api.twitter.com^$domain=ads.twitter.com|analytics.twitter.com
+@@||ads-i.org/images/ads3.jpg$~third-party
 @@||ads-interfaces.sc-cdn.net^$domain=ads.snapchat.com
 @@||ads-twitter.com/oct.js$domain=ncsoft.jp
 @@||ads-twitter.com/uwt.js$domain=aussiebum.com|factory.pixiv.net
@@ -714,7 +715,6 @@
 @@||ads.reddit.com^$domain=myqqjd.com
 @@||ads.remix.es/advertisement.js|
 @@||ads.roblox.com/v*/sponsored-pages$xmlhttprequest
-@@||ads.roblox.com/v1/sponsored-pages$xmlhttprequest,domain=roblox.com
 @@||ads.rubiconproject.com/prebid/$script,domain=drudgereport.com|everydayhealth.com
 @@||ads.rubiconproject.com/prebid/*.js$domain=tvaplus.ca
 @@||ads.rubiconproject.com/prebid^$domain=index.hr
@@ -773,6 +773,7 @@
 @@||adx.adform.net/adx/$xmlhttprequest,other,domain=tvp.pl
 @@||adx.yiche.com/cityindex.ashx
 @@||adx.yiche.com/ssp/echo/v1.0/en?*,*,*&cs=
+@@||adz7short.space^$generichide
 @@||aeries.net^*/require/analytics/views/$script,~third-party
 @@||aetv.com^$generichide
 @@||affyun.com^$generichide
@@ -785,7 +786,6 @@
 @@||ahd.ruten.com.tw/ahd/fetch_ad.php?zone=*%2C$domain=ruten.com.tw
 @@||ahhhhfs.com^$generichide
 @@||aiasahi.jp/ads/$image,domain=japan.zdnet.com
-@@||aimfar.solution.weborama.fr/fcgi-bin/oba.fcgi?action=opt$domain=youronlinechoices.com
 @@||airav.cc/js/td_ga_tracker.js
 @@||airchina.com.cn/dynamicAd/
 @@||aixifan.com/acfun-H5/public/script/sensorsdata.
@@ -902,6 +902,7 @@
 @@||analytics.cervell.io/api/collect/connect$domain=cildimveben.com
 @@||analytics.cervell.io/api/product/getProduct/$domain=cildimveben.com
 @@||analytics.digitalpfizer.com/js/prod/pcc/pf_appmeasurement.js$domain=pfizer-covid19-vaccine.jp
+@@||analytics.disneyinternational.com/ads/$other
 @@||analytics.edgekey.net/config/beacon-$xmlhttprequest,domain=raiplay.it
 @@||analytics.edgekey.net/html5/akamaihtml5-min.js$domain=br.de
 @@||analytics.edgekey.net/js/csma.js^$domain=verdi.de
@@ -923,6 +924,7 @@
 @@||android-api-de.gumtree.com/api/users/*/ads.json
 @@||android.clients.google.com/market/GetBinary/$document
 @@||anhuinews.com/zhuyeguanli/2020ad/xidad.jpg
+@@||ani-*.xyz/*.html$stealth,domain=aniwatch.me
 @@||ani.gamer.com.tw^$generichide
 @@||ani4u.org^$generichide
 @@||aniboom.one/embed/$stealth
@@ -930,7 +932,6 @@
 @@||animecorner.me/*/screx.js
 @@||animego.me^$~script,~stylesheet,~xmlhttprequest,~image,stealth=ip
 @@||animego.org^$stealth=ip
-@@||animeku.org/play*.php?id=$stealth
 @@||anisearch.*^$generichide
 @@||anitube.vip/playerricas.php$stealth=referrer
 @@||annhe.net^$generichide
@@ -959,7 +960,6 @@
 @@||aolcdn.com^*/beacon.min.js$domain=autoblog.com|dailyfinance.com
 @@||api*-access-sg.pangle.io^$app=com.square_enix.android_googleplay.dqwalkj
 @@||api*.branch.io^$app=com.reddit.frontpage
-@@||api-*.spot.im/v*/broadcasts/broadcasts/sp_$xmlhttprequest,domain=bizpacreview.com
 @@||api-analytics.magstimconnect.net^$~third-party
 @@||api-edge.cognitive.microsofttranslator.com/translate?
 @@||api-js.datadome.co/js/$domain=account.samsung.com
@@ -983,6 +983,7 @@
 @@||api.adinplay.com/libs/aiptag/pub/$domain=geotastic.net
 @@||api.adinplay.com/libs/aiptag/pub/NND/taming.io/tag.min.js$domain=taming.io|tamming.io
 @@||api.adinplay.com/libs/aiptag/pub/NRB/castlesiege.io/tag.min.js$domain=castlesiege.io
+@@||api.adinplay.com/libs/aiptag/pub/WRK/tetrads.io/tag.min.js$domain=tetrads.io
 @@||api.ads.tvb.com^
 @@||api.aliagents.ai/api/v1/activity$~third-party,xmlhttprequest
 @@||api.amplitude.com^$xmlhttprequest,domain=insiderintelligence.com
@@ -1069,6 +1070,7 @@
 @@||api.mapbox.com/*/mapbox.mapbox-terrain-*,mapbox.mapbox-streets-*^$stealth
 @@||api.mapbox.com/*/mapbox.satellite/$stealth
 @@||api.mapbox.com/*?secure&access_token=$stealth
+@@||api.mapbox.com/geocoding/$stealth
 @@||api.mercari.jp^$stealth
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
@@ -1119,6 +1121,7 @@
 @@||apiservices.krxd.net/click_tracker^
 @@||apk.tw^*/ads.js$script,~third-party
 @@||apkmirror.com^$generichide
+@@||apkmoddone.phongroblox.com^$generichide
 @@||aplayer.xyz/player/watch.php^$stealth
 @@||app-advertise.zhihuishu.com^
 @@||app-measurement.com^$important
@@ -1378,6 +1381,7 @@
 @@||bhg.com/web/js-min/common/js/dwr/RemoteTargetingService.js
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||bigota.d.miui.com^$important
+@@||bigspeeds.com/ajax/advertisement.js
 @@||bikeforums.net/clientscript/vbulletin_analytics.js
 @@||bikeportland.org/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js$script,~third-party
 @@||bild.met.vgwort.de/na^$domain=bild.de
@@ -1573,7 +1577,6 @@
 @@||cd.connatix.com/connatix.playspace.js$domain=loot.tv
 @@||cdc-api.account.sap.com^$stealth=referrer
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
-@@||cdn*.anicdn.net/appsd*.mp4$stealth=referrer
 @@||cdn*.downdetector.com/*/javascript*/adscript.js
 @@||cdn*.esimg.jp/resize/*/image/nativead/
 @@||cdn*.jianshu.io^$stealth
@@ -2527,7 +2530,6 @@
 @@||drivemoe.com/-ads-banner.js
 @@||driverfix.com^*/index_src.php?tracking=$~third-party
 @@||dropbox.com/*/oauth$document
-@@||dropbox.com^$generichide
 @@||dropbox.com^$generichide,badfilter
 @@||dropgalaxy.com^$generichide
 @@||dtdc.in/tracking^
@@ -2643,6 +2645,7 @@
 @@||emailregex.com^$generichide
 @@||emathhelp.net^$csp
 @@||embed.binkies3d.com/content/$domain=gsmarena.com
+@@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
 @@||embed.new.video^$stealth=referrer|ip
 @@||embed.redditmedia.com/widgets/platform.js$domain=gamerant.com
 @@||embed.sendtonews.com/player*.php$domain=earth.com
@@ -2809,7 +2812,6 @@
 @@||filmerotikizle.com/rek/katla2.gif
 @@||films.imhonet.ru^$jsinject
 @@||filmweb.pl^$generichide
-@@||findernet.com^$content
 @@||findlawimg.com^$stealth=referrer,domain=findlaw.cn
 @@||fingerprintjs.com^$generichide
 @@||firebase.google.com/docs/analytics/$~third-party
@@ -3956,6 +3958,7 @@
 @@||gounlimited.to/js/pop.js|
 @@||gov.cn/scripts/Comm/AdRotator.js
 @@||gov1.siteintercept.qualtrics.com^$domain=healthcare.gov
+@@||gpt-worldwide.com/js/gpt.js$~third-party
 @@||grapeshot.co.uk/image-resize/$image
 @@||grapeshot.co.uk/main/channels.cgi$script,domain=telegraph.co.uk
 @@||grapeshot.co.uk/sare-api/
@@ -4956,11 +4959,11 @@
 @@||login.live.com^$stealth
 @@||login.microsoftonline.com^$stealth
 @@||login.nvgs.nvidia.com^$stealth
+@@||login.nvidia.com^$stealth
 @@||login.sendpulse.com^
 @@||login.uid.me^$domain=ucoz.ru
 @@||login.wyborcza.pl^$stealth=referrer
 @@||login.yahoo.com$stealth
-@@||login.yahoo.com/config/$stealth
 @@||loginza.ru/api/
 @@||logly.co.jp/recommend/$image,domain=benesse.ne.jp|sponichi.co.jp
 @@||logly.co.jp/recommend/$image,domain=sponichi.co.jp
@@ -5070,6 +5073,7 @@
 @@||material.io^$generichide
 @@||matlab.mathworks.com^$generichide
 @@||matomo.miraheze.org/matomo.js$script,~third-party
+@@||matrix.redditspace.com^$stealth=3p-auth
 @@||max.com^$generichide
 @@||maxcdn.bootstrapcdn.com/font-awesome^
 @@||maxcheaters.com^$generichide
@@ -5985,8 +5989,8 @@
 @@||prra.spxl.socy.es/pixel.json$domain=cadenaser.com
 @@||prra.spxl.socy.es/pixel/js/$domain=cadenaser.com
 @@||pruefernavi.de/vendor/elasticsearch/elastic-apm-rum.umd.min.js$~third-party
+@@||przegladpiaseczynski.pl/wp-content/plugins/wppas/$~third-party
 @@||przegladsportowy.pl/*&srcc=ucs$removeparam
-@@||ps.eyeota.net/eopt$domain=youronlinechoices.com
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
 @@||ps.w.org^$image,domain=wordpress.org
 @@||pstatic.net^$image,stealth
@@ -6426,6 +6430,7 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$script,domain=m.timesofindia.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=20min.ch
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=castlesiege.io
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=ctv.ca
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=eksisozluk.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamer.com.tw
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamestar.de
@@ -6525,6 +6530,7 @@
 @@||seznam.cz/?spec=*&url=$image,domain=search.seznam.cz
 @@||sf*-*cdn-tos.pstatp.com^$domain=bcy.net|agefans.cc
 @@||sf*-*cdn-tos.pstatp.com^$domain=juejin.cn
+@@||sf.ezoiccdn.com/ezoimgfmt/i0.wp.com/kosmofoto.com/wp-content/uploads/$image,domain=kosmofoto.com
 @@||sf.ezoiccdn.com/ezossp/https/kosmofoto.com/_static/$script,domain=kosmofoto.com
 @@||sf.ezoiccdn.com/ezossp/https/kosmofoto.com/wp-content/$script,domain=kosmofoto.com
 @@||sfdict.com/app/*/click_tracking.js$domain=thesaurus.com
@@ -6966,6 +6972,7 @@
 @@||supremejav.com/supjav.php^$stealth
 @@||surfguru.com^$generichide
 @@||surfsees.com/wp-content/plugins/clickarsf/assets/fuckadblock.js
+@@||surirt.com/ad/ads.php?id=$script,domain=surirt.com
 @@||surveymyopinion.researchnow.com^
 @@||suumo.jp/sp/js/beacon.js$script,~third-party
 @@||suwonlib.go.kr^$stealth=dpi
@@ -7394,6 +7401,7 @@
 @@||tvr.by^$stealth=dpi
 @@||tweaktown.com^$generichide,badfilter
 @@||twitch.tv^$generichide
+@@||twitchadvertising.tv/wp-content/uploads/2014/06/header_logo_advertising.png
 @@||twitter.com$domain=bleacherreport.com
 @@||twitter.com/oct.js$domain=jp.square-enix.com
 @@||twowheeler.policybazaar.com/js/googleanalytics.js
