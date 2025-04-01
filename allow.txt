@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-03-31 20:16:05（北京时间）
+! Version: 2025-04-01 08:49:00（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8078
+! Total count: 8087
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -303,6 +303,7 @@
 @@|http*.php?url=$stealth,domain=nicotv.me
 @@|http*://*.*/*.$image,third-party,domain=a2zupload.com
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
+@@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.orgard.app^
 @@|https://$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@|ws://*$websocket,domain=flirt4free.com
 @@||*.alipay.com^
@@ -826,6 +827,8 @@
 @@||akc.blueconic.net^$domain=akc.org
 @@||aktuality.sk^$generichide
 @@||akyapitv.idealdata.com.tr^$stealth=dpi
+@@||albforex.com.tr^$stealth=dpi
+@@||albyatirim.com.tr^$stealth=dpi
 @@||algolia.net/*/indexes/$stealth
 @@||algolianet.com/*/indexes/$stealth
 @@||alicdn.com/??*/tracker/
@@ -1381,6 +1384,9 @@
 @@||beacon.guim.co.uk/accept-beacon?
 @@||beanfun.com/ADClient/
 @@||beatthetraffic.com/traffic/?partner=$subdocument
+@@||beeline.api.flocktory.com/*/loader.js$domain=beeline.ru
+@@||beeline.api.flocktory.com/u_shaman/setup-api.js$domain=beeline.ru
+@@||beeline.api.flocktory.com/u_widget/get-widget.js$domain=beeline.ru
 @@||behanceserved.com/stats/stats.js?
 @@||beinconnect.com.tr^$stealth
 @@||beinconnect.com.tr^$stealth=donottrack|webrtc
@@ -2157,6 +2163,7 @@
 @@||colatour.com.tw/webDM/*/adbanner$~third-party
 @@||colatour.com.tw^$generichide
 @@||colendilabs.com^$stealth=dpi
+@@||colendimenkul.com^$stealth=dpi
 @@||collect.igodigital.com/collect.js$domain=berkley-fishing.com
 @@||collect.igodigital.com/collect.js$domain=berkley-fishing.com|enoteca.co.jp|goodwillfinds.com|samash.com|viajeguanabara.com.br|vitalsource.com|wilsonparking.com.au
 @@||collect.igodigital.com/collect.js$domain=enoteca.co.jp
@@ -3838,6 +3845,7 @@
 @@||googletagmanager.com/gtm.js$domain=sk.club.iqos.com
 @@||googletagmanager.com/gtm.js$domain=skechers.com.tr
 @@||googletagmanager.com/gtm.js$domain=skoda-auto.pl
+@@||googletagmanager.com/gtm.js$domain=slam.nl
 @@||googletagmanager.com/gtm.js$domain=sloggi.com
 @@||googletagmanager.com/gtm.js$domain=society6.com
 @@||googletagmanager.com/gtm.js$domain=sonos.com
@@ -5118,6 +5126,7 @@
 @@||maps.hereapi.com^$stealth=referrer
 @@||maps4heroes.com^$generichide
 @@||maptiles.ping-admin.ru^$image,domain=ping-admin.com
+@@||marbas.com.tr^$stealth=dpi
 @@||market.mi-img.com^$important
 @@||market.viber.com^$elemhide
 @@||marketing.dropbox.com/?referrer=$stealth
