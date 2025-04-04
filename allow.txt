@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-04-03 20:16:16（北京时间）
+! Version: 2025-04-04 08:41:44（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8094
+! Total count: 8097
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -1010,6 +1010,7 @@
 @@||api.app.mobilelocker.eu/api/latest/application-environment/ahoy/events$~third-party
 @@||api.apple-mapkit.com^$stealth
 @@||api.apptentive.com^$app=de.mcdonalds.mcdonaldsinfoapp
+@@||api.asmr-200.com/api/auth/$stealth=3p-auth
 @@||api.babbel.io/gamma/v1/$ping,domain=babbel.com
 @@||api.bbc.com/bbcdotcom/assets/*/script/av/emp/adverts.js
 @@||api.bilibili.com^$stealth
@@ -1656,6 +1657,7 @@
 @@||cdn.adswizz.com/adswizz/js/SynchroClient*.js$domain=lounge.fm
 @@||cdn.advertserve.com^$domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
 @@||cdn.afp.ai/ssp/sdk.js$domain=manilatimes.net
+@@||cdn.almamedia.tech/esm/geo-client/v*/geo-client.min.mjs$domain=iltalehti.fi
 @@||cdn.amplitude.com/libs/amplitude-*-min.gz.js$domain=agroros.ru
 @@||cdn.amplitude.com/libs/amplitude-*-min.gz.js$domain=crunchyroll.com|elconfidencial.com
 @@||cdn.amplitude.com/libs/amplitude-*-min.gz.js$domain=pdfexpert.com
@@ -2445,6 +2447,7 @@
 @@||dev.appboy.com^$app=com.picsart.studio
 @@||dev.virtualearth.net/REST/*/Autosuggest?query=$stealth=referrer
 @@||dev.virtualearth.net/webservices/$domain=multiroute.de
+@@||dev.visualwebsiteoptimizer.com/j.php$script,domain=kb.arlo.com
 @@||dev.visualwebsiteoptimizer.com^$stylesheet,script,domain=hancomdocs.com
 @@||developer.qcloudimg.com/http-save/$image,stealth=referrer
 @@||developers.google.com^
@@ -4413,7 +4416,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sbs.com.au
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=sondakika.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=spox.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tabii.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=texastech.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=timesnownews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tranimeci.com
@@ -4458,7 +4460,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=news4jax.com|gmg-wjxt-prod.cdn.arcpublishing.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=southparkstudios.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=tabii.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=vix.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=wsls.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=zee5.com
@@ -4839,6 +4840,7 @@
 @@||kingofshrink.com^$generichide
 @@||kingwar.cn^$image,stealth=referrer
 @@||kinja.com/api/profile/accountwithtoken$stealth
+@@||kion.ru/api/$stealth=ip
 @@||kiplinger.112.2o7.net^
 @@||kissjav.com^$generichide
 @@||kit.fontawesome.com$stealth=referrer,domain=androidacy.com
@@ -5653,6 +5655,7 @@
 @@||onet.pl/?utm_source=$removeparam
 @@||onet.pl^$generichide,badfilter
 @@||onetag-sys.com/prebid-request$domain=linkneverdie.net
+@@||oneupload.net/*.html$stealth=referrer
 @@||onl.bz^
 @@||online-metrix.net/*/check.js$domain=secure.getcreditscore.com.au
 @@||online-metrix.net/*/tags.js$domain=secure.getcreditscore.com.au
