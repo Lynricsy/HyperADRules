@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-05-17 08:43:38（北京时间）
+! Version: 2025-05-17 20:15:12（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8920
+! Total count: 8927
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -1014,6 +1014,7 @@
 @@||ams.cdn.arkadiumhosted.com/advertisement/video/stable/video-ads.js$domain=play.dictionary.com
 @@||ams.cdn.arkadiumhosted.com/assets/*/advertisements.js
 @@||ams.cdn.arkadiumhosted.com/assets/*/display-ads-f.js
+@@||amsarkadium-a.akamaihd.net/assets/*/arena/heap/advertisements.js$domain=nydailynews.com
 @@||an.yandex.ru^$app=com.badmanners.murglar
 @@||analogplanet.com^$elemhide
 @@||analysys.cn^$domain=analysys.cn
@@ -1325,6 +1326,7 @@
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
 @@||app.tirelocator.ca/static/scripts/google-analytics.js
+@@||app.veggly.net/plugins/cordova-plugin-admobpro/www/AdMob.js$script,~third-party
 @@||app.zhuanzhuan.com^$important
 @@||app2.putgate.org/static/*.html$xmlhttprequest,stealth=referrer
 @@||appapi.inspsearchapi.com^$domain=search.pch.com
@@ -1523,6 +1525,7 @@
 @@||banma.com/statics/js/??
 @@||banner-hiroba.com/wp-content/uploads/$image,~third-party
 @@||banner.dna.fi^
+@@||banner.infoey.com/adbanner.png$domain=phineypet.com
 @@||banners.s1.citilink.ru^$image,domain=citilink.ru
 @@||baozhang.baidu.com^
 @@||barax.de/cache/images/logo-*x*-
@@ -1691,6 +1694,7 @@
 @@||browserscope.org/user/beacon/*?callback=$script,domain=jsperf.com
 @@||brutalmania.io/ads.js
 @@||bs.serving-sys.com/crossdomain.xml$domain=rte.ie
+@@||bscfsdf.azzureedge.xyz/scripts/*.m3u8$stealth=referrer
 @@||bt*.t-ru.org^$stealth=useragent
 @@||bt.com^*/touchclarity/homepage/omtr_tc.js
 @@||bt.dk/build/prebid-ads-advertisement_adbanner.*.js
@@ -2412,6 +2416,7 @@
 @@||cnzz.com/z_stat.php?id=$domain=fapiao.bangnimang.net
 @@||cocomanga.com/js/ad*/*.js
 @@||cocomanga.com/js/ad_/$image
+@@||code.adsales.snidigital.com/conf/ads-config.js^$domain=foodnetwork.com
 @@||code.etracker.com/t.js?et=$script,domain=apotheken-umschau.de|compo-hobby.de|kaguma.com|krombacher.de
 @@||code.jquery.com/*.min.js$domain=audioz.download
 @@||code.sms.mob.com^
@@ -2659,7 +2664,6 @@
 @@||d8rk54i4mohrb.cloudfront.net/js/video.js$domain=forbes.com
 @@||da.mgtv.com/m/player?
 @@||da.mgtv.com/m5/page?
-@@||daikoku.ebis.ne.jp^
 @@||dailyfinance.com/traffic/?
 @@||dailymail.co.uk/brightcove/tracking/ted3.js
 @@||dan-ball.jp/*/img.gif$domain=dan-ball.jp
@@ -3489,7 +3493,6 @@
 @@||gnar.grammarly.com/events$xmlhttprequest,domain=account.grammarly.com
 @@||gntm.connect.prosieben.de^$generichide
 @@||gnula.club/embed.php$stealth=referrer
-@@||go.adjust.com^
 @@||go.admost.com/adx/js/admost.js$domain=arsiv.mackolik.com
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/stat/dolwebanalytics.js
@@ -4631,6 +4634,7 @@
 @@||i*-tb.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
 @@||i*.gmx.com/image
 @@||i*.imagetwist.com^$image,domain=imagetwist.com
+@@||i-funbox.com/images/
 @@||i-sdk.mediation.unity3d.com^$app=jp.step_official
 @@||i.cdn.turner.com/ads/adfuel/$domain=bleacherreport.com
 @@||i.cdn.turner.com/ads/adfuel/ais/*/tbs-ais.min.js$domain=tbs.com
@@ -6301,6 +6305,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=apkmirror.com,stealth=referrer
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arahdrive.com
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=arkadium.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=as-selection.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=axilesoft.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=bilinovel.com
@@ -7751,6 +7756,7 @@
 @@||sumologic.com^$domain=sumologic.com
 @@||sundaysky.com/sundaysky.js?$domain=lenovo.com
 @@||sundaysky.com^*/default/sundaysky.js$domain=lenovo.com
+@@||sundaysportclassifieds.com/ads/$image,~third-party
 @@||suning.cn/project/msIndex/js/??
 @@||suo.im^$important
 @@||supercloudsms.com/js/ad
@@ -8443,6 +8449,7 @@
 @@||vikistream.com:*/hls/*.m3u8$stealth=referrer
 @@||vipi.tv/ads.js
 @@||vipstatic.com/img/share/blank.png
+@@||viptools.es/assets/ads.js
 @@||virginplus.ca^$stealth=dpi
 @@||virpe.cc/includes/js/adver.js
 @@||virtualearth.net^$stealth=searchqueries|referrer,domain=bing.com
