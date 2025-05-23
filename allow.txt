@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-05-23 08:45:30（北京时间）
+! Version: 2025-05-23 20:16:40（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8967
+! Total count: 8975
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -356,6 +356,7 @@
 @@|http://$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
 @@|http://r.i.ua/s?*&p*&l$image,domain=swordmaster.org
 @@|https://$xmlhttprequest,domain=depositfiles.com|depositfiles.org|dfiles.eu|dfiles.ru
+@@|https:///ovh.webshark.pl/adserver/*/main_script.js?advertise_check=1
 @@|ws://*$websocket,domain=flirt4free.com
 @@||*.alipay.com^
 @@||*.alipay.com^$important
@@ -1120,7 +1121,6 @@
 @@||api-v*.trbo.com/r.php$domain=blau.de
 @@||api-v*.trbo.com/r.php$domain=o2online.de
 @@||api-v4.trbo.com/r.php?$script,domain=blau.de
-@@||api.*.commercetools.com^$stealth=3p-auth,domain=qt.io
 @@||api.1plus1.video^$stealth=referrer|ip
 @@||api.account.xiaomi.com^$important
 @@||api.adinplay.com/$xmlhttprequest,domain=taming.io|tamming.io
@@ -1440,7 +1440,6 @@
 @@||auni.telecome.cn^
 @@||ausha.tsbluebox.com^$media,domain=podcast.ausha.co
 @@||auth-id.nfl.com/gs/webSdk/Api.aspx$stealth=referrer
-@@||auth.*.commercetools.com^$stealth=3p-auth,domain=qt.io
 @@||auth.gfx.ms^$document
 @@||auth.mail.ru^$stealth=useragent
 @@||auth.opera.com^$stealth=useragent
@@ -2149,6 +2148,7 @@
 @@||cdn.vox-cdn.com/packs/js/concert_ads-*.js$domain=bavarianfootballworks.com
 @@||cdn.vox-cdn.com/packs/js/concert_ads-*.js$domain=goldenstateofmind.com
 @@||cdn.vox-cdn.com/packs/js/concert_ads-*.js$domain=mmafighting.com
+@@||cdn.watch.aetnd.com^$domain=fyi.tv|cdn.watch.aetnd.com
 @@||cdn.wazimo.com/engine/common/js/$domain=lastnighton.com
 @@||cdn.wazimo.com/engine/common/js/$domain=showsnob.com
 @@||cdn.wazimo.com/engine/static/*/images/$domain=lastnighton.com
@@ -2793,6 +2793,7 @@
 @@||discordapp.com/banners/$image
 @@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
+@@||discretemath.org/ads/
 @@||discretemath.org^$image,stylesheet
 @@||disneyplus.com^$generichide
 @@||disneyplus.com^$generichide,badfilter
@@ -4178,6 +4179,7 @@
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.de
 @@||googletagmanager.com/gtm.js$domain=mediamarkt.nl
 @@||googletagmanager.com/gtm.js$domain=megacurioso.com.br
+@@||googletagmanager.com/gtm.js$domain=merrell.com
 @@||googletagmanager.com/gtm.js$domain=militaria.pl
 @@||googletagmanager.com/gtm.js$domain=miltonkeynes.co.uk
 @@||googletagmanager.com/gtm.js$domain=mobile01.com
@@ -6035,6 +6037,7 @@
 @@||mywot.com/*/confirmNewEmail/$removeparam
 @@||myyouporn.org/wp-content/uploads/$media,stealth=referrer
 @@||mzzcloud.life/embed-$stealth=referrer
+@@||n4mo.org/advert.js
 @@||n8s.jp^$script,domain=nikkei.com
 @@||na61-na62.wagbridge.advertisement.alibabacorp.com.gds.alibabadns.com^$important
 @@||na61-na62.wagbridge.advertisement.alibabacorp.com^$important
@@ -6893,6 +6896,7 @@
 @@||recaptcha.net/recaptcha/$csp
 @@||recaptcha.net/recaptcha/$script
 @@||receiveasms.com^$generichide
+@@||recetasmaria.com^$stealth=referrer
 @@||recmd.html5.qq.com^$important
 @@||recommender.scarabresearch.com/merchants/$domain=nkd.com
 @@||recommender.scarabresearch.com^
@@ -7268,6 +7272,7 @@
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=tf1info.fr
 @@||securepubads.g.doubleclick.net^$app=jp.naver.line.android
 @@||securetoken.googleapis.com^$stealth=referrer
+@@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth=ip
 @@||securevideotoken.tmgrup.com.tr/webtv/secure^$stealth=referrer
 @@||securitykiss.com$document
 @@||securitytrails.com/app/api/$domain=securitytrails.com
@@ -7459,7 +7464,6 @@
 @@||snssdk.com^$important
 @@||snva.jp/javascripts/reco/$script,domain=store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
-@@||sobot.com^
 @@||sofire.baidu.com^$important
 @@||soft.tbs.imtt.qq.com^$important
 @@||soft8ware.com^$generichide
@@ -7708,6 +7712,7 @@
 @@||static.telegraph.co.uk/telegraph-advertising/tmg-gpt.min.js$domain=telegraph.co.uk
 @@||static.trbo.com/img/$domain=o2online.de
 @@||static.truex.com/js/client.js$domain=schoolcheats.net
+@@||static.vocstatic.com/*/voonto.js$domain=secure.hoy.es
 @@||static.vocstatic.com/voonto2/latest/voonto.js$domain=abc.es
 @@||static.vocstatic.com^$script,domain=areapersonal.hoy.es
 @@||static.vocstatic.com^$script,stylesheet,domain=ideal.es
@@ -8031,6 +8036,7 @@
 @@||themarker.com/logger/p.gif?*=COMMENTS$xmlhttprequest
 @@||themarker.com/logger/p.gif?a=$image
 @@||themelock.com/advertisement.js
+@@||themes.googleusercontent.com/static/fonts/$domain=tweaktown.com
 @@||themezon.net/link.php$stealth=referrer
 @@||thenewslens.com/assets/js/*/admanager.js$domain=thenewslens.com
 @@||thenextweb.com$generichide
@@ -8430,6 +8436,8 @@
 @@||vatchus.com^$generichide
 @@||vattastic.com/js/fp2/fingerprint2.min.js
 @@||vaughnsoft.net/play/$stealth=referrer,domain=vaughn.live
+@@||vcentry2.valuecommerce.ne.jp^
+@@||vcentry3.valuecommerce.ne.jp^
 @@||vdncloud.org/iframe/$stealth=referrer
 @@||vdun.weibo.com^$important
 @@||vector.hereapi.com/v*/vectortiles/$stealth=referrer
