@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-06-03 08:46:56（北京时间）
+! Version: 2025-06-03 20:17:33（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8970
+! Total count: 8963
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|bhugolinfo.com|bhugolinfo.com|cxissuegk.com|gknutshell.com|godstoryinfo.com|laweducationinfo.com|makeincomeinfo.com|rsfinanceinfo.com|rsgames.xyz|savemoneyinfo.com|vichitrainfo.com|workproductivityinfo.com|worldaffairinfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -229,7 +229,6 @@
 @@/player/*$stealth=referrer,domain=ibomma.*
 @@/playlist.m3u8$stealth=referrer|ip
 @@/playstream/*/embed*.php$xmlhttprequest,stealth=referrer,domain=playstream.site
-@@/playstream/*/event.php$xmlhttprequest,stealth=referrer,domain=playstream.site
 @@/prebid-js-$domain=mytvsuper.com|tvb.com|tvbs.com.tw
 @@/progress.php?callback=$script,domain=ytmp3.cc
 @@/pub/ad/*$domain=ruten.com.tw
@@ -596,7 +595,6 @@
 @@||acgdraw.com/ad$xmlhttprequest
 @@||acgvideo.com^$stealth=referrer,domain=bilibili.com
 @@||achieves.2gis.com/*/achieves?locale=$stealth=3p-auth,xmlhttprequest
-@@||acid2.acidtests.org^$document
 @@||acid3.acidtests.org^$document
 @@||acornsquare.jp^$stealth=dpi
 @@||acortalink.me/s.php?$stealth=referrer
@@ -865,7 +863,6 @@
 @@||adst.mp.pl^$domain=mp.pl
 @@||adstats.tencentmusic.com^$important
 @@||adswizz.com/adswizz/js/SynchroClient*.js$script,third-party,domain=jjazz.net
-@@||adswizz.com/sca_newenco/$domain=triplem.com.au
 @@||adswizz.com^$domain=noz.de
 @@||adtech.de/dt/common/DAC.js$domain=swehockey.se
 @@||adtech.de/dt/common/DAC.js$domain=worldsnooker.com
@@ -992,6 +989,7 @@
 @@||amazonaws.com/prod.iqdcontroller.iqdigital/cdn_iqdspiegel/live/iqadcontroller.js.gz$domain=spiegel.de
 @@||amazonaws.com/static.madlan.co.il/*/heatmap.json?$xmlhttprequest
 @@||amazonaws.com/storage.liveabc.com/ads/$domain=store.liveabc.com
+@@||amazonaws.com/tracker/p/kompasreco/oval_web_analytics_latest.js$domain=kompas.com
 @@||amazonaws.com/zeroistanbulplaylist/$stealth=referrer,domain=zeroistanbul.com
 @@||amazoncustomerservice.d2.sc.omtrdc.net^$domain=amazon.es
 @@||amc-widgets.crowdtwist.com/widgets/t/account-
@@ -2641,6 +2639,7 @@
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$script,domain=line.me
 @@||d.line-scdn.net/*/torimochi.js/public/v1/release/stable/min/torimochi.js$domain=pointclub-portal.landpress.line.me
 @@||d.line-scdn.net^*/torimochi.js$script,domain=demae-can.com
+@@||d.socdm.com/adsv/*/tver_splive$xmlhttprequest,domain=imasdk.googleapis.com
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d1-dm.com^$generichide
 @@||d1ayxb9ooonjts.cloudfront.net/bitly2/$domain=bitly.com
@@ -2752,7 +2751,6 @@
 @@||dev.visualwebsiteoptimizer.com/server-side/settings?a=$domain=olx.co.id
 @@||dev.visualwebsiteoptimizer.com^$stylesheet,script,domain=hancomdocs.com
 @@||developer.qcloudimg.com/http-save/$image,stealth=referrer
-@@||developers.google.com^
 @@||developers.google.com^$domain=developers.google.com
 @@||devfaq.ru/*/search?*&method=HEAD$xmlhttprequest,document
 @@||deviantart.com^$stealth=ip
@@ -3411,7 +3409,6 @@
 @@||geoplugin.net/javascript.gp$script,domain=christianhouseshare.com.au|gamemazing.com|soundsonline.com
 @@||get-to.link^$stealth=referrer
 @@||get.cervell.io/api/$domain=cildimveben.com
-@@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
 @@||get.x-link.pl/*embed.html$stealth=referrer
@@ -3471,6 +3468,7 @@
 @@||global.apis.naver.com/commentBox/cbox/web_neo_list_jsonp.json$stealth=referrer
 @@||global.apis.naver.com/weverse/$stealth=referrer,domain=weverse.io
 @@||global.apis.naver.com^$stealth=referrer,domain=webtoons.com
+@@||global.fncstatic.com/*/OutbrainWidgetConnector.js$domain=video.foxnews.com|video.foxbusiness.com|foxnews.com
 @@||global.fncstatic.com/static/isa/app/lib/VisitorAPI.js$domain=video.foxnews.com|video.foxbusiness.com
 @@||global.ketchcdn.com/web/$domain=forbes.com
 @@||globalatlanticannuity.com/assets/embed/gtm.js$script,~third-party
@@ -3487,7 +3485,6 @@
 @@||gnar.grammarly.com/events$xmlhttprequest,domain=account.grammarly.com
 @@||gntm.connect.prosieben.de^$generichide
 @@||gnula.club/embed.php$stealth=referrer
-@@||go.adjust.com^
 @@||go.admost.com/adx/js/admost.js$domain=arsiv.mackolik.com
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/stat/dolwebanalytics.js
@@ -4876,7 +4873,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=texastech.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=timesnownews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tranimeci.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tubitv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tvid.in
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tvn24.pl|tvn.pl
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=tvp.pl
@@ -6370,7 +6366,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=repo.hackyouriphone.org
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sammobile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=satdl.com
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=seminarstopics.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=simsdom.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smallseotools.com,badfilter
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smsget.net
@@ -7471,7 +7466,6 @@
 @@||soisk-me.pl/modules/*/js/advertisement.js
 @@||solr.sas.com/query/$xmlhttprequest,domain=jmp.com
 @@||solve-all-problems.info/googleads.js
-@@||solvetube.site^$generichide
 @@||som.aeroplan.com/b/ss/
 @@||somewheresouth.net/banner/banner.php$image
 @@||sonar.viously.com^$domain=clubic.com
@@ -8882,7 +8876,6 @@
 @@||yimg.com/*/*.css
 @@||yimg.com/*/css/
 @@||yimg.com/bm/lib/fi/common/*/yfi_comscore.js$domain=finance.yahoo.com
-@@||yimg.com/dy/ads/native.js$script,domain=animedao.to
 @@||yimg.com/mi/eu/ywa.js$domain=immowelt.de
 @@||yimg.com/rq/darla/*/g-r-min.js$domain=yahoo.com
 @@||yimg.com/ss/rapid-3.*.js$domain=hk.yahoo.com|tw.yahoo.com
