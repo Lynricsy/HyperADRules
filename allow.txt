@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-06-15 08:52:41（北京时间）
+! Version: 2025-06-15 20:15:29（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8461
+! Total count: 8460
 @@$cookie=__gads,domain=rseducationinfo.com|rsinsuranceinfo.com|rsadnetworkinfo.com|rsfinanceinfo.com|rshostinginfo.com|rssoftwareinfo.com|armypowerinfo.com|artoffocas.com|godstoryinfo.com|laweducationinfo.com|rsfinanceinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -1226,7 +1226,6 @@
 @@||app.appsflyer.com^
 @@||app.clarity.so^$~third-party
 @@||app.hubspot.com/api/ads/$~third-party
-@@||app.humanornot.ai^$stealth=referrer
 @@||app.market.xiaomi.com^$important
 @@||app.message.sonicwall.com^
 @@||app.plex.tv/auth-form/$removeparam=utm_content,domain=app.plex.tv
@@ -1703,11 +1702,11 @@
 @@||cdc-api.account.sap.com^$stealth=referrer
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
 @@||cdek.ru^$stealth=useragent
+@@||cdn*.anicdn.net/appsd*.mp4$stealth=referrer
 @@||cdn*.anyclip.com^$domain=content.dictionary.com
 @@||cdn*.downloadapkgames.com/?session=$stealth=referrer
 @@||cdn*.jianshu.io^$stealth=referrer
 @@||cdn*.movcdn.*^$xmlhttprequest,stealth=referrer|ip,domain=moeni.net
-@@||cdn*.pw/stream2/cdn-*/index.m3u8$stealth=ip|referrer
 @@||cdn-*.convertexperiments.com/js^$domain=xda-developers.com
 @@||cdn-aitg.widerplanet.com/js/wp_astg_$script,domain=larocheposay.co.kr
 @@||cdn-fck.tnaflix.com^$removeparam
@@ -1848,7 +1847,6 @@
 @@||cdn.flashtalking.com/*.mp4?cb=$media,domain=safeframe.googlesyndication.com
 @@||cdn.fluidplayer.com/*/current/fluidplayer.min.js
 @@||cdn.games.mobinozer.com/shared/loader/advert.js
-@@||cdn.gateway.now-plus-prod.aws-cbc.cloud^$stealth=3p-auth,domain=plus.rtl.de
 @@||cdn.georiot.com/snippet.js$domain=techadvisor.co.uk
 @@||cdn.georiot.com/snippet.js$domain=webwereld.nl
 @@||cdn.getblueshift.com/blueshift.js$script,domain=rentcafe.com
@@ -3080,6 +3078,7 @@
 @@||fuckadblock.sitexw.fr^$generichide
 @@||fullhdfilm.*/_video_onu_yeni.php$domain=fullhdfilm.*
 @@||fundingchoicesmessages.google.com/f^$domain=adshnk.com
+@@||fundingchoicesmessages.google.com^$domain=ytlarge.com
 @@||fundingchoicesmessages.google.com^$script,domain=soranews24.com
 @@||fundingchoicesmessages.google.com^$stealth=referrer
 @@||funnel.bgfretail.com^$stealth=dpi
@@ -3583,7 +3582,6 @@
 @@||google.com.tr/ads/publisher/partners/static/*/index.min.$domain=google.com.tr
 @@||google.com/adsense/domains/caf.js$domain=deepart.io
 @@||google.com/adsense/domains/caf.js$domain=paint.net
-@@||google.com/adsense/search/ads.js$domain=news.biglobe.ne.jp
 @@||google.com/afs/ads?q=*adsafe$domain=wanted.de
 @@||google.com/cse/cse.js$domain=m.hdzog.com
 @@||google.com/images/integrations/$image,~third-party
@@ -7844,6 +7842,7 @@
 @@||txxxporn.tube/ext/get_file/$stealth=referrer
 @@||tycoon.adspirit.net/adview.php^$domain=streetdir.com|roaddir.com
 @@||type.jp/common/js/clicktag.js
+@@||typhoon.zjwater.gov.cn^$stealth=donottrack
 @@||u1.img.mobile.sina.cn^$important
 @@||uaprom.net/image/blank.gif?$image
 @@||ucoz.net/cgi/uutils.fcg?$script,third-party
@@ -8037,7 +8036,6 @@
 @@||vjs.zencdn.net/*/video-js.css
 @@||vk.com/*.php?__query=$document
 @@||vk.com/vkpay$stealth
-@@||vk.payservice.io^$stealth
 @@||vkcdn5.com^$stealth=referrer,image,media
 @@||vkprime.com/embed-*.html$stealth=referrer
 @@||vlist.se/advertisement.js
@@ -8240,6 +8238,7 @@
 @@||wwads.cn/js/makemoney.js$domain=baomidou.com|nodejs.cn
 @@||wwe.com/sites/all/modules/wwe/wwe_analytics/s_wwe_code.js
 @@||www.chemdraw.com.cn^$important
+@@||www.dogpile.com^
 @@||www.fbsbx.com^
 @@||www.gdata.pl^$elemhide
 @@||www.google-analytics.com^$app=com.fitbit.FitbitMobile
@@ -8258,6 +8257,7 @@
 @@||www.googletagmanager.com/gtm.js$script,domain=book.impress.co.jp
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
 @@||www.gstatic.com
+@@||www.jdoqocy.com^
 @@||www.jiaoyimao.com^$important
 @@||www.kanjiantu.com^$important
 @@||www.literotica.com^$content
@@ -8300,7 +8300,6 @@
 @@||xboxlive.com^$stealth=3p-auth
 @@||xboxservices.com^$stealth=3p-auth
 @@||xcweather.co.uk/*/geo.php?
-@@||xdiv.space/io/p/?token=$stealth=referrer
 @@||xe.com^$removeparam
 @@||xeroshoes.co.uk/affiliate/scripts/trackjs.js$~third-party
 @@||xfinity.com/stream/js/api/fingerprint.js$domain=xfinity.com
