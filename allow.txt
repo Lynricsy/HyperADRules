@@ -2,7 +2,7 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-07-14 08:52:14（北京时间）
+! Version: 2025-07-14 20:18:36（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
 ! Total count: 8395
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -352,7 +352,6 @@
 @@||*.video.xiaomi.com^$important
 @@||*.y.qq.com^$important
 @@||*.yt2api.com/api/$domain=api.ytapi.cc,stealth=referrer
-@@||*hubst.guru/uploads/$stealth=referrer
 @@||*optout$domain=smartadserver.com
 @@||*optout$domain=youronlinechoices.com
 @@||*status$domain=youronlinechoices.com
@@ -1191,7 +1190,6 @@
 @@||api2.branch.io^$app=com.spotify.music|app.hallow.android|com.adobe.reader|tv.twitch.android.app
 @@||api2.branch.io^$app=com.strava
 @@||api2.branch.io^$app=com.tokopedia.tkpd
-@@||apiavsee.com/player.php$stealth=referrer
 @@||apibay.org^$script,xmlhttprequest,domain=thepiratebay.org
 @@||apim.canadiantire.ca^$stealth=referrer
 @@||apimeishi.meituan.com/meishi/poi$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
@@ -1750,6 +1748,7 @@
 @@||cdn.bannersnack.com/banners/$~third-party,image,subdocument
 @@||cdn.bannersnack.com/iframe/embed.js$domain=audiogon.com
 @@||cdn.bcebos.com/passApi/$stealth=referrer
+@@||cdn.bcebos.com^$stealth=referrer,domain=baike.baidu.com
 @@||cdn.behavioralengine.com/scripts/btest/advertisement.js$domain=tvnturbo.pl
 @@||cdn.bewab.co/embed-$subdocument,stealth=referrer
 @@||cdn.blueconic.net/akc.js$domain=akc.org
@@ -2133,6 +2132,7 @@
 @@||cizgifilmlerizle.com/getvid?$stealth=referrer
 @@||cj.dotomi.com^
 @@||cl*.k5a.io^$script,xmlhttprequest,domain=finansavisen.no
+@@||cl-*.k5a.io/*.js^$domain=tv2.no
 @@||cl-eu4.k5a.io/*.js$domain=itavisen.no
 @@||cl.link-ag.net^
 @@||cl2.webterren.com^$important
@@ -2192,6 +2192,7 @@
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=karnaval.com|livestream.com|luxuryrealestate.com
 @@||cloudfront.net/atrk.js$domain=luxuryrealestate.com
+@@||cloudfront.net/images/$stealth=referrer,domain=maps.seaofthieves.rarethief.com
 @@||cloudfront.net/js/common/invoke.js
 @@||cloudfront.net/libs/amplitude-$script,domain=elconfidencial.com
 @@||cloudfront.net/libs/amplitude-*-min.gz.js$domain=elconfidencial.com
@@ -2267,7 +2268,6 @@
 @@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
 @@||coinadster.com^$script,stylesheet,xmlhttprequest,other,image,domain=coinadster.com
 @@||coinmarketcap.com/static/addetect/$script,~third-party
-@@||coinpayu.com/assets/ads_$domain=coinpayu.com
 @@||cokcok.stream/play/$stealth=referrer
 @@||colamanga.com/js/*/load.js
 @@||colamanga.com^$generichide
@@ -2992,7 +2992,6 @@
 @@||flyordie.com/games/online/iframeafg*.html
 @@||fnggcdn.com/items/$stealth=referrer
 @@||focus.ti.com^*/metrics-min.js
-@@||focusmate-api.herokuapp.com/v*/profiles/$stealth=3p-auth,domain=focusmate.com
 @@||fonts.shopifycdn.com/roboto/roboto_*.woff$stealth=referrer,domain=shopify.com
 @@||football-lineups.com^$generichide
 @@||forbes.ru^$removeparam=erid
@@ -6159,7 +6158,6 @@
 @@||player.glomex.com^$subdocument,stealth=referrer
 @@||player.mediavitrina.ru^$stealth=referrer
 @@||player.odycdn.com/api/$xmlhttprequest,domain=odysee.com
-@@||player.ooyala.com/static/v*/production/latest/ad-plugin/google_ima.min.js$domain=broncos.com.au
 @@||player.pl^$generichide
 @@||player.smotrim.ru/js/piwik.js
 @@||player.smotrim.ru/js/piwik.js$~third-party
@@ -6472,6 +6470,7 @@
 @@||remote-data.urbanairship.com^$app=com.caribou.caribouapp
 @@||ren.tv/video/embed/$stealth=referrer
 @@||renault.de/js/sitestat.js
+@@||renewcanceltv.com/porpoiseant/banger.js$script,~third-party
 @@||renfei.net^$generichide
 @@||report-ads-to.pubnation.com/dist/pnr.js?t=$domain=m.neogaf.com
 @@||reports.adguard.com^
@@ -6706,7 +6705,6 @@
 @@||secure.info.seek.com/b/ss/
 @@||secure.logmein.com/scripts/Tracking/$script,domain=logme.in|logmein.com
 @@||secure.quantserve.com/quant.js$domain=fruitlab.com
-@@||secure.selfwealth.com.au^$stealth=ip
 @@||securecard.jp/card_input.html$stealth=referrer
 @@||securegames.iwin.com/data/gtm.json$~third-party,xmlhttprequest
 @@||secureimage.securedataimages.com^
@@ -6970,6 +6968,7 @@
 @@||smp.sankei.co.jp/js/analytics/skd.Analysis.js
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
+@@||smtp.focusgroupresearch.com^
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||snapchat.com/static/js/autotrack.js
@@ -7533,7 +7532,6 @@
 @@||threatbook.cn/public/asset/js/zhugeIo.
 @@||thron.com/shared/plugins/tracking/current/tracking-library-min.js$domain=dainese.com
 @@||thumbnail*.coupangcdn.com/thumbnails/$stealth=referrer,image
-@@||thumbnail.thench.net^
 @@||thumbor.thedailymeal.com^
 @@||tianxun.com/min/f=
 @@||tianyancha.com^*/sensorsdata.$script,~third-party
@@ -8223,6 +8221,7 @@
 @@||wx2.sinaimg.cn^$important
 @@||wxhepz-inapps.appsflyersdk.com^$app=com.getir
 @@||wxhepz-launches.appsflyersdk.com^$app=com.getir
+@@||wykop.pl/api/v3/tags/reklama/$xmlhttprequest,~third-party
 @@||wzrkt.com/e?$domain=lottiefiles.com
 @@||x.com^$generichide
 @@||x.kinja-static.com/assets/packaged-js/runtime~trackers.*.js$domain=clickhole.com|lifehacker.com|splinternews.com|avclub.com|deadspin.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|qz.com|theinventory.com|theonion.com|theroot.com|thetakeout.com
@@ -8344,6 +8343,7 @@
 @@||youtu.be^$important
 @@||youtube-nocookie.com
 @@||youtube.com/$stealth=useragent,app=MicrosoftEdgeCP.exe
+@@||youtube.com/get_video_info*&el=editpage
 @@||youtube.com/get_video_info?$xmlhttprequest,domain=music.youtube.com|tv.youtube.com
 @@||youtube.com/iframe_api?$stealth=referrer
 @@||youtube.com/live_chat$stealth=referrer
