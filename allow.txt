@@ -2,7 +2,7 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-07-16 20:18:53（北京时间）
+! Version: 2025-07-17 08:50:26（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
 ! Total count: 8407
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
@@ -2385,6 +2385,7 @@
 @@||counter-strike.net^$important
 @@||countrygarden.com.cn/ad/
 @@||coupang.com^$stealth=dpi
+@@||coupang.com^$stealth=useragent
 @@||cov19ent.kdca.go.kr^$stealth=dpi
 @@||coveo.com/rest/search/$stealth=3p-auth,domain=lg.com
 @@||covid19m.kdca.go.kr^$stealth=dpi
@@ -4839,6 +4840,7 @@
 @@||iprima.cz^$stealth=referrer
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||ipv4.seeip.org/jsonip$domain=empire-streaming.app
+@@||iqiyi.com/*.html$stealth=webrtc
 @@||ireland101.com/assets/js/prebid-add.js
 @@||issuecdn.baidupcs.com^$important
 @@||isub.isnssdk.com^$app=com.ss.android.article.topbuzzvideo
@@ -6296,9 +6298,7 @@
 @@||pub.doubleverify.com/dvtag/$domain=time.com
 @@||pub.doubleverify.com/dvtag/$script,domain=time.com
 @@||pub.network^$script,domain=creaders.net
-@@||pub.pixels.ai/prebid_standard.js$domain=standard.co.uk
 @@||pub.pixels.ai/prebid_standard.js$script,domain=standard.co.uk
-@@||pub.pixels.ai/wrap-independent-no-prebid-lib.js$domain=the-independent.com
 @@||pub.pixels.ai/wrap-independent-no-prebid-lib.js$script,domain=independent.co.uk
 @@||pubads.g.doubleclick.net/gampad/ad?$domain=nbc.com
 @@||pubads.g.doubleclick.net/gampad/ads?$app=com.goldtouch.ynet
