@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-07-24 20:18:54（北京时间）
+! Version: 2025-07-25 08:50:18（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8404
+! Total count: 8407
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$generichide,domain=vidoza.co|vidoza.net
@@ -650,6 +650,7 @@
 @@||addthis.com/*-angularjs.min.js$script,domain=ead.senac.br|missingkids.com|missingkids.org
 @@||addthis.com/js/*/addthis_widget.js$script,domain=stagecoachbus.com
 @@||adguard.com^$stealth
+@@||adguardpartner.com^$generichide,genericblock
 @@||adidas.com^*/adidasAnalytics.js?
 @@||adidasapp.api.adidas.com.cn^$important
 @@||adidasoriginals-lookbook.com.tw/js/adtracking.js
@@ -2320,6 +2321,7 @@
 @@||connatix.com$domain=babycenter.com
 @@||connatix.com*/connatix.player.$script,domain=ebaumsworld.com|funker530.com|tvinsider.com|washingtonexaminer.com
 @@||connatix.com/min/connatix.renderer.infeed.min.js$domain=accuweather.com|collider.com|gamepress.gg|salon.com
+@@||connatix.com^$domain=accuweather.com
 @@||connatix.com^$domain=sport-fm.gr|sport24.gr|variety.com
 @@||connect.facebook.net^$script,domain=up-4ever.net
 @@||connect.facebook.net^*/fbevents.js$domain=elinoi.com
@@ -3218,6 +3220,7 @@
 @@||gizmodo.com/x-kinja-static/assets/new-client/*~slideshowPermalinkPage~trackers.
 @@||gj.mmstat.com/aliyun.$domain=work.aliyun.com
 @@||gk.sina.cn/v1/gkmatch?
+@@||glancecdn.net/cobrowse/$domain=payroll.toasttab.com
 @@||glavnoe.life^$removeparam=utm_campaign
 @@||glavnoe.life^$removeparam=utm_content
 @@||glavnoe.life^$removeparam=utm_medium
@@ -7299,7 +7302,7 @@
 @@||streamtape.com^$popup,domain=streamtape.to
 @@||streamwish.com/js/dnsads.js?ads
 @@||streanplay.cc^$stealth
-@@||sts.wavewalt.me/scripts/v*/embedv*.min.js$domain=cricstream.me
+@@||sts.wavewalt.me/scripts/v*/embedv*.min.js$domain=cricstreams.re
 @@||studioclassroom.com/ad/
 @@||stylished.de/js/vendors/emos2.js$domain=stylished.de
 @@||stylist.co.uk^$stealth=dpi
