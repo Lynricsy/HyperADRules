@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-08-29 08:42:49（北京时间）
+! Version: 2025-08-29 20:16:20（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8367
+! Total count: 8375
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -76,7 +76,6 @@
 @@/adbanner/*$domain=bsgroup.com.hk|fjt2.net
 @@/adbanner/*$image,domain=books.com.tw
 @@/adbar/*$domain=outlook.live.com
-@@/adblock.js^$domain=cbs.com
 @@/adblockDetector.$domain=softwarebrother.com
 @@/adblock_$domain=xingk.cc
 @@/adfile/*$domain=cidianwang.com
@@ -1129,7 +1128,6 @@
 @@||api.mapbox.com/*mapbox.mapbox-$stealth=referrer
 @@||api.mapbox.com/geocoding/$stealth=referrer
 @@||api.mapbox.com^$stealth,domain=kamsnim.cz
-@@||api.mapbox.com^$stealth=referrer,domain=gpx.studio
 @@||api.mapbox.com^$stealth=referrer,domain=planet.com
 @@||api.mapbox.com^$stealth=referrer,domain=tunein.com
 @@||api.mapy.cz/*/maptiles/$stealth=referrer
@@ -1461,6 +1459,7 @@
 @@||bhc.co.kr^$stealth=dpi
 @@||bhg.com/web/js-min/common/js/dwr/RemoteTargetingService.js
 @@||bid.g.doubleclick.net/dbm/vast$xmlhttprequest,domain=safeframe.googlesyndication.com
+@@||bigad.me^$domain=bigad.me
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||biggestplayer.cachefly.net/ad300.html
 @@||bigota.d.miui.com^$important
@@ -1496,7 +1495,6 @@
 @@||bjjhq.com/HttpCombiner.ashx?$script,~third-party
 @@||blackcircles.ca^$script,~third-party
 @@||blackmod.net^$generichide
-@@||bleepingcomputer.com/download/ads-spy/
 @@||blob.core.windows.net/bge/src/js/google-analytics.js$domain=secure2.bge.com
 @@||blocket.se/annonser^
 @@||blocket.se^*/xtcore.js
@@ -1844,6 +1842,8 @@
 @@||cdn.maskinbladet.dk/*assets/templates/*/img/adblocker/ads.png
 @@||cdn.matomo.cloud/tekuchi.matomo.cloud/matomo.js$domain=berkeleygroup.digital
 @@||cdn.megadata.co.kr/dist/prod/enp_tracker_self_hosted.min.js$domain=hancomdocs.com
+@@||cdn.membrana.media/spx/ym.js$domain=sporx.com
+@@||cdn.membrana.media/video/$domain=sporx.com
 @@||cdn.mxpnl.com/libs/$script,domain=get.pumpkin.care
 @@||cdn.mxpnl.com/libs/mixpanel*.min.js$domain=account.cyberghostvpn.com
 @@||cdn.mxpnl.com/libs/mixpanel*.min.js$domain=grammarly.com
@@ -2434,7 +2434,6 @@
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$script,domain=line.me
 @@||d.line-scdn.net/*/torimochi.js/public/v1/release/stable/min/torimochi.js$domain=pointclub-portal.landpress.line.me
 @@||d.line-scdn.net^*/torimochi.js$script,domain=demae-can.com
-@@||d.socdm.com/adsv/*/tver_splive$xmlhttprequest,domain=imasdk.googleapis.com
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d1-dm.com^$generichide
 @@||d1ayxb9ooonjts.cloudfront.net/bitly2/$domain=bitly.com
@@ -2538,6 +2537,7 @@
 @@||dev.visualwebsiteoptimizer.com/server-side/settings?a=$domain=olx.co.id
 @@||dev.visualwebsiteoptimizer.com^$stylesheet,script,domain=hancomdocs.com
 @@||developer.qcloudimg.com/http-save/$image,stealth=referrer
+@@||developers.google.com^
 @@||developers.google.com^$domain=developers.google.com
 @@||devfaq.ru/*/search?*&method=HEAD$xmlhttprequest,document
 @@||devhub.rezcomm.com/hubapmydbauth/brandapi/$stealth=referrer
@@ -2764,6 +2764,7 @@
 @@||einthusan.tv^$generichide
 @@||eircomphonebook.ie/js/wt_capi.js?
 @@||ekamus.info^$generichide
+@@||elahmad.com/ads/fc.php
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js
 @@||eldiario.es/static/BBTCore/images/pixel.gif?
@@ -2953,7 +2954,6 @@
 @@||filmerotikizle.com/rek/katla2.gif
 @@||filmweb.pl^$generichide
 @@||filmweb.pl^$stealth=referrer
-@@||financeyogi.net/safe*.php?link=$stealth=referrer
 @@||findernet.com^$content
 @@||findlawimg.com^$stealth=referrer,domain=findlaw.cn
 @@||fingerprintjs.com^$generichide
@@ -2976,6 +2976,7 @@
 @@||fnggcdn.com/items/$stealth=referrer
 @@||focus.ti.com^*/metrics-min.js
 @@||fonts.shopifycdn.com/roboto/roboto_*.woff$stealth=referrer,domain=shopify.com
+@@||foodtechnos.in^$generichide
 @@||football-lineups.com^$generichide
 @@||forbes.ru^$removeparam=erid
 @@||forecast.lemonde.fr/ls.html$domain=lemonde.fr
@@ -4582,7 +4583,7 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=f5haber.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=zattoo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=10play.com.au|10.com.au
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|digi24.ro|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|digi24.ro|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|watchcharge.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=cbs.com|paramountplus.com|history.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=click2houston.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=gbnews.com
@@ -4671,6 +4672,7 @@
 @@||img*.kachelmannwetter.com/images/$domain=meteologix.com
 @@||img*.kangaroobro.com/images/$image,domain=leyuman.com
 @@||img*.nga$removeparam=cmpid
+@@||img*.reimg.org/images/$stealth=referrer,domain=remanga.org
 @@||img-r1.2xstorage.com^$image,stealth=referrer
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
@@ -5044,6 +5046,7 @@
 @@||leanplum.com^$domain=arkadium.com
 @@||leanplum.com^$domain=nbc.com|leanplum.com
 @@||learn.khanacademy.org^
+@@||lecteurvideo.com/embed.php?id=$stealth=referrer
 @@||leechers-paradise.org^
 @@||lefile.cn/??*,
 @@||legendstracking.com/js/legends-tracking.js$~third-party
@@ -5161,6 +5164,7 @@
 @@||login.microsoftonline.com^$stealth
 @@||login.nvgs.nvidia.com^$stealth
 @@||login.sendpulse.com^
+@@||login.wmtransfer.com^$stealth=3p-cookie
 @@||login.wyborcza.pl^$stealth=referrer
 @@||login.yahoo.com$stealth=referrer
 @@||login.yahoo.net^$stealth=referrer
@@ -5187,6 +5191,7 @@
 @@||lr-ingest.io/LogRocket.min.js$domain=smartcare.com
 @@||lsi.com^*/google-analytics.js
 @@||lso.ca^$stealth=dpi
+@@||lswcdn.net^$stealth=referrer
 @@||lulustream.com^$popup,domain=luluvdo.com
 @@||luluvdo.com^$stealth=useragent
 @@||luminousstreamhaven.com^$stealth=referrer,domain=edgedeliverynetwork.com
@@ -5848,6 +5853,8 @@
 @@||ott.yandex.ru^$stealth=ip|useragent
 @@||outbrain.com/outbrain.js$domain=cnn.com
 @@||outbrainimg.com^$third-party,domain=computerbild.de|fitbook.de|metal-hammer.de|rollingstone.de|stylebook.de
+@@||outkick.com/wp-content/plugins/advanced-ads-pro/assets/js/
+@@||outkick.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js
 @@||outlook.live.com^$cookie=OParams
 @@||outlookindia.com$generichide
 @@||outsideonline.com^$stealth=dpi
@@ -6288,7 +6295,6 @@
 @@||pubads.g.doubleclick.net^$domain=twitch.tv
 @@||public-api.reviews.2gis.com^$stealth=3p-auth
 @@||public-cis.exponea.com^
-@@||public-ubiservices.ubi.com^$stealth=3p-auth
 @@||public.fbot.me/events/$domain=casper.com
 @@||publicwww.com/ad/paypro_success.html
 @@||publicwww.com^$generichide
@@ -6896,6 +6902,7 @@
 @@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
 @@||siteanalytics.compete.com^$~third-party
 @@||siteapps.com^$script,domain=netcombo.com.br
+@@||siva-my.jsstatic.com/_ads/_static/$domain=jobstreet.com.my
 @@||sjsmitaa.org/bin/showads.
 @@||skiplinks.xyz/skipad.webp$domain=skiplinks.xyz|lewdsteam.com|adultcomixxx.com
 @@||skmedix.pl/*/*.js$~third-party
@@ -7251,6 +7258,7 @@
 @@||stream.adunity.com^$xmlhttprequest,domain=b1tv.ro
 @@||stream.voidboost.$stealth=ip
 @@||stream4free.live^$generichide
+@@||streambox*.xyz/cdn/down/$stealth=referrer,domain=ddizi.im
 @@||streamingcommunity.*/*.js
 @@||streamlive.to^$generichide
 @@||streamtape.*/ad.js
