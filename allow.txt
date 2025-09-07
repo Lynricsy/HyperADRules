@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-09-07 08:45:58（北京时间）
+! Version: 2025-09-07 20:14:30（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8391
+! Total count: 8389
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -480,6 +480,7 @@
 @@||99ybcc.com^$generichide
 @@||9anime.nl/ajax/
 @@||9anime.nl/assets^
+@@||9anime.nl/watch/$stealth=referrer
 @@||9anime.vip/ajax/
 @@||9cache.com^$stealth=referrer,domain=9gag.com
 @@||9sblog.com^$generichide
@@ -523,11 +524,11 @@
 @@||abt.nike.com^$domain=nike.com
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
+@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||ac.namu.la^$image,domain=arca.live,stealth=referrer
 @@||accaii.com^$domain=kyuusai2nd.net
-@@||account.adguard.*/api_acc/$stealth=3p-auth
 @@||account.adobe.com/newrelic.js$~third-party
 @@||account.mail.ru^$stealth=useragent
 @@||account.mcid.mynavi.jp^$stealth=referrer
@@ -1707,7 +1708,9 @@
 @@||cdn.adsninja.ca/adsninja_worker.js$domain=makeuseof.com|howtogeek.com
 @@||cdn.adsninja.ca/adsninja_worker_caller.js$domain=makeuseof.com|howtogeek.com
 @@||cdn.adspirit.de/banner/_default/160x600.jpg$domain=streetdir.com|roaddir.com
+@@||cdn.adspirit.de/banner/_default/300x250.jpg$domain=streetdir.com|roaddir.com
 @@||cdn.adspirit.de/banner/_default/468x60.jpg$domain=streetdir.com|roaddir.com
+@@||cdn.adspirit.de/banner/_default/728x90.jpg$domain=streetdir.com|roaddir.com
 @@||cdn.adspirit.de^$domain=cdn.adspirit.de
 @@||cdn.adswizz.com/adswizz/js/SynchroClient*.js$domain=lounge.fm
 @@||cdn.advertserve.com^$domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
@@ -2550,7 +2553,6 @@
 @@||dev.visualwebsiteoptimizer.com/server-side/settings?a=$domain=olx.co.id
 @@||dev.visualwebsiteoptimizer.com^$stylesheet,script,domain=hancomdocs.com
 @@||developer.qcloudimg.com/http-save/$image,stealth=referrer
-@@||developers.google.com^
 @@||developers.google.com^$domain=developers.google.com
 @@||devfaq.ru/*/search?*&method=HEAD$xmlhttprequest,document
 @@||deviantart.com^$stealth=ip
@@ -2725,6 +2727,7 @@
 @@||e.zg-api.com/*/analytics.js$domain=zillow.com
 @@||e.zg-api.com/a/z/js/*/analytics.js$domain=zillow.com
 @@||e9china.net^$generichide
+@@||eapi.pcloud.com/getpublinkdownload$stealth=referrer
 @@||eapteka.ru/*/personal/$stealth=ip
 @@||easternbank.com/sites/easternbank/files/google_tag/eastern_bank/google_tag.script.js$script,~third-party
 @@||easy-firmware.com/templates/default/html/*/assets/js/fingerprint2.min.js$script,~third-party
@@ -2901,7 +2904,6 @@
 @@||facebook.com^$generichide
 @@||facebook.com^$generichide,badfilter
 @@||facebook.com^$important
-@@||faculty.uml.edu/klevasseur/ads/
 @@||faculty.uml.edu^$image,stylesheet
 @@||fakt.pl/*&srcc=ucs$removeparam
 @@||fakt.pl/*?utm_source=$removeparam
@@ -4693,7 +4695,6 @@
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
 @@||img.blesk.cz/js/base-cz/gemius.js
-@@||img.blesk.cz/static/data/blesk/reklama/advertisment.js
 @@||img.forumfree.net^$stealth=referrer
 @@||img.informer.com/images/mac_banner_$domain=informer.com
 @@||img.kilimall.com/*/js/sensorsdata.min.js$domain=kilimall.co.ke
@@ -5881,7 +5882,6 @@
 @@||oxygenmag.com^$stealth=dpi
 @@||ozabc.com^$generichide
 @@||ozon.ru/my/points$removeparam=__rr,app=ru.ozon.app.android
-@@||p.d.1emn.com^$script,domain=hotair.com
 @@||p.jwpcdn.com/*/googima.js$domain=kar360.com
 @@||p.jwpcdn.com/*/skins/$third-party
 @@||p.sky.com^$domain=wowtv.de,stealth=referrer
@@ -5935,6 +5935,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=keralatelecom.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=key-hub.eu
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=kitguru.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=litecoinfaucet.info
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mealcold.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=mobile-tracker-free.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=okdebrid.com
@@ -5944,7 +5945,6 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=quienhabla.mx,xmlhttprequest
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rain-alarm.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=repo.hackyouriphone.org
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rte.ie
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sammobile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=satdl.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smallseotools.com,badfilter
@@ -6196,7 +6196,6 @@
 @@||pon.blueconic.net/plugins/*optout_responsive$domain=seat.nl
 @@||ponominalu.ru/cart$document
 @@||pons.com/p/files/*$image
-@@||pool-newskoolmedia.adhese.com/tag/config.js$domain=formule1.nl
 @@||pool.v6.bt.n0808.com
 @@||popads.net^$domain=popads.net
 @@||popart.hk/newweb/$generichide
@@ -7765,7 +7764,6 @@
 @@||twitter.com$domain=bleacherreport.com
 @@||twitter.com/oct.js$domain=jp.square-enix.com
 @@||twowheeler.policybazaar.com/js/googleanalytics.js
-@@||txc.gtimg.com/static/$stealth,domain=support.qq.com
 @@||txws.yyzb456.top^$domain=857zb7.tv
 @@||txxx.com/embed/$stealth=referrer
 @@||txxx.com/ext/get_file^$stealth=referrer
