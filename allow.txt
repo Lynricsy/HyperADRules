@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-09-18 08:40:39（北京时间）
+! Version: 2025-09-18 20:16:24（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8392
+! Total count: 8393
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -2086,6 +2086,7 @@
 @@||chinamobile.com^*/ad$~third-party
 @@||chinatimes.com/css-main/ad.css
 @@||chineseanime.vip^$generichide
+@@||choice.microsoft.com/*/opt-out$urlblock
 @@||chompers.io/ads.js
 @@||chronicle.blueconic.net/*/json$domain=chronicle.com
 @@||chtoen.com/js/adsbygoogle.js
@@ -2930,7 +2931,6 @@
 @@||fedex.com/apps/myprofile/$generichide
 @@||feed.4strokemedia.com^$domain=video.corriere.it
 @@||feed.4strokemedia.com^$domain=video.gazzetta.it
-@@||feed.adrelayer.com^
 @@||feedback-pa.clients6.google.com^$stealth=referrer
 @@||feedback.miui.com^$important
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
@@ -4219,7 +4219,6 @@
 @@||hcaptcha.com/*/api.js
 @@||hcaptcha.com/captcha/$script,subdocument
 @@||hcaptcha.com^*/api.js
-@@||hdmomplayer.com/embed/$domain=dizimom.*,stealth=referrer
 @@||hdsky.net/ad/down.png
 @@||hdslb.com/bfs/archive/*@$domain=bilibili.com,image
 @@||hdslb.com/bfs/cm/cm-sdk/static/js/bili-collect.js
@@ -4971,6 +4970,7 @@
 @@||karte.io^$domain=online.ysroad.co.jp
 @@||kaspersky.co$content
 @@||kaspersky.com/advert/
+@@||kaspersky.ru/advert/
 @@||kataweb.it/wt/wt.js?http$domain=gelocal.it|video.huffingtonpost.it|video.ilsecoloxix.it|video.lastampa.it|video.repubblica.it
 @@||katfile.com/js/*ad*.js
 @@||kayixin.com^*/advert
@@ -5821,6 +5821,7 @@
 @@||onetag-sys.com/prebid-request$domain=linkneverdie.net
 @@||oneupload.net/*.html$stealth=referrer
 @@||onl.bz^
+@@||onli.anime-best.com^$stealth=referrer
 @@||online-metrix.net/*/check.js$domain=secure.getcreditscore.com.au
 @@||online-metrix.net/*/tags.js$domain=secure.getcreditscore.com.au
 @@||online-metrix.net/*/tags.js$domain=smartsource.com
@@ -5881,6 +5882,7 @@
 @@||outlookindia.com$generichide
 @@||outsideonline.com^$stealth=dpi
 @@||ovh.webshark.pl/adserver/*/main_script.js?advertise_check=1
+@@||owlzo.com/gpt_ads-public.js$domain=owlzo.com
 @@||oxygenmag.com^$stealth=dpi
 @@||ozabc.com^$generichide
 @@||ozon.ru/my/points$removeparam=__rr,app=ru.ozon.app.android
@@ -5945,6 +5947,7 @@
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=quienhabla.mx,xmlhttprequest
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rain-alarm.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=repo.hackyouriphone.org
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=rockradio.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=sammobile.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=satdl.com
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$domain=smallseotools.com,badfilter
@@ -6251,7 +6254,6 @@
 @@||prod.adspsp.com/adb.*.min.js$domain=healthline.com
 @@||prod.adspsp.com/adb.2418030m.min.js$domain=medicalnewstoday.com
 @@||prod.impartner.live^
-@@||production-public.tubi.io^$stealth=3p-auth
 @@||profile*.se.360.cn^
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
 @@||promiflash.de/static/js/pf-web-*.js$domain=promiflash.de
@@ -6716,7 +6718,6 @@
 @@||securepubads.g.doubleclick.net/*/pubads_impl*.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|thecubexguide.com|jytechs.in
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=cinemaxx.de
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=purepeople.com
-@@||securepubads.g.doubleclick.net/gampad/ads$domain=simple.ripley.cl
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=softonic.com
 @@||securepubads.g.doubleclick.net/gampad/ads$domain=wtf.nl
 @@||securepubads.g.doubleclick.net/gampad/ads?$domain=bloomberg.com
@@ -7304,7 +7305,6 @@
 @@||sumologic.com^$domain=sumologic.com
 @@||sundaysky.com/sundaysky.js?$domain=lenovo.com
 @@||sundaysky.com^*/default/sundaysky.js$domain=lenovo.com
-@@||sundaysportclassifieds.com/ads/$image,~third-party
 @@||suning.cn/project/msIndex/js/??
 @@||suo.im^$important
 @@||supercloudsms.com/js/ad
@@ -7980,6 +7980,7 @@
 @@||vod.olympics2010.msn.com/beacon?
 @@||vod.universalsports.com/beacon?
 @@||vodafonelimited.tt.omtrdc.net^
+@@||vodakpsdhdsdrm-vh.akamaihd.net/z/clips/$stealth=3p-cookie
 @@||vplayer.ilsemedia.nl/swf/im_player.swf?
 @@||vpnsplit.com/ads/advertisement.js
 @@||vpro.nl/vpro/htmlplayer/0.3-snapshot/statcounter.js?
