@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-09-28 08:47:12（北京时间）
+! Version: 2025-09-28 20:14:34（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8412
+! Total count: 8400
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -526,6 +526,7 @@
 @@||abt.nike.com^$domain=nike.com
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
+@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||ac.namu.la^$image,domain=arca.live,stealth=referrer
@@ -560,6 +561,7 @@
 @@||action.metaffiliation.com^
 @@||actiris.be/urchin.js
 @@||activity.tuiapple.com^$important
+@@||ad-api-v01.uliza.jp^$script,xmlhttprequest,domain=golfnetwork.co.jp|tv-asahi.co.jp
 @@||ad-block.dns.adguard.com^
 @@||ad-cdn.bilgin.pro/app/ad-*.min.js$domain=medyafaresi.com
 @@||ad-delivery.net/px.gif$domain=bildderfrau.de,xmlhttprequest
@@ -1467,7 +1469,6 @@
 @@||bhc.co.kr^$stealth=dpi
 @@||bhg.com/web/js-min/common/js/dwr/RemoteTargetingService.js
 @@||bid.g.doubleclick.net/dbm/vast$xmlhttprequest,domain=safeframe.googlesyndication.com
-@@||bigad.me^$domain=bigad.me
 @@||bigbtc.win/js/ads-prebid.js
 @@||bigfishaudio.com/banners/$image,~third-party
 @@||biggestplayer.cachefly.net/ad300.html
@@ -2784,7 +2785,6 @@
 @@||einthusan.tv^$generichide
 @@||eircomphonebook.ie/js/wt_capi.js?
 @@||ekamus.info^$generichide
-@@||elahmad.com/ads/fc.php
 @@||elconfidencial.com^*/AnalyticsEvent.js
 @@||elconfidencial.com^*/EventTracker.js
 @@||eldiario.es/static/BBTCore/images/pixel.gif?
@@ -2799,8 +2799,6 @@
 @@||eltern.de/min.php?*/clickTracking.js
 @@||em.dynamicyield.com^$removeparam=cuid
 @@||em.hk/wp-content/uploads/*_300_250.
-@@||email.awscloud.com^
-@@||email.elitedangerous.com^
 @@||emailapi.zdbb.net/subscriptions/$domain=extremetech.com
 @@||emailapi.zdbb.net/subscriptions/$domain=pcmag.com
 @@||emailregex.com^$generichide
@@ -3172,7 +3170,6 @@
 @@||geoplugin.net/javascript.gp$script,domain=christianhouseshare.com.au|gamemazing.com|soundsonline.com
 @@||get-to.link^$stealth=referrer
 @@||get.cervell.io/api/$domain=cildimveben.com
-@@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
 @@||get.x-link.pl/*embed.html$stealth=referrer
@@ -4600,7 +4597,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=wsls.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=xxxdan.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=yad.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=yallo.tv
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=yandexcdn.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=ynet.co.il
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=zee5.com
@@ -5223,7 +5219,6 @@
 @@||lr-ingest.io/LogRocket.min.js$domain=smartcare.com
 @@||lsi.com^*/google-analytics.js
 @@||lso.ca^$stealth=dpi
-@@||lswcdn.net^$stealth=referrer
 @@||lulustream.com^$popup,domain=luluvdo.com
 @@||luluvdo.com^$stealth=useragent
 @@||luminousstreamhaven.com^$stealth=referrer,domain=edgedeliverynetwork.com
@@ -5369,7 +5364,6 @@
 @@||media.bnd.com/mistats/finalizestats.js
 @@||media.bnd.com/mistats/micb.js
 @@||media.bnd.com/mistats/products/escenic_s_code.js
-@@||media.fastclick.net/iab^$domain=youronlinechoices.com
 @@||media.foundit.*/trex/public/theme_3/dist/js/userTracking.js$script,~third-party
 @@||media.ft.com/j/optimost-$domain=ft.com
 @@||media.jd.com/static/*/ad
@@ -5887,8 +5881,6 @@
 @@||ott.yandex.ru^$stealth=ip|useragent
 @@||outbrain.com/outbrain.js$domain=cnn.com
 @@||outbrainimg.com^$third-party,domain=computerbild.de|fitbook.de|metal-hammer.de|rollingstone.de|stylebook.de
-@@||outkick.com/wp-content/plugins/advanced-ads-pro/assets/js/
-@@||outkick.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js
 @@||outlook.live.com^$cookie=OParams
 @@||outlookindia.com$generichide
 @@||outsideonline.com^$stealth=dpi
@@ -6565,7 +6557,6 @@
 @@||s-pt.ppstatic.pl/o/js/pp-ads/ads.js
 @@||s.206ads.com/core.js$domain=androidauthority.com
 @@||s.adadapter.netzathleten-media.de/*/naMediaAd.js$domain=wooco.de
-@@||s.bluecore.com^
 @@||s.bstarstatic.com/ogv/subtitle/$stealth=referrer
 @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
 @@||s.click.taobao.com^$important
@@ -6577,7 +6568,6 @@
 @@||s.mvconf.f.360.cn^
 @@||s.nitropay.com/ads-437.js$domain=wago.io
 @@||s.ntv.io/serve/load.js$domain=titantv.com
-@@||s.optnx.com^
 @@||s.ssl.qhres2.com/baomitu/jquery/*/jquery.min.js$domain=yasuo.360.cn
 @@||s.ssl.qhres2.com/pkg/radarsdk/radar-analytic-js-sdk-*.umd.js$domain=xinshuru.com
 @@||s.tgfcer.com^$generichide
@@ -6936,7 +6926,6 @@
 @@||site-banner.hange.jp/adshow?$domain=animallabo.hange.jp
 @@||siteanalytics.compete.com^$~third-party
 @@||siteapps.com^$script,domain=netcombo.com.br
-@@||siva-my.jsstatic.com/_ads/_static/$domain=jobstreet.com.my
 @@||sjsmitaa.org/bin/showads.
 @@||skiplinks.xyz/skipad.webp$domain=skiplinks.xyz|lewdsteam.com|adultcomixxx.com
 @@||skmedix.pl/*/*.js$~third-party
@@ -6956,7 +6945,6 @@
 @@||slit.cn/source/plugin/unadblock/*.js
 @@||sltrib.com/pb/resources/scripts/utils/ads/ads.js
 @@||sm.cn^$important
-@@||smallseotools.com^$generichide
 @@||smallseotools.com^$generichide,badfilter
 @@||smartadserver.com/ac?$domain=bildderfrau.de
 @@||smartadserver.com/call/pubx/*/M/$domain=vbox7.com
