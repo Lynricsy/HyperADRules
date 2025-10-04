@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-10-04 08:39:02（北京时间）
+! Version: 2025-10-04 20:14:14（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8410
+! Total count: 8408
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -284,6 +284,7 @@
 @@_300_250.$domain=nanrenwo.net
 @@_370x270.$domain=bairuitool-cn.aliyun-hk03.hicheng.net
 @@_468x60_$domain=top100arena.com
+@@_ad_300.$domain=bleacherreport.com
 @@_ads_cpc_$domain=90lover.cn
 @@_cpc_cpm/$domain=youranshare.com
 @@_cpc_cpm_$domain=saraba1st.com
@@ -549,6 +550,7 @@
 @@||acdn.adnxs.com^$app=se.prisjakt.pricespy
 @@||acgbenzi.com//dist/images/top.png
 @@||acgdraw.com/ad$xmlhttprequest
+@@||acgvideo.com^$stealth=referrer,domain=bilibili.com
 @@||acid2.acidtests.org^$document
 @@||acid3.acidtests.org^$document
 @@||acornsquare.jp^$stealth=dpi
@@ -823,7 +825,6 @@
 @@||adv.bloop.info^
 @@||adv.clickadu.com^$domain=adv.clickadu.com
 @@||adv.gg^$popup
-@@||adv.welaika.com^$popup
 @@||advert.kf5.com^
 @@||advertisement.taobao.com^
 @@||advertisingcamps.com/*/landing/$stealth=referrer
@@ -998,7 +999,6 @@
 @@||anisearch.*^$generichide
 @@||anitube.vip/playerricas.php$stealth=referrer
 @@||aniview.com/api/$script,xmlhttprequest,domain=gamingbible.co.uk|ladbible.com|stirr.com
-@@||anizmstream*.com/cdn/down/$stealth=referrer,domain=anizmplayer.com|anizm.net
 @@||annhe.net^$generichide
 @@||annuaire.118000.fr/js/xtcore.js
 @@||anonymousemail.me/*.js$~third-party
@@ -1031,7 +1031,6 @@
 @@||api-js.datadome.co/js/$domain=account.samsung.com
 @@||api-js.datadome.co/js/$domain=sso.garena.com
 @@||api-maps.yandex.$stealth=referrer
-@@||api-maps.yandex.ru/services/startup/$stealth=referrer
 @@||api-mg2.db-ip.com^$xmlhttprequest,domain=journal-news.com
 @@||api-public.roland.com/geoip$domain=bosstoneexchange.com
 @@||api-rewarded-video.fyber.com^$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
@@ -2226,6 +2225,7 @@
 @@||cnlogin.cainiao.com^
 @@||cnn.com^*/ad_policy.xml$domain=cnn.com
 @@||cnnic.net.cn^
+@@||cnnturk.com/action/media^
 @@||cnpack.org^$stealth=dpi
 @@||cnprint.org^$generichide
 @@||cnr.cn/gg/
@@ -2591,6 +2591,7 @@
 @@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
 @@||discretemath.org/ads/
+@@||discretemath.org^$image,stylesheet
 @@||disneyplus.com^$generichide
 @@||disneyplus.com^$generichide,badfilter
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
@@ -2757,7 +2758,6 @@
 @@||ec.atdmt.com/b/$domain=starwoodhotels.com
 @@||ec.europa.eu/eurostat/databrowser/assets/analytics/piwik.js
 @@||ec.europa.eu/eurostat/databrowser/assets/analytics/piwik.js$script,~third-party
-@@||ec.nintendo.com^$stealth=3p-auth
 @@||ecitic.com/source/*/pop
 @@||ecma.bdimg.com/holmes/*.svg
 @@||econcal.forexprostools.com^$domain=bloomberg.com
@@ -2845,7 +2845,6 @@
 @@||epubit.com/static/epubit/share/js/share.min.js
 @@||equifaxps.122.2o7.net^
 @@||esia.gosuslugi.ru^$stealth
-@@||esko.cloud^*_300x600_$~third-party
 @@||eslite.com^*/ad
 @@||espn.com/b/ss/$domain=espn.com
 @@||espncdn.com/combiner/*/chartbeat/$script,domain=espn.go.com
@@ -4267,7 +4266,6 @@
 @@||hentaicdn.com^$stealth=referrer,domain=hentai2read.com
 @@||hepfinans.com/wp-content/uploads/*/Google-Adsense-$image,~third-party
 @@||hermes-europe.co.uk/webtracking/
-@@||hesgoal.com/advertisement.js
 @@||heute.de/zdf/flash/eplayer/player.swf?*/cgi-bin/ivw/
 @@||hh010.com^$generichide
 @@||hhgregg.com/wcsstore/MadisonsStorefrontAssetStore/javascript/Analytics/AnalyticsTagDataObject.js
@@ -4705,7 +4703,6 @@
 @@||img*.kachelmannwetter.com/images/$domain=meteologix.com
 @@||img*.kangaroobro.com/images/$image,domain=leyuman.com
 @@||img*.nga$removeparam=cmpid
-@@||img*.reimg.org/images/$stealth=referrer,domain=remanga.org
 @@||img-r1.2xstorage.com^$image,stealth=referrer
 @@||img.ads.tvb.com/news/min.js$domain=news.tvb.com
 @@||img.ads.tvb.com^
@@ -5129,6 +5126,7 @@
 @@||linksynergy.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||linkvertise.com^$generichide
 @@||linuxize.com/detroitchicago/dayton.js
+@@||listing-search-wonen.funda.io^$domain=funda.nl,stealth=referrer
 @@||litv.tv/ads/ads.js
 @@||litvp.com/checkStatus/$domain=emturbovid.com
 @@||litvp.com/creatDownload$domain=emturbovid.com
