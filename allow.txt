@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-10-11 08:39:30（北京时间）
+! Version: 2025-10-11 20:14:23（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8416
+! Total count: 8412
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1029,7 +1029,6 @@
 @@||api-*.cludo.com/api/$stealth=referrer
 @@||api-*.mappy.net^$stealth=referrer
 @@||api-analytics.magstimconnect.net^$~third-party
-@@||api-b2b.backenster.com/b1/api/$stealth=3p-auth
 @@||api-edge.cognitive.microsofttranslator.com/translate?
 @@||api-js.datadome.co/js/$domain=account.samsung.com
 @@||api-js.datadome.co/js/$domain=sso.garena.com
@@ -2160,7 +2159,6 @@
 @@||clj.valuecommerce.com/*/vcushion.min.js
 @@||clksite.com/static/advertisement.js
 @@||cloadstream*.xyz/hls/$stealth=referrer
-@@||closeload.com/video/embed/$stealth=referrer
 @@||cloud.189.cn/web/subapp/main.html$jsinject,elemhide,extension
 @@||cloud.google.com^$generichide
 @@||cloud.google.com^$~third-party
@@ -2541,7 +2539,6 @@
 @@||debenhams.com/foresee/foresee-trigger.js
 @@||debugtbs.qq.com^$important
 @@||decrypt.day^$generichide
-@@||deep-vision.cloud/graphql$stealth=3p-auth,domain=doveze.cz
 @@||deepbrid.com/backend-dl/app/views/site/default/ads/*.js$domain=deepbrid.com
 @@||deezer.com^$generichide
 @@||defensa.gob.es^$stealth=dpi
@@ -4200,6 +4197,7 @@
 @@||h-cast.jp^$script,domain=bookoffonline.co.jp
 @@||h-sdk.online-metrix.net^$app=com.ebay.mobile
 @@||h.imedia.cz/js/cmp2/scmp.js$domain=seznam.cz
+@@||h1g.jp/img/ad/ad_heigu.html$~third-party
 @@||h5.m.taobao.com^$important
 @@||haaretz.co.il/htz/js/advertisement.js
 @@||haaretz.co.il/logger/p.gif?$image,xmlhttprequest
@@ -4869,7 +4867,6 @@
 @@||izifilm.net^$stealth=useragent,app=Kinoplay.exe
 @@||izo.tw/wp-content/advert1.js
 @@||j.wit.qq.com/sc/crystal_ad.js?$domain=888.sports.qq.com
-@@||j2apps.s.llnwi.net/assets-origin/static/js/mx-prebid-ads.js$domain=mxplayer.in
 @@||jandan.net^$generichide
 @@||jav777.cc/advertise/
 @@||jav777.xyz/advertise/
@@ -5275,6 +5272,7 @@
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
 @@||manageengine.com/images/logo/$image,~third-party
 @@||manageengine.com/products/ad-manager/$~third-party
+@@||management.azure.com^$stealth=3p-auth
 @@||mangadex.*/images^
 @@||mangapark.net^$image
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
@@ -5736,6 +5734,7 @@
 @@||noxgroup.com/noxinfluencer/sensor_sdk/$script,domain=noxinfluencer.com
 @@||npr.org/sponsorship/targeting/$other,xmlhttprequest,domain=npr.org
 @@||npr.org/sponsorship/targeting/$~third-party,xmlhttprequest
+@@||nq-api.net^$stealth=referrer,domain=jellycat.com
 @@||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js
 @@||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js$script,~third-party
 @@||nstool.netease.com^
@@ -6232,7 +6231,6 @@
 @@||posttrack.com^$xmlhttprequest,~third-party
 @@||potalapalace.cn/upload/images/advertise/picture/131030000583.jpg
 @@||powerquality.eaton.com/include/js/elqScr.js$~third-party
-@@||powersports.honda.com/js/*/Popup2.js$~third-party
 @@||powvideo.net/$~third-party,popup
 @@||powvideo.net/new/css/fonts/font/custom-icons.$font
 @@||pp.lp4.io/app^$domain=berliner-zeitung.de
@@ -6978,7 +6976,6 @@
 @@||smp.sankei.co.jp/js/analytics/skd.Analysis.js
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
-@@||smtp.focusgroupresearch.com^
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||snapchat.com/static/js/autotrack.js
@@ -7272,7 +7269,6 @@
 @@||stepik.org/lesson^$stealth=useragent
 @@||stereonet.com^$stealth=dpi
 @@||stereophile.com^$elemhide
-@@||stfly.me^$stealth=referrer
 @@||stippleit.com/stipple.js$domain=photos.toofab.com
 @@||stjscn.s-msn.com/portal/hp/2011/udctrack.
 @@||sto*.igstatic.com/js/seo-ads.js$domain=igraal.com
