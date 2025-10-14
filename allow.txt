@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-10-13 20:17:34（北京时间）
+! Version: 2025-10-14 08:41:55（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8407
+! Total count: 8409
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -1199,7 +1199,6 @@
 @@||apimeishi.meituan.com/meishi/poi$removeparam=utm_medium,xmlhttprequest,domain=meishi.meituan.com
 @@||apis.google.com
 @@||apis.google.com/js/plusone.js$domain=pornhub.com
-@@||apis.naver.com^$stealth=dpi
 @@||apiservices.krxd.net/click_tracker^
 @@||apjr.needrom.com/advert*.js
 @@||apk.tw^*/ads.js$script,~third-party
@@ -1569,6 +1568,7 @@
 @@||browserscope.org/user/beacon/*?callback=$script,domain=jsperf.com
 @@||brutalmania.io/ads.js
 @@||bs.nakanohito.jp/b3/bi.js$domain=nexon.com
+@@||bstlar.com^$generichide
 @@||bt.com^*/touchclarity/homepage/omtr_tc.js
 @@||bt.dk/build/prebid-ads-advertisement_adbanner.*.js
 @@||btloader.com/tag$domain=taming.io
@@ -2246,6 +2246,7 @@
 @@||cnzz.com/q_stat.php$domain=qd.alibaba.com
 @@||cnzz.com/z_stat.php$domain=newsite.sherpa.com.cn
 @@||cnzz.com/z_stat.php?id=$domain=fapiao.bangnimang.net
+@@||co.kr^$stealth=dpi
 @@||cocomanga.com/js/ad*/*.js
 @@||cocomanga.com/js/ad_/$image
 @@||code.etracker.com/t.js?et=$script,domain=apotheken-umschau.de|compo-hobby.de|kaguma.com|krombacher.de
@@ -2901,6 +2902,7 @@
 @@||extreme-ip-lookup.com^$script,domain=bulkbarn.ca
 @@||eye.swfchan.com/captcha/*.gif$domain=eye.swfchan.com
 @@||eye.swfchan.com/flash.asp?id=*.swf$domain=eye.swfchan.com
+@@||eyejokerdb.com^$stealth=dpi
 @@||ez3c.tw/js/adblockDetector.js
 @@||ez3c.tw^$generichide
 @@||ezodn.com/cmp/gvl.json$xmlhttprequest
@@ -5651,6 +5653,7 @@
 @@||natro.com^$stealth=dpi
 @@||natureetdecouvertes.com^*/pixel.png$~third-party
 @@||nav.browser.miui.com^
+@@||naver.com^$stealth=dpi
 @@||naver.net/wcslog.js$domain=fragpunk.com|m.tv.naver.com
 @@||nbcume.sc.omtrdc.net/id?d_visid_ver=$domain=nbcdfw.com,important
 @@||nbe.com.eg/NBEeChannelManager/CallMW.aspx$~third-party
@@ -5700,7 +5703,6 @@
 @@||nfl.com^$generichide
 @@||ngastatic.com/*/tracker.js$domain=ads.allegro.pl
 @@||nhkondemand.sc.omtrdc.net^$domain=nhk-ondemand.jp
-@@||nid.naver.com^$stealth=dpi
 @@||nike.com/assets/measure/data-capture/analytics-client.min.js$script,~third-party
 @@||nike.com/checkout/analytics/js/analyticFunctions.js$domain=nike.com
 @@||nineto5mac-d.openx.net^
