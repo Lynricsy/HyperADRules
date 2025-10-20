@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-10-20 08:46:46（北京时间）
+! Version: 2025-10-20 20:17:51（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8460
+! Total count: 8469
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -341,7 +341,7 @@
 @@||*.twimg.com^$important
 @@||*.video.xiaomi.com^$important
 @@||*.y.qq.com^$important
-@@||*.yt2api.com/api/$domain=api.ytapi.cc,stealth=referrer
+@@||*.yt2api.com/api/$domain=ytapi.cc,stealth=referrer
 @@||*optout$domain=smartadserver.com
 @@||*optout$domain=youronlinechoices.com
 @@||*status$domain=youronlinechoices.com
@@ -471,6 +471,7 @@
 @@||88box.com/images/ad_images/
 @@||8muses.com^$generichide
 @@||8tm.net/static/img/fbpixel.png$~third-party
+@@||8tracks.com^$stealth=referrer
 @@||91wii.com/source/plugin/unadblock/adjs_pic_cpc_cpm_cpa_guanggao_gg_ads_250x250.js
 @@||930mh.com/js/config.js
 @@||95306.cn/public/images/ad/
@@ -1226,6 +1227,7 @@
 @@||app.sendgrid.com$document
 @@||app.sendgrid.com^$elemhide,jsinject
 @@||app.tirelocator.ca/static/scripts/google-analytics.js
+@@||app.titsx.com*/search$domain=porn-plus.com
 @@||app.veggly.net/plugins/cordova-plugin-admobpro/www/AdMob.js$script,~third-party
 @@||app.zhuanzhuan.com^$important
 @@||app2.putgate.org/static/*.html$xmlhttprequest,stealth=referrer
@@ -1422,7 +1424,6 @@
 @@||bats.video.yahoo.com$app=com.yahoo.mobile.client.android.mail
 @@||battlecats-db.com^$generichide
 @@||battlecats-db.imgs-server.com^$stealth=referrer
-@@||battlecats.spica-net.com^$generichide
 @@||baumberger.shop/cache/javascript_*_responsive_ad_footer.js$~third-party
 @@||baumberger.shop/cache/style_*_responsive_ad_header.css$~third-party
 @@||bb.com.br^$stealth=dpi
@@ -1664,7 +1665,6 @@
 @@||captcha.qq.com^*&refer=http
 @@||captcha.qq.com^*?*=*=*=$subdocument
 @@||captcha.su.baidu.com^
-@@||carbuzz.com^$generichide
 @@||card-form.diehard.yandex.net^$stealth=referrer
 @@||cardiagn.com^$cookie=__gads
 @@||cardiagn.com^$cookie=__gpi
@@ -3263,6 +3263,7 @@
 @@||glookup.info/api/json/$domain=grabify.link
 @@||gma.alicdn.com^
 @@||gmail.com^$generichide
+@@||gms.plus.pl/service/$stealth=referrer,domain=plushbezlimitu.pl
 @@||gn-web-assets.api.bbc.com/bbcdotcom/assets/$script,domain=bbc.co.uk
 @@||gnar.grammarly.com/events$xmlhttprequest,domain=account.grammarly.com
 @@||gntm.connect.prosieben.de^$generichide
@@ -3278,7 +3279,6 @@
 @@||go.kr^$stealth=dpi
 @@||go.redirectingat.com/*&url=$domain=forums.redflagdeals.com
 @@||go.redirectingat.com^$document
-@@||go.scorptec.com.au^
 @@||go.xliirdr.com/?*targetDomain=fikfapcams.com$domain=fikfap.com
 @@||go.xlirdr.com/api/models/vast$xmlhttprequest
 @@||go2stream.net/stream/live/track/view/Tracking.php$domain=go2stream.net
@@ -4000,6 +4000,7 @@
 @@||googletagmanager.com/gtm.js$domain=security-demo.extrahop.com
 @@||googletagmanager.com/gtm.js$domain=service.smt.docomo.ne.jp
 @@||googletagmanager.com/gtm.js$domain=sfd.pl
+@@||googletagmanager.com/gtm.js$domain=sferis.pl
 @@||googletagmanager.com/gtm.js$domain=shieldsgazette.com
 @@||googletagmanager.com/gtm.js$domain=shockwave.com
 @@||googletagmanager.com/gtm.js$domain=shop-apotheke.com
@@ -4032,6 +4033,7 @@
 @@||googletagmanager.com/gtm.js$domain=systemrequirementslab.com
 @@||googletagmanager.com/gtm.js$domain=t-online.de
 @@||googletagmanager.com/gtm.js$domain=tagesanzeiger.ch
+@@||googletagmanager.com/gtm.js$domain=tauron.pl
 @@||googletagmanager.com/gtm.js$domain=teb.com.tr
 @@||googletagmanager.com/gtm.js$domain=techadvisor.co.uk
 @@||googletagmanager.com/gtm.js$domain=techgenix.com
@@ -4147,6 +4149,7 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=ikitesurf.com
 @@||googletagservices.com/tag/js/gpt.js$domain=imgur.com
 @@||googletagservices.com/tag/js/gpt.js$domain=koigaku.machicon.jp
+@@||googletagservices.com/tag/js/gpt.js$domain=nbcsports.com
 @@||googletagservices.com/tag/js/gpt.js$domain=news.tvb.com
 @@||googletagservices.com/tag/js/gpt.js$domain=nfl.com
 @@||googletagservices.com/tag/js/gpt.js$domain=phileweb.com
@@ -4444,6 +4447,7 @@
 @@||iflow.uc.cn^$important
 @@||ignitetv.rogers.com/js/api/fingerprint.js$script,~third-party
 @@||ignitetv.shaw.ca/js/api/fingerprint.js$~third-party
+@@||ihlv1.xyz/images$image,stealth=referrer,domain=weloma.art
 @@||ihlv1.xyz/images$stealth=referrer
 @@||iis1.deliver.ifeng.com/showcode?$domain=v.ifeng.com
 @@||ikea.cn^*/img/ads/
@@ -5389,6 +5393,7 @@
 @@||meanwell.com^$stealth=dpi
 @@||measure.medpex.de/gtm.js
 @@||meb.gov.tr^$stealth=dpi
+@@||meb.k12.tr^$stealth=dpi
 @@||mec.ca/media/javascript/resxclsx.js
 @@||media-consumer365.desigual.com^
 @@||media-imdb.com^$stealth=referrer,domain=imdb.com
@@ -5584,6 +5589,7 @@
 @@||motherless.com/favorites/
 @@||motherless.com/scripts/mobile^
 @@||motika.com.mk/wp-content/plugins/ajax-hits-counter/display-hits.rapid.php$~third-party
+@@||motortrader.com.my/advert/$image,~third-party
 @@||moulinex.com/js/xtroi.js
 @@||moyens.net^$generichide
 @@||moyu.im/*.jpg$stealth=referrer
@@ -5854,6 +5860,7 @@
 @@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=argos.co.uk|att.com|t-mobile.com
 @@||omtrdc.net^*/mbox/standard?$script,domain=ancestry.com|ancestry.com.au|blogtalkradio.com
 @@||omtrdc.net^*/mbox/standard?$script,domain=kenkoukazoku.co.jp
+@@||omuzaani.me^$generichide
 @@||ondemand.sas.com^$subdocument
 @@||onedrive.live.com^$generichide
 @@||oneline.nextday.media^
@@ -5897,6 +5904,7 @@
 @@||opex.xplan.iress.com.au/js/xiled/util/pageview.js$~third-party
 @@||oppo.yidianzixun.com^$important
 @@||opt.semasio.net/optsvc^$domain=youronlinechoices.com
+@@||optimatic.com/shell.js$domain=pch.com
 @@||optimize.webtrends.com^$domain=peterboroughtoday.co.uk
 @@||optimizely.com/js/geo2.js$domain=cbs.com
 @@||optimizely.com^$domain=sonos.com
@@ -6261,7 +6269,6 @@
 @@||pos.baidu.com^$script,domain=fxpan.com|htqyy.com
 @@||pos.baidu.com^$subdocument,domain=bigpixel.cn
 @@||pos.baidu.com^*?di=u3160754&$domain=bigpixel.cn
-@@||postescanada-canadapost.ca/Capture/Interactive/$stealth=referrer
 @@||postex.com/api/ping?$~third-party
 @@||postfiles*.naver.net^$stealth=referrer
 @@||posttrack.com^$xmlhttprequest,~third-party
@@ -7899,6 +7906,7 @@
 @@||usaa.com^$document
 @@||usageapi.*.oraclecloud.com^
 @@||useinsider.com/ins.js$domain=pizzahut.jp
+@@||user-portal.*.edenred.io^$stealth=3p-auth
 @@||user.pnetlab.com/store/advs/check
 @@||user.userguiding.com/sdk/identify$xmlhttprequest,domain=xaris.ai
 @@||userapi.com^*.gif?extra=$image,domain=vk.com
@@ -8454,6 +8462,7 @@
 @@||zmdownload.zoho.com/zm/imagedisplay$stealth=dpi
 @@||zmovs.com/js/pop.js
 @@||zohopublic.com^*/ADManager_$subdocument,xmlhttprequest,domain=manageengine.com|zohopublic.com
+@@||zoigvids.zoigg.com^$stealth=referrer,domain=zoig.com
 @@||zol-img.com.cn^$stealth=referrer,domain=zol.com.cn
 @@||zoominfo.com/c/amplitude-js$script,~third-party
 @@||zorroplay.xyz/*.php$stealth=referrer
