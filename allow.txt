@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-11-01 08:47:45（北京时间）
+! Version: 2025-11-01 20:15:01（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8501
+! Total count: 8500
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -942,7 +942,6 @@
 @@||amazon.com/*/signin$stealth=3p-cookie
 @@||amazon.com/gp/redirect.html
 @@||amazonaws.com/angular-ui-router.min.js*-google-analytics.js$script,domain=dcard.tw
-@@||amazonaws.com/cdn.pbrd.co/images/$stealth=referrer,domain=pasteboard.co
 @@||amazonaws.com/prod.iqdcontroller.iqdigital/cdn_iqdspiegel/live/iqadcontroller.js.gz$domain=spiegel.de
 @@||amazonaws.com/static.madlan.co.il/*/heatmap.json?$xmlhttprequest
 @@||amazonaws.com/storage.liveabc.com/ads/$domain=store.liveabc.com
@@ -1294,6 +1293,7 @@
 @@||assets.adobedtm.com/*launch-*.min.js$domain=samsung.com
 @@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$domain=bestbuy.ca|identity.healthsafe-id.com|nbc.com|subwy.com|tatamotors.com|usanetwork.com
 @@||assets.connatix.com/Elements/*/jwpc-player-init-plugin_v2.js$domain=nypost.com
+@@||assets.ctfassets.net^$media,domain=ads.spotify.com
 @@||assets.customer.io/assets/track.js$domain=buffer.com
 @@||assets.dfb.de/uploads/*/original_$image
 @@||assets.espn.go.com/espn360/builds/nielsen/ggce*.swf
@@ -2761,7 +2761,6 @@
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|cnet.com|gamespot.com|tv.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|tv.com
 @@||dw.de/js/xtcore.js
-@@||dwnserver.com/download/$stealth=referrer
 @@||dwstatic.com/b=amkit&f=*/adjoin.
 @@||dxcloud.episerver.net^
 @@||dxx.wwwtop.top^$important
@@ -2797,6 +2796,7 @@
 @@||ebank.bsstarozreby.pl^$stealth=dpi
 @@||ebanking.meezanbank.com/AmbitRetailFrontEnd/js/fingerprint2.min.js$~third-party
 @@||ebates.com^$generichide
+@@||ebay.*/*promote$xmlhttprequest,elemhide,jsinject,extension
 @@||ebay.*/makeOffer/$document,subdocument
 @@||ebayrtm.com/rtm?$script,domain=annonces.ebay.fr|ebay.it
 @@||ebilet.tcddtasimacilik.gov.tr^$stealth=dpi
@@ -5088,7 +5088,6 @@
 @@||komplett.no/gtm.js$script,~third-party
 @@||komputerswiat.pl/*&srcc=ucs$removeparam=utm_source
 @@||komputerswiat.pl/*srcc=$stealth=referrer
-@@||konten.co.id/wp-content/*/fuckadblock.js
 @@||korail.com^$stealth=dpi
 @@||kotaku.com/embed/comments$removeparam
 @@||kotaku.com/x-kinja-static/assets/new-client/adManager.$~third-party
@@ -6102,6 +6101,7 @@
 @@||passport.jlcpcb.com^$removeparam=from
 @@||passport.yandex.ru^$stealth=3p-cookie
 @@||passport.youdao.com^$important
+@@||passwordsleakcheck-pa.googleapis.com$stealth=dpi
 @@||pastebin.com/etc/geo.php?
 @@||patreonusercontent.com/*.gif?token-$image,domain=patreon.com
 @@||patrick-wied.at/static/heatmapjs/src/heatmap.js
@@ -6621,7 +6621,6 @@
 @@||rtr-vesti.ru/pvc_cdn/js/stat.js$domain=player.vgtrk.com
 @@||rubiconproject.com/prebid/dynamic/$script,domain=ask.com|journaldequebec.com
 @@||rudaw.net/images/pixel.gif$~third-party
-@@||rule34hentai.net/fluidplayer.min.js$domain=rule34hentai.net
 @@||rule34hentai.net^$generichide
 @@||rumble.com/embed/$stealth=referrer
 @@||rumcdn.geoedge.be/*/grumi.js$domain=comingsoon.net
@@ -6747,6 +6746,7 @@
 @@||schwab.com^$stealth=referrer
 @@||sciencechannel.com^$generichide
 @@||sciencedirect.com^$stealth=useragent
+@@||sciencedirectassets.com^$stealth=useragent,domain=sciencedirect.com
 @@||scontent*.cdninstagram.com^$stealth=referrer
 @@||scontent.xx.fbcdn.net/hads-ak-prn2/*.png$domain=facebook.com|facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion
 @@||scorecardresearch.com$domain=bt.com
@@ -7038,7 +7038,6 @@
 @@||slit.cn/source/plugin/unadblock/*.js
 @@||sltrib.com/pb/resources/scripts/utils/ads/ads.js
 @@||sm.cn^$important
-@@||smallseotools.com^$generichide
 @@||smallseotools.com^$generichide,badfilter
 @@||smartadserver.com/ac?$domain=bildderfrau.de
 @@||smartadserver.com/genericpost$domain=filmweb.pl
@@ -7071,6 +7070,7 @@
 @@||snssdk.com^$important
 @@||snva.jp/javascripts/reco/$script,domain=store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
+@@||sobot.com^
 @@||soefart.dk^$generichide
 @@||sofire.baidu.com^$important
 @@||soft.tbs.imtt.qq.com^$important
@@ -8044,7 +8044,6 @@
 @@||vidrame.pro^$subdocument,stealth=referrer
 @@||vidroll.cloud^$stealth=referrer
 @@||vidsrc.*/embed/$stealth=referrer
-@@||vidstream.to^$stealth=referrer,domain=egybest.*
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
 @@||vidtube.pro/embed$subdocument,stealth=referrer
 @@||view.inews.qq.com^$important
