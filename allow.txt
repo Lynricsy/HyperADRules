@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-11-02 08:48:45（北京时间）
+! Version: 2025-11-02 20:15:03（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8502
+! Total count: 8500
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -345,6 +345,7 @@
 @@||*.video.xiaomi.com^$important
 @@||*.y.qq.com^$important
 @@||*.yt2api.com/api/$domain=ytapi.cc,stealth=referrer
+@@||*hubst.guru/uploads/$stealth=referrer
 @@||*optout$domain=smartadserver.com
 @@||*optout$domain=youronlinechoices.com
 @@||*status$domain=youronlinechoices.com
@@ -3032,6 +3033,7 @@
 @@||filespace.com^$generichide
 @@||filme.imyfone.com/assets/js/gatrack.js$~third-party
 @@||filmerotikizle.com/rek/katla2.gif
+@@||filmix.co/api/$stealth=ip
 @@||filmweb.pl^$generichide
 @@||filmweb.pl^$stealth=referrer
 @@||findlawimg.com^$stealth=referrer,domain=findlaw.cn
@@ -4210,9 +4212,7 @@
 @@||greenbuildingadvisor.com^$removeparam=oly_enc_id
 @@||grimoireoss-pa.clients6.google.com/batch?$stealth=referrer,domain=cs.android.com
 @@||groupbycloud.com/gb-tracker-client-3.min.js
-@@||grp07.ias.rakuten.co.jp^
 @@||gs.statcounter.com/chart.php$script,third-party
-@@||gs.statcounter.com^
 @@||gstatic.com
 @@||gstatic.com/admanager/outstream/rewarded_web_video_$script,domain=safeframe.googlesyndication.com
 @@||gstatic.com/ads/external/images/$image,domain=support.google.com
@@ -4240,7 +4240,6 @@
 @@||gumtree.com.au/p-post-ad*.html
 @@||gva.et-gv.fr^$script,domain=culture.gouv.fr
 @@||gvt1.com^$important
-@@||gws.unicredit.ru/branch/map?$stealth=referrer,domain=unicreditbank.ru
 @@||gymnasedeburier.ch/themes/segment/js/$~third-party
 @@||h-adashx.ut.dingtalk.com^
 @@||h-cast.jp^$script,domain=bookoffonline.co.jp
@@ -4756,6 +4755,7 @@
 @@||imasdk.googleapis.com^$app=tv.htv.app
 @@||imasdk.googleapis.com^$app=tw.com.gamer.android.animad
 @@||imasdk.googleapis.com^$domain=cnet.com
+@@||imasdk.googleapis.com^$stealth=referrer,domain=news.tvb.com
 @@||imasdk.googleapis.com^|$app=com.nextmediatw
 @@||imasdk.googleapis.com^|$app=com.nhl.gc1112.free|com.nhl.hattrickchallenge
 @@||imasdk.googleapis.com^|$app=com.trt.tabii.android
@@ -6534,6 +6534,7 @@
 @@||reddit.com^$generichide,badfilter
 @@||redditenhancementsuite.com/js/jquery.google-analytics.js
 @@||reddithelp.com/*/categories/advertising^
+@@||redditinc.com/assets/images/site/*_300x250.$image,~third-party
 @@||redecanais.*^$stealth=referrer
 @@||redecanaistv.*^$stealth=referrer
 @@||redfin.com/stingray/clicktracker.jsp?
@@ -6693,7 +6694,6 @@
 @@||safeframe.googlesyndication.com^$subdocument,domain=koigaku.machicon.jp
 @@||safeway.com/*/?bannerId
 @@||sail-horizon.com/spm/spm.v1.min.js$script,domain=voguegirl.jp
-@@||salfordonline.com/wp-content/plugins/wp_pro_ad_system/$script
 @@||sammyboy.com/members/*advertisement$xmlhttprequest
 @@||sams.11freunde.de/ee/*/interact?$xmlhttprequest,domain=11freunde.de
 @@||sams.spiegel.de/ee/irl1/v1/interact?$domain=spiegel.de
@@ -6770,7 +6770,6 @@
 @@||scriptcdn.net/code/$xmlhttprequest,domain=filecr.com
 @@||scripts.demandmedia.com/wm.js$domain=ehow.com
 @@||sctapi.ftqq.com^
-@@||scw.cloud^$stealth=3p-auth
 @@||scyts.com^$generichide
 @@||sdc.pingan.com^$~image
 @@||sdk.mrf.io/statics/marfeel-sdk.js$domain=mundodeportivo.com
@@ -6851,7 +6850,6 @@
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?$domain=purepeople.com
 @@||securepubads.g.doubleclick.net/pagead/ppub_config?ippd=$xmlhttprequest,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in|thecubexguide.com|jytechs.in
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=abccar.com.tw
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=agario-play.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=ani.gamer.com.tw
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=bloomberg.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=chelseafc.com
@@ -7060,7 +7058,6 @@
 @@||smp.sankei.co.jp/js/analytics/skd.Analysis.js
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
-@@||smtp.focusgroupresearch.com^
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||snapchat.com/static/js/autotrack.js
@@ -7846,6 +7843,7 @@
 @@||tvb.com^*/videojs.ads.
 @@||tvbanywherena.com^$generichide
 @@||tvcatchup.com^$generichide
+@@||tvcdn365.ru/*.php$stealth=referrer
 @@||tvcom-static.ssl.cdn.cra.cz/*/videojs.ga.js$script,domain=tvcom.cz
 @@||tvepg.pandora.xiaomi.com^$important
 @@||tvfreak.cz/*/pubfig.min.js
@@ -8152,7 +8150,6 @@
 @@||webex.com^$generichide
 @@||webfail.com/image
 @@||webgains.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
-@@||webhook.frontapp.com/forms/$stealth=referrer
 @@||weblet.square-enix.com/banner.php^
 @@||webmail.smartlinkcorp.com/dotrans_20160909.php
 @@||webminepool.com/lib/base.js$domain=autofaucet.org
@@ -8338,6 +8335,7 @@
 @@||xfinity.com/stream/js/api/fingerprint.js$domain=xfinity.com
 @@||xfinity.com/stream/js/api/fingerprint.js$~third-party
 @@||xfreehd.com^$generichide
+@@||xfreehd.com^$generichide|gaybeeg.info^$generichide
 @@||xhaccess.com^$script,~third-party
 @@||xhamster.com^$script,~third-party
 @@||xhamster.desi^$script,~third-party
