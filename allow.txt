@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-11-04 08:43:57（北京时间）
+! Version: 2025-11-04 20:19:13（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8502
+! Total count: 8506
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -46,6 +46,7 @@
 @@.m3u8$stealth=referrer,domain=yfsp.tv
 @@.m4s$domain=crunchyroll.com,stealth=referrer
 @@.mp4$domain=crunchyroll.com,stealth=referrer
+@@.mp4$media,stealth=referrer,domain=sekai.one
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@.php$subdocument,stealth=referrer,domain=/dizipal\d+.com/
 @@.php?id=$script,domain=surirt.com
@@ -287,7 +288,6 @@
 @@_300_250.$domain=nanrenwo.net
 @@_370x270.$domain=bairuitool-cn.aliyun-hk03.hicheng.net
 @@_468x60_$domain=top100arena.com
-@@_ad_300.$domain=bleacherreport.com
 @@_ads_cpc_$domain=90lover.cn
 @@_cpc_cpm/$domain=youranshare.com
 @@_cpc_cpm_$domain=saraba1st.com
@@ -1865,6 +1865,7 @@
 @@||cdn.ex.co^$domain=mm-watch.com|theautopian.com
 @@||cdn.exmarketplace.com/bidder/video_scripts/video_updated_*.js$domain=tvserial.it
 @@||cdn.facil-iti.app/tags/faciliti-tag.min.js$script,domain=apec.fr|kyoto.travel
+@@||cdn.fios.tv^$stealth=3p-auth
 @@||cdn.fluidplayer.com/*/current/fluidplayer.min.js
 @@||cdn.games.mobinozer.com/shared/loader/advert.js
 @@||cdn.georiot.com/snippet.js$domain=techadvisor.co.uk
@@ -2640,7 +2641,6 @@
 @@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
 @@||discretemath.org/ads/
-@@||discretemath.org^$image,stylesheet
 @@||disneyplus.com^$generichide
 @@||disneyplus.com^$generichide,badfilter
 @@||disneyplus.disney.co.jp/view/vendor/analytics/$~third-party
@@ -2698,6 +2698,7 @@
 @@||dodo.ac/np/images/$image,domain=nookipedia.com
 @@||dogus-ads-cdn.dygdigital.com/daion/daion-videojs-hlsjs-*.min.js
 @@||dogus-ads-cdn.dygdigital.com/live-broadcast-player/v1/bundle.js$domain=startv.com.tr
+@@||dokoplay.xyz$stealth=referrer
 @@||donilasplay.com/embed/$stealth=referrer
 @@||dood.watch^$subdocument
 @@||doods.to^$generichide
@@ -2866,6 +2867,7 @@
 @@||embed.ex.co^$xmlhttprequest,domain=espncricinfo.com
 @@||embed.new.video^$stealth=referrer|ip
 @@||embed.redditmedia.com/widgets/platform.js$domain=gamerant.com
+@@||embed.sendtonews.com/player*.php$domain=earth.com
 @@||embed.wcostream.com/inc/embed/*.js$domain=embed.wcostream.com
 @@||embed.wcostream.com^$generichide
 @@||embed.wcostream.com^$subdocument,stealth=referrer
@@ -3232,6 +3234,7 @@
 @@||geoplugin.net/javascript.gp$script,domain=christianhouseshare.com.au|gamemazing.com|soundsonline.com
 @@||get-to.link^$stealth=referrer
 @@||get.cervell.io/api/$domain=cildimveben.com
+@@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
 @@||get.x-link.pl^$generichide
@@ -4403,7 +4406,6 @@
 @@||hutchgo.advertserve.com^$popup,domain=hutchgo.com|hutchgo.com.cn|hutchgo.com.hk|hutchgo.com.sg|hutchgo.com.tw
 @@||huxiucdn.com/*/*.mp4$stealth=referrer
 @@||hvemder.no/js/hitcount.min.js$~third-party
-@@||hvg.hu/Content/redesign/js-notbundled/showads.js
 @@||hvz.baden-wuerttemberg.de$stealth=dpi
 @@||hw-ads.datpiff.com/news/$image,domain=datpiff.com
 @@||hydrax.net/players^
@@ -4681,12 +4683,12 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=zattoo.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=10play.com.au|10.com.au
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=247sports.com|4029tv.com|bet.com|bloomberg.co.jp|bloomberg.com|cbc.ca|cbssports.com|cc.com|clickorlando.com|digi24.ro|gbnews.com|history.com|kcci.com|kcra.com|ketv.com|kmbc.com|koat.com|koco.com|ksbw.com|mynbc5.com|paramountplus.com|s.yimg.jp|sbs.com.au|tv.rakuten.co.jp|vk.sportsbull.jp|wapt.com|watchcharge.com|wbaltv.com|wcvb.com|wdsu.com|wesh.com|wgal.com|wisn.com|wjcl.com|wlky.com|wlwt.com|wmtw.com|wmur.com|worldsurfleague.com|wpbf.com|wtae.com|wvtm13.com|wxii12.com|wyff4.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=aetv.com|mylifetime.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=btvplus.bg
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=cbs.com|paramountplus.com|history.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=click2houston.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=gbnews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=news4jax.com|gmg-wjxt-prod.cdn.arcpublishing.com
-@@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=play.aetv.com|play.mylifetime.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=skai.gr
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=sonyliv.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3_dai.js$domain=southpark.*|southparkstudios.*|southpark.de
@@ -5430,6 +5432,7 @@
 @@||meb.gov.tr^$stealth=dpi
 @@||meb.k12.tr^$stealth=dpi
 @@||mec.ca/media/javascript/resxclsx.js
+@@||media-consumer365.desigual.com^
 @@||media-imdb.com^$stealth=referrer,domain=imdb.com
 @@||media-imdb.com^*/clickstream.js
 @@||media.bnd.com/mistats/finalizestats.js
@@ -5737,6 +5740,7 @@
 @@||nemlog-in.dk/resources/js/adrum.js$~third-party
 @@||neo.btrl.ro/Scripts/services/fingerprint2.min.js$~third-party
 @@||neobux.com/css/ads.css
+@@||netatmo.commander1.com^
 @@||netcoresmartech.com/smartechclient.js$domain=cgv.vn
 @@||netcoresmartech.com/smartechclient.js$domain=hdfcfund.com
 @@||netd.com/js/piwik-plugin.js
@@ -5756,6 +5760,7 @@
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de
 @@||news-app.abumedia.yql.yahoo.com^
 @@||news.u17i.com/advert/
+@@||news.warhammer.com^
 @@||newscgp.com/prod/prebid/nyp/pb.js$domain=nypost.com
 @@||newsdig.tbs.co.jp/op/analytics.js$~third-party
 @@||newsmth.net/nForum/*/ADAgent_
@@ -7073,6 +7078,7 @@
 @@||snssdk.com^$important
 @@||snva.jp/javascripts/reco/$script,domain=store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
+@@||sobot.com^
 @@||soefart.dk^$generichide
 @@||sofire.baidu.com^$important
 @@||soft.tbs.imtt.qq.com^$important
@@ -7518,7 +7524,6 @@
 @@||tags.tiqcdn.com/utag/*/utag.sync.js$domain=bankofamerica.com|hsbc.co.uk|samsung.com|sony.jp|visible.com|vmware.com
 @@||tags.tiqcdn.com/utag/tegna^$domain=kvue.com
 @@||tags.w55c.net/rs?*&t=marketing$image
-@@||taiga.maven.io^
 @@||tailscale.com^$generichide
 @@||taipit-mebel.ru/upload/resize_cache/$image,~third-party
 @@||tajs.qq.com/stats?$~third-party
@@ -7731,7 +7736,6 @@
 @@||tra.scds.pmdstatic.net/advertising-core/$domain=voici.fr
 @@||tra.scds.pmdstatic.net/sourcepoint/$domain=businessinsider.fr|caminteresse.fr|capital.fr|geo.fr|voici.fr
 @@||traceparts.com/lib/piano-analytics/piano-analytics.js$script,~third-party
-@@||track.adform.net/*cpdir=$popup,domain=pepper.*
 @@||track.adform.net/serving/scripts/trackpoint$script,domain=sky.it
 @@||track.adtraction.com/t/t?a*epi=*url=
 @@||track.ksta.de/cre-*/tracking/call.js
@@ -7910,7 +7914,6 @@
 @@||umeng.com/api/$domain=developer.umeng.com
 @@||umeng.com/college/$domain=developer.umeng.com
 @@||unet.ucweb.com^$important
-@@||unian.net/player/$stealth=referrer|ip
 @@||unimedsorocaba.coop.br^$stealth=dpi
 @@||union.video.qq.com/fcgi-bin/$script,domain=qq.com
 @@||uniqlo.com^$jsinject,content
@@ -8312,6 +8315,7 @@
 @@||www.ruanyifeng.com^$csp=script-src 'self' * 'sha256-0McqMM66/wAVZmxF6zXpjNsb1UMbTl4LXBXdhqPKxws='
 @@||www.statcounter.com/images/$image,third-party
 @@||www.statcounter.com^
+@@||www.ticketmaster.$popup,domain=adclick.g.doubleclick.net
 @@||www.ups.com/WebTracking/processInputRequest
 @@||www.youtube-nocookie.com
 @@||www.youtube.com^$generichide
@@ -8339,6 +8343,7 @@
 @@||xfinity.com/stream/js/api/fingerprint.js$domain=xfinity.com
 @@||xfinity.com/stream/js/api/fingerprint.js$~third-party
 @@||xfreehd.com^$generichide
+@@||xfreehd.com^$generichidecom^$script,~third-party
 @@||xhaccess.com^$script,~third-party
 @@||xhamster.com^$script,~third-party
 @@||xhamster.desi^$script,~third-party
@@ -8375,7 +8380,6 @@
 @@||xvideos.*/models/$elemhide,jsinject,extension,xmlhttprequest
 @@||xvideos.*/pornstars/$elemhide,jsinject,extension,xmlhttprequest
 @@||xvideos.*/profiles/$elemhide,jsinject,extension,xmlhttprequest
-@@||xvideos.com/video-get-comments/
 @@||xxxxx520.com^$generichide
 @@||xzeepb2clookuppsta001.blob.core.windows.net/comed/src/js/google-analytics.js$domain=secure1.comed.com
 @@||xzz.xiaomin.tech^$important
