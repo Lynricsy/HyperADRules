@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-11-10 08:48:19（北京时间）
+! Version: 2025-11-10 20:18:12（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8535
+! Total count: 8544
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -290,6 +290,7 @@
 @@_ads_cpc_$domain=90lover.cn
 @@_cpc_cpm/$domain=youranshare.com
 @@_cpc_cpm_$domain=saraba1st.com
+@@_prebid.js$domain=now.com
 @@analytics^$domain=wwe.com
 @@bcdn*.$image,stealth=referrer,domain=mangabuddy.com
 @@bit.ly
@@ -865,6 +866,7 @@
 @@||airchina.com.cn/dynamicAd/
 @@||airplaydirect.com/openx/www/images/$image
 @@||aisandbox-pa.googleapis.com/v1:checkAppAvailability$stealth=referrer
+@@||aisandbox-pa.googleapis.com^$stealth=3p-auth
 @@||aixifan.com/acfun-H5/public/script/sensorsdata.
 @@||aixifan.com/acsdk/log.min.js?
 @@||aixifan.com/dotnet/20130418/script/fingerprint.
@@ -1533,6 +1535,7 @@
 @@||bitbucket.org/SetCST^$stealth
 @@||bitbucket.org^$generichide
 @@||bitcoinbazis.hu/advertise-with-us/$~third-party
+@@||bitent.com/lock_html5/adPlayer/v*/adPlayer.js
 @@||bitent.com/lock_html5/adscontrol.js$domain=bitent.com
 @@||biv.gazeta.pl/resources/emailLoginPage__front/$domain=oauth.gazeta.pl
 @@||biz.yelp.com/ads?$popup
@@ -1654,6 +1657,7 @@
 @@||c.y.qq.com^
 @@||c.y.qq.com^$important
 @@||c.yandexcdn.com/js/adv/ads.js$domain=yandexcdn.com
+@@||c.yandexcdn.com/js/adv/fuckadblock.js$domain=yandexcdn.com
 @@||cache.nymag.com^*/clickability.js
 @@||cache2.delvenetworks.com/crossdomain.xml$domain=lapresse.ca
 @@||cache2.delvenetworks.com/ps/c/v1/$domain=lapresse.ca
@@ -2208,6 +2212,7 @@
 @@||climbing.com^$stealth=dpi
 @@||clj.valuecommerce.com/*/vcushion.min.js
 @@||clksite.com/static/advertisement.js
+@@||closeload.com/video/embed/$stealth=referrer
 @@||cloud.189.cn/web/subapp/main.html$jsinject,elemhide,extension
 @@||cloud.google.com^$generichide
 @@||cloud.google.com^$~third-party
@@ -2743,6 +2748,7 @@
 @@||downloads.castlabs.com^$stealth=referrer
 @@||downum.game.uc.cn^$important
 @@||dpbolvw.net^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
+@@||dplayer82.site^$stealth=referrer
 @@||dpm.demdex.net/id?d_visid_ver=$domain=nbcdfw.com,important
 @@||dpm.demdex.net^$app=com.appseleration.android.selfcare
 @@||dpm.zebestof.com/*/tag.js$domain=commentcamarche.net
@@ -2956,6 +2962,7 @@
 @@||experienceleague.adobe.com^$~third-party
 @@||explainxkcd.com/wiki/images/$image,~third-party
 @@||exponential.com^*/tags.js$domain=yellowbridge.com
+@@||extreme-down.plus^$popup,domain=extreme-down.plus
 @@||extreme-ip-lookup.com/json/$xmlhttprequest,domain=skaitv.gr
 @@||extreme-ip-lookup.com^$script,domain=bulkbarn.ca
 @@||eye.swfchan.com/captcha/*.gif$domain=eye.swfchan.com
@@ -3319,6 +3326,7 @@
 @@||gntm.connect.prosieben.de^$generichide
 @@||gnula.club/embed.php$stealth=referrer
 @@||go-mpulse.net^$domain=costcobusinessdelivery.com
+@@||go.adjust.com^
 @@||go.admost.com/adx/js/admost.js$domain=arsiv.mackolik.com
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/stat/dolwebanalytics.js
@@ -3680,6 +3688,7 @@
 @@||googleapis.com/identitytoolkit^$stealth=referrer
 @@||googleapis.com/tile/v*/*?session=$stealth=referrer,domain=waze.com
 @@||googleapis.com/tile/v*/createSession?key=$stealth=referrer,domain=waze.com
+@@||googleapis.com/youtube/*/search?key=$stealth=referrer
 @@||googledrive.com$document
 @@||googleoptimize.com/optimize.js$domain=binglee.com.au|grasshopper.com|in.bookmyshow.com|inquirer.com|investing.com|lacomer.com.mx|lodgecastiron.com|tentree.ca|virginmedia.com
 @@||googleoptimize.com/optimize.js$domain=bookmyshow.com
@@ -4905,6 +4914,7 @@
 @@||interia.hit.gemius.pl/redot.gif?$domain=m.interia.pl
 @@||intersport.peerius.com/tracker/*.page$domain=intersport.de
 @@||intersport.peerius.com^|$domain=intersport.de
+@@||intoday.in/embeded/*_live?
 @@||intuitcdn.net/libs/*/track-star.min.js$script,domain=turbotax.intuit.com
 @@||inven.co.kr^$stealth=dpi
 @@||inven.com^$stealth=dpi
@@ -5358,7 +5368,6 @@
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
 @@||manageengine.com/images/logo/$image,~third-party
 @@||manageengine.com/products/ad-manager/$~third-party
-@@||management.azure.com^$stealth=3p-auth
 @@||mangadex.*/images^
 @@||mangapark.net^$image
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
@@ -5475,6 +5484,7 @@
 @@||media.wazimo.com/logos/$domain=lastnighton.com
 @@||media.wired.it/static_wired/js/misc/cn-adv.js
 @@||mediaalpha.com/js/serve.js$domain=goseek.com
+@@||mediacdn.disqus.com^$document
 @@||mediaite.com/decor/javascript/magnify_stats.js$domain=videos.mediaite.com
 @@||mediamarkt.com.tr^$genericblock
 @@||mediamarkt.de/*/shop^
@@ -6670,7 +6680,6 @@
 @@||s.bstarstatic.com/ogv/subtitle/$stealth=referrer
 @@||s.click.aliexpress.com/deep_link.htm?aff_short_key=$removeparam=aff_short_key
 @@||s.click.taobao.com^$important
-@@||s.confluency.site/*.com/4/js/$script
 @@||s.go-mpulse.net/boomerang/$domain=royalmail.com
 @@||s.imgur.com/min/px.js$domain=imgur.com
 @@||s.jacquieetmichelelite.com/assets/popunder.js
@@ -7085,7 +7094,6 @@
 @@||smp.sankei.co.jp/js/analytics/skd.Analysis.js
 @@||smsonline.cloud^$generichide
 @@||smtcaw.com^$generichide
-@@||smtp.focusgroupresearch.com^
 @@||smushcdn.com^*/1.gif$domain=retrounlim.com
 @@||sn.dplayer*.site/iframe.php$stealth=referrer
 @@||snapchat.com/static/js/autotrack.js
@@ -7861,6 +7869,7 @@
 @@||tui.click/js/ads.js
 @@||tui.click^$generichide
 @@||tunein.com/api/v1/comscore$~third-party
+@@||turbo.az^$stealth=referrer
 @@||turboplayers.xyz/t/$stealth=referrer
 @@||turbovidhls.com/t/$stealth=referrer
 @@||turkcell.com.tr^$content
