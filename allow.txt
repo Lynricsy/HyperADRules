@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-11-28 20:18:13（北京时间）
+! Version: 2025-11-29 08:43:56（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8595
+! Total count: 8598
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -5637,6 +5637,7 @@
 @@||mmstat.com/eg.js$domain=player.youku.com
 @@||mmstat.com/eg.js$script,domain=aliexpress.com
 @@||mmuu22.link^$generichide
+@@||mmvideocdn.com/mini-player/$domain=fortune.com
 @@||mmy.la^*300*250
 @@||mnighthk.net/template/*/ad
 @@||mnighthk.net^$elemhide
@@ -6973,6 +6974,7 @@
 @@||senda.pl/ads/*.js$~third-party
 @@||sendgb.com/*/?utm_source=$removeparam=utm_source
 @@||sendgrid.com/marketing_campaigns$document
+@@||sendtonews.com/player*/$domain=fortune.com
 @@||sentry.ftshp.xyz/api/3/envelope/?sentry_key=$xmlhttprequest,domain=footshop.ro
 @@||seosprint.net/style/img/ad-
 @@||seoulland.co.kr^$stealth=dpi
@@ -7598,7 +7600,7 @@
 @@||tags.t.tailtarget.com/t3m.js?$domain=superesportes.com.br
 @@||tags.tiqcdn.com/utag/*/utag.sync.js$domain=bankofamerica.com|hsbc.co.uk|samsung.com|sony.jp|visible.com|vmware.com
 @@||tags.tiqcdn.com/utag/cbsi/webplex-intl/prod/utag.js$domain=southpark.de|southpark.lat|southparkstudios.com.br|southparkstudios.com
-@@||tags.tiqcdn.com/utag/pch/pchcomnew/prod/utag.js$domain=pch.com
+@@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||tags.tiqcdn.com/utag/tegna^$domain=kvue.com
 @@||tags.w55c.net/rs?*&t=marketing$image
 @@||taiga.maven.io^
@@ -8170,6 +8172,7 @@
 @@||vlscppe.microsoft.com/fp/tags.js$stealth=referrer
 @@||vmeas.cloud/hls/$stealth=referrer
 @@||vms-players.minutemediaservices.com^$script,domain=si.com
+@@||vms-videos.minutemediaservices.com^$xmlhttprequest,domain=fortune.com
 @@||vms-videos.minutemediaservices.com^$xmlhttprequest,domain=si.com
 @@||vmware.com^$important
 @@||vnecdn.net/vnexpress/video/video/$stealth=referrer,domain=vnexpress.net
@@ -8332,6 +8335,7 @@
 @@||work.ink^$generichide
 @@||work.weixin.qq.com^$important
 @@||workers.dev/*.jpeg$stealth=referrer
+@@||workers.dev/*.jpg$xmlhttprequest,stealth=referrer
 @@||workers.dev/*.m3u8$stealth=referrer
 @@||worldgravity.com^$script,domain=hotstar.com
 @@||worldometers.info^|$stealth=referrer
@@ -8431,7 +8435,6 @@
 @@||xfinity.com/stream/js/api/fingerprint.js$domain=xfinity.com
 @@||xfinity.com/stream/js/api/fingerprint.js$~third-party
 @@||xfreehd.com^$generichide
-@@||xfreehd.com^$generichide.spotify.com^$popup
 @@||xhaccess.com^$script,~third-party
 @@||xhamster.com^$script,~third-party
 @@||xhamster.desi^$script,~third-party
