@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2025-12-02 20:20:14（北京时间）
+! Version: 2025-12-03 08:46:10（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8592
+! Total count: 8595
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$subdocument,xmlhttprequest,stealth=referrer,domain=pichive.online
@@ -6319,6 +6319,7 @@
 @@||player.vidmody.com^$stealth=referrer
 @@||player.vimeo.com/video^$stealth=referrer
 @@||player.ynet.co.il/*/flowplayer.ads.*.ynet.js$domain=ynet.co.il
+@@||playerp2p.com^$stealth=referrer
 @@||players.brightcove.net/*/index.html?videoId=$domain=amp.usatoday.com
 @@||players.fichub.com/plugins/adobe/$domain=24kitchen.pt
 @@||playshakespeare.com/*/js/prebid-ads.js
@@ -7761,6 +7762,7 @@
 @@||tms.delta.com/delta/dl_bastian/*.js$domain=delta.com
 @@||tms.delta.com/delta/dl_bastian/serverComponent.php$domain=delta.com
 @@||tms.oracle.com/main/prod/utag.sync.js$~third-party
+@@||tms.post.ch/*gtm.js|
 @@||tn.voyeurhit.com^$domain=voyeurhit.tube
 @@||tns-counter.ru/tcounter.js$domain=forbes.ru
 @@||tntdrama.com/modules/custom/ten_libraries/reusedFrom*/adHelper.js$~third-party
@@ -8358,6 +8360,7 @@
 @@||wwads.cn/js/makemoney.js$domain=baomidou.com
 @@||wwe.com/sites/all/modules/wwe/wwe_analytics/s_wwe_code.js
 @@||www.chemdraw.com.cn^$important
+@@||www.datadoghq-browser-agent.com^
 @@||www.dogpile.com^
 @@||www.fbsbx.com^
 @@||www.gdata.pl^$elemhide
