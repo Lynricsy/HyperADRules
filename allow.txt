@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-02-05 20:31:32（北京时间）
+! Version: 2026-02-06 08:58:58（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8657
+! Total count: 8659
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$stealth=useragent,app=top.rootu.lampa
@@ -61,6 +61,7 @@
 @@/*.m3u8$domain=vidload.site,stealth=referrer
 @@/*/*-*/*.png$stealth=referrer,xmlhttprequest,domain=dbx.molystream.org
 @@//store.donanimhaber.com/ad/*$domain=forum.donanimhaber.com
+@@/?scode=*&stream=$stealth=referrer
 @@/?utm_data=*&_=$xmlhttprequest,domain=sterham.net|casthill.net
 @@/Tag.rb$domain=github.com
 @@/WebAd/*$domain=yongyoujia.com
@@ -1766,7 +1767,6 @@
 @@||cdn-surfline.com/quiver/*/scripts/$domain=surfline.com
 @@||cdn.*.exponea.com/production*/consent?$subdocument,domain=proffsmagasinet.se|staypro.*
 @@||cdn.7tv.app^$stealth=dpi
-@@||cdn.ablyft.com/s/$domain=giesswein.com
 @@||cdn.adapex.io/hb/aaw.worthpoint.js$domain=worthpoint.com
 @@||cdn.adguard.com/public/$domain=adguard.com|adguard.ru
 @@||cdn.adrise.tv/js/ads.js$domain=tubitv.com
@@ -5146,6 +5146,7 @@
 @@||kf.cn/ad/css/*.*.
 @@||kf.cn/ad/css/*.css
 @@||kf.cn/ad/css/images/
+@@||kfc.com^$stealth=ip
 @@||kfcclub.com.tw/web/*/ad
 @@||kfcorder.com.tw/web/Script/Analytics.js
 @@||kfcorder.com.tw^*/Advert
@@ -6447,6 +6448,7 @@
 @@||prod.adspsp.com/adb.*.min.js$domain=healthline.com
 @@||prod.adspsp.com/adb.2418030m.min.js$domain=medicalnewstoday.com
 @@||prod.impartner.live^
+@@||prod.kfc-digital.io/api/$stealth=ip
 @@||prod.sfm.geforcenow.nvidiagrid.net^$stealth=3p-auth
 @@||profile*.se.360.cn^
 @@||progress.org.uk/wp-content/plugins/adsanity-adblock-detection/public/js/ads.js$~third-party
