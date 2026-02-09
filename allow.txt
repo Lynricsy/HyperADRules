@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-02-09 09:05:01（北京时间）
+! Version: 2026-02-09 20:37:48（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8651
+! Total count: 8647
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$stealth=useragent,app=top.rootu.lampa
@@ -785,6 +785,7 @@
 @@||ads.pinterest.com^$popup
 @@||ads.privacy.qq.com^
 @@||ads.privacy.qq.com^$domain=privacy.qq.com
+@@||ads.pubmatic.com/AdServer/js/pwtSync/$script,subdocument,domain=dnaindia.com|independent.co.uk
 @@||ads.pubmatic.com/adserver/js/$script,domain=wionews.com|zeebiz.com
 @@||ads.reddit.com^$domain=myqqjd.com
 @@||ads.remix.es/advertisement.js|
@@ -931,7 +932,6 @@
 @@||aliyun.com^$important
 @@||aliyuncs.com^
 @@||aliyundrive.com^*/share_link/$xmlhttprequest
-@@||alkalimetricsink-pa.clients6.google.com/$rpc/google.internal.alkali.applications.metricsink.v1.MetricService/RecordMetrics$domain=matrix.itasoftware.com,stealth=referrer
 @@||allabout.co.jp/mtx_cnt.js$script,~third-party
 @@||allarewin.space/assets/ads-*.js
 @@||alllaw.112.2o7.net^
@@ -1041,7 +1041,6 @@
 @@||anymind360.com/js/*/ats.js$domain=newmobilelife.com
 @@||anyporn.com/get_file^
 @@||anyporn.com/js/jquery.easy-autocomplete-my.js
-@@||anyporn.com/js/v*_all.js
 @@||anyporn.com/js/videopreview.js^
 @@||anyporn.com/js_ads/banner.js$~third-party
 @@||aobi.100bt.com/play/ad/ad*.swf
@@ -2507,7 +2506,6 @@
 @@||cryptowin.io^$generichide
 @@||crystalmark.info/wp-content/uploads/*_300x250.
 @@||crystalmark.info/wp-content/uploads/sites/$image,~third-party
-@@||cs.silverpop.com^
 @@||csdata1.com/data/js/$domain=acehardware.com
 @@||csdn.net/static/static/js/apps/popShow.js
 @@||csdnimg.cn^$stealth=referrer,domain=csdn.net
@@ -2567,6 +2565,7 @@
 @@||d.line-scdn.net/*/torimochi.js/*/torimochi.js$script,domain=line.me
 @@||d.line-scdn.net/*/torimochi.js/public/v1/release/stable/min/torimochi.js$domain=pointclub-portal.landpress.line.me
 @@||d.line-scdn.net^*/torimochi.js$script,domain=demae-can.com
+@@||d.socdm.com/adsv/*/tver_splive$xmlhttprequest,domain=imasdk.googleapis.com
 @@||d.tailtarget.com/profiles.js$domain=superesportes.com.br
 @@||d1ayxb9ooonjts.cloudfront.net/bitly2/$domain=bitly.com
 @@||d1z2jf7jlzjs58.cloudfront.net/p.js$domain=nfl.com
@@ -3017,11 +3016,13 @@
 @@||f-gear.ec-optimizer.com/img/spacer.gif$image,domain=ec.f-gear.co.jp
 @@||f-gear.ec-optimizer.com/search4.do$script,domain=ec.f-gear.co.jp
 @@||f-gear.ec-optimizer.com/speights/searchresult2fgear.js$script,domain=ec.f-gear.co.jp
+@@||f-gear.ec-optimizer.com^
 @@||f-tra.com^$script,domain=pokemoncenter-online.com
 @@||f.51240.com^$important
 @@||f.monetate.net/trk/$domain=debenhams.com
 @@||f8.market.xiaomi.com^$important
 @@||faberlic.com/images/banners/
+@@||facebook.com/*/dialog/oauth$stealth=3p-cookie
 @@||facebook.com/ads/profile/$~third-party,xmlhttprequest
 @@||facebook.com/adsmanager^
 @@||facebook.com/connect/xd_arbiter.php$jsinject,elemhide
@@ -4248,6 +4249,7 @@
 @@||googletagservices.com/tag/js/gpt.js$domain=edition.cnn.com
 @@||googletagservices.com/tag/js/gpt.js$domain=eksisozluk.com
 @@||googletagservices.com/tag/js/gpt.js$domain=epaper.timesgroup.com
+@@||googletagservices.com/tag/js/gpt.js$domain=falkirkherald.co.uk
 @@||googletagservices.com/tag/js/gpt.js$domain=fukuishimbun.co.jp
 @@||googletagservices.com/tag/js/gpt.js$domain=gamestar.de
 @@||googletagservices.com/tag/js/gpt.js$domain=gentside.com|gentside.de|gentside.co.uk|gentside.com.br|maxisciences.com|ohmymag.com|ohmymag.de
@@ -4753,7 +4755,6 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$domain=zoomtventertainment.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$important,domain=digi24.ro
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=line.me
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=winknews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=24ur.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=f5haber.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js^$domain=zattoo.com
@@ -4929,7 +4930,6 @@
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infolink.pavv.co.kr^
 @@||infotop.jp/html/ad/$image,~third-party
-@@||infra-api.newrelic.com^
 @@||infusionsoft.app/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||infusionsoft.com/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||ing-diba.de^*/sitestat.js
@@ -4959,7 +4959,6 @@
 @@||instantink.hpconnected.com/api/$stealth=referrer
 @@||instapundit.com^$generichide
 @@||instawp.xyz^$generichide
-@@||instreamvideo.ru/storage/inplayer/js/in-player.js
 @@||insurancexblog.blogspot.com/?utm_source=$removeparam=utm_source
 @@||int.mwbbiz.com/static/*/app.js$domain=91porny.com
 @@||int.mwbbiz.com/static/*/videoShow.js$domain=91porny.com
@@ -4969,6 +4968,7 @@
 @@||interia.hit.gemius.pl/hitredir/$domain=interia.pl
 @@||interia.hit.gemius.pl/redot.gif?$domain=m.interia.pl
 @@||intersport.peerius.com/tracker/*.page$domain=intersport.de
+@@||intersport.peerius.com^
 @@||intersport.peerius.com^|$domain=intersport.de
 @@||intuitcdn.net/libs/*/track-star.min.js$script,domain=turbotax.intuit.com
 @@||inven.co.kr^$stealth=dpi
@@ -4996,6 +4996,7 @@
 @@||iteye.com^$important
 @@||itmedia.co.jp^$cookie=cX_G
 @@||itnews.com.au/scripts/js_*.js
+@@||itoya.ec-optimizer.com^
 @@||itv.1tv.ru/stat.php?
 @@||itv.com/itv/hserver/*/site=itv/$xmlhttprequest
 @@||itv.com/itv/tserver/$~third-party
@@ -5354,6 +5355,7 @@
 @@||login.live.com^$stealth
 @@||login.microsoftonline.com^$stealth
 @@||login.nvgs.nvidia.com^$stealth
+@@||login.nvidia.com^$stealth=3p-auth
 @@||login.sendpulse.com^
 @@||login.swissid.ch^$stealth=dpi
 @@||login.wyborcza.pl^$stealth=referrer
@@ -6041,7 +6043,6 @@
 @@||opex.xplan.iress.com.au/js/xiled/util/pageview.js$~third-party
 @@||oppo.yidianzixun.com^$important
 @@||opt.semasio.net/optsvc^$domain=youronlinechoices.com
-@@||optimatic.com/iframe.html$subdocument,domain=pch.com
 @@||optimize.webtrends.com^$domain=peterboroughtoday.co.uk
 @@||optimizely.com/js/geo2.js$domain=cbs.com
 @@||optimizely.com^$domain=sonos.com
@@ -6992,7 +6993,6 @@
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=theglobeandmail.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=tractorsupply.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=usatoday.com
-@@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=vogue.ru
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=wunderground.com
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$domain=yorkshirepost.co.uk
 @@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in
@@ -7253,7 +7253,6 @@
 @@||sport.be/javascripts/tracking/metriweb/spring.js
 @@||sportnews.to/*?ref=$stealth=referrer,domain=sportshub.to
 @@||sportnews.to^$generichide
-@@||sportpari.by^$stealth=ip
 @@||sportsgrid.com/decor/javascript/magnify_stats.js
 @@||sportshub.to/frames$subdocument,stealth=referrer
 @@||sportsnet.ca/wp-content/plugins/bwp-minify/$domain=sportsnet.ca
@@ -7639,6 +7638,7 @@
 @@||tags.crwdcntrl.net/c/*/cc.js?ns=$domain=html5.gamedistribution.com
 @@||tags.crwdcntrl.net/c/*/cc.js?ns=$domain=m.timesofindia.com
 @@||tags.crwdcntrl.net/c/*/cc_ajax.js$domain=gotrip.hk
+@@||tags.crwdcntrl.net^
 @@||tags.crwdcntrl.net^$domain=weather.com
 @@||tags.news.com.au/prod/heartbeat/$script
 @@||tags.stepstone.com/utag/de/prod/utag.js$domain=stepstone.de
@@ -7650,6 +7650,7 @@
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||tags.tiqcdn.com/utag/tegna^$domain=kvue.com
 @@||tags.w55c.net/rs?*&t=marketing$image
+@@||taiga.maven.io^
 @@||tailscale.com^$generichide
 @@||taipit-mebel.ru/upload/resize_cache/$image,~third-party
 @@||tajs.qq.com/stats?$~third-party
@@ -7950,7 +7951,6 @@
 @@||try.abtasty.com/403fb16c20596e4691fbe9ec5db9720e.js$domain=shop.euromaster.de
 @@||try.abtasty.com/78cb84f9b3158bdce6932109a6d7c7c1.js$domain=tf1.fr
 @@||try.abtasty.com^$script,domain=tickpick.com
-@@||tryit.w3schools.com^$document
 @@||ts.market.mi-img.com^$important
 @@||tsyndicate.com/sdk/v1/n.js$domain=hpjav.tv
 @@||tt.omtrdc.net/rest/$xmlhttprequest,domain=shop.shoppersdrugmart.ca
@@ -8133,8 +8133,6 @@
 @@||vatanbilgisayar.com/upload/banner/
 @@||vattastic.com/js/fp2/fingerprint2.min.js
 @@||vaughnsoft.net/play/$stealth=referrer,domain=vaughn.live
-@@||vcentry2.valuecommerce.ne.jp^
-@@||vcentry3.valuecommerce.ne.jp^
 @@||vdncloud.org/iframe/$stealth=referrer
 @@||vdun.weibo.com^$important
 @@||vector.hereapi.com/v*/vectortiles/$stealth=referrer
@@ -8209,7 +8207,6 @@
 @@||vk.com/*.php?__query=$document
 @@||vk.com/vkpay$stealth
 @@||vkcdn5.com^$stealth=referrer,image,media
-@@||vkprime.com/embed-*.html$stealth=referrer
 @@||vlm-ads.aimatch.com/vlm/jserver/$domain=titulky.com
 @@||vlscppe.microsoft.com/fp/tags.js$domain=microsoft.com
 @@||vlscppe.microsoft.com/fp/tags.js$stealth=referrer
@@ -8239,7 +8236,6 @@
 @@||w88.espn.com/id?$domain=espn.com
 @@||w88.go.com/id?$domain=espn.com
 @@||w88.go.com^$domain=abc.go.com
-@@||waa-pa.clients6.google.com/$rpc/google.internal.waa.v1.Waa/Create$domain=matrix.itasoftware.com,stealth=referrer
 @@||waaw.to/adv/ads/popunder.js$script
 @@||walla.co.il^$csp
 @@||wallpaper*.site/*.jpg$xmlhttprequest,stealth=referrer
@@ -8322,7 +8318,6 @@
 @@||werbung.qs-optiker.de^$domain=werbung.qs-optiker.de
 @@||westelm.com^*/bloomreach.js
 @@||westjet.com/js/webstats.js
-@@||wettercom-c1.livespotting.com/memfs/$image,xmlhttprequest,stealth=referrer
 @@||wf.typesquare.com^$font,domain=morisawafonts.com
 @@||wfpscripts.webspectator.com/bootstrap/$script,domain=gpfans.com
 @@||wgun.net^$elemhide
@@ -8436,6 +8431,7 @@
 @@||www.googletagmanager.com/gtm.js$script,domain=book.impress.co.jp
 @@||www.googletagmanager.com^$domain=onlineshop.smt.docomo.ne.jp
 @@||www.gstatic.com
+@@||www.jdoqocy.com^
 @@||www.jiaoyimao.com^$important
 @@||www.kanjiantu.com^$important
 @@||www.literotica.com^$content
