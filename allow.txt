@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-02-27 20:30:17（北京时间）
+! Version: 2026-02-28 08:54:50（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8685
+! Total count: 8689
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$stealth=useragent,app=top.rootu.lampa
@@ -176,6 +176,7 @@
 @@/ggjs/*$domain=tingfm.com
 @@/gtm.js$domain=amd.com
 @@/guanggao/*$domain=icbc.com.cn|igame.qq.com
+@@/hdful/player.php?video=$stealth=referrer
 @@/hitCount.$script,domain=on.cc
 @@/hitCount_$xmlhttprequest,domain=on.cc
 @@/hls.key$stealth=referrer
@@ -1355,6 +1356,7 @@
 @@||atwiki.jp/common/_img/spacer.gif?$image,domain=atwiki.jp
 @@||auchan.ru/pokupki/media/banners/*.jpg$~third-party
 @@||audience.io/api/$domain=campaign.aptivada.com
+@@||audio-*.scdn.co/audio/$redirect=noopmp4-1s,app=com.apple.Safari
 @@||audiostream.com^$elemhide
 @@||audiotag.info/images/banner
 @@||auni.telecome.cn^
@@ -4218,6 +4220,7 @@
 @@||googletagmanager.com/gtm.js$script,domain=musinsa.com
 @@||googletagmanager.com/gtm.js$script,domain=okwave.jp
 @@||googletagmanager.com/gtm.js$script,domain=radiko.jp
+@@||googletagmanager.com/gtm.js$script,domain=streetstyle24.pl
 @@||googletagmanager.com/gtm.js$script,domain=viviennewestwood-tokyo.com
 @@||googletagmanager.com/gtm.js$script,domain=www.nap-camp.com
 @@||googletagmanager.com/gtm.js?$domain=ozon.ru
@@ -4573,6 +4576,7 @@
 @@||ikea.cn^*/img/ads/
 @@||ikea.com^*/analyticsEvent.$script,~third-party
 @@||iknow-pic.cdn.bcebos.com^$stealth=referrer
+@@||iko-yo.net/system/ad_images/$~third-party
 @@||ilpuntotecnico.com^$generichide
 @@||im.qq.com^$important
 @@||image.mp3.zdn.vn/banner/
@@ -5586,7 +5590,6 @@
 @@||mega-debrid.eu/JS/advertisement.js
 @@||megacloud.*/embed-$stealth=referrer
 @@||megafon.ru/static/?files=*/tealeaf.js
-@@||megane.com.pl^$generichide,badfilter
 @@||megaplay.*/stream/$subdocument,stealth=referrer
 @@||megatube.xxx/atrm/s/s/js/m/pr-before.js
 @@||megaup.net^$generichide
@@ -5975,6 +5978,7 @@
 @@||ofeminin.pl/*srcc=$stealth=referrer
 @@||offgamers.com/checkout/buyNow/$document,xmlhttprequest
 @@||officeapps.live.com/*.aspx$stealth
+@@||officeapps.live.com^$domain=cloud.microsoft
 @@||officeworks.com.au^*/site-tracker.js
 @@||official.paymaya.com^
 @@||oglaszamy24.pl/*js-css/reklamy/bannery/*/adv.js
