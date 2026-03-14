@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-03-14 09:00:41（北京时间）
+! Version: 2026-03-14 20:23:01（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8716
+! Total count: 8711
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -221,7 +221,6 @@
 @@/prebid-js-$domain=mytvsuper.com|tvb.com|tvbs.com.tw
 @@/prebid.$script,domain=mingpao.com
 @@/prebid.min.js$~third-party,domain=advertape.net|tapepops.com|watchadsontape.com|advertisertape.com|tapeadvertisement.com|adblockplustape.xyz|tapelovesads.org|gettapeads.com|tapeadsenjoyer.com|noblocktape.com|antiadtape.com|tapewithadblock.org|streamadblocker.*|strtape.cloud|adblockeronstape.me|streamadblockplus.com|shavetape.*|adblockstrtape.link|adblockstrtech.link|adblockstreamtape.*|stape.fun|strcloud.link|streamtape.*|streamtape.com
-@@/premium*/*.php$subdocument,stealth=referrer,domain=stronstream.shop|sportzlive.shop
 @@/progress.php?callback=$script,domain=ytmp3.cc
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
@@ -509,7 +508,6 @@
 @@||9zvip.net^$elemhide
 @@||a-adq.mediation.unity3d.com^$app=jp.step_official
 @@||a-fds.youborafds01.com/data?$xmlhttprequest,domain=pluto.tv
-@@||a.adwolf.ru^
 @@||a.alimama.cn/tkapi$domain=ieeee.com
 @@||a.applovin.com^$app=ac.hush.app
 @@||a.bf-ad.net/adengine/fff/adengine.js$domain=fitforfun.de
@@ -757,6 +755,7 @@
 @@||ads.console.aliyun.com^
 @@||ads.cricbuzz.com/adserver/units/mobile/set_ads_values.php
 @@||ads.dainikbhaskar.com/AdTech/ads/ads.js
+@@||ads.dblink.us$~image,~third-party
 @@||ads.digital.disneyadvertising.com^$app=com.disney.disneyplus
 @@||ads.doordash.com^
 @@||ads.dygdigital.com/services/pauseroll?site=$domain=startv.com.tr|ntv.com.tr|puhutv.com|tlctv.com.tr|discoverychannel.com.tr|dmax.com.tr
@@ -2525,7 +2524,6 @@
 @@||crowdscience.com/start-$script,domain=everydayhealth.com
 @@||cruisecenter.com.tw/data/ad/
 @@||crwdcntrl.net/*callback=setPIDForPlayer$domain=static.rtl.nl
-@@||crystalmark.info/wp-content/uploads/*_300x250.
 @@||crystalmark.info/wp-content/uploads/sites/$image,~third-party
 @@||cs.silverpop.com^
 @@||csdata1.com/data/js/$domain=acehardware.com
@@ -2733,7 +2731,6 @@
 @@||distrowatch.com/images/cpxtu/dwbanner.png
 @@||diyanet.gov.tr^$stealth=dpi
 @@||dizhi99.com^$generichide
-@@||dizifilmevreni.xyz/embed/$stealth=referrer
 @@||dizzylab.net^$cookie=_ga
 @@||dizzylab.net^$cookie=_ga_Y1BLF2VWNB
 @@||dj.1688.com^$important
@@ -3034,6 +3031,7 @@
 @@||experience.ninetailed.co/v2/organizations/*/environments/main/profiles/$xmlhttprequest,domain=dkb.de
 @@||experienceleague.adobe.com^$~third-party
 @@||explainxkcd.com/wiki/images/$image,~third-party
+@@||explosm.net/js/adsense.js
 @@||exponential.com^*/tags.js$domain=yellowbridge.com
 @@||extreme-ip-lookup.com/json/$xmlhttprequest,domain=skaitv.gr
 @@||extreme-ip-lookup.com^$script,domain=bulkbarn.ca
@@ -3092,7 +3090,6 @@
 @@||fedex.com/apps/myprofile/$generichide
 @@||feed.4strokemedia.com^$domain=video.corriere.it
 @@||feed.4strokemedia.com^$domain=video.gazzetta.it
-@@||feed.adrelayer.com^
 @@||feedback-pa.clients6.google.com^$stealth=referrer
 @@||feedback.miui.com^$important
 @@||feedback.userreport.com/*/*.csb.app$domain=csb.app
@@ -3116,6 +3113,7 @@
 @@||fifa.com^*/webanalytics.js?
 @@||figma.com^$generichide
 @@||file-static.com^$stealth=referrer,domain=eyny.com
+@@||file-upload.com/js/advertisement.js
 @@||file-upload.net/include/adserver.js
 @@||file-upload.net/include/werbebanner-ad.js
 @@||file.market.xiaomi.com^$importantcdn.ark.qq.com
@@ -4879,6 +4877,7 @@
 @@||imasdk.googleapis.com^$app=tv.htv.app
 @@||imasdk.googleapis.com^$app=tw.com.gamer.android.animad
 @@||imasdk.googleapis.com^$domain=cnet.com
+@@||imasdk.googleapis.com^$stealth=referrer,domain=news.tvb.com
 @@||imasdk.googleapis.com^|$app=com.nextmediatw
 @@||imasdk.googleapis.com^|$app=com.nhl.gc1112.free|com.nhl.hattrickchallenge
 @@||imasdk.googleapis.com^|$app=com.trt.tabii.android
@@ -5039,6 +5038,7 @@
 @@||iteye.com^$important
 @@||itmedia.co.jp^$cookie=cX_G
 @@||itnews.com.au/scripts/js_*.js
+@@||itoya.ec-optimizer.com^
 @@||itv.1tv.ru/stat.php?
 @@||itv.com/itv/hserver/*/site=itv/$xmlhttprequest
 @@||itv.com/itv/tserver/$~third-party
@@ -5175,7 +5175,6 @@
 @@||kanalfrederikshavn.dk^*/jquery.openx.js?
 @@||kantie.org^$generichide
 @@||kapaza.be/nl/js/xtcore_$script,domain=kapaza.be
-@@||kapsamaharitasi.turktelekom.com.tr^$stealth=ip
 @@||kargoist.com^$stealth=dpi
 @@||karte.io/libs/tracker.$domain=online.ysroad.co.jp|zf1.tohoku-epco.co.jp|zozo.jp
 @@||karte.io/libs/tracker.$domain=zf1.tohoku-epco.co.jp
@@ -5485,7 +5484,6 @@
 @@||manageengine.com/products/ad-manager/$~third-party
 @@||mangadex.*/images^
 @@||mangapark.net^$image
-@@||mangasail.co/sites/default/files/*//*_adsense_
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
 @@||manhua.weibo.com/adv/
 @@||manhuagui.com^$stealth=referrer
@@ -5537,7 +5535,7 @@
 @@||maxmind.com^*/geoip.js$domain=ballerstatus.com|bikemap.net|dr.dk|everydaysource.com|girlgames4u.com|ip-address.cc|justin.tv|qatarairways.com|sat-direction.com|sotctours.com|stoli.com|vibe.com
 @@||maxmind.com^*/geoip.js$domain=sportube.tv
 @@||maxmind.com^*/geoip2.js$domain=bandai-hobby.net|boostedboards.com|donorschoose.org|driftinnovation.com|fallout4.com|ibanez.com|instamed.com|metronews.ca|mtv.com.lb|runningheroes.com|tama.com|teslamotors.com
-@@||maxstream.org^$subdocument,stealth=referrer,domain=javgods.com
+@@||maxstream.org^$subdocument,stealth=referrer,third-party
 @@||maxstream.video^$generichide
 @@||mb.yidianzixun.com^$important
 @@||mbank.pl^$stealth=dpi
@@ -6733,7 +6731,6 @@
 @@||repubblica.it/pw/pw.js?deskurl=$domain=gelocal.it|ilsecoloxix.it|lastampa.it
 @@||republicbharat.com/_app/immutable/assets/FloatAd.*.css$domain=republicbharat.com
 @@||republicbharat.com/_app/immutable/chunks/FloatAd.*.js$domain=republicbharat.com
-@@||request-global.czilladx.com/serve/popunder.php$domain=faucetcrypto.net
 @@||res-x.com^*/Resonance.aspx?
 @@||res.ads.nicovideo.jp^
 @@||res.imtt.qq.com^$important
@@ -7702,7 +7699,6 @@
 @@||tags.crwdcntrl.net/c/*/cc.js?ns=$domain=html5.gamedistribution.com
 @@||tags.crwdcntrl.net/c/*/cc.js?ns=$domain=m.timesofindia.com
 @@||tags.crwdcntrl.net/c/*/cc_ajax.js$domain=gotrip.hk
-@@||tags.crwdcntrl.net^
 @@||tags.crwdcntrl.net^$domain=weather.com
 @@||tags.news.com.au/prod/adblock/adblock.js
 @@||tags.news.com.au/prod/heartbeat/$script
@@ -7716,7 +7712,6 @@
 @@||tags.tiqcdn.com/utag/pch/*/prod/utag.js$domain=pch.com
 @@||tags.tiqcdn.com/utag/tegna^$domain=kvue.com
 @@||tags.w55c.net/rs?*&t=marketing$image
-@@||taiga.maven.io^
 @@||tailscale.com^$generichide
 @@||taipit-mebel.ru/upload/resize_cache/$image,~third-party
 @@||tajs.qq.com/stats?$~third-party
