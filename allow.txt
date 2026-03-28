@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-03-28 09:04:10（北京时间）
+! Version: 2026-03-28 20:27:47（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8723
+! Total count: 8717
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -170,7 +170,6 @@
 @@/fingerprintjs2.min.js$domain=imooc.com
 @@/fuckadblock.$domain=datehub.co|golangnote.com|joyk.com|liumingye.cn|lnk2.cc|poedb.tw|share1223.com
 @@/fuckadblock.js$domain=meucdn.vip|yandexcdn.com|hqq.tv|waaw.tv
-@@/gettoken.php?$xmlhttprequest,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in
 @@/ggjs/*$domain=tingfm.com
 @@/gtm.js$domain=amd.com
 @@/guanggao/*$domain=icbc.com.cn|igame.qq.com
@@ -286,6 +285,7 @@
 @@://googleadservices.com^|
 @@://localhost/$generichide
 @@://localhost:$generichide
+@@://streamcdn.xyz/hls/$stealth=referrer
 @@://www.exoclick.com/ads.js|
 @@://www.fedex.com/Tracking?
 @@://www.googleadservices.com^|
@@ -649,7 +649,6 @@
 @@||ad4.on.cc/web/www/delivery/fl.js
 @@||ad4.on.cc/web/www/delivery/spc.php
 @@||ad4.on.cc/web/www/delivery/spcjs.php
-@@||ad4mat.*/cookie^$domain=ad4mat.net|youronlinechoices.com
 @@||ad71.adfarm1.adition.com/lt?nw=$domain=atv.at
 @@||adac.de/_common/js/adac.webtrekk.js
 @@||adap.tv/redir/javascript/vpaid.js
@@ -869,7 +868,6 @@
 @@||ahcdn.xyz^$stealth,media
 @@||ahd.ruten.com.tw/ahd/fetch_ad.php?zone=*%2C$domain=ruten.com.tw
 @@||ahhhhfs.com^$generichide
-@@||ahtapot.shop/cdn/$stealth=referrer
 @@||aiasahi.jp/ads/$image,domain=japan.zdnet.com
 @@||aile.gov.tr^$stealth=dpi
 @@||aimfar.solution.weborama.fr/fcgi-bin/oba.fcgi?action=opt$domain=youronlinechoices.com
@@ -1006,6 +1004,7 @@
 @@||analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$domain=hbstrt.deltatre.net|hbsch1russia.deltatre.net|1tv.ru
 @@||analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$script,domain=sports.nhk.or.jp
 @@||analytics.freetubeapp.io/index.php$domain=analytics.freetubeapp.io
+@@||analytics.google.com/analytics/$~third-party
 @@||analytics.itunes.apple.com^
 @@||analytics.itunes.apple.com^$~third-party
 @@||analytics.kbjfree.com/js/plausible.js
@@ -1189,6 +1188,7 @@
 @@||api.micloud.xiaomi.net^$important
 @@||api.mindbox.ru/scripts/v1/tracker.js$domain=xcom-shop.ru
 @@||api.miui.security.xiaomi.com^$important
+@@||api.mojang.com^$stealth=3p-auth
 @@||api.ok.ru/fb.do?application_key=*_advertisement.user_id
 @@||api.olx.$app=com.app.tokobagus.betterb
 @@||api.onedrive.com^
@@ -1246,6 +1246,7 @@
 @@||app.appsflyer.com^
 @@||app.axenthost.com^$generichide
 @@||app.clarity.so^$~third-party
+@@||app.focusmate.com^$stealth=webrtc
 @@||app.hubspot.com/api/ads/$~third-party
 @@||app.hype.it/assets/packages/mixpanel_flutter/assets/mixpanel.js$~third-party
 @@||app.market.xiaomi.com^$important
@@ -1679,7 +1680,6 @@
 @@||c.y.qq.com^
 @@||c.y.qq.com^$important
 @@||c.yandexcdn.com/js/adv/ads.js$domain=yandexcdn.com
-@@||c.yandexcdn.com/js/adv/advert3.js$domain=yandexcdn.com
 @@||cache.nymag.com^*/clickability.js
 @@||cache2.delvenetworks.com/crossdomain.xml$domain=lapresse.ca
 @@||cache2.delvenetworks.com/ps/c/v1/$domain=lapresse.ca
@@ -2301,7 +2301,6 @@
 @@||cloudimg.io/*/analytics.$script,domain=michelinman.com
 @@||cloudinary.com/perimeterx/$image,domain=perimeterx.com
 @@||club.tgfcer.com^$generichide
-@@||cluster1.rednbluelogistics.com^$stealth=3p-auth,domain=rednbluepty.com
 @@||cm-beacon.nakanohito.jp/cm/comment_$xmlhttprequest
 @@||cm-beacon.nakanohito.jp^
 @@||cm-widget.nakanohito.jp/cm/$script,stylesheet
@@ -2578,6 +2577,7 @@
 @@||cy.com/hz/*/ad
 @@||cy.com^$generichide
 @@||cybozu.com/*/event.gif?$~third-party
+@@||cz.mrezadosa.com^$xmlhttprequest,image,domain=playzone.cz
 @@||d-cache.microad.jp/js/td_iw_access.js$domain=watch.impress.co.jp
 @@||d.apkpure.com/b/APK/$stealth=ip
 @@||d.applovin.com^$app=ac.hush.app
@@ -3332,6 +3332,7 @@
 @@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
+@@||get.x-link.pl/*embed.html$stealth=referrer
 @@||get.x-link.pl^$generichide
 @@||getbootstrap.com/docs/*/assets/js/vendor/popper.min.js
 @@||getclicky.com/ajax/marketshare?$script
@@ -3398,6 +3399,7 @@
 @@||gnar.grammarly.com/events$xmlhttprequest,domain=account.grammarly.com
 @@||gntm.connect.prosieben.de^$generichide
 @@||go-mpulse.net^$domain=costcobusinessdelivery.com
+@@||go.adjust.com^
 @@||go.admost.com/adx/js/admost.js$domain=arsiv.mackolik.com
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/stat/dolwebanalytics.js
@@ -4389,7 +4391,6 @@
 @@||haoweichi.com/Public/js/ads.js
 @@||happyride.se/img/admarket/
 @@||harvard.edu/scripts/ga_social_tracking.js
-@@||havuc4.shop/cdn/$stealth=referrer
 @@||hb.afl.rakuten.co.jp^
 @@||hb.improvedigital.com/pbw/gameDistributionV*.min.js$domain=html5.gamedistribution.com
 @@||hb.improvedigital.com/pbw/headerlift.min.js$domain=spielen.com
@@ -5914,7 +5915,6 @@
 @@||networkworld.com^*/demandbase.js
 @@||new.abb.com/ruxitagentjs_$~third-party
 @@||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js
-@@||newkso.ru/*.php$stealth=searchqueries|referrer
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de
 @@||news-app.abumedia.yql.yahoo.com^
 @@||news.u17i.com/advert/
@@ -5966,7 +5966,6 @@
 @@||now.com/*/js/dfpAsset_prebid.js
 @@||nowscore.com/script/common/adHelper.js
 @@||noxgroup.com/noxinfluencer/sensor_sdk/$script,domain=noxinfluencer.com
-@@||np.community.playstation.net^$stealth=3p-auth
 @@||npr.org/sponsorship/targeting/$other,xmlhttprequest,domain=npr.org
 @@||nq-api.net^$stealth=referrer,domain=jellycat.com
 @@||nsfw.xxx/vendor/fingerprint/fingerprint2.min.js
@@ -6993,7 +6992,6 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=ibtimes.co.in
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=mobile.donanimhaber.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=southwalesargus.co.uk
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=tvmovie.de
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=www.vulture.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$script,domain=m.timesofindia.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=20min.ch
@@ -7010,7 +7008,6 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=ukr.net
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=weheartit.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=wunderground.com
-@@||securepubads.g.doubleclick.net/pagead/managed/$script,domain=metacritic.com
 @@||securepubads.g.doubleclick.net/pagead/managed/js/gpt/$domain=fifetoday.co.uk
 @@||securepubads.g.doubleclick.net/pagead/managed/js/gpt/*/pubads_impl.js$domain=abccar.com.tw
 @@||securepubads.g.doubleclick.net/pagead/managed/js/gpt/*/pubads_impl.js$domain=kitco.com
@@ -7915,7 +7912,6 @@
 @@||toutiaocdn.com^$important
 @@||toweroffantasy-global.com/events/accounttransfer/public/js/fingerprint.js$~third-party
 @@||towideo.pl/assets/ads_configs/sas_ad_config_vod.js
-@@||townhall.com/resources/dist/js/prebid-pjmedia.js$script,domain=pjmedia.com
 @@||townwork.net/js/AppMeasurement.js$~third-party
 @@||toy-people.com^$generichide
 @@||toyota.com/recall/static/js/custom/facebookPixel.js$~third-party
@@ -8065,7 +8061,6 @@
 @@||tvid.in/api/mediainfo/*.json?$stealth=referrer
 @@||tvid.in/sdk/loader.js$domain=indiatimes.com|timesofindia.com|timesnownews.com|zoomtventertainment.com
 @@||tvid.in/sdk/loader.js$domain=tvid.in
-@@||tving.com^$stealth=ip
 @@||tvn.adocean.pl/*ad.xml$xmlhttprequest,domain=player.pl|get.x-link.pl
 @@||tvn.hit.gemius.pl/*redataredir?url=*tvn.adocean.pl*ad.xml$domain=player.pl|teletoonplus.pl|get.x-link.pl
 @@||tvn24.pl^$generichide
@@ -8082,7 +8077,6 @@
 @@||twitter.com$domain=bleacherreport.com
 @@||twitter.com/oct.js$domain=jp.square-enix.com
 @@||twowheeler.policybazaar.com/js/googleanalytics.js
-@@||txc.gtimg.com/static/$stealth,domain=support.qq.com
 @@||txws.yyzb456.top^$domain=857zb7.tv
 @@||txxx.com/embed/$stealth=referrer
 @@||txxx.com/ext/get_file^$stealth=referrer
