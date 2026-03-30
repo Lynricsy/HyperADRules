@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-03-29 20:27:29（北京时间）
+! Version: 2026-03-30 09:14:03（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8705
+! Total count: 8709
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -253,6 +253,7 @@
 @@/v/*.gif$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/v/*.html$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/video.m3u8$stealth=referrer,domain=missav.live
+@@/video.m3u8$stealth=referrer,domain=missav.ws
 @@/video/*$media,stealth=referrer,domain=douyin.com
 @@/videos/*$domain=pornhub.com|pornhub.org|pornhub.net
 @@/weborama.js$~third-party,domain=zertalious.xyz|digworm.io
@@ -1970,6 +1971,7 @@
 @@||cdn.optimizely.com/datafiles/*.json$domain=feverup.com
 @@||cdn.optimizely.com/datafiles/*.json$domain=hm.com
 @@||cdn.optimizely.com/datafiles/*.json$domain=pizzahut.*
+@@||cdn.optimizely.com/datafiles/*.json$domain=scheels.com
 @@||cdn.optimizely.com/datafiles/*.json$domain=shop.mango.com
 @@||cdn.optimizely.com/datafiles/*.json$domain=talktalk.co.uk
 @@||cdn.optimizely.com/datafiles/*.json$domain=wingstop.com
@@ -3176,6 +3178,7 @@
 @@||forums.windowscentral.com^$script,~third-party
 @@||fotbolltransfers.com^$generichide
 @@||fotor.com.cn/static/web/share/js/
+@@||fourhoi.com^$image,stealth=referrer,domain=missav.ws
 @@||fp-it.fengkongcloud.com^
 @@||fplay.online/log_event$~third-party,xmlhttprequest
 @@||fpnpmcdn.net/v*/*/loader_*.js$domain=member.neofinancial.com
@@ -7263,6 +7266,7 @@
 @@||soranews24.com^$generichide
 @@||soufunimg.com/??*/fshare.
 @@||soufunimg.com/count/uvbforpc.js
+@@||soundcore.com/metrics/gtd?id=$script,~third-party
 @@||sourcegraph.com^$generichide
 @@||sourcepointcmp.bloomberg.*/ccpa.js$script,domain=bloomberg.co.jp|bloomberg.com
 @@||sourcepointcmp.bloomberg.*/mms/get_site_data?$domain=bloomberg.co.jp|bloomberg.com
