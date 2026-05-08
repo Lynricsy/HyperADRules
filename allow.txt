@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-05-08 09:48:36（北京时间）
+! Version: 2026-05-08 21:03:23（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 9013
+! Total count: 9010
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
@@ -542,7 +542,6 @@
 @@||a0.app.xiaomi.com
 @@||a0.app.xiaomi.com^$important
 @@||a1.itc.cn/pv/js/spv.
-@@||a2zapk.com^$script,xmlhttprequest,third-party,domain=financemonk.net|rtxkeeda.com|houseofblogger.com|dropgalaxy.com|djxmaza.in
 @@||a8cv.amiami.jp/click/$removeparam=a8
 @@||aax-eu.amazon-adsystem.com/s/yoc^$domain=youronlinechoices.com
 @@||aax.amazon-adsystem.com^$domain=mylifetime.com
@@ -560,6 +559,7 @@
 @@||abt.s3.yandex.net/expjs/latest/exp.js$script,domain=some.porn
 @@||abv-p.com/Images/adv.png
 @@||ac*.namu.la^$domain=arca.live,media,image,stealth=referrer
+@@||ac.ebis.ne.jp^
 @@||ac.kr^$stealth=dpi
 @@||ac.namu.la^$domain=arca.live,media,image,stealth=referrer
 @@||ac.namu.la^$image,domain=arca.live,stealth=referrer
@@ -1132,7 +1132,6 @@
 @@||api.clerk.io/v*/log/click?$domain=fjellandhandel.no
 @@||api.cognitive.microsofttranslator.com/translate?
 @@||api.comm.miui.com^$important
-@@||api.commercecloud.salesforce.com^$stealth=3p-auth,domain=steelseries.com
 @@||api.crunchyroll.com/log_ad_event.0.json$app=com.crunchyroll.crunchyroid
 @@||api.cxense.com/document/search?
 @@||api.cxense.com/persisted/execute$domain=nippon.com
@@ -1209,6 +1208,7 @@
 @@||api.mapbox.com/*access_token=$stealth=referrer
 @@||api.mapbox.com^$stealth,domain=kamsnim.cz
 @@||api.mapy.*/maptiles/$stealth=referrer
+@@||api.mapy.cz^$stealth
 @@||api.mi-img.com^$stealth=referrer
 @@||api.micloud.xiaomi.net^$important
 @@||api.mindbox.ru/scripts/v1/tracker.js$domain=xcom-shop.ru
@@ -1316,7 +1316,6 @@
 @@||arstechnica.com/information-technology/2019/07/data-slurped-from-4-million-browsers-still-available-via-google-analytics/
 @@||arstechnica.com/services/incr.php?*=interactions.adblock-annoy.click$xmlhttprequest
 @@||arstechnica.com^$generichide,badfilter
-@@||art-reklama.razitko.cz^$domain=art-reklama.razitko.cz
 @@||arte.tv^*/xtcore.js
 @@||artifactory.appodeal.com^
 @@||artnet.com^$generichide
@@ -1699,7 +1698,6 @@
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=fox21news.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=foxnews.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=gamestar.de
-@@||c.amazon-adsystem.com/aax2/apstag.js$domain=independentespanol.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=kark.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=spox.com
 @@||c.amazon-adsystem.com/aax2/apstag.js$domain=tasteofhome.com
@@ -1963,6 +1961,7 @@
 @@||cdn.evolutionadv.it/money.it/*.mp4$domain=money.it
 @@||cdn.ex.co/player/$domain=reviewjournal.com
 @@||cdn.ex.co/player/*.js$domain=pagesix.com
+@@||cdn.ex.co/player/*.js$domain=sport24.gr
 @@||cdn.ex.co^$domain=mm-watch.com|theautopian.com
 @@||cdn.ex.co^$domain=standard.co.uk
 @@||cdn.exmarketplace.com/bidder/video_scripts/video_updated_*.js$domain=tvserial.it
@@ -2251,6 +2250,7 @@
 @@||chaynikam.info^$removeparam
 @@||check.ddos-guard.net/check.js
 @@||check.ddos-guard.net/check.js$script
+@@||checkdomain.b-cdn.net/assets/$stealth=referrer
 @@||checkfresh.com/js/prebid-ads.js
 @@||checkout.api.scayle.cloud/next/api/$stealth=3p-auth
 @@||checkoutshopper-live-us.adyen.com^$stealth=referrer
@@ -2721,6 +2721,7 @@
 @@||datadome.monster.com.first-party-js.datadome.co^$script,domain=monster.com
 @@||dataprajna.net^
 @@||dataprajna.net^$important
+@@||dato.porn/js/pop.js|
 @@||datpiff.com^$csp=script-src 'self' * blob: data:
 @@||daxiaamu.com^$generichide
 @@||dayanzai.me/image/ad/$image
@@ -3129,7 +3130,6 @@
 @@||ezodn.com/tardisrocinante/lazy_load.js$script,domain=origami-resource-center.com
 @@||ezoic.net/detroitchicago/cmb.js$script,domain=gerweck.net
 @@||ezoic.net/tardisrocinante/screx.js$domain=doncorgi.com
-@@||ezsoftwarestorage.com^$image,media,domain=ezfunnels.com
 @@||eztv.io^$csp=script-src 'self' 'unsafe-inline'
 @@||f*.market.mi-img.com^$important
 @@||f*.market.xiaomi.com^$important
@@ -3244,6 +3244,7 @@
 @@||flormar.webinstats.com^$domain=flormar.com.tr
 @@||fltaradio.com/js/ads.js
 @@||flyert.com/plug/socialShare/js/social-share.
+@@||flying-lines.com/banners/$image,~third-party
 @@||flyme.cn^
 @@||flyordie.com/games/online/iframeafg*.html
 @@||fnggcdn.com/items/$stealth=referrer
@@ -4605,7 +4606,6 @@
 @@||hood.de^$cookie=DSID
 @@||hopto.org/js/prebid-ads.
 @@||hopto.org^$generichide
-@@||horriblesubs.info/static/hs.js
 @@||hostlogr.com/etc/geo.php?
 @@||hosts-file.net/ad_servers.txt
 @@||hosts-file.net^$important
@@ -5113,6 +5113,7 @@
 @@||ing.blueconic.net^$domain=ing.jobs
 @@||ingdirect.com.au^$document
 @@||ingest.sentry.io/api/$xmlhttprequest,domain=core.app|orionprotocol.io|play.tv3.lv|tesco.com|tesco.hu
+@@||ingka.com^$stealth=3p-auth,domain=ikea.com
 @@||ingress.com/intel?$document
 @@||injections.adguard.com^$document
 @@||injections.adguard.org^
@@ -5169,7 +5170,6 @@
 @@||ipstatp.com/business_center/dist/img/ad-$domain=tiktok.com
 @@||ipv4.seeip.org/jsonip$domain=empire-streaming.app
 @@||iqiyi.com/*.html$stealth=webrtc
-@@||irdeto.com/widevine/$stealth=3p-auth,domain=paramountplus.com|cbs.com
 @@||island.lk/userfiles/image/danweem/island.gif
 @@||issuecdn.baidupcs.com^$important
 @@||istanbulsenin.istanbul^$stealth=dpi
@@ -5251,7 +5251,6 @@
 @@||js-sec.indexww.com^$script,domain=maxisciences.com|gentside.*|ohmymag.*
 @@||js.3conline.com/pconlinenew/data/2023/sensors/sensorsdata.min.js$domain=pconline.pcvideo.com.cn
 @@||js.adsrvr.org/up_loader.$script,domain=www3.nissan.co.jp
-@@||js.adsrvr.org/up_loader.1.1.0.js$domain=sterkinekor.com
 @@||js.agkn.com/prod/v0/tag.js$domain=netd.com
 @@||js.appboycdn.com/web-sdk/$domain=kfc.co.jp
 @@||js.appboycdn.com/web-sdk/*/appboy.min.js$domain=equinox.com
@@ -5473,7 +5472,6 @@
 @@||link.theplatform.com/*?affiliate=
 @@||linka.page^
 @@||linkbucks.com/tmpl/$image,stylesheet
-@@||linkconnector.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||linkjust.com^$generichide
 @@||linkneverdie.com^$generichide
 @@||links.e.theatlantic.com^
@@ -5592,6 +5590,7 @@
 @@||luluvdo.com^$stealth=useragent
 @@||luminousstreamhaven.com^$stealth=referrer,domain=edgedeliverynetwork.com
 @@||lun.com/*/Scripts/Analytics.js
+@@||luna.amazon.*/game$stealth=webrtc
 @@||luoxiadushu.com^$generichide
 @@||lustich.de.adadapter.netzathleten-media.de/API-1.0/*/naMediaAd.js$domain=lustich.de
 @@||lwadm.com/lw/pbjs?pid=$script,domain=sydostran.se
@@ -7215,6 +7214,7 @@
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=espn.com
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=ibtimes.co.in
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=mobile.donanimhaber.com
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=plug.dj
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=southwalesargus.co.uk
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=tvmovie.de
 @@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=www.vulture.com
@@ -7378,7 +7378,6 @@
 @@||shopify.com/shopifycloud/boomerang/shopify-boomerang-$domain=rydewear.com
 @@||shoptimise.fr/Content/Images/bann_
 @@||short.cliquebook.net/*js/viewad.js
-@@||short.croclix.me/*js/viewad.js
 @@||short.goldenfaucet.io/*templates/css/viewad.css
 @@||short2money.com^$stealth=referrer
 @@||shorterall.com^$cookie=_gid
@@ -7839,6 +7838,7 @@
 @@||sundaysky.com/sundaysky.js?$domain=lenovo.com
 @@||sundaysky.com^*/default/sundaysky.js$domain=lenovo.com
 @@||suning.cn/project/msIndex/js/??
+@@||suntory.co.jp/beer/kinmugi/css2020/ad.css?
 @@||suo.im^$important
 @@||supabase.co/auth/v*/user|$stealth=3p-auth
 @@||supercachecdn.com/play/$media,stealth=referrer,domain=pornmedium.com|pornammo.com
@@ -8156,7 +8156,6 @@
 @@||tools.pinpoll.com^$script,subdocument,domain=iframely.net
 @@||tools.services.tvn.pl/_ads/advert.js
 @@||tools.services.tvn.pl/maertsg.js$domain=tvn24.pl
-@@||tools.usps.com/go/TrackConfirmAction$stealth=ip
 @@||toolsforworkingwood.com/blogimg/
 @@||top.list.ru/counter?id=$domain=crimea-kurort.com
 @@||top.list.ru/jump?from=$domain=pvo.guns.ru
@@ -8231,7 +8230,6 @@
 @@||tracklog.58.com/referrer$~third-party
 @@||tracklog.58.com/referrer_ershouche_m_Now.js$domain=m.renrenche.com
 @@||trackonomics.net/client/$script,domain=popsugar.com
-@@||tractorshed.com/photoads/upload/$~third-party
 @@||tradedoubler.com^$removeparam=tduid
 @@||tradingview.com/adx/$subdocument,domain=adx.ae
 @@||tradingview.com^$script,stealth
@@ -8308,7 +8306,6 @@
 @@||tui.click/js/ads.js
 @@||tui.click^$generichide
 @@||tunein.com/api/v1/comscore$~third-party
-@@||turbo.az^$stealth=referrer
 @@||turboplayers.xyz/t/$stealth=referrer
 @@||turbovid.vip^$subdocument,stealth=referrer
 @@||turbovidhls.com/t/$stealth=referrer
@@ -8528,6 +8525,7 @@
 @@||vidhidevip.com/embed/$subdocument,stealth=referrer
 @@||vidible.tv^*/ComScore.StreamSense.js
 @@||vidible.tv^*/ComScore.Viewability.js
+@@||vidload.site^$stealth=referrer
 @@||vidmoly.to/embed-$stealth=referrer|ip
 @@||vidnest.io^$generichide
 @@||vidoza.net/embed-*.html$subdocument
@@ -8631,7 +8629,6 @@
 @@||web-ads.pulse.weatherbug.net/api/ads/targeting/v*/parameters?$domain=weatherbug.com
 @@||web-sdk.segmentify.com/segmentify.debug.js$domain=fisslermagaza.com.tr
 @@||web-sdk.urbanairship.com/notify/$script,domain=etoro.com
-@@||web.any.do^$document
 @@||web.basemark.com^$generichide
 @@||web.map-m.com/*/api?appKey=$domain=toyota.jp,stealth=referrer
 @@||web.saavncdn.com^$stealth=referrer
