@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-05-13 09:52:19（北京时间）
+! Version: 2026-05-13 21:59:24（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8985
+! Total count: 8988
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
@@ -50,6 +50,7 @@
 @@.mp4$domain=crunchyroll.com,stealth=referrer
 @@.mp4$media,stealth=referrer,domain=sekai.one
 @@.net/click-$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
+@@.online/premiumtv/*.php$subdocument,xmlhttprequest,stealth=referrer
 @@.php$subdocument,stealth=referrer,domain=/dizipal\d+.com/
 @@.php?id=$script,domain=surirt.com
 @@.php?play_vid=$subdocument,stealth=referrer,domain=xyflv.cc
@@ -233,6 +234,7 @@
 @@/prebid-js-$domain=mytvsuper.com|tvb.com|tvbs.com.tw
 @@/prebid.$script,domain=mingpao.com
 @@/prebid.min.js$~third-party,domain=tpead.net|advertape.net|tapepops.com|watchadsontape.com|advertisertape.com|tapeadvertisement.com|adblockplustape.xyz|tapelovesads.org|gettapeads.com|tapeadsenjoyer.com|noblocktape.com|antiadtape.com|tapewithadblock.org|streamadblocker.*|strtape.cloud|adblockeronstape.me|streamadblockplus.com|shavetape.*|adblockstrtape.link|adblockstrtech.link|adblockstreamtape.*|stape.fun|strcloud.link|streamtape.*|streamtape.com
+@@/premium*/*.php$subdocument,stealth=referrer,domain=stronstream.shop|sportzlive.shop|dlhd.pk
 @@/progress.php?callback=$script,domain=ytmp3.cc
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
@@ -1161,6 +1163,7 @@
 @@||api.cxense.com/public/widget/data?json=$domain=diamond.jp
 @@||api.cxense.com/public/widget/data?json=$domain=elle.com
 @@||api.cxense.com/public/widget/data?json=$domain=euractiv.com
+@@||api.cxense.com/public/widget/data?json=$domain=hochi.news
 @@||api.cxense.com/public/widget/data?json=$domain=i-voce.jp
 @@||api.cxense.com/public/widget/data?json=$domain=journaldemontreal.com
 @@||api.cxense.com/public/widget/data?json=$domain=journaldequebec.com
@@ -1785,7 +1788,6 @@
 @@||ccllaa.com^$generichide
 @@||ccom-cdn.com/assets/img/clear.gif?ccom_md5=$domain=credit.com
 @@||cd.connatix.com/connatix.playspace.js$domain=inc.com
-@@||cd.connatix.com/connatix.playspace.js$domain=loot.tv
 @@||cd.connatix.com/connatix.playspace.js$domain=theverge.com
 @@||cdc-api.account.sap.com^$stealth=referrer
 @@||cdc.gov/jscript/metrics/adobe/launch/$script,~third-party
@@ -1906,6 +1908,7 @@
 @@||cdn.cxense.com/cx.cce.js$domain=elcorreogallego.es
 @@||cdn.cxense.com/cx.cce.js$domain=elle.com
 @@||cdn.cxense.com/cx.cce.js$domain=euractiv.com
+@@||cdn.cxense.com/cx.cce.js$domain=hochi.news
 @@||cdn.cxense.com/cx.cce.js$domain=i-voce.jp
 @@||cdn.cxense.com/cx.cce.js$domain=journaldemontreal.com
 @@||cdn.cxense.com/cx.cce.js$domain=lopinion.fr
@@ -1926,6 +1929,7 @@
 @@||cdn.cxense.com/cx.js$domain=elcorreogallego.es
 @@||cdn.cxense.com/cx.js$domain=elle.com
 @@||cdn.cxense.com/cx.js$domain=euractiv.com
+@@||cdn.cxense.com/cx.js$domain=hochi.news
 @@||cdn.cxense.com/cx.js$domain=i-voce.jp
 @@||cdn.cxense.com/cx.js$domain=itmedia.co.jp
 @@||cdn.cxense.com/cx.js$domain=journaldemontreal.com
@@ -1945,7 +1949,6 @@
 @@||cdn.deviceinf.com^$domain=etail.market
 @@||cdn.dimml.io/dimml.js$domain=consumentenbond.nl
 @@||cdn.dimml.io/static/*.js$domain=consumentenbond.nl
-@@||cdn.dotstream.buzz^$stealth=referrer,domain=megaplay.*
 @@||cdn.dsmcdn.com/sfx/mergen/*.js$domain=trendyol-milla.com
 @@||cdn.dsmcdn.com/sfx/mergen/*/errors.$domain=trendyol.com
 @@||cdn.dsmcdn.com/sfx/mergen/*/index.js$domain=trendyol.com
@@ -2630,10 +2633,10 @@
 @@||cuttlinks.com^$generichide
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
 @@||cwtv.com^$generichide
-@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|inquirer.com|mainichi.jp|marketwatch.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|mainichi.jp|marketwatch.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com/cx.cce.js$domain=tarzanweb.jp
 @@||cxense.com/cx.cce.js$domain=tn.com.ar
-@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
+@@||cxense.com/cx.js$domain=13.cl|bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cyclestyle.net|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nikkansports.com|nippon.com|savonsanomat.fi|shueisha.co.jp|str.toyokeizai.net|tarzanweb.jp|tn.com.ar|tv-tokyo.co.jp|tvnet.lv|wsj.com
 @@||cxense.com/cx.js$domain=mainichi.jp
 @@||cxense.com/cx.js$domain=nlab.itmedia.co.jp
 @@||cxense.com/cx.js$domain=shueisha.co.jp
@@ -2642,7 +2645,7 @@
 @@||cxense.com/cx.js$script,domain=tv-tokyo.co.jp
 @@||cxense.com/document/search?
 @@||cxense.com/persisted/execute$domain=nippon.com
-@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
+@@||cxense.com/public/widget/$domain=bizjournals.com|businessinsider.de|businessinsider.jp|computerbild.de|cxpublic.com|cyclestyle.net|diamond.jp|friday.gold|friday.kodansha.co.jp|handelsblatt.com|hochi.news|inquirer.com|journaldequebec.com|ksml.fi|mainichi.jp|marketwatch.com|nippon.com|rikejo.jp|savonsanomat.fi|shueisha.co.jp|tn.com.ar|tvnet.lv|wsj.com
 @@||cxense.com^$domain=ikea.com
 @@||cxense.com^$domain=thelocal.fr
 @@||cxpublic.com/ToyoKeizai.js$domain=str.toyokeizai.net
@@ -2797,7 +2800,6 @@
 @@||discordsays.com/?instance_id=$stealth=referrer
 @@||discoveryplus.com^$generichide
 @@||discoveryplus.in/*/ads/banner_ad.js
-@@||discretemath.org/ads/
 @@||discretemath.org^$image,stylesheet
 @@||disneyplus.com^$generichide
 @@||disneyplus.com^$generichide,badfilter
@@ -3156,6 +3158,7 @@
 @@||fandango.com/b/ss/$image
 @@||fang.com/stats/clickm2011.js
 @@||fangcloud.com^$generichide
+@@||faq-widget.nakanohito.jp/faqwidget.js$domain=keio-passport.co.jp
 @@||faq.subaru.jp^$stealth=dpi
 @@||faq.viewcard.co.jp^$stealth=dpi
 @@||fast*.vidplus.dev/file*/*?host=$xmlhttprequest,stealth=referrer
@@ -3429,6 +3432,7 @@
 @@||geoplugin.net/javascript.gp$script,domain=christianhouseshare.com.au|gamemazing.com|soundsonline.com
 @@||get-to.link^$stealth=referrer
 @@||get.cervell.io/api/$domain=cildimveben.com
+@@||get.neofinancial.com^
 @@||get.s-onetag.com/*/tag.min.js$domain=zakzak.co.jp
 @@||get.sogou.com^$important
 @@||get.x-link.pl^$generichide
@@ -3500,6 +3504,7 @@
 @@||gntm.connect.prosieben.de^$generichide
 @@||gnula.club/embed.php$stealth=referrer
 @@||go-mpulse.net^$domain=costcobusinessdelivery.com
+@@||go.adjust.com^
 @@||go.admost.com/adx/js/admost.js$domain=arsiv.mackolik.com
 @@||go.affec.tv/cookie^$domain=youronlinechoices.com
 @@||go.com/stat/dolwebanalytics.js
@@ -4671,6 +4676,7 @@
 @@||ia.hit.interia.pl/*/date?$domain=interia.pl|pomponik.pl
 @@||ia.hit.interia.pl^
 @@||ia.hit.interia.pl^$app=pl.interia.news
+@@||iamcdn.net/players/*ads*.js$domain=hydrax.net
 @@||ib.adnxs.com/getuidj|$domain=independent.co.uk
 @@||ib.adnxs.com/ptv$domain=tele5.de
 @@||ib.adnxs.com^$app=se.prisjakt.pricespy
@@ -4725,7 +4731,6 @@
 @@||ikea.cn^*/img/ads/
 @@||ikea.com^*/analyticsEvent.$script,~third-party
 @@||iknow-pic.cdn.bcebos.com^$stealth=referrer
-@@||ilpuntotecnico.com/forum/RealPopup/blockadblock.js
 @@||ilpuntotecnico.com^$generichide
 @@||im.qq.com^$important
 @@||image.mp3.zdn.vn/banner/
@@ -5095,7 +5100,6 @@
 @@||infojobs.com.br/mf-publicarea/_content/InfoJobs.Microfrontend.Components/js/smarttag.js
 @@||infolink.pavv.co.kr^
 @@||infotop.jp/html/ad/$image,~third-party
-@@||infowars.com/wp-content/themes/$image
 @@||infra-api.newrelic.com^
 @@||infusionsoft.app/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
 @@||infusionsoft.com/aff.html$subdocument,domain=pages.infusionsoft.net|reginadancecity.ca
@@ -5167,7 +5171,6 @@
 @@||iteye.com^$important
 @@||itmedia.co.jp^$cookie=cX_G
 @@||itnews.com.au/scripts/js_*.js
-@@||itoya.ec-optimizer.com^
 @@||itv.1tv.ru/stat.php?
 @@||itv.com/itv/hserver/*/site=itv/$xmlhttprequest
 @@||itv.com/itv/tserver/$~third-party
@@ -5572,6 +5575,7 @@
 @@||lr-ingest.io/LogRocket.min.js$domain=smartcare.com
 @@||lsi.com^*/google-analytics.js
 @@||lso.ca^$stealth=dpi
+@@||lswcdn.net^$stealth=referrer
 @@||lulustream.com^$popup,domain=luluvdo.com
 @@||luluvdo.com^$stealth=useragent
 @@||luminousstreamhaven.com^$stealth=referrer,domain=edgedeliverynetwork.com
@@ -5620,7 +5624,6 @@
 @@||mail.yahoo.com/neo/ymstat$xmlhttprequest
 @@||mailingtechnology.com/tracking/tracking_$~third-party
 @@||main.govpilot.com/jet/js/newrelic.js$~third-party
-@@||mainstream.whatfinger.com/wp-content/plugins/meks-easy-ads-widget/css/style.css$domain=mainstream.whatfinger.com
 @@||makeuseof.com/public/build/images/bg-advert-with-us.$~third-party
 @@||mam.netease.com^$important
 @@||manage.wix.com/_api/wix-laboratory-server/laboratory/conductAllInScope?scope=vod$domain=editor.wixapps.net
@@ -5628,7 +5631,6 @@
 @@||manageengine.com/products/ad-manager/$~third-party
 @@||mangadex.*/images^
 @@||mangapark.net^$image
-@@||mangasail.co/sites/default/files/*//*_adsense_
 @@||manhua.acimg.cn^$stealth=referrer,domain=ac.qq.com
 @@||manhua.weibo.com/adv/
 @@||manhuagui.com^$stealth=referrer
@@ -6777,6 +6779,7 @@
 @@||pussyspace.com/class/captcha/captcha.php$domain=pussyspace.com
 @@||puui.qpic.cn^
 @@||puzzles-games-api.gp-prod.conde.digital^
+@@||puzzles-games-api.gp-prod.conde.digital^$domain=newyorker.com
 @@||pv.sohu.com/cityjson$domain=bulletin.cebpubservice.com
 @@||pv.sohu.com/cityjson$domain=bulletin.sntba.com
 @@||pv.sohu.com/cityjson$domain=ems.com.cn
@@ -7065,7 +7068,6 @@
 @@||samsunhaber.com/images/banner/*logo$~third-party
 @@||sankei.co.jp/js/analytics/skd.Analysis.js$script
 @@||sanspo.com/parts/chartbeat/$xmlhttprequest
-@@||sascdn.com/diff/js/smart.js$domain=deezer.com
 @@||sascdn.com/tag/$script,domain=filmweb.pl
 @@||sascdn.com/video/controller.js$domain=towideo.pl
 @@||sax.sina.com.cn/video/newimpress?
@@ -7437,7 +7439,6 @@
 @@||smartclip.net/ads?type=$domain=energy.de
 @@||smartnews-ads.com^$app=jp.co.alc.eow
 @@||smartpixel.tv
-@@||smedia2.intoday.in/aajtak_pwapp$script
 @@||smetrics.aa.com/b/ss/
 @@||smetrics.aa.com^$app=com.aa.android
 @@||smetrics.blackberry.com/b/ss/*:jump-page:$image,domain=bbm.com
@@ -7462,6 +7463,7 @@
 @@||snssdk.com^$important
 @@||snva.jp/javascripts/reco/$script,domain=abc-mart.net|store.charle.co.jp
 @@||snyk.io^$cookie=ajs_anonymous_id
+@@||sobot.com^
 @@||sofire.baidu.com^$important
 @@||soft.tbs.imtt.qq.com^$important
 @@||soft8ware.com^$generichide
@@ -7781,6 +7783,7 @@
 @@||storage.googleapis.com/prebid/qm_prebid.js$domain=kicker.de
 @@||storage.googleapis.com/prebid/qm_prebid8.js$domain=kicker.de
 @@||storage.live.com^
+@@||storage.waitst.com^$image,stealth=referrer,domain=mangabats.com
 @@||storage.waitst.com^$stealth=referrer,image,domain=mangakakalot.gg
 @@||storage.yandex.net/rdisk/$stealth=referrer
 @@||store.storeimages.cdn-apple.com^$domain=apple.com,stealth=referrer
@@ -7822,6 +7825,7 @@
 @@||supercloudsms.com^*/a_d
 @@||superpsx.com^$generichide
 @@||supersonicads.com^$app=com.square_enix.android_googleplay.dqwalkj
+@@||support-beacon.nakanohito.jp/widget/faqview$domain=keio-passport.co.jp
 @@||support-beacon.nakanohito.jp^
 @@||support-widget.nakanohito.jp^
 @@||support.google.com^$domain=support.google.com
@@ -7843,7 +7847,6 @@
 @@||swap.qth.com/include/adblockdetection/adblockDetector.js
 @@||swedbank.ee^$document
 @@||swhoi.com/e/$subdocument,stealth=referrer
-@@||swiftmailgen.com/storage/js/adcount.js
 @@||swishsrv.com/e/$stealth=referrer
 @@||switch.atdmt.com/iaction/$subdocument,domain=bestbuy.com
 @@||swnovels.com/assets/js/prebid-ads.js
@@ -8401,6 +8404,7 @@
 @@||urlcheck.hulu.com/crossdomain.xml
 @@||urldefense.com^$removeparam
 @@||useinsider.com/ins.js$domain=pizzahut.jp
+@@||user-profile.pr.sbsod.com^$stealth=3p-auth
 @@||user.edenredplus.com/assets/packages/mixpanel_flutter/assets/mixpanel.js$script,~third-party
 @@||user.pnetlab.com/store/advs/check
 @@||user.userguiding.com/sdk/identify$xmlhttprequest,domain=xaris.ai
@@ -8432,7 +8436,6 @@
 @@||v.fwmrm.net/ad/g/1?$domain=ruutu.fi
 @@||v.fwmrm.net/ad/g/1?*mtv_desktop$xmlhttprequest
 @@||v.fwmrm.net/ad/g/1?csid=vcbs_cbsnews_*_web_vod&*&host=https%3A%2F%2Fwww.cbsnews.com&$domain=imasdk.googleapis.com
-@@||v.fwmrm.net/ad/g/1?csid=vcbs_cbsnews_desktop_$xmlhttprequest
 @@||v.fwmrm.net/ad/p/1?$domain=cc.com|channel5.com|cmt.com|eonline.com|foodnetwork.com|nbcnews.com|ncaa.com|player.theplatform.com|simpsonsworld.com|today.com
 @@||v.fwmrm.net/ad/p/1?$domain=channel4.com
 @@||v.fwmrm.net/crossdomain.xml$xmlhttprequest
@@ -8590,7 +8593,6 @@
 @@||warpwire.net/AD/
 @@||was.vodafone.de/ee/*/privacy/set-consent
 @@||watch.globaltv.com^$generichide
-@@||watchanimesub.net^$media,stealth=referrer,domain=watchcartoononline.com
 @@||watchdirty.to/player/stats.php
 @@||wavepc.pl/wp-content/*-500x100.png$image,~third-party
 @@||wavse.com^$generichide
@@ -8606,6 +8608,7 @@
 @@||web-sdk.urbanairship.com/notify/$script,domain=etoro.com
 @@||web.basemark.com^$generichide
 @@||web.map-m.com/*/api?appKey=$domain=toyota.jp,stealth=referrer
+@@||web.np.playstation.com/api^$stealth=3p-auth
 @@||web.saavncdn.com^$stealth=referrer
 @@||web.snrbox.com/*?tracker=$domain=carrefourpl.snrpage.com
 @@||web.snrbox.com/rtom-proxy/rtom/configs/getPublicConfigForContext$domain=komputronik.pl
