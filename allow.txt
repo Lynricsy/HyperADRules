@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-06-02 23:52:10（北京时间）
+! Version: 2026-06-03 10:32:11（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8935
+! Total count: 8938
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
@@ -220,6 +220,7 @@
 @@/media/*/js/adblock_detector.js$domain=eska.pl|eskarock.pl|voxfm.pl|vibefm.pl|radiosupernova.pl
 @@/mobileads.$domain=naviking.localking.com.tw
 @@/mono.m3u8$stealth=referrer
+@@/mp4$media,stealth=referrer,domain=player.videasy.net
 @@/nbc-ad*.js$domain=notebookcheck-hu.com|notebookcheck.com|notebookcheck.net|notebookcheck.org|notebookcheck.biz|notebookcheck.it|notebookcheck.nl|notebookcheck.info|notebookcheck-tr.com|notebookcheck.se|notebookcheck-ru.com
 @@/needsharebutton.min.js$domain=leetcode-cn.com
 @@/owa/service.svc$document
@@ -335,6 +336,7 @@
 @@m.video.xiaomi.com
 @@mp4.ts
 @@nileapi.market.xiaomi.com
+@@q=$xmlhttprequest,stealth=referrer,domain=player.videasy.net
 @@qlogo.cn^
 @@s.click.taobao.com
 @@s.click.tmall.com
@@ -2701,6 +2703,7 @@
 @@||data.mistat.xiaomi.com^$app=com.tencent.mm
 @@||data.mistat.xiaomi.com^$important
 @@||data.notify.macys.com^
+@@||data.orders.costco.ca^
 @@||data.orders.costco.com^
 @@||data.reactandshare.com/api/plugin/$stealth=referrer,domain=maanmittauslaitos.fi
 @@||data.service.paypal.com^
