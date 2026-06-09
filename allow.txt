@@ -2,11 +2,10 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-06-09 09:51:54（北京时间）
+! Version: 2026-06-09 22:14:39（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 8998
+! Total count: 9003
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
-@@$csp=worker-src 'none',domain=uptostream.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
 @@$stealth=useragent,app=top.rootu.lampa
@@ -341,6 +340,7 @@
 @@s.click.taobao.com
 @@s.click.tmall.com
 @@sh.st
+@@style/*/*jpeg$xmlhttprequest,stealth=referrer,domain=weakspell.to
 @@t.cn
 @@t1.market.xiaomi.com
 @@ticketmaster.com/fau/account/log
@@ -484,7 +484,6 @@
 @@||58img.top/muliframe/muliframe$stealth=referrer,domain=mypornerleak.com
 @@||58img.top^$image,stealth=referrer,domain=hornysimp.com.lv|mypornerleak.com
 @@||58img.top^$stealth=referrer
-@@||5dm.link^$subdocument,stealth=referrer
 @@||5qidgde.com^$generichide
 @@||5w8.fun/myads/img/*.gif
 @@||70.86.24.120:8060/*/
@@ -703,6 +702,7 @@
 @@||adm.crowdicity.com^
 @@||adm.fwmrm.net^$domain=revision3.com
 @@||adm.fwmrm.net^*/TremorAdRenderer.$object,domain=go.com
+@@||adm.fwmrm.net^*/videoadrenderer.$object,domain=cnbc.com|go.com|nbc.com|nbcnews.com
 @@||admin.corrata.com/console/dcconsolews/event-log?$~third-party
 @@||admin.dable.io^
 @@||admin.mailchimp.com^
@@ -1754,6 +1754,7 @@
 @@||caf.fr/*/smarttag.js
 @@||caf.fr^*/smarttag.js$script,~third-party
 @@||cafe24.com^$stealth=dpi
+@@||caffenero-webassets-production.*.amazonaws.com/images/$stealth=referrer,domain=caffenero.com
 @@||calciomercato.com/promodisplay
 @@||calciomercato.com^$generichide
 @@||calendar.google.com^$generichide
@@ -2397,6 +2398,7 @@
 @@||cloudfront.net^*/jquery.google-analytics.js$domain=homepath.com
 @@||cloudimg.io/*/analytics.$script,domain=michelinman.com
 @@||cloudinary.com/perimeterx/$image,domain=perimeterx.com
+@@||cloudvideo.tv/embed-$stealth=referrer
 @@||club.tgfcer.com^$generichide
 @@||cm-beacon.nakanohito.jp/cm/comment_$xmlhttprequest
 @@||cm-beacon.nakanohito.jp^
@@ -2467,6 +2469,7 @@
 @@||cohesionapps.com/preamp/$subdocument,xmlhttprequest,domain=frontier.com
 @@||coinadster.com^$script,stylesheet,xmlhttprequest,other,image,domain=coinadster.com
 @@||coinmarketcap.com/static/addetect/$script,~third-party
+@@||coinpayu.com/assets/ads_$domain=coinpayu.com
 @@||cokcok.stream/play/$stealth=referrer
 @@||colamanga.com/js/*/load.js
 @@||colamanga.com^$generichide
@@ -2573,6 +2576,7 @@
 @@||convertexperiments.com^$domain=skratchlabs.com
 @@||convertpad.com/ad/
 @@||cookielaw.org^*/OtAutoBlock.js$domain=bancsabadell.com|darkreading.com|uphold.com
+@@||coolermaster.com/images/adv_
 @@||coolinet.com^$generichide
 @@||copypastecharacter.com^$generichide
 @@||coral.coralproject.net^$stealth
@@ -2715,6 +2719,7 @@
 @@||dan-ball.jp/*/img.gif$domain=dan-ball.jp
 @@||dan-ball.jp/en/javagame/mine/data/d.gif$image,~third-party
 @@||daoju.qq.com/time/*/js/ad/
+@@||dapi.kakao.com/v*/maps/sdk.js$stealth=referrer,domain=aptgin.com
 @@||dapi.kakao.com/v*/maps/sdk.js$stealth=referrer,domain=disco.re
 @@||dapi.kakao.com/v*/maps/sdk.js$stealth=referrer,domain=hyundai.com
 @@||dapi.kakao.com/v*/maps/sdk.js$stealth=referrer,domain=nonghyup.tritops.co.kr
@@ -2754,6 +2759,7 @@
 @@||dayanzai.me/image/ad/$image
 @@||daziba.cn/Images/share.css
 @@||dby*.xyz^$stealth=referrer,domain=molystream.*
+@@||dc.services.visualstudio.com/v2/track$xmlhttprequest,domain=aiskillsnavigator.microsoft.com
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=abcnews.go.com
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=disney.*
 @@||dcf.espn.com/TWDC-DTCI/prod/Bootstrap.js$domain=fivethirtyeight.com
@@ -3345,7 +3351,6 @@
 @@||fuseplatform.net^*/fuse.js$script,domain=broadsheet.com.au|friendcafe.jp
 @@||fussball.de/fbed/js/xtcore.js
 @@||future.biz.weibo.com^
-@@||fux.com/adblockchecker.js
 @@||g.alicdn.com/??*/criteo
 @@||g.alicdn.com/AWSC/et/$domain=ele.me
 @@||g.alicdn.com/alilog/mlog/aplus_o.js$domain=v.youku.com
@@ -5218,6 +5223,7 @@
 @@||jav777.xyz/advertise/
 @@||javedit.com/d/js/acmsd/thea0.
 @@||javpost.net/ads.php
+@@||javtiful.com/ad-engine.js
 @@||jawcloud.co/embed$stealth=referrer
 @@||jbprogramnotes.com^$generichide
 @@||jccsmart.com^$stealth
@@ -5754,7 +5760,6 @@
 @@||media-consumer365.desigual.com^
 @@||media-imdb.com^$stealth=referrer,domain=imdb.com
 @@||media-imdb.com^*/clickstream.js
-@@||media.biertijd.com/galleries/$stealth=referrer,domain=biertijd.xxx
 @@||media.bnd.com/mistats/finalizestats.js
 @@||media.bnd.com/mistats/micb.js
 @@||media.bnd.com/mistats/products/escenic_s_code.js
@@ -6092,6 +6097,7 @@
 @@||netshoes.com.br/webanalytics/collect
 @@||netto-online.de/jquery/webanalytics/xtcore.js
 @@||networkworld.com^*/demandbase.js
+@@||neveitalia.it/assets/images/logo-gds-bianco.svg
 @@||new.abb.com/ruxitagentjs_$~third-party
 @@||new.hnair.com/hainanair/ibe/static/scripts/new/profile/fingerprint2.js
 @@||newrelic.com/nr-*.min.js$domain=surveymonkey.co.uk|surveymonkey.com|surveymonkey.de
@@ -6519,7 +6525,6 @@
 @@||picholes.online/*/*.jpg$xmlhttprequest,stealth=referrer
 @@||picjs.xyz^$stealth=referrer,domain=vikacg.com
 @@||picmix.com/js/fuckadblock.js
-@@||pics.porn300.com^
 @@||pics.porndroids.com^
 @@||picsearch.com/js/comscore.js$domain=dn.se
 @@||pillsbury.com/Shared/StarterKit/Javascript/UnicaTag.js
@@ -7173,7 +7178,6 @@
 @@||search-myfonts-api.monotype.com^$stealth=referrer
 @@||search.brave.com/search$xmlhttprequest
 @@||search.powergap.de/indexes/$stealth=3p-auth
-@@||search.spotxchange.com/vmap/*&content_page_url=www.bsfuji.tv$xmlhttprequest,domain=imasdk.googleapis.com
 @@||sears.com^*/analytics.sitecatalyst.js
 @@||sec-cdn.static.xiaomi.net^$important
 @@||sec.levexis.com/clients/nbty/$domain=puritan.com
@@ -7402,6 +7406,7 @@
 @@||simg.sinajs.cn^$important
 @@||similarweb.com/website/data/
 @@||simkl.com^$xmlhttprequest,elemhide,jsinject,extension
+@@||simpforselti.com/captcha.js$domain=simpcity.cr
 @@||simple.ripley.cl$generichide
 @@||simpleanalyticsexternal.com^$script,domain=inleo.io
 @@||simplelogin.io^$cookie
@@ -7763,6 +7768,7 @@
 @@||statics.itc.cn^$important
 @@||statics.zcool.com.cn/track/sensors.$script,~third-party
 @@||staticsns.cdn.bcebos.com/amis/$image,domain=pan.baidu.com
+@@||staticxx.facebook.com/connect/xd_arbiter/*.js?version=$domain=animeflv.net
 @@||stats.britishbaseball.org.uk^
 @@||stats.e-go.gr/rx.asp?$domain=megatv.com
 @@||stats.g.doubleclick.net$app=ro.rcsrds.mydigi
@@ -8057,7 +8063,6 @@
 @@||thegay.com/assets//jwplayer-*/jwplayer.core.controls.js|$domain=thegay.com
 @@||thegay.com/assets//jwplayer-*/jwplayer.js|$domain=thegay.com
 @@||thegay.com/assets//jwplayer-*/provider.hlsjs.js|$domain=thegay.com
-@@||thegay.com/assets/jwplayer-*/provider.hlsjs.js|$domain=thegay.com
 @@||thegay.com/upd/*/assets/preview*.js|$domain=thegay.com
 @@||thegay.com/upd/*/static/js/*.js|$domain=thegay.com
 @@||thegioididong.com^$stealth=dpi
@@ -8491,7 +8496,6 @@
 @@||video-shoper.ru^$removeparam=utm_source
 @@||video.520cc.cc/ad.php|
 @@||video.520cc.cc^$generichide
-@@||video.externulls.com/key=$stealth=referrer
 @@||video.fyber.com^$app=net.wooga.tropicats_tropical_cats_puzzle_paradise
 @@||video.javhdporn.net^$stealth=referrer
 @@||video.matchtv.ru/iframe/$stealth=referrer
@@ -8633,6 +8637,7 @@
 @@||webcenter.tiscali.it/distribuzione/_script/audience_science.js$domain=mail.tiscali.it
 @@||webex.com^$generichide
 @@||webfail.com/image
+@@||webgains.com^$domain=bradsdeals.com|coupons.com|dealigg.com|dealnews.com|goodsearch.com|groupon.com|hotukdeals.com|moneysavingexpert.com|offers.com|retailmenot.com|slickdeals.net
 @@||weblet.square-enix.com/banner.php^
 @@||webmail.smartlinkcorp.com/dotrans_20160909.php
 @@||webminepool.com/lib/base.js$domain=autofaucet.org
