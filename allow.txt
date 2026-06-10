@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-06-09 22:14:39（北京时间）
+! Version: 2026-06-10 10:03:08（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 9003
+! Total count: 9007
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -2071,6 +2071,7 @@
 @@||cdn.petametrics.com/*-nbc.js$script,domain=bringmethenews.com
 @@||cdn.petametrics.com/*.js$domain=thestreet.com
 @@||cdn.petametrics.com^$script,domain=mechacomic.jp
+@@||cdn.petametrics.com^$script,domain=meidasnews.com
 @@||cdn.plyr.io/*/plyr.svg$domain=akwam.*
 @@||cdn.polarbyte.com^$domain=bab.la
 @@||cdn.popt.in/pixel.js$domain=userstyles.org
@@ -8731,10 +8732,13 @@
 @@||work.weixin.qq.com^$important
 @@||workers.dev/*.css$stealth=referrer
 @@||workers.dev/*.html$stealth=referrer
+@@||workers.dev/*.ico$stealth=referrer
 @@||workers.dev/*.jpeg$stealth=referrer
 @@||workers.dev/*.jpg$xmlhttprequest,stealth=referrer
 @@||workers.dev/*.js$stealth=referrer
 @@||workers.dev/*.m3u8$stealth=referrer
+@@||workers.dev/*.png$stealth=referrer
+@@||workers.dev/*.txt$stealth=referrer
 @@||workers.dev^$xmlhttprequest,stealth=referrer,domain=vidfast.pro
 @@||worldgravity.com^$script,domain=hotstar.com
 @@||worldometers.info^|$stealth=referrer
