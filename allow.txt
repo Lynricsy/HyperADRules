@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-07-10 21:50:29（北京时间）
+! Version: 2026-07-11 09:20:45（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 9228
+! Total count: 9230
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -282,7 +282,7 @@
 @@/v/*.gif$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/v/*.html$stealth=referrer,xmlhttprequest,domain=player.bunny-frame.online
 @@/vast.php?idzone=$domain=jptt.tv
-@@/video.m3u8$stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*
+@@/video.m3u8$stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*|missav01.com
 @@/video/*$media,stealth=referrer,domain=douyin.com
 @@/videos/*$domain=pornhub.com|pornhub.org|pornhub.net
 @@/webtracking/*$domain=pasts.lv
@@ -3423,7 +3423,7 @@
 @@||fotbolltransfers.com^$generichide
 @@||fotor.com.cn/static/web/share/js/
 @@||fourfourtwo.com/vite/assets/Ads/Ads.ts-BXJqYWBm.js$domain=fourfourtwo.com
-@@||fourhoi.com^$image,media,stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*
+@@||fourhoi.com^$image,media,stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*|missav01.com
 @@||fp-it.fengkongcloud.com^
 @@||fplay.online/log_event$~third-party,xmlhttprequest
 @@||fpnpmcdn.net/v*/*/loader_*.js$domain=member.neofinancial.com
@@ -7180,6 +7180,7 @@
 @@||rsc.cdn77.org^$stealth=referrer
 @@||rscaptcha.com^$domain=claimtrx.com,stealth=referrer
 @@||rscdn.cxense.com/cx-test.js$domain=wsj.com
+@@||rscripts.net/ads/custom_ads.js$script,domain=rscripts.net
 @@||rscripts.net^$generichide
 @@||rt.rtoaster.jp^$image,domain=ec-store.net
 @@||rt.ru/api/$stealth=referrer
@@ -8052,7 +8053,8 @@
 @@||suratkargo.com.tr^$stealth=dpi
 @@||surfguru.com^$generichide
 @@||surirt.com/ad/ads.php?id=$script,domain=surirt.com
-@@||surrit.com/*/video*.jpeg$image,xmlhttprequest,stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*
+@@||surrit.com/*/video*.jpeg$image,xmlhttprequest,stealth=referrer,domain=missav.live|missav.ws|missav123.com|missav888.com|missav.*|missav01.com
+@@||surrit.com^$image,stealth=referrer,domain=missav.ws
 @@||survey.g.doubleclick.net^$script,domain=sporcle.com
 @@||surveymyopinion.researchnow.com^
 @@||suumo.jp/sp/js/beacon.js$script,~third-party
