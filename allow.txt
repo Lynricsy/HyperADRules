@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-07-20 21:44:08（北京时间）
+! Version: 2026-07-21 09:20:17（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 9205
+! Total count: 9209
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -600,6 +600,7 @@
 @@||account.mail.ru^$stealth=useragent
 @@||account.mcid.mynavi.jp^$stealth=referrer
 @@||account.microsoft.com/auth/$stealth=3p-cookie
+@@||accountapi.gosplit.net/authorize/$stealth=referrer
 @@||accounts.ea.com^$stealth
 @@||accounts.google.com^$generichide
 @@||accounts.google.com^$popup
@@ -1058,6 +1059,7 @@
 @@||ams.cdn.arkadiumhosted.com/assets/*/advertisements.js
 @@||ams.cdn.arkadiumhosted.com/assets/*/display-ads-f.js
 @@||an-sm.naughtycdn.com/js/lti-analytics-*.min.js$domain=members.naughtyamerica.com
+@@||an.gr-wcon.com/script/$domain=chipstore.de
 @@||an.yandex.ru^$app=com.badmanners.murglar
 @@||analogplanet.com^$elemhide
 @@||analysis.chess.com^
@@ -2743,6 +2745,7 @@
 @@||customer-*.cloudflarestream.com/*/iframe$stealth=referrer
 @@||customer.iad-03.braze.com^$app=de.burgerking.kingfinder
 @@||cutcaptcha.com^
+@@||cuttty.com^$generichide
 @@||cvs.com/shop-assets/js/VisitorAPI.js$~third-party
 @@||cwtv.com^$generichide
 @@||cxense.com/cx.cce.js$domain=bizjournals.com|businessinsider.de|cxpublic.com|diamond.jp|handelsblatt.com|hochi.news|inquirer.com|mainichi.jp|marketwatch.com|shueisha.co.jp|tarzanweb.jp|tn.com.ar|tvnet.lv|wsj.com
@@ -4829,6 +4832,7 @@
 @@||ias.global.rakuten.com/adv/$script,domain=rakuten.co.jp
 @@||ib.adnxs.com/getuidj|$domain=independent.co.uk
 @@||ib.adnxs.com/ptv$domain=tele5.de
+@@||ib.adnxs.com/ut/$domain=cuttty.com
 @@||ib.adnxs.com^$app=se.prisjakt.pricespy
 @@||ib11.go2yd.com^$important
 @@||ibb.istanbul^$stealth=dpi
