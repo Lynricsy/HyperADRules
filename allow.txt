@@ -2,9 +2,9 @@
 ! Title: HyperADRules
 ! Homepage: https://github.com/Lynricsy/HyperADRules
 ! Expires: 12 Hours
-! Version: 2026-07-22 21:15:29（北京时间）
+! Version: 2026-07-23 09:26:08（北京时间）
 ! Description: HyperADRules，一个集合众家之长的、强力去广告的规则
-! Total count: 9213
+! Total count: 9215
 @@$cookie=__gads,domain=godstoryinfo.com|laweducationinfo.com|rsgames.xyz|vichitrainfo.com
 @@$generichide,domain=androidpolice.com|babygaga.com|backyardboss.net|carbuzz.com|cbr.com|collider.com|dualshockers.com|footballfancast.com|footballleagueworld.co.uk|gamerant.com|givemesport.com|hardcoregamer.com|hotcars.com|howtogeek.com|makeuseof.com|moms.com|movieweb.com|pocket-lint.com|pocketnow.com|screenrant.com|simpleflying.com|thegamer.com|therichest.com|thesportster.com|thethings.com|thetravel.com|topspeed.com|xda-developers.com
 @@$image,stealth=referrer,domain=comix.to
@@ -250,6 +250,7 @@
 @@/premium*/*.php$subdocument,stealth=referrer,domain=stronstream.shop|sportzlive.shop|dlhd.*
 @@/progress.php?callback=$script,domain=ytmp3.cc
 @@/proxy?data=$third-party,xmlhttprequest,stealth=referrer,domain=flixer.*
+@@/proxy?data=$third-party,xmlhttprequest,stealth=referrer,domain=hexa.su
 @@/pub/ad/*$domain=ruten.com.tw
 @@/pub1/??$domain=banggo.com
 @@/pubads*theguardian.com
@@ -8722,6 +8723,7 @@
 @@||vidrame.pro^$subdocument,stealth=referrer
 @@||vidsrc.*/embed/$stealth=referrer
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
+@@||vidtub.kotocdn.site^$xmlhttprequest,stealth=referrer,domain=vidtube.site
 @@||vidtube.pro/embed$subdocument,stealth=referrer
 @@||view.inews.qq.com^$important
 @@||vipi.tv/ads.js
