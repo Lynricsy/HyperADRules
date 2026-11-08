@@ -1,19 +1,15 @@
 from __future__ import annotations
 
-import base64
 from pathlib import Path
 from typing import Final
 
-# 经 mihomo -t 加载验证的 0 条 ipcidr MRS (zstd 帧 + MRS 头, count=0).
-# 不使用占位 CIDR, 避免改变 allow/拦截语义.
-EMPTY_IPCIDR_MRS_B64: Final[str] = "KLUv/SQohQAAQE1SUwEBAAEAAgBgxh0oAiJw+dQ="
-EMPTY_IPCIDR_MRS_BYTES: Final[bytes] = base64.b64decode(EMPTY_IPCIDR_MRS_B64)
 EMPTY_IPCIDR_TEXT_PLACEHOLDER: Final[str] = "# empty ipcidr ruleset\n"
 
-
-def write_empty_ipcidr_mrs(path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    _ = path.write_bytes(EMPTY_IPCIDR_MRS_BYTES)
+# mihomo 的 ipcidr MRS 读取端要求区间数 >= 1 (cidr.ReadIpCidrSet: "length is invalid"),
+# 格式上不存在可加载的空集合。空集改为编译单条 RFC 6666 discard-only 前缀中的一个地址:
+# 该地址不会作为真实目的地出现, 对 allow(PASS) / 拦截(REJECT) 语义均无可观测影响。
+# 仅 MRS 使用占位; text / yaml 空集 mihomo 可直接加载, 保持真实空集合。
+EMPTY_IPCIDR_MRS_PLACEHOLDER_CIDR: Final[str] = "100::/128"
 
 
 def ipcidr_text_has_rules(text: str) -> bool:
@@ -24,10 +20,10 @@ def ipcidr_text_has_rules(text: str) -> bool:
     return False
 
 
-def ensure_ipcidr_mrs_from_text(text_path: Path, mrs_path: Path) -> str:
-    """根据 text 生成 mrs; 无有效规则时写入空集合 MRS, 返回 used|empty."""
+def write_ipcidr_mrs_source(text_path: Path, source_path: Path) -> bool:
+    """写出交给 mihomo convert-ruleset 的 ipcidr text; 返回是否使用了空集占位."""
     text = text_path.read_text(encoding="utf-8") if text_path.is_file() else ""
-    if ipcidr_text_has_rules(text):
-        return "used"
-    write_empty_ipcidr_mrs(mrs_path)
-    return "empty"
+    is_empty = not ipcidr_text_has_rules(text)
+    source_path.parent.mkdir(parents=True, exist_ok=True)
+    _ = source_path.write_text(f"{EMPTY_IPCIDR_MRS_PLACEHOLDER_CIDR}\n" if is_empty else text, encoding="utf-8")
+    return is_empty

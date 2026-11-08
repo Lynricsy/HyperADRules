@@ -115,24 +115,16 @@ jobs:
             /tmp/mihomo convert-ruleset domain text "$file" "${file%.txt}.mrs"
           done
           for file in dist/hyper_adrules_ads_ipcidr.txt dist/hyper_adrules_allow_ipcidr.txt dist/hyper_adrules_malware_ipcidr.txt; do
-            mrs="${file%.txt}.mrs"
-            # mihomo 对 0 条规则 panic; 空集写已验证空 MRS, 保证 URL 永不 404。
-            set +e
-            uv run python -m scripts.write_ipcidr_mrs --text "$file" --mrs "$mrs"
-            status=$?
-            set -e
-            if [ "$status" -eq 0 ]; then
-              echo "$file -> empty mrs"
-            elif [ "$status" -eq 10 ]; then
-              /tmp/mihomo convert-ruleset ipcidr text "$file" "$mrs"
-            else
-              exit "$status"
-            fi
+            # mihomo ipcidr MRS 不支持 0 条 (加载报 length is invalid); 空集由脚本换成 discard-only 占位地址再编译。
+            src="$(mktemp)"
+            uv run python -m scripts.prepare_ipcidr_mrs_source --text "$file" --source "$src"
+            /tmp/mihomo convert-ruleset ipcidr text "$src" "${file%.txt}.mrs"
+            rm -f "$src"
           done
           for file in dist/hyper_adrules_ads_singbox.json dist/hyper_adrules_allow_singbox.json dist/hyper_adrules_malware_singbox.json; do
             /tmp/sing-box rule-set compile --output "${file%.json}.srs" "$file"
           done
-          # 用本次下载的 mihomo 加载全部 domain/ipcidr MRS, 防止空集静态 blob 与内核格式漂移。
+          # 用本次下载的 mihomo 实际启动并初始化全部 MRS provider (-t 不加载 provider, 无法发现格式错误)。
           uv run python -m scripts.validate_mrs_bundle --dist dist --mihomo /tmp/mihomo
           uv run python -m scripts.ruleset_stats --output dist
           # ipcidr 空集已是非 0 字节占位; 仍清理其他格式可能产生的 0 字节文件, 避免 Release 拒收。

@@ -6,7 +6,7 @@ from pathlib import Path
 from scripts.ruleset_core import convert_repositories, parse_rule, write_outputs
 from scripts.ruleset_domain import DomainMatchKind, classify_domain, to_domain_regex
 from scripts.ruleset_formats import write_kind_text_formats
-from scripts.ruleset_mrs import EMPTY_IPCIDR_MRS_BYTES, ensure_ipcidr_mrs_from_text
+from scripts.ruleset_mrs import EMPTY_IPCIDR_MRS_PLACEHOLDER_CIDR, write_ipcidr_mrs_source
 from scripts.ruleset_parser import parse_adguard_values
 from scripts.ruleset_stats import build_stats_payload, count_lines, expected_release_assets, release_assets_complete
 from scripts.ruleset_types import (
@@ -352,15 +352,16 @@ def test_count_lines_ignores_comment_only_ipcidr_placeholder(tmp_path: Path) -> 
     assert count_lines(path) == 0
 
 
-def test_ensure_ipcidr_mrs_writes_empty_binary_for_comment_only_text(tmp_path: Path) -> None:
-    text_path = tmp_path / "allow_ipcidr.txt"
-    mrs_path = tmp_path / "allow_ipcidr.mrs"
-    _ = text_path.write_text("# empty ipcidr ruleset\n", encoding="utf-8")
+def test_ipcidr_mrs_source_uses_placeholder_only_for_comment_only_text(tmp_path: Path) -> None:
+    empty_text = tmp_path / "allow_ipcidr.txt"
+    rules_text = tmp_path / "ads_ipcidr.txt"
+    _ = empty_text.write_text("# empty ipcidr ruleset\n", encoding="utf-8")
+    _ = rules_text.write_text("# header\n1.2.3.4/32\n", encoding="utf-8")
 
-    mode = ensure_ipcidr_mrs_from_text(text_path, mrs_path)
-
-    assert mode == "empty"
-    assert mrs_path.read_bytes() == EMPTY_IPCIDR_MRS_BYTES
+    assert write_ipcidr_mrs_source(empty_text, tmp_path / "empty.src")
+    assert (tmp_path / "empty.src").read_text(encoding="utf-8") == f"{EMPTY_IPCIDR_MRS_PLACEHOLDER_CIDR}\n"
+    assert not write_ipcidr_mrs_source(rules_text, tmp_path / "rules.src")
+    assert (tmp_path / "rules.src").read_text(encoding="utf-8") == "# header\n1.2.3.4/32\n"
 
 
 def test_write_kind_text_formats_emits_empty_allow_ipcidr_assets(tmp_path: Path) -> None:

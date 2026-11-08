@@ -46,7 +46,8 @@
 - 定时拉取多个 DNS 级上游，合并去重
 - **保守语义**：路径 / 端口 / 无法表达的 modifier **跳过**，绝不静默扩大为整域误杀
 - 一次构建，输出 AdGuard Home、mihomo、Clash、sing-box、Surge、dnsmasq、SmartDNS、Pi-hole 等格式
-- 空 `ipcidr` 集合也会发布合法空资产，订阅 URL **不会 404**
+- 空 `ipcidr` 集合也会发布可加载资产，订阅 URL **不会 404**；mihomo MRS 不支持 0 条 ipcidr，空集 MRS 内含单条
+  RFC 6666 discard-only 占位地址 `100::/128`（不会命中真实流量），text / YAML 仍为真正的空集合
 
 ### 上游来源
 
@@ -338,7 +339,7 @@ uv run python -m scripts.build_rulesets \
 
 ```bash
 mihomo convert-ruleset domain text dist/hyper_adrules_ads.txt dist/hyper_adrules_ads.mrs
-# 空 ipcidr 由流水线写入合法空 MRS；有规则时同样 convert-ruleset ipcidr
+# 空 ipcidr 先换成占位地址 100::/128 再 convert-ruleset ipcidr（mihomo 拒绝加载 0 条的 ipcidr MRS）
 
 sing-box rule-set compile --output dist/hyper_adrules_ads_singbox.srs dist/hyper_adrules_ads_singbox.json
 ```
