@@ -66,30 +66,53 @@ def free_port() -> int:
         return cast("int", sock.getsockname()[1])
 
 
-def fetch_rule_providers(port: int, process: subprocess.Popen[bytes]) -> dict[str, object] | None:
-    # mihomo 在 provider 全部 Initial 之后才启动 external-controller, 接口可用即加载完成。
-    deadline = time.monotonic() + STARTUP_TIMEOUT_SECONDS
+def parse_rule_providers(body: bytes) -> dict[str, object] | None:
+    # controller 先于 updateRules 启动, 此时 tunnel 中 provider 表为 nil, 接口返回 {"providers": null}。
+    payload = cast("object", json.loads(body))
+    providers = cast("dict[str, object]", payload).get("providers") if isinstance(payload, dict) else None
+    return cast("dict[str, object]", providers) if isinstance(providers, dict) else None
+
+
+def fetch_rule_providers(port: int) -> dict[str, object] | None:
     url = f"http://127.0.0.1:{port}/providers/rules"
-    while time.monotonic() < deadline:
-        if process.poll() is not None:
-            return None
-        try:
-            with cast("http.client.HTTPResponse", urllib.request.urlopen(url, timeout=2)) as response:
-                payload = cast("dict[str, object]", json.loads(response.read()))
-                return cast("dict[str, object]", payload["providers"])
-        except (urllib.error.URLError, ConnectionError, TimeoutError):
-            time.sleep(0.2)
-    return None
+    try:
+        with cast("http.client.HTTPResponse", urllib.request.urlopen(url, timeout=2)) as response:
+            body = response.read()
+    except (urllib.error.URLError, ConnectionError, TimeoutError):
+        return None
+    return parse_rule_providers(body)
 
 
-def find_problems(providers: dict[str, object], log_text: str) -> list[str]:
-    problems = [line for line in log_text.splitlines() if "initial rule provider" in line and "error" in line]
+def provider_problems(providers: dict[str, object]) -> list[str]:
+    problems: list[str] = []
     for name in PROVIDERS:
         info = providers.get(name)
         rule_count = cast("dict[str, object]", info).get("ruleCount") if isinstance(info, dict) else None
-        # 发布的 MRS 均不为空集 (空 ipcidr 使用占位地址), 0 条即加载失败。
+        # 发布的 MRS 均不为空集 (空 ipcidr 使用占位地址), 0 条即未加载成功。
         if not isinstance(rule_count, int) or rule_count < 1:
             problems.append(f"provider {name} loaded {rule_count!r} rules")
+    return problems
+
+
+def wait_for_providers(port: int, process: subprocess.Popen[bytes], log_path: Path) -> list[str]:
+    """轮询直到全部 provider 加载出规则; 返回问题列表, 空列表表示通过."""
+    # external-controller 先于 provider Initial 启动, 接口可用不代表已加载, 需等 ruleCount 就绪。
+    deadline = time.monotonic() + STARTUP_TIMEOUT_SECONDS
+    problems = ["mihomo external-controller did not become ready"]
+    while time.monotonic() < deadline:
+        returncode = process.poll()
+        if returncode is not None:
+            return [f"mihomo exited early with code {returncode}"]
+        log_text = log_path.read_text(encoding="utf-8", errors="replace")
+        init_errors = [line for line in log_text.splitlines() if "initial rule provider" in line and "error" in line]
+        if init_errors:
+            return init_errors
+        providers = fetch_rule_providers(port)
+        if providers is not None:
+            problems = provider_problems(providers)
+            if not problems:
+                return []
+        time.sleep(0.2)
     return problems
 
 
@@ -120,7 +143,7 @@ def main(argv: list[str] | None = None) -> int:
                 stderr=subprocess.STDOUT,
             )
             try:
-                providers = fetch_rule_providers(port, process)
+                problems = wait_for_providers(port, process, log_path)
             finally:
                 process.terminate()
                 try:
@@ -128,14 +151,8 @@ def main(argv: list[str] | None = None) -> int:
                 except subprocess.TimeoutExpired:
                     process.kill()
                     _ = process.wait()
-        log_text = log_path.read_text(encoding="utf-8", errors="replace")
-        if providers is None:
-            print(log_text, end="", file=sys.stderr)
-            print("mihomo external-controller did not become ready", file=sys.stderr)
-            return 1
-        problems = find_problems(providers, log_text)
         if problems:
-            print(log_text, end="", file=sys.stderr)
+            print(log_path.read_text(encoding="utf-8", errors="replace"), end="", file=sys.stderr)
             for problem in problems:
                 print(problem, file=sys.stderr)
             return 1

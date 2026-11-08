@@ -16,6 +16,7 @@ from scripts.ruleset_types import (
     RuleKind,
     UpstreamKind,
 )
+from scripts.validate_mrs_bundle import PROVIDERS, parse_rule_providers, provider_problems
 
 
 def empty_local_allow(tmp_path: Path) -> Path:
@@ -362,6 +363,18 @@ def test_ipcidr_mrs_source_uses_placeholder_only_for_comment_only_text(tmp_path:
     assert (tmp_path / "empty.src").read_text(encoding="utf-8") == f"{EMPTY_IPCIDR_MRS_PLACEHOLDER_CIDR}\n"
     assert not write_ipcidr_mrs_source(rules_text, tmp_path / "rules.src")
     assert (tmp_path / "rules.src").read_text(encoding="utf-8") == "# header\n1.2.3.4/32\n"
+
+
+def test_mrs_validator_treats_null_or_unloaded_providers_as_not_ready() -> None:
+    # controller 先于 provider 表就绪时返回 null; 已注册但未加载完的 provider ruleCount 为 0。
+    assert parse_rule_providers(b'{"providers": null}') is None
+    partial = parse_rule_providers(b'{"providers": {"ads_domain": {"ruleCount": 5}, "ads_ipcidr": {"ruleCount": 0}}}')
+    assert partial is not None
+    problems = provider_problems(partial)
+    assert "provider ads_ipcidr loaded 0 rules" in problems
+    assert "provider allow_domain loaded None rules" in problems
+    assert not any(problem.startswith("provider ads_domain ") for problem in problems)
+    assert provider_problems({name: {"ruleCount": 1} for name in PROVIDERS}) == []
 
 
 def test_write_kind_text_formats_emits_empty_allow_ipcidr_assets(tmp_path: Path) -> None:
