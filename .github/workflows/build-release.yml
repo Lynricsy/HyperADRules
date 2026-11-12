@@ -25,12 +25,20 @@ jobs:
       - name: Fetch upstream rules
         run: |
           set -euo pipefail
+          # Magisk Mod 只取 AdGuardHome.yaml 的 user_rules; 其 data/filters 是手动上传的过期快照。
+          # 主过滤器直接拉取该 yaml 实际订阅的在线源 (GOODBYEADS / URLHaus)。
           git clone --depth=1 https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod upstream-adguard
           git clone --depth=1 https://github.com/privacy-protection-tools/anti-AD upstream-anti-ad
+          curl -fsSL https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt -o upstream-goodbyeads-dns.txt
+          curl -fsSL https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/allow.txt -o upstream-goodbyeads-allow.txt
+          curl -fsSL https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt -o upstream-urlhaus.txt
           curl -fsSL https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml -o upstream-anti-ad/anti-ad-white-for-clash.yaml
           curl -fsSL https://raw.githubusercontent.com/lingeringsound/10007/main/reward -o upstream-coolapk-1007-reward.txt
 
           ADGUARD_SHA="$(git -C upstream-adguard rev-parse HEAD)"
+          GOODBYEADS_DNS_SHA="$(sha256sum upstream-goodbyeads-dns.txt | cut -d ' ' -f 1)"
+          GOODBYEADS_ALLOW_SHA="$(sha256sum upstream-goodbyeads-allow.txt | cut -d ' ' -f 1)"
+          URLHAUS_SHA="$(sha256sum upstream-urlhaus.txt | cut -d ' ' -f 1)"
           ANTI_AD_SHA="$(git -C upstream-anti-ad rev-parse HEAD)"
           DEAD_HORSE_SHA="$(sha256sum upstream-anti-ad/anti-ad-white-for-clash.yaml | cut -d ' ' -f 1)"
           COOLAPK_1007_REWARD_SHA="$(sha256sum upstream-coolapk-1007-reward.txt | cut -d ' ' -f 1)"
@@ -39,6 +47,9 @@ jobs:
 
           {
             echo "ADGUARD_SHA=${ADGUARD_SHA}"
+            echo "GOODBYEADS_DNS_SHA=${GOODBYEADS_DNS_SHA}"
+            echo "GOODBYEADS_ALLOW_SHA=${GOODBYEADS_ALLOW_SHA}"
+            echo "URLHAUS_SHA=${URLHAUS_SHA}"
             echo "ANTI_AD_SHA=${ANTI_AD_SHA}"
             echo "DEAD_HORSE_SHA=${DEAD_HORSE_SHA}"
             echo "COOLAPK_1007_REWARD_SHA=${COOLAPK_1007_REWARD_SHA}"
@@ -54,11 +65,17 @@ jobs:
         run: |
           uv run python -m scripts.build_rulesets \
             --adguard-source upstream-adguard \
+            --goodbyeads-dns-source upstream-goodbyeads-dns.txt \
+            --goodbyeads-allow-source upstream-goodbyeads-allow.txt \
+            --urlhaus-source upstream-urlhaus.txt \
             --anti-ad-source upstream-anti-ad \
             --coolapk-1007-reward-source upstream-coolapk-1007-reward.txt \
             --local-allow-source sources/local_allow.txt \
             --output dist \
             --adguard-commit "$ADGUARD_SHA" \
+            --goodbyeads-dns-commit "$GOODBYEADS_DNS_SHA" \
+            --goodbyeads-allow-commit "$GOODBYEADS_ALLOW_SHA" \
+            --urlhaus-commit "$URLHAUS_SHA" \
             --anti-ad-commit "$ANTI_AD_SHA" \
             --dead-horse-commit "$DEAD_HORSE_SHA" \
             --coolapk-1007-reward-commit "$COOLAPK_1007_REWARD_SHA"
@@ -188,7 +205,13 @@ jobs:
             echo "- Release tag: \`$RELEASE_TAG\`"
             echo "- Content id: \`$CONTENT_ID\` (sha256 of dist/SHA256SUMS, first 16 hex)"
             echo "- Converter commit: \`$CONVERTER_SHA\`"
-            echo "- Upstream: https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod"
+            echo "- Upstream: https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt"
+            echo "- Upstream SHA256: \`$GOODBYEADS_DNS_SHA\`"
+            echo "- Upstream: https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/allow.txt"
+            echo "- Upstream SHA256: \`$GOODBYEADS_ALLOW_SHA\`"
+            echo "- Upstream: https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt"
+            echo "- Upstream SHA256: \`$URLHAUS_SHA\`"
+            echo "- Upstream (user_rules): https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod"
             echo "- Upstream commit: \`$ADGUARD_SHA\`"
             echo "- Upstream: https://github.com/privacy-protection-tools/anti-AD"
             echo "- Upstream commit: \`$ANTI_AD_SHA\`"

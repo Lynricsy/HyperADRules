@@ -53,7 +53,9 @@
 
 | 上游 | 用途 |
 |---|---|
-| [AdGuard Home For Magisk Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) | ads / malware / allow 主过滤器 |
+| [GOODBYEADS](https://github.com/8680/GOODBYEADS) `dns.txt` / `allow.txt` | ads / allow 主过滤器 |
+| [URLHaus](https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt)（AdGuard HostlistsRegistry filter_11） | malware |
+| [AdGuard Home For Magisk Mod](https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod) | `AdGuardHome.yaml` 中的 `user_rules`（ads 补充 + 例外） |
 | [anti-AD](https://github.com/privacy-protection-tools/anti-AD) | Clash payload 广告域 + 例外 |
 | [dead-horse whitelist](https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml) | 并入 allow |
 | [Coolapk 1007 reward](https://raw.githubusercontent.com/lingeringsound/10007/main/reward) | 补充 ads hosts |
@@ -318,6 +320,9 @@ GitHub Actions 每天 UTC `20:23` 构建并发布。文件名中 `{kind}` = `ads
 ```bash
 git clone --depth=1 https://github.com/liuzq2002/Adguard-Home-For-Magisk-Mod upstream-adguard
 git clone --depth=1 https://github.com/privacy-protection-tools/anti-AD upstream-anti-ad
+curl -fsSL https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/dns.txt -o upstream-goodbyeads-dns.txt
+curl -fsSL https://raw.githubusercontent.com/8680/GOODBYEADS/master/data/rules/allow.txt -o upstream-goodbyeads-allow.txt
+curl -fsSL https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt -o upstream-urlhaus.txt
 curl -fsSL https://raw.githubusercontent.com/privacy-protection-tools/dead-horse/master/anti-ad-white-for-clash.yaml \
   -o upstream-anti-ad/anti-ad-white-for-clash.yaml
 curl -fsSL https://raw.githubusercontent.com/lingeringsound/10007/main/reward \
@@ -325,11 +330,17 @@ curl -fsSL https://raw.githubusercontent.com/lingeringsound/10007/main/reward \
 
 uv run python -m scripts.build_rulesets \
   --adguard-source upstream-adguard \
+  --goodbyeads-dns-source upstream-goodbyeads-dns.txt \
+  --goodbyeads-allow-source upstream-goodbyeads-allow.txt \
+  --urlhaus-source upstream-urlhaus.txt \
   --anti-ad-source upstream-anti-ad \
   --coolapk-1007-reward-source upstream-coolapk-1007-reward.txt \
   --local-allow-source sources/local_allow.txt \
   --output dist \
   --adguard-commit "$(git -C upstream-adguard rev-parse HEAD)" \
+  --goodbyeads-dns-commit "$(sha256sum upstream-goodbyeads-dns.txt | cut -d ' ' -f 1)" \
+  --goodbyeads-allow-commit "$(sha256sum upstream-goodbyeads-allow.txt | cut -d ' ' -f 1)" \
+  --urlhaus-commit "$(sha256sum upstream-urlhaus.txt | cut -d ' ' -f 1)" \
   --anti-ad-commit "$(git -C upstream-anti-ad rev-parse HEAD)" \
   --dead-horse-commit "$(sha256sum upstream-anti-ad/anti-ad-white-for-clash.yaml | cut -d ' ' -f 1)" \
   --coolapk-1007-reward-commit "$(sha256sum upstream-coolapk-1007-reward.txt | cut -d ' ' -f 1)"

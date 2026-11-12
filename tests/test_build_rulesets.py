@@ -15,14 +15,52 @@ from scripts.ruleset_types import (
     RuleCollector,
     RuleKind,
     UpstreamKind,
+    UpstreamSources,
 )
 from scripts.validate_mrs_bundle import PROVIDERS, parse_rule_providers, provider_problems
 
+UPSTREAM_COMMITS: dict[UpstreamKind, str] = {kind: f"{kind.value}-sha" for kind in UpstreamKind}
 
-def empty_local_allow(tmp_path: Path) -> Path:
-    path = tmp_path / "local_allow.txt"
-    _ = path.write_text("# empty local allow\n", encoding="utf-8")
-    return path
+
+def write_upstreams(  # noqa: PLR0913 - 每个上游一个可覆盖的内容参数
+    tmp_path: Path,
+    *,
+    goodbyeads_dns: str = "||ads.example.com^\n",
+    goodbyeads_allow: str = "@@||safe.example.com^\n",
+    urlhaus: str = "||bad.example.com^\n",
+    user_rules: str = "user_rules:\n  - '||custom.example.com^'\n",
+    anti_ad_adguard: str = "@@||anti-safe.example.com^\n",
+    anti_ad_clash: str = "payload:\n  - '+.anti-clash.example.com'\n",
+    anti_ad_white: str = "payload:\n  - '+.anti-white.example.com'\n",
+    reward: str = "0.0.0.0 reward.example.com\n",
+    local_allow: str = "# empty local allow\n",
+) -> UpstreamSources:
+    magisk_bin = tmp_path / "adguard" / "Adguardhome" / "bin"
+    magisk_bin.mkdir(parents=True)
+    _ = (magisk_bin / "AdGuardHome.yaml").write_text(user_rules, encoding="utf-8")
+    anti_ad = tmp_path / "anti-ad"
+    anti_ad.mkdir()
+    _ = (anti_ad / "anti-ad-adguard.txt").write_text(anti_ad_adguard, encoding="utf-8")
+    _ = (anti_ad / "anti-ad-clash.yaml").write_text(anti_ad_clash, encoding="utf-8")
+    _ = (anti_ad / "anti-ad-white-for-clash.yaml").write_text(anti_ad_white, encoding="utf-8")
+    files = {
+        "goodbyeads_dns.txt": goodbyeads_dns,
+        "goodbyeads_allow.txt": goodbyeads_allow,
+        "urlhaus.txt": urlhaus,
+        "reward.txt": reward,
+        "local_allow.txt": local_allow,
+    }
+    for name, content in files.items():
+        _ = (tmp_path / name).write_text(content, encoding="utf-8")
+    return UpstreamSources(
+        adguard_magisk=tmp_path / "adguard",
+        goodbyeads_dns=tmp_path / "goodbyeads_dns.txt",
+        goodbyeads_allow=tmp_path / "goodbyeads_allow.txt",
+        urlhaus=tmp_path / "urlhaus.txt",
+        anti_ad=anti_ad,
+        coolapk_1007_reward=tmp_path / "reward.txt",
+        local_allow=tmp_path / "local_allow.txt",
+    )
 
 
 def test_parse_domain_block_rule_when_adguard_suffix_rule() -> None:
@@ -248,49 +286,15 @@ def test_parse_adguard_values_when_domain_modifier_not_allowed() -> None:
 
 
 def test_convert_repositories_when_multiple_upstreams_have_rules(tmp_path: Path) -> None:
-    adguard_source = tmp_path / "adguard"
-    anti_ad_source = tmp_path / "anti-ad"
-    reward_source = tmp_path / "reward.txt"
-    filters_dir = adguard_source / "Adguardhome" / "bin" / "data" / "filters"
-    filters_dir.mkdir(parents=True)
-    (adguard_source / "Adguardhome" / "bin").mkdir(exist_ok=True)
-    _ = (filters_dir / "1721861846.txt").write_text("||ads.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1735560833.txt").write_text("||bad.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1721861844.txt").write_text("@@||safe.example.com^\n", encoding="utf-8")
-    _ = (adguard_source / "Adguardhome" / "bin" / "AdGuardHome.yaml").write_text(
-        "user_rules:\n  - '||custom.example.com^'\n",
-        encoding="utf-8",
-    )
-    anti_ad_source.mkdir()
-    _ = (anti_ad_source / "anti-ad-adguard.txt").write_text(
-        "@@||anti-safe.example.com^\n||ads.example.com^\n||anti.example.com^\n",
-        encoding="utf-8",
-    )
-    _ = (anti_ad_source / "anti-ad-clash.yaml").write_text(
-        "payload:\n  - '+.anti-clash.example.com'\n  - '203.0.113.9/32'\n",
-        encoding="utf-8",
-    )
-    _ = (anti_ad_source / "anti-ad-white-for-clash.yaml").write_text(
-        "payload:\n  - '+.anti-white.example.com'\n  - '198.51.100.10/32'\n",
-        encoding="utf-8",
-    )
-    _ = reward_source.write_text(
-        "#@coolapk 1007\n127.0.0.1 localhost\n0.0.0.0 reward.example.com\n",
-        encoding="utf-8",
+    sources = write_upstreams(
+        tmp_path,
+        anti_ad_adguard="@@||anti-safe.example.com^\n||ads.example.com^\n||anti.example.com^\n",
+        anti_ad_clash="payload:\n  - '+.anti-clash.example.com'\n  - '203.0.113.9/32'\n",
+        anti_ad_white="payload:\n  - '+.anti-white.example.com'\n  - '198.51.100.10/32'\n",
+        reward="#@coolapk 1007\n127.0.0.1 localhost\n0.0.0.0 reward.example.com\n",
     )
 
-    result = convert_repositories(
-        adguard_source,
-        anti_ad_source,
-        reward_source,
-        {
-            UpstreamKind.ADGUARD_MAGISK: "adguard-sha",
-            UpstreamKind.ANTI_AD: "anti-sha",
-            UpstreamKind.DEAD_HORSE: "dead-horse-sha256",
-            UpstreamKind.COOLAPK_1007_REWARD: "reward-sha256",
-        },
-        local_allow_source=empty_local_allow(tmp_path),
-    )
+    result = convert_repositories(sources, UPSTREAM_COMMITS)
 
     assert result.buckets[RuleKind.ADS].domains == {
         "+.ads.example.com",
@@ -306,10 +310,7 @@ def test_convert_repositories_when_multiple_upstreams_have_rules(tmp_path: Path)
     }
     assert result.buckets[RuleKind.ALLOW].ipcidrs == {"198.51.100.10/32"}
     assert result.buckets[RuleKind.MALWARE].domains == {"+.bad.example.com"}
-    assert result.upstream_commits[UpstreamKind.ADGUARD_MAGISK] == "adguard-sha"
-    assert result.upstream_commits[UpstreamKind.ANTI_AD] == "anti-sha"
-    assert result.upstream_commits[UpstreamKind.DEAD_HORSE] == "dead-horse-sha256"
-    assert result.upstream_commits[UpstreamKind.COOLAPK_1007_REWARD] == "reward-sha256"
+    assert result.upstream_commits == UPSTREAM_COMMITS
 
 
 def test_build_stats_payload_when_release_assets_exist(tmp_path: Path) -> None:
@@ -537,46 +538,13 @@ def test_write_kind_text_formats_keeps_empty_clash_ipcidr(tmp_path: Path) -> Non
 
 
 def test_write_outputs_emits_multi_format_files(tmp_path: Path) -> None:
-    adguard_source = tmp_path / "adguard"
-    anti_ad_source = tmp_path / "anti-ad"
-    reward_source = tmp_path / "reward.txt"
-    filters_dir = adguard_source / "Adguardhome" / "bin" / "data" / "filters"
-    filters_dir.mkdir(parents=True)
-    (adguard_source / "Adguardhome" / "bin").mkdir(exist_ok=True)
-    _ = (filters_dir / "1721861846.txt").write_text(
-        "||ads.example.com^\nexact.example.com\n",
-        encoding="utf-8",
+    sources = write_upstreams(
+        tmp_path,
+        goodbyeads_dns="||ads.example.com^\nexact.example.com\n",
+        anti_ad_clash="payload:\n  - '+.anti-clash.example.com'\n  - '.subonly.example.com'\n  - '203.0.113.9/32'\n",
     )
-    _ = (filters_dir / "1735560833.txt").write_text("||bad.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1721861844.txt").write_text("@@||safe.example.com^\n", encoding="utf-8")
-    _ = (adguard_source / "Adguardhome" / "bin" / "AdGuardHome.yaml").write_text(
-        "user_rules:\n  - '||custom.example.com^'\n",
-        encoding="utf-8",
-    )
-    anti_ad_source.mkdir()
-    _ = (anti_ad_source / "anti-ad-adguard.txt").write_text("@@||anti-safe.example.com^\n", encoding="utf-8")
-    _ = (anti_ad_source / "anti-ad-clash.yaml").write_text(
-        "payload:\n  - '+.anti-clash.example.com'\n  - '.subonly.example.com'\n  - '203.0.113.9/32'\n",
-        encoding="utf-8",
-    )
-    _ = (anti_ad_source / "anti-ad-white-for-clash.yaml").write_text(
-        "payload:\n  - '+.anti-white.example.com'\n",
-        encoding="utf-8",
-    )
-    _ = reward_source.write_text("0.0.0.0 reward.example.com\n", encoding="utf-8")
 
-    result = convert_repositories(
-        adguard_source,
-        anti_ad_source,
-        reward_source,
-        {
-            UpstreamKind.ADGUARD_MAGISK: "adguard-sha",
-            UpstreamKind.ANTI_AD: "anti-sha",
-            UpstreamKind.DEAD_HORSE: "dead-horse-sha256",
-            UpstreamKind.COOLAPK_1007_REWARD: "reward-sha256",
-        },
-        local_allow_source=empty_local_allow(tmp_path),
-    )
+    result = convert_repositories(sources, UPSTREAM_COMMITS)
     out = tmp_path / "dist"
     write_outputs(result, out)
 
@@ -592,46 +560,9 @@ def test_write_outputs_emits_multi_format_files(tmp_path: Path) -> None:
 
 
 def test_dns_safe_build_does_not_contain_claude_apex(tmp_path: Path) -> None:
-    adguard_source = tmp_path / "adguard"
-    anti_ad_source = tmp_path / "anti-ad"
-    reward_source = tmp_path / "reward.txt"
-    filters_dir = adguard_source / "Adguardhome" / "bin" / "data" / "filters"
-    filters_dir.mkdir(parents=True)
-    (adguard_source / "Adguardhome" / "bin").mkdir(exist_ok=True)
-    _ = (filters_dir / "1721861846.txt").write_text(
-        "||claude.ai/sentry^\n||ads.example.com^\n",
-        encoding="utf-8",
-    )
-    _ = (filters_dir / "1735560833.txt").write_text("||bad.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1721861844.txt").write_text("@@||safe.example.com^\n", encoding="utf-8")
-    _ = (adguard_source / "Adguardhome" / "bin" / "AdGuardHome.yaml").write_text(
-        "user_rules:\n  - '||custom.example.com^'\n",
-        encoding="utf-8",
-    )
-    anti_ad_source.mkdir()
-    _ = (anti_ad_source / "anti-ad-adguard.txt").write_text("@@||anti-safe.example.com^\n", encoding="utf-8")
-    _ = (anti_ad_source / "anti-ad-clash.yaml").write_text(
-        "payload:\n  - '+.anti-clash.example.com'\n",
-        encoding="utf-8",
-    )
-    _ = (anti_ad_source / "anti-ad-white-for-clash.yaml").write_text(
-        "payload:\n  - '+.anti-white.example.com'\n",
-        encoding="utf-8",
-    )
-    _ = reward_source.write_text("0.0.0.0 reward.example.com\n", encoding="utf-8")
+    sources = write_upstreams(tmp_path, goodbyeads_dns="||claude.ai/sentry^\n||ads.example.com^\n")
 
-    result = convert_repositories(
-        adguard_source,
-        anti_ad_source,
-        reward_source,
-        {
-            UpstreamKind.ADGUARD_MAGISK: "adguard-sha",
-            UpstreamKind.ANTI_AD: "anti-sha",
-            UpstreamKind.DEAD_HORSE: "dead-horse-sha256",
-            UpstreamKind.COOLAPK_1007_REWARD: "reward-sha256",
-        },
-        local_allow_source=empty_local_allow(tmp_path),
-    )
+    result = convert_repositories(sources, UPSTREAM_COMMITS)
     out = tmp_path / "dist"
     write_outputs(result, out)
 
@@ -659,56 +590,19 @@ def test_dns_safe_build_does_not_contain_claude_apex(tmp_path: Path) -> None:
 
 def test_local_allow_covers_volces_business_domain(tmp_path: Path) -> None:
     """Issue #24: keep ads +.volces.com while allowlisting business hosts."""
-    adguard_source = tmp_path / "adguard"
-    anti_ad_source = tmp_path / "anti-ad"
-    reward_source = tmp_path / "reward.txt"
-    local_allow = tmp_path / "local_allow.txt"
-    filters_dir = adguard_source / "Adguardhome" / "bin" / "data" / "filters"
-    filters_dir.mkdir(parents=True)
-    (adguard_source / "Adguardhome" / "bin").mkdir(exist_ok=True)
-    _ = (filters_dir / "1721861846.txt").write_text("||ads.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1735560833.txt").write_text("||bad.example.com^\n", encoding="utf-8")
-    _ = (filters_dir / "1721861844.txt").write_text("@@||safe.example.com^\n", encoding="utf-8")
-    # Magisk user_rules 整域拦截 volces.com, 同时含拼写错误的 Kimi 例外。
-    _ = (adguard_source / "Adguardhome" / "bin" / "AdGuardHome.yaml").write_text(
-        (
+    sources = write_upstreams(
+        tmp_path,
+        # Magisk user_rules 整域拦截 volces.com, 同时含拼写错误的 Kimi 例外。
+        user_rules=(
             "user_rules:\n"
             "  - '||volces.com^$important'\n"
             "  - '@@||prod-chat-kimi.tos-cn-beijing.volces.com^$importat'\n"
         ),
-        encoding="utf-8",
-    )
-    anti_ad_source.mkdir()
-    _ = (anti_ad_source / "anti-ad-adguard.txt").write_text("@@||anti-safe.example.com^\n", encoding="utf-8")
-    _ = (anti_ad_source / "anti-ad-clash.yaml").write_text(
-        "payload:\n  - '+.mssdk.volces.com'\n",
-        encoding="utf-8",
-    )
-    _ = (anti_ad_source / "anti-ad-white-for-clash.yaml").write_text(
-        "payload:\n  - '+.anti-white.example.com'\n",
-        encoding="utf-8",
-    )
-    _ = reward_source.write_text("0.0.0.0 reward.example.com\n", encoding="utf-8")
-    _ = local_allow.write_text(
-        (
-            "@@||ark.cn-beijing.volces.com^\n"
-            "@@||prod-chat-kimi.tos-cn-beijing.volces.com^\n"
-        ),
-        encoding="utf-8",
+        anti_ad_clash="payload:\n  - '+.mssdk.volces.com'\n",
+        local_allow="@@||ark.cn-beijing.volces.com^\n@@||prod-chat-kimi.tos-cn-beijing.volces.com^\n",
     )
 
-    result = convert_repositories(
-        adguard_source,
-        anti_ad_source,
-        reward_source,
-        {
-            UpstreamKind.ADGUARD_MAGISK: "adguard-sha",
-            UpstreamKind.ANTI_AD: "anti-sha",
-            UpstreamKind.DEAD_HORSE: "dead-horse-sha256",
-            UpstreamKind.COOLAPK_1007_REWARD: "reward-sha256",
-        },
-        local_allow_source=local_allow,
-    )
+    result = convert_repositories(sources, UPSTREAM_COMMITS)
     out = tmp_path / "dist"
     write_outputs(result, out)
 

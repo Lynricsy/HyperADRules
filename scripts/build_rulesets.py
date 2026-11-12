@@ -11,29 +11,33 @@ import sys
 from collections.abc import Sequence
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Final
 
 from scripts.ruleset_core import convert_repositories, print_summary, write_outputs
-from scripts.ruleset_types import UpstreamKind
+from scripts.ruleset_types import UpstreamKind, UpstreamSources
+
+# CLI 选项名 (去掉 -source / -commit 后缀) 与上游的对应关系; 每个上游都必须给出本地路径与版本标识。
+UPSTREAM_OPTIONS: Final[dict[UpstreamKind, str]] = {
+    UpstreamKind.ADGUARD_MAGISK: "adguard",
+    UpstreamKind.GOODBYEADS_DNS: "goodbyeads-dns",
+    UpstreamKind.GOODBYEADS_ALLOW: "goodbyeads-allow",
+    UpstreamKind.URLHAUS: "urlhaus",
+    UpstreamKind.ANTI_AD: "anti-ad",
+    UpstreamKind.COOLAPK_1007_REWARD: "coolapk-1007-reward",
+}
 
 
 @dataclass(frozen=True, slots=True)
 class BuildArgs:
-    adguard_source: Path
-    anti_ad_source: Path
-    coolapk_1007_reward_source: Path
-    local_allow_source: Path
+    sources: UpstreamSources
     output: Path
-    adguard_commit: str
-    anti_ad_commit: str
-    dead_horse_commit: str
-    coolapk_1007_reward_commit: str
+    upstream_commits: dict[UpstreamKind, str]
 
 
 def parse_args(argv: Sequence[str]) -> BuildArgs:
     parser = argparse.ArgumentParser(description="Build mihomo rule-provider text sources.")
-    _ = parser.add_argument("--adguard-source", type=Path, required=True)
-    _ = parser.add_argument("--anti-ad-source", type=Path, required=True)
-    _ = parser.add_argument("--coolapk-1007-reward-source", type=Path, required=True)
+    for option in UPSTREAM_OPTIONS.values():
+        _ = parser.add_argument(f"--{option}-source", type=Path, required=True)
     _ = parser.add_argument(
         "--local-allow-source",
         type=Path,
@@ -41,66 +45,44 @@ def parse_args(argv: Sequence[str]) -> BuildArgs:
         help="repo-local AdGuard exception rules merged into allow",
     )
     _ = parser.add_argument("--output", type=Path, required=True)
-    _ = parser.add_argument("--adguard-commit", default="unknown")
-    _ = parser.add_argument("--anti-ad-commit", default="unknown")
+    for option in UPSTREAM_OPTIONS.values():
+        _ = parser.add_argument(f"--{option}-commit", default="unknown")
+    # dead-horse 白名单由 CI 下载进 anti-AD 目录, 只有版本标识没有独立路径。
     _ = parser.add_argument("--dead-horse-commit", default="unknown")
-    _ = parser.add_argument("--coolapk-1007-reward-commit", default="unknown")
-    namespace = parser.parse_args(argv)
-    parsed: dict[str, object] = vars(namespace)
-    adguard_source = parsed["adguard_source"]
-    anti_ad_source = parsed["anti_ad_source"]
-    coolapk_1007_reward_source = parsed["coolapk_1007_reward_source"]
-    local_allow_source = parsed["local_allow_source"]
-    output = parsed["output"]
-    adguard_commit = parsed["adguard_commit"]
-    anti_ad_commit = parsed["anti_ad_commit"]
-    dead_horse_commit = parsed["dead_horse_commit"]
-    coolapk_1007_reward_commit = parsed["coolapk_1007_reward_commit"]
-    if not isinstance(adguard_source, Path):
-        raise TypeError
-    if not isinstance(anti_ad_source, Path):
-        raise TypeError
-    if not isinstance(coolapk_1007_reward_source, Path):
-        raise TypeError
-    if not isinstance(local_allow_source, Path):
-        raise TypeError
-    if not isinstance(output, Path):
-        raise TypeError
-    if not isinstance(adguard_commit, str):
-        raise TypeError
-    if not isinstance(anti_ad_commit, str):
-        raise TypeError
-    if not isinstance(dead_horse_commit, str):
-        raise TypeError
-    if not isinstance(coolapk_1007_reward_commit, str):
-        raise TypeError
+    parsed: dict[str, object] = vars(parser.parse_args(argv))
+
+    def path_arg(name: str) -> Path:
+        value = parsed[name.replace("-", "_")]
+        if not isinstance(value, Path):
+            raise TypeError(name)
+        return value
+
+    def str_arg(name: str) -> str:
+        value = parsed[name.replace("-", "_")]
+        if not isinstance(value, str):
+            raise TypeError(name)
+        return value
+
+    commits = {kind: str_arg(f"{option}-commit") for kind, option in UPSTREAM_OPTIONS.items()}
+    commits[UpstreamKind.DEAD_HORSE] = str_arg("dead-horse-commit")
     return BuildArgs(
-        adguard_source=adguard_source,
-        anti_ad_source=anti_ad_source,
-        coolapk_1007_reward_source=coolapk_1007_reward_source,
-        local_allow_source=local_allow_source,
-        output=output,
-        adguard_commit=adguard_commit,
-        anti_ad_commit=anti_ad_commit,
-        dead_horse_commit=dead_horse_commit,
-        coolapk_1007_reward_commit=coolapk_1007_reward_commit,
+        sources=UpstreamSources(
+            adguard_magisk=path_arg("adguard-source"),
+            goodbyeads_dns=path_arg("goodbyeads-dns-source"),
+            goodbyeads_allow=path_arg("goodbyeads-allow-source"),
+            urlhaus=path_arg("urlhaus-source"),
+            anti_ad=path_arg("anti-ad-source"),
+            coolapk_1007_reward=path_arg("coolapk-1007-reward-source"),
+            local_allow=path_arg("local-allow-source"),
+        ),
+        output=path_arg("output"),
+        upstream_commits=commits,
     )
 
 
 def main() -> int:
     args = parse_args(sys.argv[1:])
-    result = convert_repositories(
-        args.adguard_source,
-        args.anti_ad_source,
-        args.coolapk_1007_reward_source,
-        {
-            UpstreamKind.ADGUARD_MAGISK: args.adguard_commit,
-            UpstreamKind.ANTI_AD: args.anti_ad_commit,
-            UpstreamKind.DEAD_HORSE: args.dead_horse_commit,
-            UpstreamKind.COOLAPK_1007_REWARD: args.coolapk_1007_reward_commit,
-        },
-        local_allow_source=args.local_allow_source,
-    )
+    result = convert_repositories(args.sources, args.upstream_commits)
     write_outputs(result, args.output)
     print_summary(result)
     return 0

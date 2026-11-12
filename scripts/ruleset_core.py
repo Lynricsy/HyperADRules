@@ -11,6 +11,7 @@ from scripts.ruleset_types import (
     RuleCollector,
     RuleKind,
     UpstreamKind,
+    UpstreamSources,
 )
 
 COMMENT_PREFIXES: Final[tuple[str, ...]] = ("!", "#", "[")
@@ -19,42 +20,26 @@ MIN_QUOTED_LENGTH: Final[int] = 2
 OUTPUT_PREFIX: Final[str] = "hyper_adrules"
 
 def convert_repositories(
-    adguard_source_dir: Path,
-    anti_ad_source_dir: Path,
-    coolapk_1007_reward_source: Path,
+    sources: UpstreamSources,
     upstream_commits: dict[UpstreamKind, str],
-    *,
-    local_allow_source: Path,
 ) -> ConversionResult:
     collectors: dict[RuleKind, RuleCollector] = {kind: RuleCollector() for kind in RuleKind}
     stats: dict[RuleKind, ConversionStats] = {kind: ConversionStats() for kind in RuleKind}
 
-    parse_adguard_magisk(adguard_source_dir, collectors, stats)
-    parse_anti_ad(anti_ad_source_dir, collectors, stats)
-    parse_coolapk_1007_reward(coolapk_1007_reward_source, collectors, stats)
+    parse_file(sources.goodbyeads_dns, RuleKind.ADS, collectors, stats)
+    parse_file(sources.goodbyeads_allow, RuleKind.ALLOW, collectors, stats)
+    parse_file(sources.urlhaus, RuleKind.MALWARE, collectors, stats)
+    parse_user_rules(sources.adguard_magisk / "Adguardhome" / "bin" / "AdGuardHome.yaml", collectors, stats)
+    parse_anti_ad(sources.anti_ad, collectors, stats)
+    parse_coolapk_1007_reward(sources.coolapk_1007_reward, collectors, stats)
     # 本地白名单并入 allow; 不从 ads 删除上游条目, 客户端靠 allow/PASS 优先。
-    parse_local_allow(local_allow_source, collectors, stats)
+    parse_local_allow(sources.local_allow, collectors, stats)
 
     return ConversionResult(
         buckets={kind: collector.freeze() for kind, collector in collectors.items()},
         stats=stats,
         upstream_commits=upstream_commits,
     )
-
-def parse_adguard_magisk(
-    source_dir: Path,
-    collectors: dict[RuleKind, RuleCollector],
-    stats: dict[RuleKind, ConversionStats],
-) -> None:
-    filters_dir = source_dir / "Adguardhome" / "bin" / "data" / "filters"
-    if not filters_dir.is_dir():
-        message = f"missing rule directory: {filters_dir}"
-        raise FileNotFoundError(message)
-
-    parse_file(filters_dir / "1721861846.txt", RuleKind.ADS, collectors, stats)
-    parse_file(filters_dir / "1735560833.txt", RuleKind.MALWARE, collectors, stats)
-    parse_file(filters_dir / "1721861844.txt", RuleKind.ALLOW, collectors, stats)
-    parse_user_rules(source_dir / "Adguardhome" / "bin" / "AdGuardHome.yaml", collectors, stats)
 
 def parse_anti_ad(
     source_dir: Path,
@@ -204,7 +189,10 @@ def write_manifest(result: ConversionResult, path: Path) -> None:
         "",
         "## 上游",
         "",
-        f"- AdGuard Home For Magisk Mod: `{result.upstream_commits[UpstreamKind.ADGUARD_MAGISK]}`",
+        f"- GOODBYEADS dns.txt: `{result.upstream_commits[UpstreamKind.GOODBYEADS_DNS]}`",
+        f"- GOODBYEADS allow.txt: `{result.upstream_commits[UpstreamKind.GOODBYEADS_ALLOW]}`",
+        f"- URLHaus (AdGuard filter_11): `{result.upstream_commits[UpstreamKind.URLHAUS]}`",
+        f"- AdGuard Home For Magisk Mod user_rules: `{result.upstream_commits[UpstreamKind.ADGUARD_MAGISK]}`",
         f"- anti-AD: `{result.upstream_commits[UpstreamKind.ANTI_AD]}`",
         f"- dead-horse: `{result.upstream_commits[UpstreamKind.DEAD_HORSE]}`",
         f"- Coolapk 1007 reward: `{result.upstream_commits[UpstreamKind.COOLAPK_1007_REWARD]}`",
